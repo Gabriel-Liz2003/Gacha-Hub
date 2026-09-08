@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "game": "GENSHIN",
+  "owned": [
+    {
+      "characterId": "gi:bennett",
+      "level": 40,
+      "copies": 1,
+      "ascension": 1,
+      "stats": {
+        "Energy Recharge": 180.0
+      },
+      "skills": {
+        "Burst": 4,
+        "Skill": 4,
+        "Normal Attack": 1
+      }
+    }
+  ]
+}
