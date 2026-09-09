@@ -49,6 +49,7 @@ class NavigationTest {
         compose.onNodeWithText("Atual • Ascensão total (sem EXP)").performScrollTo().performTextInput("0")
         compose.onNodeWithText("Salvar projeto").performClick()
         dismissMessage("Planejamento salvo")
+        compose.waitUntil(timeoutMillis=10000){vm.state.value.projects.any{it.title=="UI ascension"}}
         compose.onNodeWithText("Nome e prioridade").performScrollTo().performClick()
         compose.onNodeWithText("Nome do projeto").performTextReplacement("UI renamed")
         compose.onNodeWithText("Salvar alterações").performClick()
@@ -61,11 +62,15 @@ class NavigationTest {
         compose.onNodeWithText("Tingyun •",substring=true).performScrollTo().performClick()
         compose.onNodeWithText("Salvar time").performScrollTo().performClick()
         dismissMessage("Time salvo")
-        compose.onNodeWithText("Editar time").performScrollTo().performClick()
+        compose.waitUntil(timeoutMillis=10000){vm.state.value.teams.any{it.name=="UI team"}}
+        compose.onNodeWithTag("teams-list").performScrollToNode(hasText("Editar time"))
+        compose.onNodeWithText("Editar time").performClick()
         compose.onNodeWithText("Nome do time").performScrollTo().performTextReplacement("UI team edited")
         compose.onNodeWithText("Salvar alterações do time").performScrollTo().performClick()
         dismissMessage("Time salvo")
-        compose.onNodeWithText("Excluir time").performScrollTo().performClick()
+        compose.waitUntil(timeoutMillis=10000){vm.state.value.teams.any{it.name=="UI team edited"}}
+        compose.onNodeWithTag("teams-list").performScrollToNode(hasText("Excluir time"))
+        compose.onNodeWithText("Excluir time").performClick()
         compose.onNodeWithText("Confirmar exclusão").performClick()
         dismissMessage("Time excluído")
     }

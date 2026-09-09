@@ -4,16 +4,19 @@ import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import dev.gachahub.core.ResourceMath
 import dev.gachahub.data.*
 import dev.gachahub.data.Target
+import kotlinx.coroutines.launch
 
 @Composable internal fun GlobalPlanningPage(state: HubState, open: (Project)->Unit) {
     var sort by rememberSaveable { mutableStateOf("Prioridade") }
@@ -188,8 +191,10 @@ import dev.gachahub.data.Target
     var selected by rememberSaveable(account.id){mutableStateOf(listOf<String>())}
     var notes by rememberSaveable(account.id){mutableStateOf("")}
     var deleting by remember(account.id){mutableStateOf<Team?>(null)}
+    val listState=rememberLazyListState()
+    val scope=rememberCoroutineScope()
     fun reset(){editing=null;name="";selected=emptyList();notes=""}
-    LazyColumn(contentPadding=PaddingValues(18.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
+    LazyColumn(modifier=Modifier.testTag("teams-list"),state=listState,contentPadding=PaddingValues(18.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
         item {Section(if(editing==null) "Montar time (${game.teamSize} vagas)" else "Editar time"){
             Field("Nome do time",name,{name=it})
             Text("A ordem de seleção define as vagas do time.")
@@ -201,7 +206,7 @@ import dev.gachahub.data.Target
         items(state.teams.filter{it.accountId==account.id},key={it.id}){t->Section(t.name){
             Text(t.members.joinToString(" • "){chars[it]?.name ?: it});Text(t.notes)
             Row {
-                TextButton(onClick={editing=t.id;name=t.name;selected=t.members;notes=t.notes}){Text("Editar time")}
+                TextButton(onClick={editing=t.id;name=t.name;selected=t.members;notes=t.notes;scope.launch { listState.animateScrollToItem(0) }}){Text("Editar time")}
                 TextButton(onClick={deleting=t}){Text("Excluir time")}
             }
             if(editing==t.id)Text("Edite os campos no início desta tela.")
