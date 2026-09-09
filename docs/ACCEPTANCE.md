@@ -6,7 +6,7 @@ Nenhuma linha desta matriz equivale a afirmar que o app está pronto para produ�
 
 | Item original | Estado | Evidência / lacuna |
 |---|---|---|
-| 1. Plataforma/build pelo GitHub | Bloqueado | Workflow escrito; repositório remoto e execução não disponíveis |
+| 1. Plataforma/build pelo GitHub | Bloqueado | Workflow publicado; execução iniciada no PR #1, resultado pendente |
 | 2. Stack nativa | Código | Kotlin, Compose, Material 3, Room, Coroutines, OkHttp |
 | 3. Organização por jogo | Código | Home e nove seções; várias contas por jogo |
 | 4. Importação | Parcial | Enka Genshin/HSR/ZZZ; JSON/manual todos; sem conta completa ou Kuro UID |
@@ -29,19 +29,17 @@ Nenhuma linha desta matriz equivale a afirmar que o app está pronto para produ�
 | 21. Dashboard | Código | Totais locais explícitos, projetos, favoritos, atributos pendentes e farm |
 | 22. Arquitetura multijogo | Código | Tipos compartilhados e adaptador de importação extensível |
 | 23. Pesquisa | Parcial | Enka documentado; resposta JSON Genshin consultada; HSR/ZZZ/WuWa sem teste real de conta |
-| 24. GitHub | Bloqueado | Git local, branch feature e commits; sem remoto, PR ou proteção configurada |
+| 24. GitHub | Bloqueado | Branch feature e PR #1 publicados; proteção de main não configurada |
 | 25. Autonomia | Executado | Arquivos, pesquisa e testes locais sem exigir decisões técnicas ao usuário |
 | 26. Processo | Parcial | Implementação/revisão local; build, instalação e correções do CI ainda pendentes |
 | 27. Testes | Parcial | Java/Python executados; Kotlin/Room/migration/UI escritos mas não executados |
 | 28. Sucesso final | Não atingido | APK, CI verde, cobertura completa e QA ainda pendentes |
 
-## Bloqueio externo imediato
+## GitHub desbloqueado
 
-O GitHub conectado listou os repositórios acessíveis, mas nenhum foi identificado
-como destino deste projeto. As ferramentas disponíveis não incluem criação de
-repositório. Não foi modificado um repositório de outro projeto para contornar isso.
-O usuário precisa fornecer um repositório inicializado com README. Com esse destino,
-pode-se publicar uma branch e PR, acompanhar o Actions, corrigir logs e baixar o APK.
+O usuário forneceu `Gabriel-Liz2003/Gacha-Hub`. O código foi publicado na branch
+`feature/gacha-hub-foundation` e o PR #1 está em rascunho. A compilação e os testes
+Android foram iniciados. Os resultados serão registrados em VALIDATION.md.
 
 ## Trabalho de produto que ainda continua necessário
 

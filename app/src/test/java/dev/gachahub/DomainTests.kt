@@ -1,6 +1,7 @@
 package dev.gachahub
 
 import dev.gachahub.data.*
+import dev.gachahub.data.Target
 import org.junit.Assert.*
 import org.junit.Test
 import kotlinx.serialization.json.JsonObject

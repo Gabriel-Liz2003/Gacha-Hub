@@ -1,8 +1,8 @@
 # Gacha Hub — Android
 
-**Estado: implementação inicial incompleta, aguardando repositório e build Android.**
+**Estado: implementação inicial incompleta; compilação Android em validação no PR #1.**
 Não atende ainda a todos os critérios de aceitação do pedido. Nenhum APK foi gerado
-ou instalado, e nenhuma execução do GitHub Actions ocorreu nesta sessão.
+ou instalado nesta revisão documental. Acompanhe as execuções reais no PR abaixo.
 
 App nativo para Zenless Zone Zero, Honkai: Star Rail, Genshin Impact e Wuthering
 Waves. Kotlin, Jetpack Compose, Material 3, Room, Coroutines/Flow, OkHttp e Coil.
@@ -49,10 +49,13 @@ Não há rendimentos/energia de farm nem banners documentados no pacote inicial.
 
 ## Como compilar e baixar pelo celular
 
-O projeto precisa primeiro ser enviado à raiz de um repositório GitHub com Actions
-habilitado. O conector desta sessão edita repositórios existentes, mas não cria um
-novo. Crie um repositório **GachaHub**, inicializado com README, e forneça o link
-para que o código possa ser enviado em uma branch de feature.
+Código publicado na branch `feature/gacha-hub-foundation`:
+https://github.com/Gabriel-Liz2003/Gacha-Hub/tree/feature/gacha-hub-foundation
+
+PR de desenvolvimento: https://github.com/Gabriel-Liz2003/Gacha-Hub/pull/1
+
+Enquanto o workflow não estiver na branch padrão, use as execuções disparadas por
+push/PR. O botão manual do GitHub fica disponível após o workflow chegar à `main`.
 
 Após a publicação do código:
 

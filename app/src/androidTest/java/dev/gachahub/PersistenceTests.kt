@@ -4,6 +4,7 @@ import android.database.sqlite.SQLiteDatabase
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import dev.gachahub.data.*
+import dev.gachahub.data.Target
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
 import org.junit.Test
