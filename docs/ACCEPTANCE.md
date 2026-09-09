@@ -13,7 +13,7 @@ Nenhuma linha desta matriz equivale a afirmar que o app está pronto para produ�
 | 5. Personagens | Parcial | Modelo e editor de campos; catálogo de 14, não completo; equipamentos por ID/JSON |
 | 6. Builds | Parcial | Quatro builds curadas; recomendações e benchmarks; não cobre todo roster |
 | 7. Fontes | Parcial | Prydwen/KQM com links/datas; sem cruzamento amplo de fontes ou feed editorial automático |
-| 8. Atualizações | Código | Pacote local/HTTPS versionado, validado e salvo sem novo APK; sem endpoint hospedado |
+| 8. Atualizações | Código | Pacote local/HTTPS versionado, validado e salvo sem novo APK; fonte padrão publicada no próprio repositório e consulta por botão |
 | 9. Comparador | Parcial | Benchmarks individuais; sem cálculo de buffs/estado de combate, limites condicionais avançados |
 | 10. Planejador completo | Parcial | Motor de transições exatas; faltam tabelas por nível, EXP, arma, habilidades para todos |
 | 11. Checklist | Código | Quantidades, faltantes, progresso, reserva de inventário e consumo |

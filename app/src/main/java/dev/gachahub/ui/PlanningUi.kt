@@ -156,7 +156,7 @@ import dev.gachahub.data.Target
             edges.forEach{(track,steps)->
                 FilterChip(enabledTracks[track]==true,{
                     enabledTracks[track]=enabledTracks[track]!=true
-                    if(track !in from) from[track]=steps.minOf{it.from}.toString()
+                    if(track !in from) from[track]=""
                     if(track !in to) to[track]=steps.maxOf{it.to}.toString()
                     preview=null
                 },label={Text(track)})

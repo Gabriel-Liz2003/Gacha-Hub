@@ -112,12 +112,14 @@ class PersistenceTests {
         try {
             val r=Repository(db);r.seed(context);r.saveAccount(Account("a",Game.ZZZ,"ZZZ"))
             val before=r.snapshot()
+            assertFalse(r.refreshContent(requireNotNull(before.pack)))
+            try {r.refreshContent(requireNotNull(before.pack).copy(coverage="Changed without version"));fail("Conflicting version accepted")}catch(_:IllegalArgumentException){}
             try {
                 r.import("a",ImportFile(game=Game.ZZZ,characters=listOf(Character("zzz:new",Game.ZZZ,"New")),owned=listOf(Owned("zzz:new",999))))
                 fail("Expected rejection")
             } catch(_:IllegalArgumentException) { }
             assertEquals(before,r.snapshot())
-            r.content(requireNotNull(before.pack).copy(version=2))
+            assertTrue(r.refreshContent(requireNotNull(before.pack).copy(version=2)))
             assertEquals(before.accounts,r.snapshot().accounts)
             try {r.content(requireNotNull(before.pack));fail("Downgrade accepted")}catch(_:IllegalArgumentException){}
             assertEquals(2,r.snapshot().pack?.version)

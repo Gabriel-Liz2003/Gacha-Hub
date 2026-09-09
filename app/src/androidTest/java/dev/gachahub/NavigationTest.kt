@@ -46,7 +46,7 @@ class NavigationTest {
         compose.onNodeWithText("Novo planejamento").performClick()
         compose.onNodeWithText("Nome do projeto").performTextInput("UI ascension")
         compose.onNodeWithText("Ascensão total (sem EXP)").performScrollTo().performClick()
-        compose.onNodeWithText("Atual • Ascensão total (sem EXP)").assertExists()
+        compose.onNodeWithText("Atual • Ascensão total (sem EXP)").performScrollTo().performTextInput("0")
         compose.onNodeWithText("Salvar projeto").performClick()
         dismissMessage("Planejamento salvo")
         compose.onNodeWithText("Nome e prioridade").performScrollTo().performClick()

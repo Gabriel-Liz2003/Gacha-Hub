@@ -7,6 +7,8 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.encodeToString
 
+const val DEFAULT_CONTENT_URL = "https://raw.githubusercontent.com/Gabriel-Liz2003/Gacha-Hub/main/content/starter.json"
+
 class Repository(val db: HubDatabase) {
     val dao = db.dao()
     fun decode(records: List<Record>): HubState {
@@ -39,6 +41,11 @@ class Repository(val db: HubDatabase) {
         old.pack?.materials?.filter { previous -> pack.materials.none { it.id == previous.id } }?.forEach { dao.put(Record("material", it.id, codec.encodeToString(it))) }
         old.pack?.characters?.filter { it.id !in ids }?.forEach { dao.put(Record("character", it.id, codec.encodeToString(it))) }
         dao.put(Record("content", "current", codec.encodeToString(pack)))
+    }
+    suspend fun refreshContent(pack: ContentPack): Boolean = db.withTransaction {
+        pack.validate()
+        if (pack == snapshot().pack) false
+        else { content(pack); true }
     }
     suspend fun saveAccount(account: Account) = db.withTransaction {
         val s = snapshot()

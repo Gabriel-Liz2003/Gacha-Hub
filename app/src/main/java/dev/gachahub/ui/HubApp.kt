@@ -105,9 +105,15 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
                             OutlinedButton(onClick={openFile("backup")},enabled=!busy) { Text("Importar / mesclar backup") }
                             Text("Backup substitui contas com o mesmo ID. Exporte antes de importar um backup antigo.",style=MaterialTheme.typography.bodySmall)
                             OutlinedButton(onClick={openFile("content")},enabled=!busy) { Text("Importar pacote de conteúdo") }
-                            var url by rememberSaveable { mutableStateOf("") }
-                            Field("URL HTTPS do pacote",url,{url=it})
-                            Button(onClick={vm.sync(url)},enabled=!busy && url.startsWith("https://")) { Text("Sincronizar conteúdo") }
+                            Button(onClick={vm.sync()},enabled=!busy) { Text("Buscar atualizações de conteúdo") }
+                            Text("Consulta o pacote publicado pelo Gacha Hub no GitHub. A atualização não altera seus personagens nem seus projetos salvos.",style=MaterialTheme.typography.bodySmall)
+                            var customFeed by rememberSaveable { mutableStateOf(false) }
+                            TextButton(onClick={customFeed=!customFeed}) { Text("Fonte de conteúdo personalizada") }
+                            if(customFeed) {
+                                var url by rememberSaveable { mutableStateOf("") }
+                                Field("URL HTTPS do pacote",url,{url=it})
+                                Button(onClick={vm.sync(url)},enabled=!busy && url.startsWith("https://")) { Text("Sincronizar fonte personalizada") }
+                            }
                             Text("Pacote ${state.pack?.version ?: 0} • ${state.pack?.publishedAt ?: "—"}",style=MaterialTheme.typography.bodySmall)
                         } }
                     }

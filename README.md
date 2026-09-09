@@ -33,7 +33,8 @@ Android 8+ (API 26), target/compile SDK 35. Sem WebView, Electron ou Chromium.
 - Calendário por fuso fixo e horário de reset do servidor.
 - Persistência Room transacional, cache Enka com TTL e espera após HTTP 429.
 - Exportação/restauração por seletor de documentos Android, sem permissão de armazenamento.
-- Pacotes de conteúdo JSON locais ou por HTTPS. Conteúdo salvo fica disponível offline.
+- Atualização de conteúdo por um botão, usando o pacote publicado neste repositório.
+- Pacotes JSON locais ou fonte HTTPS personalizada. Conteúdo salvo fica disponível offline.
 
 O build, lint, testes Kotlin e quatro testes de instrumentação passaram em
 emulador Android 15. Isso não cobre todos os aparelhos nem importação real por UID.
@@ -194,3 +195,14 @@ imagens offline. Os dados estruturados ficam em Room.
 Nomes, personagens e imagens pertencem aos titulares dos jogos e provedores
 indicados. Projeto não oficial, sem afiliação com HoYoverse, Kuro, Enka, KQM ou
 Prydwen. As recomendações são sínteses com links para as análises originais.
+
+## Publicar uma atualização de conteúdo
+
+O botão **Buscar atualizações de conteúdo** consulta `content/starter.json` na `main`.
+Para publicar dados novos, aumente `version`, atualize fontes/datas, mantenha IDs estáveis
+e copie o mesmo pacote para `app/src/main/assets/starter.json`. Os testes verificam
+a equivalência. Envie por branch/PR. Os usuários podem baixar o pacote novo pelo app
+sem instalar outro APK; contas, projetos e inventário são preservados.
+
+Consultar novamente a mesma versão não gera erro. Pacotes diferentes com a mesma versão
+e versões inferiores são rejeitados. Fontes personalizadas continuam disponíveis.

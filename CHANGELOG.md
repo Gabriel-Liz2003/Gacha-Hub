@@ -2,7 +2,8 @@
 
 ## 0.2.0 — gerenciamento de projetos e times
 
-- Campos de objetivos por trilha, sem exigir JSON.
+- Campos de objetivos por trilha, sem exigir JSON ou presumir a etapa atual.
+- Atualização de conteúdo por botão, usando o pacote publicado na main; reconsulta idempotente.
 - Edição e exclusão de times; edição, prioridade e exclusão de projetos.
 - Visão global com ordenação por jogo, personagem, prioridade e progresso.
 - Reservas recalculadas sem gastar inventário; projetos concluídos mantêm custos históricos.
