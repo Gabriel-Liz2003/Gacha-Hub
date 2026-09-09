@@ -69,3 +69,19 @@ Datas e patches da própria fonte são exibidos sem substituí-los pela versão 
 https://developer.android.com/build/releases/agp-8-9-0-release-notes confirma AGP
 8.9.x, Gradle 8.11.1, JDK 17 e SDK máximo 35. Dependências foram fixadas no projeto;
 a resolução completa pelo Gradle ainda precisa ocorrer no CI.
+
+## Dados de evolução Genshin — inclusão 0.3
+
+Fonte: https://github.com/theBowja/genshin-db
+Snapshot: `8b15995fa220c88a4d0d7ffe1e21b041d0b32588` (20/08/2026), README identifica versão 7.0.
+Repositório ativo e público, licença MIT preservada em content/sources. Dados de
+characters, talents, materials e image foram lidos pela API GitHub, sem autenticação
+da conta do jogo. A aplicação recebe o pacote normalizado pelo feed do próprio hub.
+
+Não é API oficial HoYoverse. Os dados mecânicos não são recomendações de build.
+O gerador exclui Manekin/Manekina, cujos custos não têm quantidades válidas, e não
+atribui tabelas elementais de talento a Aether/Lumine. Não contém curvas de EXP ou
+armas. Não há promessa de atualização diária: snapshots novos exigem validação e PR.
+
+Testes comparam todas as etapas geradas aos valores do snapshot e verificam totais
+e parciais de Bennett, triple crown de Furina e dias dos livros.

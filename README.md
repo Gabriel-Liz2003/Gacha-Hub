@@ -36,13 +36,13 @@ Android 8+ (API 26), target/compile SDK 35. Sem WebView, Electron ou Chromium.
 - Atualização de conteúdo por um botão, usando o pacote publicado neste repositório.
 - Pacotes JSON locais ou fonte HTTPS personalizada. Conteúdo salvo fica disponível offline.
 
-O build, lint, testes Kotlin e quatro testes de instrumentação passaram em
-emulador Android 15. Isso não cobre todos os aparelhos nem importação real por UID.
+O build, lint, testes Kotlin e sete testes de instrumentação da versão 0.2 passaram
+em emulador Android 15 (run 34363232604). A ampliação de conteúdo 0.3 tem CI separado. Isso não cobre todos os aparelhos nem importação real por UID.
 
 ## Conteúdo inicial — cobertura real
 
-O pacote embutido tem **14 personagens, 4 builds, 3 guias de times, 14 materiais e
-2 tabelas totais de ascensão**. A contagem é do catálogo local, nunca uma alegação
+O pacote de conteúdo v2 tem **130 personagens (120 de Genshin), 4 builds, 3 guias
+de times, 320 materiais e 3.908 etapas de custos**. A contagem é do catálogo local, nunca uma alegação
 de roster completo. Os personagens adicionais podem ser cadastrados ou importados.
 
 Builds: Ellen, Tingyun, Bennett e Encore. Somente os trechos resumidos e referenciados
@@ -50,11 +50,20 @@ foram incluídos; o app não espelha guias inteiros nem faz scraping periódico.
 O patch da recomendação pode ser anterior ao patch atual, mesmo quando a página
 foi consultada recentemente. Datas de consulta e atualização são distintas.
 
-Custos: ascensão total de Tingyun e Encore, **sem EXP de nível**, arma ou habilidades.
-Uma tabela de ascensão total 0→6 não pode calcular 2→6 por divisão proporcional.
-O motor aceita custos por nível, habilidades e armas através de novas trilhas,
-mas essas tabelas ainda precisam de curadoria e validação para cobertura completa.
-Não há rendimentos/energia de farm nem banners documentados no pacote inicial.
+Custos de Genshin: seis etapas de ascensão para 120 personagens e talentos de nível
+base 1–10, separados por ataque normal, habilidade e Supremo, para 118 personagens.
+Os talentos do Viajante não foram associados a um elemento arbitrário. EXP de nível
+e armas continuam ausentes. Os dias de farm dos livros vêm do mesmo snapshot.
+
+HSR e WuWa mantêm somente a ascensão total de Tingyun e Encore, sem EXP, armas ou
+habilidades. ZZZ ainda depende de checklist manual para materiais. Uma tabela total
+não é fracionada para estimar etapas ausentes. Não há estimativas verificadas de
+rendimento/energia nem banners no pacote.
+
+Os dados Genshin são derivados de `theBowja/genshin-db`, revisão `8b15995`, que se
+identifica como versão 7.0. Arquivo normalizado, licença MIT e gerador estão em
+`content/sources/` e `scripts/build-genshin-content.py`. Cada etapa tem a URL da revisão
+exata. As builds continuam sendo as quatro recomendações curadas descritas acima.
 
 ## Como compilar e baixar pelo celular
 

@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.0 — catálogo e evolução Genshin
+
+- Pacote v2: 120 personagens Genshin, ascensões por etapa e talentos 1–10 para 118.
+- Dias e locais de farm dos materiais, fontes fixadas por commit e licença MIT.
+- Gerador reproduzível e testes de todas as quantidades, etapas parciais e triple crown.
+- Dados novos embutidos atualizam o banco ao abrir; projetos antigos são preservados.
+- Parsing do catálogo fora da thread de interface e cache do conteúdo decodificado.
+- EXP, armas, talentos do Viajante e expansão dos outros três jogos ainda pendentes.
+
+
 ## 0.2.0 — gerenciamento de projetos e times
 
 - Campos de objetivos por trilha, sem exigir JSON ou presumir a etapa atual.
