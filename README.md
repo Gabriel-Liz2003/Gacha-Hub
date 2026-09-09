@@ -1,8 +1,14 @@
 # Gacha Hub — Android
 
-**Estado: implementação inicial incompleta; compilação Android em validação no PR #1.**
-Não atende ainda a todos os critérios de aceitação do pedido. Nenhum APK foi gerado
-ou instalado nesta revisão documental. Acompanhe as execuções reais no PR abaixo.
+**Estado: APK de desenvolvimento compilado e testado no GitHub Actions.**
+A cobertura funcional e de conteúdo ainda é parcial; os critérios do app completo
+não estão todos atendidos. Veja as limitações abaixo.
+
+Build validado: https://github.com/Gabriel-Liz2003/Gacha-Hub/actions/runs/34313485400
+
+APK (artifact ZIP, login GitHub necessário):
+https://github.com/Gabriel-Liz2003/Gacha-Hub/actions/runs/34313485400/artifacts/10089306797
+
 
 App nativo para Zenless Zone Zero, Honkai: Star Rail, Genshin Impact e Wuthering
 Waves. Kotlin, Jetpack Compose, Material 3, Room, Coroutines/Flow, OkHttp e Coil.
@@ -27,8 +33,8 @@ Android 8+ (API 26), target/compile SDK 35. Sem WebView, Electron ou Chromium.
 - Exportação/restauração por seletor de documentos Android, sem permissão de armazenamento.
 - Pacotes de conteúdo JSON locais ou por HTTPS. Conteúdo salvo fica disponível offline.
 
-**Implementado em código não significa validado em dispositivo.** Confira os testes e
-as lacunas antes de usar dados importantes.
+O build, lint, testes Kotlin e quatro testes de instrumentação passaram em
+emulador Android 15. Isso não cobre todos os aparelhos nem importação real por UID.
 
 ## Conteúdo inicial — cobertura real
 
@@ -171,7 +177,7 @@ gradle :app:testDebugUnitTest :app:lintDebug :app:assembleDebug
 gradle :app:connectedDebugAndroidTest
 ```
 
-Os dois primeiros foram executados localmente; os comandos Gradle estão pendentes.
+Todos os comandos passaram no GitHub Actions, incluindo testes em emulador Android 15.
 Não há resultados simulados nem selo de CI verde sem uma execução real.
 
 ## Privacidade e atribuição

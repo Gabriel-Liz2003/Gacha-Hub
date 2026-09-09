@@ -1,43 +1,41 @@
-# Verificação executada — 2026-09-08
+# Verificação — 2026-09-09
 
-## Resultados observados
+## GitHub Actions confirmado
 
-- `bash scripts/test-core.sh`: PASS, **2.036 asserções** sobre o código de produção
-  `ResourceMath.java`. Inclui 1.000 cenários determinísticos de alocação de inventário
-  com duas verificações cada. Não são 2.036 testes Android.
-- `python3 -m unittest discover -s tests -v`: **9 testes passaram**. Validam pacote,
-  referências, separação dos jogos, fontes, quantidades verificadas, contagens,
-  cópia idêntica do asset e permissão única INTERNET.
-- Java 17 disponível. O launcher `javac` não estava no PATH, mas o módulo
-  `jdk.compiler` estava presente; compilação foi executada com
-  `java -m jdk.compiler/com.sun.tools.javac.Main`.
+- Run: https://github.com/Gabriel-Liz2003/Gacha-Hub/actions/runs/34313485400
+- Commit: `6c401a5ec4297e336bd39942258979a95be9a68d`
+- `build`: success (Gradle, testes Kotlin, lint, assembleDebug, apksigner).
+- `device-tests`: success, quatro testes em emulador Android 15.
+- `release`: skipped, esperado porque o evento não é uma tag.
+- APK: artifact `GachaHub-debug-4`, ID `10089306797`, ZIP de 11.350.922 bytes.
+- Expiração do APK artifact: 2026-10-09.
 
-## Testes escritos, NÃO executados nesta sessão
+O primeiro build falhou por conflito de importação de `Target` com a anotação Kotlin.
+Importações explícitas do tipo do planejador corrigiram a compilação. A nova execução
+acima concluiu ambos os jobs com sucesso.
 
-- JUnit Kotlin: custos exatos, lacunas, downgrade, trilhas duplicadas, schema,
-  custos cruzados entre jogos, fontes, parsing Genshin/HSR/ZZZ, vitrine vazia,
-  WuWa rejeitado, níveis inválidos, combinações de time e leitura limitada.
-- Instrumentação Room: conta → vitrine → build → projeto → inventário → time →
-  fechar banco → reabrir → comparação integral → backup/restauração.
-- Migration de banco v1 real para v2, preservando uma conta existente.
-- Rollback de importação inválida, atualização e rejeição de downgrade de conteúdo.
-- Compose: abrir ZZZ, criar conta e acessar importação.
+## Cobertura validada
 
-O teste de reabertura de banco cobre persistência, mas não é um teste de encerramento
-forçado do processo Android. O fluxo SAF de importação/exportação precisa de teste
-manual no dispositivo, assim como teclado, acessibilidade, tamanhos de tela e imagens.
+2.036 asserções JVM de domínio e nove testes Python de conteúdo passaram localmente
+e no Actions. A suíte JUnit Kotlin passou no job de build. Inclui parsing dos três
+adaptadores Enka, rejeição de WuWa sem endpoint, custos exatos, validação e times.
 
-## Ambiente e CI
+Quatro testes de instrumentação passaram:
 
-Gradle, Android SDK e emulador não estavam instalados. A tentativa de acesso para
-baixar dependências foi bloqueada/cancelada antes da decisão de rede; não houve
-escalada alternativa nem resolução de dependências Android. A documentação pública
-foi consultada por ferramentas disponíveis para pesquisa.
+1. Conta → importação de fixture → build → plano → inventário → time → fechar banco
+   → reabrir → comparar dados → backup e restauração.
+2. Migration real v1→v2 preservando conta e criando cache.
+3. Rollback de importação inválida, atualização e rejeição de downgrade de conteúdo.
+4. Compose: abrir jogo, criar conta e acessar a tela de UID.
 
-**GitHub Actions: NÃO EXECUTADO.** Sem URL de run, job ou logs remotos para reportar.
-**APK: NÃO GERADO.** Não existe arquivo instalável nesta entrega.
-**Instalação: NÃO TESTADA.**
-**Compilação Kotlin/Compose/Room: NÃO VERIFICADA.** Pode conter erros a corrigir no CI.
+Os testes de importação usam fixtures, não contas reais. Reabrir o banco não equivale
+a encerrar à força o processo Android. SAF, servidores reais, outros tamanhos de tela,
+acessibilidade e imagens ainda precisam de cobertura adicional.
 
-Não se deve interpretar testes de conteúdo e domínio como verificação de compilação
-Android, interface, integração real com conta ou satisfação de todos os requisitos.
+## Limitações remanescentes
+
+Catálogo, custos de evolução, calendários e builds são parciais. CI verde não implica
+cumprimento dos 28 itens do pedido. A auditoria está em ACCEPTANCE.md. O APK usa chave
+debug do runner e pode exigir backup/reinstalação ao trocar de build.
+
+O SDK/Gradle local continuam indisponíveis; a compilação Android foi feita remotamente.

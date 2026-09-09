@@ -6,7 +6,7 @@ Nenhuma linha desta matriz equivale a afirmar que o app está pronto para produ�
 
 | Item original | Estado | Evidência / lacuna |
 |---|---|---|
-| 1. Plataforma/build pelo GitHub | Bloqueado | Workflow publicado; execução iniciada no PR #1, resultado pendente |
+| 1. Plataforma/build pelo GitHub | Validado | Run 34313485400: build e emulador passaram; APK artifact disponível |
 | 2. Stack nativa | Código | Kotlin, Compose, Material 3, Room, Coroutines, OkHttp |
 | 3. Organização por jogo | Código | Home e nove seções; várias contas por jogo |
 | 4. Importação | Parcial | Enka Genshin/HSR/ZZZ; JSON/manual todos; sem conta completa ou Kuro UID |
@@ -29,17 +29,17 @@ Nenhuma linha desta matriz equivale a afirmar que o app está pronto para produ�
 | 21. Dashboard | Código | Totais locais explícitos, projetos, favoritos, atributos pendentes e farm |
 | 22. Arquitetura multijogo | Código | Tipos compartilhados e adaptador de importação extensível |
 | 23. Pesquisa | Parcial | Enka documentado; resposta JSON Genshin consultada; HSR/ZZZ/WuWa sem teste real de conta |
-| 24. GitHub | Bloqueado | Branch feature e PR #1 publicados; proteção de main não configurada |
+| 24. GitHub | Parcial | Branch feature e PR #1 publicados; proteção de main não configurada |
 | 25. Autonomia | Executado | Arquivos, pesquisa e testes locais sem exigir decisões técnicas ao usuário |
 | 26. Processo | Parcial | Implementação/revisão local; build, instalação e correções do CI ainda pendentes |
-| 27. Testes | Parcial | Java/Python executados; Kotlin/Room/migration/UI escritos mas não executados |
-| 28. Sucesso final | Não atingido | APK, CI verde, cobertura completa e QA ainda pendentes |
+| 27. Testes | Parcial | Java/Python/Kotlin e quatro testes Android passaram; faltam integração real e cobertura ampliada |
+| 28. Sucesso final | Não atingido | APK e CI verde obtidos; cobertura completa e QA ampliado ainda pendentes |
 
 ## GitHub desbloqueado
 
 O usuário forneceu `Gabriel-Liz2003/Gacha-Hub`. O código foi publicado na branch
 `feature/gacha-hub-foundation` e o PR #1 está em rascunho. A compilação e os testes
-Android foram iniciados. Os resultados serão registrados em VALIDATION.md.
+Android passaram no run 34313485400. Os resultados estão em VALIDATION.md.
 
 ## Trabalho de produto que ainda continua necessário
 
