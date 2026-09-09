@@ -149,7 +149,7 @@ Arquivo máximo de 8 MiB. Importação inválida é revertida integralmente.
 
 ## Atualizar conteúdo sem novo APK
 
-Edite uma cópia de `content/starter.json`, mantenha `schemaVersion: 1`, aumente
+Edite uma cópia de `content/starter.json`, mantenha `schemaVersion: 2`, aumente
 `version` e informe `publishedAt`, cobertura e proveniência de cada build/custo.
 Use **Importar pacote de conteúdo**, ou publique um JSON em HTTPS e informe sua
 URL na tela inicial. Links devem retornar JSON diretamente (não páginas HTML,
@@ -204,6 +204,15 @@ imagens offline. Os dados estruturados ficam em Room.
 Nomes, personagens e imagens pertencem aos titulares dos jogos e provedores
 indicados. Projeto não oficial, sem afiliação com HoYoverse, Kuro, Enka, KQM ou
 Prydwen. As recomendações são sínteses com links para as análises originais.
+
+## Compatibilidade do catálogo ampliado
+
+O pacote Genshin usa **schemaVersion 2** e requer **APK 0.3 ou posterior**. APKs antigos
+rejeitam esse pacote antes de gravar; instale a versão nova uma vez. Depois, as próximas
+atualizações compatíveis podem chegar pelo botão de conteúdo, sem trocar o APK.
+O banco Room v3 guarda o catálogo em linhas pequenas. As migrations 1→2→3 preservam
+os registros do usuário; a migração 2→3 lê catálogos antigos em partes para evitar
+exceder o CursorWindow. A assinatura debug ainda pode exigir backup e reinstalação.
 
 ## Publicar uma atualização de conteúdo
 

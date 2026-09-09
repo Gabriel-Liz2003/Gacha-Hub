@@ -72,7 +72,8 @@ def generate(base, snapshot):
         materials[key] = dict(id=key, game='GENSHIN', name=row['name'], category=row.get('type', 'Material'),
                               days=sorted(set(days)), location=' • '.join(locations), sources=[source('materials', row['file'])])
     count = sum(c['game'] == 'GENSHIN' for c in characters)
-    return dict(base, version=2, publishedAt=snapshot['checkedAt'], characters=characters,
+    # Schema 2 prevents older APKs (single-row storage) from accepting this large pack.
+    return dict(base, schemaVersion=2, version=2, publishedAt=snapshot['checkedAt'], characters=characters,
                 materials=list(materials.values()), costs=costs,
                 coverage=f'PARCIAL: {len(characters)} personagens ({count} Genshin), {len(base["builds"])} builds. Genshin: ascensões por etapa e talentos 1–10; talentos do Viajante, EXP e armas ainda ausentes. Outros jogos mantêm cobertura inicial.')
 

@@ -7,6 +7,8 @@
 - Gerador reproduzível e testes de todas as quantidades, etapas parciais e triple crown.
 - Dados novos embutidos atualizam o banco ao abrir; projetos antigos são preservados.
 - Parsing do catálogo fora da thread de interface e cache do conteúdo decodificado.
+- Room v3: catálogo dividido em registros menores; migration recupera JSON legado acima de 2 MB.
+- Schema de conteúdo 2 impede APKs antigos de aceitarem pacotes grandes incompatíveis.
 - EXP, armas, talentos do Viajante e expansão dos outros três jogos ainda pendentes.
 
 

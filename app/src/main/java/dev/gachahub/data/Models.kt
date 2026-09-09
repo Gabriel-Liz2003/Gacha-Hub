@@ -93,7 +93,7 @@ fun Owned.validate(game: Game) {
     }
 }
 fun ContentPack.validate() {
-    require(schemaVersion == 1 && version > 0 && coverage.isNotBlank()) { "Versão de conteúdo incompatível" }
+    require(schemaVersion in 1..2 && version > 0 && coverage.isNotBlank()) { "Versão de conteúdo incompatível; atualize o aplicativo" }
     LocalDate.parse(publishedAt)
     require(characters.size <= 5000 && materials.size <= 20000 && costs.size <= 200000)
     fun <T> unique(items: List<T>, key: (T) -> String) = require(items.map(key).distinct().size == items.size) { "IDs duplicados" }

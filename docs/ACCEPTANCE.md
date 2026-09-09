@@ -23,7 +23,7 @@ Nenhuma linha desta matriz equivale a afirmar que o app está pronto para produ�
 | 15. Vários projetos | Código | Visão global por jogo/conta e ordenação por prioridade, progresso e personagem |
 | 16. Busca/filtros | Código | Nome, elemento, especialidade e função via texto; raridade, posse e favorito |
 | 17. Offline | Código | Room e pacote embutido; imagens em cache sujeito a expulsão |
-| 18. Banco | Código | Room, transações, migration 1→2, backup; registros tipados JSON em vez de esquema normalizado |
+| 18. Banco | Código | Room, transações, migrations 1→2→3, backup; catálogo em registros menores com JSON tipado |
 | 19. Privacidade | Código | INTERNET apenas, sem senhas/trackers; backups explícitos |
 | 20. Interface | Parcial | Compose dark, cards, cores e navegação; sem QA visual em dispositivo; editores avançados JSON |
 | 21. Dashboard | Código | Totais locais explícitos, projetos, favoritos, atributos pendentes e farm |

@@ -12,15 +12,16 @@ const val DEFAULT_CONTENT_URL = "https://raw.githubusercontent.com/Gabriel-Liz20
 
 class Repository(val db: HubDatabase) {
     val dao = db.dao()
-    @Volatile private var cachedContent: Pair<String,ContentPack>? = null
-    private fun decodeContent(payload: String): ContentPack {
-        cachedContent?.takeIf { it.first == payload }?.let { return it.second }
-        return codec.decodeFromString<ContentPack>(payload).also { cachedContent = payload to it }
+    @Volatile private var cachedContent: Pair<List<Record>,ContentPack?>? = null
+    private fun decodeContent(records: List<Record>): ContentPack? {
+        val catalog = records.filter { it.kind == "content" || it.kind.startsWith("catalog_") }
+        cachedContent?.takeIf { it.first == catalog }?.let { return it.second }
+        return ContentStorage.decode(catalog).also { cachedContent = catalog to it }
     }
     fun decode(records: List<Record>): HubState {
         fun <T> rows(kind: String, parse: (String)->T) = records.filter { it.kind == kind }.map { parse(it.payload) }
         return HubState(
-            rows("content", ::decodeContent).singleOrNull(),
+            decodeContent(records),
             rows("character") { codec.decodeFromString<Character>(it) },
             rows("account") { codec.decodeFromString<Account>(it) },
             rows("project") { codec.decodeFromString<Project>(it) },
@@ -50,7 +51,9 @@ class Repository(val db: HubDatabase) {
         val ids = pack.characters.map { it.id }.toSet()
         old.pack?.materials?.filter { previous -> pack.materials.none { it.id == previous.id } }?.forEach { dao.put(Record("material", it.id, codec.encodeToString(it))) }
         old.pack?.characters?.filter { it.id !in ids }?.forEach { dao.put(Record("character", it.id, codec.encodeToString(it))) }
-        dao.put(Record("content", "current", codec.encodeToString(pack)))
+        val rows = ContentStorage.records(pack)
+        dao.deleteCatalog()
+        dao.putAll(rows)
     }
     suspend fun refreshContent(pack: ContentPack): Boolean = db.withTransaction {
         pack.validate()
