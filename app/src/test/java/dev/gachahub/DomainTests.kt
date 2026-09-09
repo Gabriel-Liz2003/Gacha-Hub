@@ -19,6 +19,20 @@ class DomainTests {
     @Test(expected=IllegalArgumentException::class) fun downgradeRejected() { Planner.calculate(pack(),character.id,listOf(Target("level",41,40))) }
     @Test(expected=IllegalArgumentException::class) fun duplicateTracksRejected() { Planner.calculate(pack(),character.id,listOf(Target("level",40,41),Target("level",40,41))) }
     @Test fun validPack() { pack().validate() }
+    @Test fun catalogRowsRoundTripPreservesOrderAndCostEdges() {
+        val p=pack()
+        val rows=ContentStorage.records(p)
+        assertTrue(rows.first{it.kind=="content"}.payload.length<2000)
+        assertEquals(p,ContentStorage.decode(rows.reversed()))
+        assertEquals(2,rows.count{it.kind=="catalog_cost"})
+    }
+    @Test fun legacyCatalogRemainsReadable() {
+        val p=pack()
+        assertEquals(p,ContentStorage.decode(listOf(Record("content","current",codec.encodeToString(ContentPack.serializer(),p)))))
+    }
+    @Test(expected=IllegalArgumentException::class) fun giantCatalogEntryRejectedBeforeWrite() {
+        ContentStorage.records(pack().copy(coverage="x".repeat(600000)))
+    }
     @Test(expected=IllegalArgumentException::class) fun crossGameCostsRejected() { pack().copy(materials=listOf(Material("hsr:coin",Game.WUWA,"Coin","Moeda"))).validate() }
     @Test(expected=IllegalArgumentException::class) fun ambiguousEdgesRejected() { val p=pack();p.copy(costs=p.costs+p.costs.first()).validate() }
     @Test(expected=IllegalArgumentException::class) fun futureSchemaRejected() { pack().copy(schemaVersion=99).validate() }

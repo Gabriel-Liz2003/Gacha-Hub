@@ -4,10 +4,10 @@
 A cobertura funcional e de conteúdo ainda é parcial; os critérios do app completo
 não estão todos atendidos. Veja as limitações abaixo.
 
-Build validado: https://github.com/Gabriel-Liz2003/Gacha-Hub/actions/runs/34313485400
+Build validado: https://github.com/Gabriel-Liz2003/Gacha-Hub/actions/runs/34382724168
 
 APK (artifact ZIP, login GitHub necessário):
-https://github.com/Gabriel-Liz2003/Gacha-Hub/actions/runs/34313485400/artifacts/10089306797
+https://github.com/Gabriel-Liz2003/Gacha-Hub/actions/runs/34382724168/artifacts/10116576757
 
 
 App nativo para Zenless Zone Zero, Honkai: Star Rail, Genshin Impact e Wuthering
@@ -36,13 +36,14 @@ Android 8+ (API 26), target/compile SDK 35. Sem WebView, Electron ou Chromium.
 - Atualização de conteúdo por um botão, usando o pacote publicado neste repositório.
 - Pacotes JSON locais ou fonte HTTPS personalizada. Conteúdo salvo fica disponível offline.
 
-O build, lint, testes Kotlin e quatro testes de instrumentação passaram em
-emulador Android 15. Isso não cobre todos os aparelhos nem importação real por UID.
+O build, lint, testes Kotlin e nove testes de instrumentação da versão 0.3 passaram
+em emulador Android 15 (run 34382724168). Inclui migração de catálogo acima de 2 MB.
+Isso não cobre todos os aparelhos nem importação real por UID.
 
 ## Conteúdo inicial — cobertura real
 
-O pacote embutido tem **14 personagens, 4 builds, 3 guias de times, 14 materiais e
-2 tabelas totais de ascensão**. A contagem é do catálogo local, nunca uma alegação
+O pacote de conteúdo v2 tem **130 personagens (120 de Genshin), 4 builds, 3 guias
+de times, 320 materiais e 3.908 etapas de custos**. A contagem é do catálogo local, nunca uma alegação
 de roster completo. Os personagens adicionais podem ser cadastrados ou importados.
 
 Builds: Ellen, Tingyun, Bennett e Encore. Somente os trechos resumidos e referenciados
@@ -50,18 +51,27 @@ foram incluídos; o app não espelha guias inteiros nem faz scraping periódico.
 O patch da recomendação pode ser anterior ao patch atual, mesmo quando a página
 foi consultada recentemente. Datas de consulta e atualização são distintas.
 
-Custos: ascensão total de Tingyun e Encore, **sem EXP de nível**, arma ou habilidades.
-Uma tabela de ascensão total 0→6 não pode calcular 2→6 por divisão proporcional.
-O motor aceita custos por nível, habilidades e armas através de novas trilhas,
-mas essas tabelas ainda precisam de curadoria e validação para cobertura completa.
-Não há rendimentos/energia de farm nem banners documentados no pacote inicial.
+Custos de Genshin: seis etapas de ascensão para 120 personagens e talentos de nível
+base 1–10, separados por ataque normal, habilidade e Supremo, para 118 personagens.
+Os talentos do Viajante não foram associados a um elemento arbitrário. EXP de nível
+e armas continuam ausentes. Os dias de farm dos livros vêm do mesmo snapshot.
+
+HSR e WuWa mantêm somente a ascensão total de Tingyun e Encore, sem EXP, armas ou
+habilidades. ZZZ ainda depende de checklist manual para materiais. Uma tabela total
+não é fracionada para estimar etapas ausentes. Não há estimativas verificadas de
+rendimento/energia nem banners no pacote.
+
+Os dados Genshin são derivados de `theBowja/genshin-db`, revisão `8b15995`, que se
+identifica como versão 7.0. Arquivo normalizado, licença MIT e gerador estão em
+`content/sources/` e `scripts/build-genshin-content.py`. Cada etapa tem a URL da revisão
+exata. As builds continuam sendo as quatro recomendações curadas descritas acima.
 
 ## Como compilar e baixar pelo celular
 
 Código publicado na branch `main`:
 https://github.com/Gabriel-Liz2003/Gacha-Hub
 
-PR de desenvolvimento: https://github.com/Gabriel-Liz2003/Gacha-Hub/pull/1
+PR desta versão: https://github.com/Gabriel-Liz2003/Gacha-Hub/pull/3
 
 O workflow está na branch padrão. O botão manual **Run workflow** está disponível
 na página Actions; pushes e pull requests também iniciam a compilação.
@@ -140,7 +150,7 @@ Arquivo máximo de 8 MiB. Importação inválida é revertida integralmente.
 
 ## Atualizar conteúdo sem novo APK
 
-Edite uma cópia de `content/starter.json`, mantenha `schemaVersion: 1`, aumente
+Edite uma cópia de `content/starter.json`, mantenha `schemaVersion: 2`, aumente
 `version` e informe `publishedAt`, cobertura e proveniência de cada build/custo.
 Use **Importar pacote de conteúdo**, ou publique um JSON em HTTPS e informe sua
 URL na tela inicial. Links devem retornar JSON diretamente (não páginas HTML,
@@ -195,6 +205,15 @@ imagens offline. Os dados estruturados ficam em Room.
 Nomes, personagens e imagens pertencem aos titulares dos jogos e provedores
 indicados. Projeto não oficial, sem afiliação com HoYoverse, Kuro, Enka, KQM ou
 Prydwen. As recomendações são sínteses com links para as análises originais.
+
+## Compatibilidade do catálogo ampliado
+
+O pacote Genshin usa **schemaVersion 2** e requer **APK 0.3 ou posterior**. APKs antigos
+rejeitam esse pacote antes de gravar; instale a versão nova uma vez. Depois, as próximas
+atualizações compatíveis podem chegar pelo botão de conteúdo, sem trocar o APK.
+O banco Room v3 guarda o catálogo em linhas pequenas. As migrations 1→2→3 preservam
+os registros do usuário; a migração 2→3 lê catálogos antigos em partes para evitar
+exceder o CursorWindow. A assinatura debug ainda pode exigir backup e reinstalação.
 
 ## Publicar uma atualização de conteúdo
 

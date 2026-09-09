@@ -7,7 +7,7 @@ o usuário controla dados locais e fontes de conteúdo.
 - `Models.kt`: tipos serializáveis para jogos, catálogo, conta, owned, gear, fonte,
   build, benchmark, custos, materiais, projeto, time, banner e backup.
 - `Database.kt`: registros Room com chave `(kind,id)` e payload tipado JSON;
-  tabela de cache separada. Schema v2; migration explícita 1→2 cria cache.
+  tabela de cache separada. Schema v3; migrations 1→2 (cache) e 2→3 (catálogo em registros pequenos).
 - `Repository.kt`: persistência, importação com merge, snapshots de projetos,
   inventário, backup e atualização atômica.
 - `Importers.kt`: interface extensível AccountImporter, Enka, parsing defensivo,
@@ -33,3 +33,18 @@ edição completa de times/projetos existentes ainda não têm interface dedicad
 Adicionar jogo exige enum/configuração, campos específicos se necessários, catálogo,
 fontes de custos, adaptador e testes de contratos reais. As abstrações não afirmam
 que todo jogo usa automaticamente as mesmas regras de ascensão/equipamentos.
+
+## Catálogo grande (0.3)
+
+Room v3 mantém os metadados em `content/current` e cada personagem, build, material,
+custo, time-guia e banner em registros `catalog_*` separados, com limite de 512 KB
+por registro. Listas são reconstruídas por índice estável. A atualização é transacional.
+
+A migration 2→3 lê `substr(payload)` do antigo registro de conteúdo em blocos de
+32.768 caracteres, permitindo recuperar inclusive bancos que já tenham um registro
+maior que o CursorWindow. Contas e projetos não são reescritos. Não se altera o limite
+interno do Android por reflexão. O cache de decodificação é invalidado pelos registros
+de catálogo completos; parsing e reconstrução ficam fora da thread da interface.
+
+Pacotes grandes usam schemaVersion 2. Leitores 0.1/0.2 aceitam somente schema 1 e
+rejeitam o pacote antes da escrita, preservando o catálogo anterior.

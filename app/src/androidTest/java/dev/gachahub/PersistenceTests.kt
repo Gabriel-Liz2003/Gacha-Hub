@@ -14,6 +14,47 @@ import java.util.UUID
 @RunWith(AndroidJUnit4::class)
 class PersistenceTests {
     private val context get()=ApplicationProvider.getApplicationContext<android.content.Context>()
+    @Test fun migrationRecoversOversizedLegacyCatalogWithoutLosingAccount() = runBlocking {
+        val name="large-migration-${UUID.randomUUID()}.db"
+        val file=context.getDatabasePath(name);file.parentFile?.mkdirs()
+        val json=context.assets.open("starter.json").bufferedReader().use{it.readText()}
+        val expected=codec.decodeFromString<ContentPack>(json)
+        assertTrue(json.toByteArray().size>2*1024*1024)
+        SQLiteDatabase.openOrCreateDatabase(file,null).use { old ->
+            old.execSQL("CREATE TABLE records (kind TEXT NOT NULL, id TEXT NOT NULL, payload TEXT NOT NULL, PRIMARY KEY(kind,id))")
+            old.execSQL("CREATE TABLE cache (`key` TEXT NOT NULL, payload TEXT NOT NULL, fetchedAt INTEGER NOT NULL, expiresAt INTEGER NOT NULL, PRIMARY KEY(`key`))")
+            old.execSQL("INSERT INTO records VALUES ('content','current',?)",arrayOf(json))
+            old.execSQL("INSERT INTO records VALUES ('account','legacy',?)",arrayOf("""{"id":"legacy","game":"ZZZ","name":"Preserved account"}"""))
+            old.version=2
+        }
+        val db=HubDatabase.open(context,name)
+        try {
+            val r=Repository(db)
+            assertEquals(expected,r.snapshot().pack)
+            assertEquals("Preserved account",r.snapshot().accounts.single().name)
+            assertTrue(db.dao().all().all { it.payload.toByteArray().size<512*1024 })
+            assertEquals(expected.costs.size,db.dao().all().count{it.kind=="catalog_cost"})
+        }finally{db.close();context.deleteDatabase(name)}
+    }
+    @Test fun newerBundledContentPreservesAccountsAndHistoricalPlans() = runBlocking {
+        val name="bundle-${UUID.randomUUID()}.db";val db=HubDatabase.open(context,name)
+        try {
+            val r=Repository(db)
+            val bundled=codec.decodeFromString<ContentPack>(context.assets.open("starter.json").bufferedReader().use{it.readText()})
+            r.content(bundled.copy(version=bundled.version-1))
+            val c=bundled.characters.first{it.game==Game.GENSHIN}
+            r.saveAccount(Account("a",Game.GENSHIN,"Offline",characters=listOf(Owned(c.id)),inventory=mapOf("genshin:mora" to 500L)))
+            r.saveProject(Project("p","a",c.id,"Historical",manual=true,costs=mapOf("genshin:mora" to 100L),dataVersion=bundled.version-1))
+            val before=r.snapshot()
+            r.seed(context)
+            assertEquals(bundled.version,r.snapshot().pack?.version)
+            assertEquals(before.accounts,r.snapshot().accounts)
+            assertEquals(before.projects,r.snapshot().projects)
+            r.content(bundled.copy(version=bundled.version+1))
+            r.seed(context)
+            assertEquals(bundled.version+1,r.snapshot().pack?.version)
+        }finally{db.close();context.deleteDatabase(name)}
+    }
     @Test fun editingAndDeletingReservationsNeverChangesInventory() = runBlocking {
         val name="edit-${UUID.randomUUID()}.db"
         var db=HubDatabase.open(context,name)
@@ -119,10 +160,11 @@ class PersistenceTests {
                 fail("Expected rejection")
             } catch(_:IllegalArgumentException) { }
             assertEquals(before,r.snapshot())
-            assertTrue(r.refreshContent(requireNotNull(before.pack).copy(version=2)))
+            val nextVersion=requireNotNull(before.pack).version+1
+            assertTrue(r.refreshContent(requireNotNull(before.pack).copy(version=nextVersion)))
             assertEquals(before.accounts,r.snapshot().accounts)
             try {r.content(requireNotNull(before.pack));fail("Downgrade accepted")}catch(_:IllegalArgumentException){}
-            assertEquals(2,r.snapshot().pack?.version)
+            assertEquals(nextVersion,r.snapshot().pack?.version)
         }finally{db.close();context.deleteDatabase(name)}
     }
 }

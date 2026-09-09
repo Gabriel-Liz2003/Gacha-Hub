@@ -24,7 +24,7 @@ class ContentTests(unittest.TestCase):
    for slot in t['slots']:
     for cid in slot:self.assertEqual(chars[cid]['game'],t['game'])
  def test_reference_totals(self):
-  h,w=self.p['costs'];self.assertEqual(h['costs']['hsr:credit'],246400);self.assertEqual(w['costs']['wuwa:rage'],46);self.assertEqual(w['costs']['wuwa:pecok'],60)
+  h=next(c for c in self.p['costs'] if 'hsr:credit' in c['costs']);w=next(c for c in self.p['costs'] if 'wuwa:rage' in c['costs']);self.assertEqual(h['costs']['hsr:credit'],246400);self.assertEqual(w['costs']['wuwa:rage'],46);self.assertEqual(w['costs']['wuwa:pecok'],60)
  def test_permissions(self):
   manifest=ET.parse(ROOT/'app/src/main/AndroidManifest.xml')
   ns='{http://schemas.android.com/apk/res/android}'

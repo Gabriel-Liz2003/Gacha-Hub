@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.withTransaction
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.encodeToString
 
@@ -11,10 +12,16 @@ const val DEFAULT_CONTENT_URL = "https://raw.githubusercontent.com/Gabriel-Liz20
 
 class Repository(val db: HubDatabase) {
     val dao = db.dao()
+    @Volatile private var cachedContent: Pair<List<Record>,ContentPack?>? = null
+    private fun decodeContent(records: List<Record>): ContentPack? {
+        val catalog = records.filter { it.kind == "content" || it.kind.startsWith("catalog_") }
+        cachedContent?.takeIf { it.first == catalog }?.let { return it.second }
+        return ContentStorage.decode(catalog).also { cachedContent = catalog to it }
+    }
     fun decode(records: List<Record>): HubState {
         fun <T> rows(kind: String, parse: (String)->T) = records.filter { it.kind == kind }.map { parse(it.payload) }
         return HubState(
-            rows("content") { codec.decodeFromString<ContentPack>(it) }.singleOrNull(),
+            decodeContent(records),
             rows("character") { codec.decodeFromString<Character>(it) },
             rows("account") { codec.decodeFromString<Account>(it) },
             rows("project") { codec.decodeFromString<Project>(it) },
@@ -22,12 +29,16 @@ class Repository(val db: HubDatabase) {
             rows("material") { codec.decodeFromString<Material>(it) }
         )
     }
-    val state = dao.observe().map(::decode)
-    suspend fun snapshot() = decode(dao.all())
+    val state = dao.observe().map(::decode).flowOn(Dispatchers.Default)
+    suspend fun snapshot(): HubState {
+        val rows = dao.all()
+        return withContext(Dispatchers.Default) { decode(rows) }
+    }
     suspend fun seed(context: Context) = withContext(Dispatchers.IO) {
-        if (dao.get("content", "current") == null) {
-            val pack = codec.decodeFromString<ContentPack>(context.assets.open("starter.json").bufferedReader().use { it.readText() })
-            pack.validate(); dao.put(Record("content", "current", codec.encodeToString(pack)))
+        val pack = codec.decodeFromString<ContentPack>(context.assets.open("starter.json").bufferedReader().use { it.readText() })
+        db.withTransaction {
+            val current = snapshot().pack
+            if (current == null || pack.version > current.version) content(pack)
         }
     }
     suspend fun content(pack: ContentPack) = db.withTransaction {
@@ -40,7 +51,9 @@ class Repository(val db: HubDatabase) {
         val ids = pack.characters.map { it.id }.toSet()
         old.pack?.materials?.filter { previous -> pack.materials.none { it.id == previous.id } }?.forEach { dao.put(Record("material", it.id, codec.encodeToString(it))) }
         old.pack?.characters?.filter { it.id !in ids }?.forEach { dao.put(Record("character", it.id, codec.encodeToString(it))) }
-        dao.put(Record("content", "current", codec.encodeToString(pack)))
+        val rows = ContentStorage.records(pack)
+        dao.deleteCatalog()
+        dao.putAll(rows)
     }
     suspend fun refreshContent(pack: ContentPack): Boolean = db.withTransaction {
         pack.validate()
