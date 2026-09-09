@@ -27,7 +27,9 @@ Android 8+ (API 26), target/compile SDK 35. Sem WebView, Electron ou Chromium.
 - Planejador de trilhas de custos exatos, com rejeição de lacunas.
 - Checklist manual com campos de quantidades e cadastro de materiais próprios.
 - Reserva de inventário compartilhado por prioridade e consumo explícito ao concluir.
-- Times manuais e seleção de alternativas da fonte que o usuário possui.
+- Times manuais com edição, exclusão e seleção de alternativas da fonte que o usuário possui.
+- Objetivos por campos Atual/Objetivo, edição de planos e prioridades, exclusão sem alterar inventário.
+- Visão global dos projetos, separando contas e ordenando por jogo, personagem, prioridade ou progresso.
 - Calendário por fuso fixo e horário de reset do servidor.
 - Persistência Room transacional, cache Enka com TTL e espera após HTTP 429.
 - Exportação/restauração por seletor de documentos Android, sem permissão de armazenamento.
@@ -55,13 +57,13 @@ Não há rendimentos/energia de farm nem banners documentados no pacote inicial.
 
 ## Como compilar e baixar pelo celular
 
-Código publicado na branch `feature/gacha-hub-foundation`:
-https://github.com/Gabriel-Liz2003/Gacha-Hub/tree/feature/gacha-hub-foundation
+Código publicado na branch `main`:
+https://github.com/Gabriel-Liz2003/Gacha-Hub
 
 PR de desenvolvimento: https://github.com/Gabriel-Liz2003/Gacha-Hub/pull/1
 
-Enquanto o workflow não estiver na branch padrão, use as execuções disparadas por
-push/PR. O botão manual do GitHub fica disponível após o workflow chegar à `main`.
+O workflow está na branch padrão. O botão manual **Run workflow** está disponível
+na página Actions; pushes e pull requests também iniciam a compilação.
 
 Após a publicação do código:
 

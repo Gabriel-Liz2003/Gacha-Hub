@@ -96,12 +96,27 @@ class Repository(val db: HubDatabase) {
     }
     suspend fun saveProject(project: Project) = db.withTransaction {
         val s = snapshot(); val a = s.accounts.first { it.id == project.accountId }
+        val previous = s.projects.find { it.id == project.id }
+        require(project.id.isNotBlank())
+        require(previous == null || previous.accountId == project.accountId) { "Projeto pertence a outra conta" }
+        require(!project.completed && previous?.completed != true) { "Projeto concluído não pode ser recalculado" }
         require(project.priority in 0..1000000)
         require(project.title.isNotBlank() && project.characterId in a.characters.map { it.characterId })
         require(project.costs.isNotEmpty() && project.costs.values.all { it in 1..1_000_000_000 })
         require(project.costs.keys.all { id -> s.materials.any { it.id == id && it.game == a.game } })
         if (!project.manual) require(project.costs == Planner.calculate(requireNotNull(s.pack), project.characterId, project.targets))
         dao.put(Record("project", project.id, codec.encodeToString(project)))
+    }
+    suspend fun renameProject(accountId: String, id: String, title: String, priority: Int) = db.withTransaction {
+        val p = snapshot().projects.first { it.id == id && it.accountId == accountId }
+        require(title.isNotBlank() && priority in 0..1000000)
+        // Keep the historical cost snapshot even after a content update.
+        dao.put(Record("project", id, codec.encodeToString(p.copy(title=title.trim(), priority=priority))))
+    }
+    suspend fun deleteProject(accountId: String, id: String) = db.withTransaction {
+        require(snapshot().projects.any { it.id == id && it.accountId == accountId }) { "Projeto não pertence à conta" }
+        // Reservations are derived. Deleting never spends or refunds inventory.
+        dao.delete("project", id)
     }
     suspend fun completeProject(id: String) = db.withTransaction {
         val s = snapshot(); val p = s.projects.first { it.id == id }; require(!p.completed)
@@ -111,11 +126,18 @@ class Repository(val db: HubDatabase) {
         saveAccount(a.copy(inventory = a.inventory.mapValues { (id,n) -> n - (p.costs[id] ?: 0) }))
         dao.put(Record("project", p.id, codec.encodeToString(p.copy(completed = true))))
     }
-    suspend fun saveTeam(team: Team) {
-        val a = snapshot().accounts.first { it.id == team.accountId }
+    suspend fun saveTeam(team: Team) = db.withTransaction {
+        val s = snapshot()
+        val a = s.accounts.first { it.id == team.accountId }
+        require(team.id.isNotBlank())
+        require(s.teams.find { it.id == team.id }?.accountId?.let { it == team.accountId } != false) { "Time pertence a outra conta" }
         require(team.name.isNotBlank() && team.members.size in 1..a.game.teamSize && team.members.distinct().size == team.members.size)
         require(team.members.all { id -> a.characters.any { it.characterId == id } }) { "Time contém personagem não possuído" }
         dao.put(Record("team", team.id, codec.encodeToString(team)))
+    }
+    suspend fun deleteTeam(accountId: String, id: String) = db.withTransaction {
+        require(snapshot().teams.any { it.id == id && it.accountId == accountId }) { "Time não pertence à conta" }
+        dao.delete("team", id)
     }
     suspend fun export(): String {
         val s = snapshot()

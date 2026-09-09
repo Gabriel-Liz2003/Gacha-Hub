@@ -34,7 +34,7 @@ import java.time.Instant
 import java.time.LocalDate
 import java.util.UUID
 
-private fun newId() = UUID.randomUUID().toString()
+internal fun newId() = UUID.randomUUID().toString()
 private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento","Times","Materiais","Calendário","Favoritos")
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -44,6 +44,7 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     val message by vm.message.collectAsStateWithLifecycle()
     var gameName by rememberSaveable { mutableStateOf<String?>(null) }
     var accountId by rememberSaveable { mutableStateOf<String?>(null) }
+    var globalPlanning by rememberSaveable { mutableStateOf(false) }
     var page by rememberSaveable { mutableStateOf("Resumo") }
     val game = gameName?.let(Game::valueOf)
     val account = state.accounts.find { it.id == accountId && it.game == game } ?: state.accounts.firstOrNull { it.game == game }
@@ -69,16 +70,24 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     fun openFile(kind: String) { fileKind = kind; importTarget=account?.id; open.launch(arrayOf("application/json","text/plain","application/octet-stream")) }
     val accent = Color(game?.accent ?: 0xFFB6EF66)
     MaterialTheme(colorScheme=darkColorScheme(primary=accent,background=Color(0xFF101217),surface=Color(0xFF191D25),surfaceVariant=Color(0xFF272D37))) {
-        BackHandler(game != null) { gameName = null; page = "Resumo" }
+        BackHandler(game != null || globalPlanning) { gameName = null; globalPlanning = false; page = "Resumo" }
         Scaffold(topBar={ TopAppBar(title={ Column {
-            Text(game?.title ?: "Gacha Hub", style=MaterialTheme.typography.titleLarge, fontWeight=FontWeight.Bold)
+            Text(game?.title ?: if(globalPlanning) "Planejamentos" else "Gacha Hub", style=MaterialTheme.typography.titleLarge, fontWeight=FontWeight.Bold)
             Text(account?.name?.takeIf { game != null } ?: "Sua coleção. Seu próximo objetivo.",style=MaterialTheme.typography.labelMedium)
-        } },navigationIcon={ if(game != null) TextButton(onClick={gameName=null}) { Text("‹") } }) }) { padding ->
+        } },navigationIcon={ if(game != null || globalPlanning) TextButton(onClick={gameName=null;globalPlanning=false}) { Text("‹") } }) }) { padding ->
             Column(Modifier.fillMaxSize().padding(padding)) {
                 if(busy) LinearProgressIndicator(Modifier.fillMaxWidth())
-                if(game == null) {
+                if(globalPlanning) {
+                    GlobalPlanningPage(state) { project ->
+                        val target = state.accounts.first { it.id == project.accountId }
+                        globalPlanning=false; gameName=target.game.name; accountId=target.id; page="Planejamento"
+                    }
+                } else if(game == null) {
                     LazyColumn(Modifier.fillMaxSize(),contentPadding=PaddingValues(20.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
                         item { Text("QUATRO MUNDOS, UM HUB",style=MaterialTheme.typography.labelLarge,color=accent) }
+                        item { OutlinedButton(onClick={globalPlanning=true},modifier=Modifier.fillMaxWidth()) {
+                            Text("Todos os planejamentos (${state.projects.count { !it.completed }})")
+                        } }
                         items(Game.entries) { g ->
                             Card(onClick={ gameName=g.name; accountId=state.accounts.firstOrNull { it.game==g }?.id; page="Resumo" },modifier=Modifier.fillMaxWidth()) {
                                 Column(Modifier.padding(22.dp)) {
@@ -126,7 +135,7 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
         if(message != null) AlertDialog(onDismissRequest=vm::dismiss,title={Text("Gacha Hub")},text={Text(message!!)},confirmButton={TextButton(onClick=vm::dismiss){Text("Entendi")}})
     }
 }
-@Composable private fun Section(title: String, content: @Composable ColumnScope.()->Unit) {
+@Composable internal fun Section(title: String, content: @Composable ColumnScope.()->Unit) {
     Card(Modifier.fillMaxWidth().animateContentSize(),shape=RoundedCornerShape(20.dp)) {
         Column(Modifier.padding(18.dp),verticalArrangement=Arrangement.spacedBy(10.dp)) {
             Text(title,style=MaterialTheme.typography.titleMedium,fontWeight=FontWeight.Bold)
@@ -134,16 +143,16 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
         }
     }
 }
-@Composable private fun Field(label: String,value: String,onChange:(String)->Unit,number:Boolean=false) {
+@Composable internal fun Field(label: String,value: String,onChange:(String)->Unit,number:Boolean=false) {
     OutlinedTextField(value,onChange,label={Text(label)},modifier=Modifier.fillMaxWidth(),singleLine=true,
         keyboardOptions=KeyboardOptions(keyboardType=if(number) KeyboardType.Decimal else KeyboardType.Text))
 }
-@Composable private fun SourceView(source: Source) {
+@Composable internal fun SourceView(source: Source) {
     val uri = LocalUriHandler.current
     Text("${source.name} • versão ${source.patch}\nAtualização: ${source.updatedAt ?: "não informada"} • consultado ${source.checkedAt}",style=MaterialTheme.typography.bodySmall)
     TextButton(onClick={runCatching { uri.openUri(source.url) }}) { Text("Abrir fonte ↗") }
 }
-@Composable private fun EmptyAccount() { Text("Crie ou selecione uma conta na seção Conta.",Modifier.padding(20.dp)) }
+@Composable internal fun EmptyAccount() { Text("Crie ou selecione uma conta na seção Conta.",Modifier.padding(20.dp)) }
 
 @Composable private fun AccountPage(game: Game, account: Account?, vm: HubViewModel, importFile:()->Unit) {
     var name by rememberSaveable(game) { mutableStateOf("") }
@@ -319,100 +328,6 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
             } else Text("Marque o personagem como possuído para comparar atributos.")
             b.sources.forEach { SourceView(it) }
         } }
-    }
-}
-@Composable private fun PlannerPage(game:Game,account:Account?,state:HubState,vm:HubViewModel) {
-    if(account==null){EmptyAccount();return}
-    var create by remember{mutableStateOf(false)}
-    var byProgress by rememberSaveable{mutableStateOf(false)}
-    val allocations=Planner.allocations(state,account.id)
-    val ps=state.projects.filter{it.accountId==account.id}.let { list -> if(byProgress)list.sortedBy { ResourceMath.progress(it.costs,allocations[it.id].orEmpty()) } else list.sortedWith(compareBy<Project>{it.priority}.thenBy{it.id}) }
-    val materials=state.materials.associateBy{it.id}
-    LazyColumn(contentPadding=PaddingValues(18.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
-        item { Button(onClick={create=true},enabled=account.characters.isNotEmpty()){Text("Novo planejamento")}
-            FilterChip(byProgress,{byProgress=!byProgress},label={Text(if(byProgress)"Ordenar: progresso" else "Ordenar: prioridade")})
-            Text("Inventário reservado por prioridade (menor número primeiro). Concluir consome os materiais; editar o progresso do personagem é uma ação separada.",style=MaterialTheme.typography.bodySmall)
-        }
-        if(ps.isEmpty())item{Text("Nenhum projeto. Cadastre um personagem e crie seu objetivo.")}
-        items(ps,key={it.id}) { p -> Section(p.title) {
-            val a=allocations[p.id].orEmpty()
-            val progress=if(p.completed)1.0 else ResourceMath.progress(p.costs,a)
-            Text("${(progress*100).toInt()}% • prioridade ${p.priority} • ${if(p.manual)"Checklist manual" else "Custos verificados, pacote ${p.dataVersion}"}")
-            LinearProgressIndicator(progress={progress.toFloat()},modifier=Modifier.fillMaxWidth())
-            p.targets.forEach{Text("${it.track}: ${it.from} → ${it.to}")}
-            p.costs.forEach { (id,need) ->
-                val held=if(p.completed)need else a[id] ?: 0
-                Text("${if(held>=need)"✓" else "□"} ${materials[id]?.name ?: id}: $held / $need • faltam ${need-held}")
-                val m=materials[id]
-                if(m?.energyPerRun!=null && m.estimatedYield!=null)Text("Energia estimada: ${ResourceMath.estimatedEnergy(need-held,m.estimatedYield,m.energyPerRun)} (rendimento médio, não garantido)",style=MaterialTheme.typography.bodySmall)
-            }
-            if(!p.completed) {
-                Row {
-                    TextButton(onClick={vm.perform{ vm.repository.dao.put(Record("project",p.id,codec.encodeToString(p.copy(priority=(p.priority-1).coerceAtLeast(0))))) }}){Text("Priorizar ↑")}
-                    TextButton(onClick={vm.perform{ vm.repository.dao.put(Record("project",p.id,codec.encodeToString(p.copy(priority=p.priority+1)))) }}){Text("Adiar ↓")}
-                }
-                Button(onClick={vm.perform("Projeto concluído; materiais consumidos") { vm.repository.completeProject(p.id) }},enabled=progress>=1){Text("Concluir e consumir materiais")}
-                Text("Atualize quantidades em Materiais. A reserva desconta o que já está comprometido com projetos anteriores.",style=MaterialTheme.typography.bodySmall)
-            } else Text("Concluído ✓")
-        } }
-    }
-    if(create) NewProject(game,account,state,{create=false}) { p -> vm.perform("Planejamento salvo") { vm.repository.saveProject(p);create=false } }
-}
-@Composable private fun NewProject(game:Game,account:Account,state:HubState,close:()->Unit,save:(Project)->Unit) {
-    val characters=state.characters.filter { c -> account.characters.any{it.characterId==c.id} }
-    var selected by remember { mutableStateOf(characters.first().id) }
-    var title by remember { mutableStateOf("") };var priority by remember{mutableStateOf("0")}
-    var manual by remember{mutableStateOf(false)};var targets by remember{mutableStateOf("[]")}
-    val manualAmounts = remember { mutableStateMapOf<String,String>() }
-    var error by remember{mutableStateOf<String?>(null)};var preview by remember{mutableStateOf<Map<String,Long>?>(null)}
-    AlertDialog(onDismissRequest=close,title={Text("Planejar personagem")},text={Column(Modifier.verticalScroll(rememberScrollState()),verticalArrangement=Arrangement.spacedBy(8.dp)) {
-        characters.forEach { c -> FilterChip(selected==c.id,{selected=c.id;preview=null},label={Text(c.name)}) }
-        Field("Nome do projeto",title,{title=it});Field("Prioridade",priority,{priority=it},true)
-        Row { Switch(manual,{manual=it;preview=null}); Text("Checklist manual") }
-        if(!manual) {
-            val edges=state.pack?.costs.orEmpty().filter{it.characterId==selected}
-            Text("Trilhas com custos verificados:")
-            if(edges.isEmpty())Text("Nenhuma tabela neste pacote. Importe conteúdo ou use modo manual.")
-            edges.groupBy{it.track}.forEach{(track,steps)->
-                TextButton(onClick={targets=codec.encodeToString(listOf(Target(track,steps.minOf{it.from},steps.maxOf{it.to})));preview=null}){Text("$track: ${steps.minOf{it.from}} → ${steps.maxOf{it.to}}")}
-            }
-            Text("As tabelas totais não incluem EXP, arma ou habilidades, salvo quando a trilha indicar isso. Não podem ser fracionadas para níveis intermediários.",style=MaterialTheme.typography.bodySmall)
-            OutlinedTextField(targets,{targets=it;preview=null},label={Text("Objetivos JSON: track, from, to")},minLines=3)
-        } else {
-            Text("Informe custos que você conferiu. O app não os classificará como verificados.")
-            state.materials.filter{it.game==game}.forEach{m->Field(m.name,manualAmounts[m.id].orEmpty(),{manualAmounts[m.id]=it;preview=null},true)}
-        }
-        TextButton(onClick={try{preview=if(manual)parseManualAmounts(manualAmounts) else Planner.calculate(requireNotNull(state.pack),selected,codec.decodeFromString(targets));error=null}catch(e:Exception){error=e.message}}){Text("Calcular prévia")}
-        preview?.forEach{(id,n)->Text("${state.materials.find{it.id==id}?.name ?: id}: $n")}
-        error?.let{Text(it,color=MaterialTheme.colorScheme.error)}
-    }},confirmButton={TextButton(onClick={try {
-        val ts=if(manual)emptyList() else codec.decodeFromString<List<Target>>(targets)
-        val costs=if(manual)parseManualAmounts(manualAmounts) else Planner.calculate(requireNotNull(state.pack),selected,ts)
-        save(Project(newId(),account.id,selected,title.ifBlank{"Evoluir ${characters.first{it.id==selected}.name}"},priority.toInt(),ts,costs,manual,state.pack?.version ?: 0))
-    }catch(e:Exception){error=e.message}}){Text("Salvar projeto")}},dismissButton={TextButton(onClick=close){Text("Cancelar")}})
-}
-@Composable private fun TeamsPage(game:Game,account:Account?,state:HubState,vm:HubViewModel) {
-    if(account==null){EmptyAccount();return}
-    val owned=account.characters.map{it.characterId}.toSet();val chars=state.characters.associateBy{it.id}
-    var name by rememberSaveable(account.id){mutableStateOf("")};var selected by remember{mutableStateOf(setOf<String>())};var notes by rememberSaveable(account.id){mutableStateOf("")}
-    LazyColumn(contentPadding=PaddingValues(18.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
-        item {Section("Montar time (${game.teamSize} vagas)"){
-            Field("Nome",name,{name=it})
-            account.characters.forEach{c->FilterChip(c.characterId in selected,{selected=if(c.characterId in selected)selected-c.characterId else if(selected.size<game.teamSize)selected+c.characterId else selected},label={Text("${chars[c.characterId]?.name ?: c.characterId} • ${chars[c.characterId]?.role.orEmpty()}")})}
-            Field("Sinergias / rotação / observações",notes,{notes=it})
-            Button(onClick={vm.perform("Time salvo"){vm.repository.saveTeam(Team(newId(),account.id,name,selected.toList(),notes));selected=emptySet();name=""}},enabled=name.isNotBlank() && selected.isNotEmpty()){Text("Salvar time")}
-        }}
-        items(state.teams.filter{it.accountId==account.id},key={it.id}){t->Section(t.name){Text(t.members.joinToString(" • "){chars[it]?.name ?: it});Text(t.notes)}}
-        items(state.pack?.teams.orEmpty().filter{it.game==game},key={"guide:${it.id}"}){t->Section(t.name){
-            Text("Referência teórica: ${t.slots.joinToString(" • "){slot->chars[slot.first()]?.name ?: slot.first()}}")
-            val team=Planner.availableTeam(t,owned)
-            Text(if(team==null)"Sua conta ainda não tem uma combinação completa desta recomendação." else "Disponível na sua conta: ${team.joinToString(" • "){chars[it]?.name ?: it}}")
-            t.slots.forEachIndexed{i,slot->Text("Vaga ${i+1}: ${slot.joinToString(" / "){chars[it]?.name ?: it}}")}
-            Text(t.explanation)
-            Text("Seleção segue a ordem da fonte. Não é ranking global de DPS.",style=MaterialTheme.typography.bodySmall)
-            if(team!=null)Button(onClick={vm.perform("Time salvo"){vm.repository.saveTeam(Team(newId(),account.id,t.name,team,t.explanation))}}){Text("Salvar combinação da conta")}
-            SourceView(t.source)
-        }}
     }
 }
 @Composable private fun MaterialsPage(game:Game,account:Account?,state:HubState,vm:HubViewModel) {

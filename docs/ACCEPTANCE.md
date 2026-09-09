@@ -18,9 +18,9 @@ Nenhuma linha desta matriz equivale a afirmar que o app está pronto para produ�
 | 10. Planejador completo | Parcial | Motor de transições exatas; faltam tabelas por nível, EXP, arma, habilidades para todos |
 | 11. Checklist | Código | Quantidades, faltantes, progresso, reserva de inventário e consumo |
 | 12. Calendário | Parcial | Regras por material e reset do servidor; sem base completa de dias e limites semanais |
-| 13. Times | Parcial | Montagem/salvamento e três guias com substituições; sem editor de time já salvo |
+| 13. Times | Parcial | Montagem/salvamento e três guias com substituições; editor e exclusão de times disponíveis |
 | 14. Baseado na conta | Parcial | Seleção de membros possuídos em slots das fontes; não calcula melhor DPS global |
-| 15. Vários projetos | Parcial | Prioridade e progresso por conta/jogo; falta visão global e ordenação por personagem |
+| 15. Vários projetos | Código | Visão global por jogo/conta e ordenação por prioridade, progresso e personagem |
 | 16. Busca/filtros | Código | Nome, elemento, especialidade e função via texto; raridade, posse e favorito |
 | 17. Offline | Código | Room e pacote embutido; imagens em cache sujeito a expulsão |
 | 18. Banco | Código | Room, transações, migration 1→2, backup; registros tipados JSON em vez de esquema normalizado |
@@ -31,14 +31,14 @@ Nenhuma linha desta matriz equivale a afirmar que o app está pronto para produ�
 | 23. Pesquisa | Parcial | Enka documentado; resposta JSON Genshin consultada; HSR/ZZZ/WuWa sem teste real de conta |
 | 24. GitHub | Parcial | Branch feature e PR #1 publicados; proteção de main não configurada |
 | 25. Autonomia | Executado | Arquivos, pesquisa e testes locais sem exigir decisões técnicas ao usuário |
-| 26. Processo | Parcial | Implementação/revisão local; build, instalação e correções do CI ainda pendentes |
+| 26. Processo | Parcial | Build e instalação em emulador validados; novos fluxos 0.2 aguardam CI |
 | 27. Testes | Parcial | Java/Python/Kotlin e quatro testes Android passaram; faltam integração real e cobertura ampliada |
 | 28. Sucesso final | Não atingido | APK e CI verde obtidos; cobertura completa e QA ampliado ainda pendentes |
 
 ## GitHub desbloqueado
 
 O usuário forneceu `Gabriel-Liz2003/Gacha-Hub`. O código foi publicado na branch
-`feature/gacha-hub-foundation` e o PR #1 está em rascunho. A compilação e os testes
+`feature/gacha-hub-foundation` e o PR #1 foi integrado à main. A compilação e os testes
 Android passaram no run 34313485400. Os resultados estão em VALIDATION.md.
 
 ## Trabalho de produto que ainda continua necessário
