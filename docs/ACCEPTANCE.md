@@ -6,7 +6,7 @@ Nenhuma linha desta matriz equivale a afirmar que o app está pronto para produ�
 
 | Item original | Estado | Evidência / lacuna |
 |---|---|---|
-| 1. Plataforma/build pelo GitHub | Validado | Run 34313485400: build e emulador passaram; APK artifact disponível |
+| 1. Plataforma/build pelo GitHub | Validado | Run 34382724168: build e nove testes Android passaram; APK artifact disponível |
 | 2. Stack nativa | Código | Kotlin, Compose, Material 3, Room, Coroutines, OkHttp |
 | 3. Organização por jogo | Código | Home e nove seções; várias contas por jogo |
 | 4. Importação | Parcial | Enka Genshin/HSR/ZZZ; JSON/manual todos; sem conta completa ou Kuro UID |
@@ -31,15 +31,15 @@ Nenhuma linha desta matriz equivale a afirmar que o app está pronto para produ�
 | 23. Pesquisa | Parcial | Enka documentado; resposta JSON Genshin consultada; HSR/ZZZ/WuWa sem teste real de conta |
 | 24. GitHub | Parcial | Branch feature e PR #1 publicados; proteção de main não configurada |
 | 25. Autonomia | Executado | Arquivos, pesquisa e testes locais sem exigir decisões técnicas ao usuário |
-| 26. Processo | Parcial | Build e instalação em emulador validados; v0.2 validada em CI; ampliação v0.3 em validação |
-| 27. Testes | Parcial | Java/Python/Kotlin e quatro testes Android passaram; faltam integração real e cobertura ampliada |
+| 26. Processo | Parcial | Build e instalação em emulador validados; v0.3 validada em CI, inclusive catálogo grande e migrations |
+| 27. Testes | Parcial | Java/Python/Kotlin e nove testes Android passaram; faltam integração real e cobertura ampliada |
 | 28. Sucesso final | Não atingido | APK e CI verde obtidos; cobertura completa e QA ampliado ainda pendentes |
 
 ## GitHub desbloqueado
 
 O usuário forneceu `Gabriel-Liz2003/Gacha-Hub`. O código foi publicado na branch
 `feature/gacha-hub-foundation` e o PR #1 foi integrado à main. A compilação e os testes
-Android passaram no run 34313485400. Os resultados estão em VALIDATION.md.
+Android passaram no run 34382724168. Os resultados estão em VALIDATION.md.
 
 ## Trabalho de produto que ainda continua necessário
 

@@ -4,10 +4,10 @@
 A cobertura funcional e de conteúdo ainda é parcial; os critérios do app completo
 não estão todos atendidos. Veja as limitações abaixo.
 
-Build validado: https://github.com/Gabriel-Liz2003/Gacha-Hub/actions/runs/34313485400
+Build validado: https://github.com/Gabriel-Liz2003/Gacha-Hub/actions/runs/34382724168
 
 APK (artifact ZIP, login GitHub necessário):
-https://github.com/Gabriel-Liz2003/Gacha-Hub/actions/runs/34313485400/artifacts/10089306797
+https://github.com/Gabriel-Liz2003/Gacha-Hub/actions/runs/34382724168/artifacts/10116576757
 
 
 App nativo para Zenless Zone Zero, Honkai: Star Rail, Genshin Impact e Wuthering
@@ -36,8 +36,9 @@ Android 8+ (API 26), target/compile SDK 35. Sem WebView, Electron ou Chromium.
 - Atualização de conteúdo por um botão, usando o pacote publicado neste repositório.
 - Pacotes JSON locais ou fonte HTTPS personalizada. Conteúdo salvo fica disponível offline.
 
-O build, lint, testes Kotlin e sete testes de instrumentação da versão 0.2 passaram
-em emulador Android 15 (run 34363232604). A ampliação de conteúdo 0.3 tem CI separado. Isso não cobre todos os aparelhos nem importação real por UID.
+O build, lint, testes Kotlin e nove testes de instrumentação da versão 0.3 passaram
+em emulador Android 15 (run 34382724168). Inclui migração de catálogo acima de 2 MB.
+Isso não cobre todos os aparelhos nem importação real por UID.
 
 ## Conteúdo inicial — cobertura real
 
@@ -70,7 +71,7 @@ exata. As builds continuam sendo as quatro recomendações curadas descritas aci
 Código publicado na branch `main`:
 https://github.com/Gabriel-Liz2003/Gacha-Hub
 
-PR de desenvolvimento: https://github.com/Gabriel-Liz2003/Gacha-Hub/pull/1
+PR desta versão: https://github.com/Gabriel-Liz2003/Gacha-Hub/pull/3
 
 O workflow está na branch padrão. O botão manual **Run workflow** está disponível
 na página Actions; pushes e pull requests também iniciam a compilação.
