@@ -49,8 +49,9 @@ class HubViewModel(app: Application) : AndroidViewModel(app) {
             else -> repository.import(requireNotNull(accountId),codec.decodeFromString<ImportFile>(text))
         }
     }
-    fun sync(url: String) = perform("Conteúdo atualizado; disponível offline") {
-        repository.content(codec.decodeFromString<ContentPack>(PublicHttp().get(url)))
+    fun sync(url: String = DEFAULT_CONTENT_URL) = perform {
+        val updated = repository.refreshContent(codec.decodeFromString<ContentPack>(PublicHttp().get(url)))
+        report(if(updated) "Conteúdo atualizado; disponível offline" else "Conteúdo já atualizado")
     }
     override fun onCleared() { super.onCleared(); database.close() }
 }
