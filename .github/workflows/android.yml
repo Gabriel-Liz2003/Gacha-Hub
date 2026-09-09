@@ -69,7 +69,9 @@ jobs:
           profile: pixel_6
           script: |
             gradle --no-daemon :app:connectedDebugAndroidTest
-            adb pull /sdcard/Android/data/dev.gachahub/files/screenshots app/build/reports/androidTests/screenshots
+            mkdir -p app/build/reports/androidTests/screenshots
+            adb pull /data/local/tmp/gacha-01-home.png app/build/reports/androidTests/screenshots/01-home.png
+            adb pull /data/local/tmp/gacha-02-account.png app/build/reports/androidTests/screenshots/02-account.png
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -3,8 +3,7 @@ package dev.gachahub
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.test.platform.app.InstrumentationRegistry
-import android.graphics.Bitmap
-import java.io.File
+import android.os.ParcelFileDescriptor
 import org.junit.Rule
 import org.junit.Test
 
@@ -13,10 +12,10 @@ class NavigationTest {
     private fun screenshot(name: String) {
         compose.waitForIdle()
         val instrumentation = InstrumentationRegistry.getInstrumentation()
-        val directory = File(instrumentation.targetContext.getExternalFilesDir(null), "screenshots").apply { mkdirs() }
-        val bitmap = requireNotNull(instrumentation.uiAutomation.takeScreenshot())
-        File(directory, name).outputStream().use { bitmap.compress(Bitmap.CompressFormat.PNG, 100, it) }
-        bitmap.recycle()
+        // Shell-owned output survives Gradle uninstalling the test application.
+        ParcelFileDescriptor.AutoCloseInputStream(
+            instrumentation.uiAutomation.executeShellCommand("screencap -p /data/local/tmp/gacha-$name")
+        ).use { it.readBytes() }
     }
     @Test fun opensGameAndAccountFlow() {
         compose.onNodeWithText("Gacha Hub").assertExists()
