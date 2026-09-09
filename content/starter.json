@@ -1,0 +1,861 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "publishedAt": "2026-09-08",
+  "coverage": "Pacote inicial PARCIAL: 14 personagens, 4 builds e 2 tabelas totais de ascensão. Não contém todos os personagens, custos por nível, armas, habilidades, banners ou calendário de domínios. Atualize por pacote JSON; nenhum conteúdo ausente é estimado.",
+  "characters": [
+    {
+      "id": "zzz:ellen",
+      "game": "ZZZ",
+      "name": "Ellen",
+      "element": "Ice",
+      "role": "DPS",
+      "specialty": "Attack",
+      "rarity": 5,
+      "providerId": "1191",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/zenless/characters/ellen",
+          "checkedAt": "2026-09-08",
+          "updatedAt": "2026-08-19",
+          "patch": "2.5"
+        }
+      ],
+      "image": "https://cdn.prydwen.gg/images/zenless-zone-zero/characters/ellen_card.webp"
+    },
+    {
+      "id": "zzz:dialyn",
+      "game": "ZZZ",
+      "name": "Dialyn",
+      "element": "",
+      "role": "Stun",
+      "specialty": "",
+      "rarity": 5,
+      "providerId": "",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/zenless/characters/ellen",
+          "checkedAt": "2026-09-08",
+          "updatedAt": "2026-08-19",
+          "patch": "2.5"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "zzz:lighter",
+      "game": "ZZZ",
+      "name": "Lighter",
+      "element": "",
+      "role": "Stun",
+      "specialty": "",
+      "rarity": 5,
+      "providerId": "",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/zenless/characters/ellen",
+          "checkedAt": "2026-09-08",
+          "updatedAt": "2026-08-19",
+          "patch": "2.5"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "zzz:lycaon",
+      "game": "ZZZ",
+      "name": "Lycaon",
+      "element": "",
+      "role": "Stun",
+      "specialty": "",
+      "rarity": 5,
+      "providerId": "1141",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/zenless/characters/ellen",
+          "checkedAt": "2026-09-08",
+          "updatedAt": "2026-08-19",
+          "patch": "2.5"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "zzz:astra",
+      "game": "ZZZ",
+      "name": "Astra Yao",
+      "element": "",
+      "role": "Support",
+      "specialty": "",
+      "rarity": 5,
+      "providerId": "",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/zenless/characters/ellen",
+          "checkedAt": "2026-09-08",
+          "updatedAt": "2026-08-19",
+          "patch": "2.5"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "hsr:tingyun",
+      "game": "HSR",
+      "name": "Tingyun",
+      "element": "Lightning",
+      "role": "Support",
+      "specialty": "Harmony",
+      "rarity": 4,
+      "providerId": "1202",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/star-rail/characters/tingyun",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ],
+      "image": "https://cdn.prydwen.gg/images/honkai-star-rail/characters/tingyun_card.webp"
+    },
+    {
+      "id": "gi:bennett",
+      "game": "GENSHIN",
+      "name": "Bennett",
+      "element": "Pyro",
+      "role": "Healing Support",
+      "specialty": "Sword",
+      "rarity": 4,
+      "providerId": "10000032",
+      "sources": [
+        {
+          "name": "KQM",
+          "url": "https://keqingmains.com/q/bennett-quickguide/",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "5.7"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gi:xiangling",
+      "game": "GENSHIN",
+      "name": "Xiangling",
+      "element": "",
+      "role": "",
+      "specialty": "",
+      "rarity": 4,
+      "providerId": "10000023",
+      "sources": [
+        {
+          "name": "KQM",
+          "url": "https://keqingmains.com/q/bennett-quickguide/",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "5.7"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gi:xingqiu",
+      "game": "GENSHIN",
+      "name": "Xingqiu",
+      "element": "",
+      "role": "",
+      "specialty": "",
+      "rarity": 4,
+      "providerId": "10000025",
+      "sources": [
+        {
+          "name": "KQM",
+          "url": "https://keqingmains.com/q/bennett-quickguide/",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "5.7"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "gi:yelan",
+      "game": "GENSHIN",
+      "name": "Yelan",
+      "element": "",
+      "role": "",
+      "specialty": "",
+      "rarity": 5,
+      "providerId": "10000060",
+      "sources": [
+        {
+          "name": "KQM",
+          "url": "https://keqingmains.com/q/bennett-quickguide/",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "5.7"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "ww:encore",
+      "game": "WUWA",
+      "name": "Encore",
+      "element": "Fusion",
+      "role": "DPS",
+      "specialty": "Rectifier",
+      "rarity": 5,
+      "providerId": "",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ],
+      "image": "https://cdn.prydwen.gg/images/ww/characters/encore_card.webp"
+    },
+    {
+      "id": "ww:lupa",
+      "game": "WUWA",
+      "name": "Lupa",
+      "element": "",
+      "role": "",
+      "specialty": "",
+      "rarity": 5,
+      "providerId": "",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "ww:sanhua",
+      "game": "WUWA",
+      "name": "Sanhua",
+      "element": "",
+      "role": "",
+      "specialty": "",
+      "rarity": 4,
+      "providerId": "",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ],
+      "image": ""
+    },
+    {
+      "id": "ww:shorekeeper",
+      "game": "WUWA",
+      "name": "Shorekeeper",
+      "element": "",
+      "role": "",
+      "specialty": "",
+      "rarity": 5,
+      "providerId": "",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ],
+      "image": ""
+    }
+  ],
+  "builds": [
+    {
+      "id": "ellen-dialyn",
+      "characterId": "zzz:ellen",
+      "title": "DPS com Dialyn",
+      "role": "DPS",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/zenless/characters/ellen",
+          "checkedAt": "2026-09-08",
+          "updatedAt": "2026-08-19",
+          "patch": "2.5"
+        }
+      ],
+      "bis": [
+        "Deep Sea Visitor S1"
+      ],
+      "premium": [
+        "Myriad Eclipse S1"
+      ],
+      "accessible": [
+        "Starlight Engine S5"
+      ],
+      "sets": [
+        "4 Puffer Electro + 2 Woodpecker Electro (com Dialyn)",
+        "4 Woodpecker Electro + 2 Puffer Electro"
+      ],
+      "slots": {
+        "4": "CRIT DMG",
+        "5": "PEN Ratio / Ice DMG",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT DMG",
+        "CRIT Rate",
+        "ATK%"
+      ],
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "adequate": 2600,
+          "excellent": 3000,
+          "low": 2080.0,
+          "unit": "",
+          "context": "Referência nível 60; não compara buffs automaticamente.",
+          "cap": null
+        },
+        {
+          "stat": "CRIT Rate",
+          "adequate": 90,
+          "excellent": 100,
+          "low": 72.0,
+          "unit": "%",
+          "context": "Confira buffs de motor e mindscape; ajuste a leitura para o contexto da fonte.",
+          "cap": 100
+        }
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Basic",
+        "Dodge",
+        "Assist"
+      ],
+      "notes": "Puffer depende de Dialyn. Confira Potential e condições no guia. Faixas do comparador são editoriais."
+    },
+    {
+      "id": "tingyun-support",
+      "characterId": "hsr:tingyun",
+      "title": "Suporte de hypercarry",
+      "role": "Support",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/star-rail/characters/tingyun",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ],
+      "bis": [
+        "A Grounded Ascent S1"
+      ],
+      "premium": [
+        "Dance! Dance! Dance! S5"
+      ],
+      "accessible": [
+        "Meshing Cogs S5"
+      ],
+      "sets": [
+        "4 Sacerdos’ Relived Ordeal + 2 Sprightly Vonwacq",
+        "Alternativa: Messenger Traversing Hackerspace"
+      ],
+      "slots": {
+        "Body": "ATK% / HP%",
+        "Feet": "SPD",
+        "Sphere": "ATK% / HP%",
+        "Rope": "Energy Regen"
+      },
+      "substats": [
+        "SPD",
+        "ATK%",
+        "HP",
+        "DEF"
+      ],
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "adequate": 2400,
+          "excellent": 2600,
+          "low": 1920.0,
+          "unit": "",
+          "context": "Nível 80; ajuste ao limite do buff para seu DPS.",
+          "cap": null
+        },
+        {
+          "stat": "SPD",
+          "adequate": 143,
+          "excellent": 160,
+          "low": 114.4,
+          "unit": "",
+          "context": "134 também é breakpoint viável; ajuste a ordem dos turnos.",
+          "cap": null
+        }
+      ],
+      "skillPriority": [
+        "Skill",
+        "Ultimate",
+        "Talent",
+        "Basic"
+      ]
+    },
+    {
+      "id": "bennett-healer",
+      "characterId": "gi:bennett",
+      "title": "Suporte — Double Pyro",
+      "role": "Healing Support",
+      "sources": [
+        {
+          "name": "KQM",
+          "url": "https://keqingmains.com/q/bennett-quickguide/",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "5.7"
+        }
+      ],
+      "bis": [
+        "Mistsplitter Reforged (se ER atendida)"
+      ],
+      "premium": [
+        "Aquila Favonia"
+      ],
+      "accessible": [
+        "Sapwood Blade"
+      ],
+      "sets": [
+        "4 Noblesse Oblige",
+        "Alternativa: Scroll of the Hero of Cinder City"
+      ],
+      "slots": {
+        "Sands": "ER / HP%",
+        "Goblet": "HP%",
+        "Circlet": "Healing Bonus / HP%"
+      },
+      "substats": [
+        "Energy Recharge",
+        "HP%"
+      ],
+      "benchmarks": [
+        {
+          "stat": "Energy Recharge",
+          "adequate": 175,
+          "excellent": 220,
+          "low": 140.0,
+          "unit": "%",
+          "context": "Double Pyro; rotação 20s; geração de partículas e Favonius alteram a exigência. Mais ER não implica maior DPS.",
+          "cap": null
+        }
+      ],
+      "skillPriority": [
+        "Burst",
+        "Skill",
+        "Normal Attack"
+      ],
+      "notes": "O buff depende do ATK base, não do ATK total dos artefatos. Guia de versão 5.7; consulte revisões posteriores."
+    },
+    {
+      "id": "encore-carry",
+      "characterId": "ww:encore",
+      "title": "Hypercarry",
+      "role": "DPS",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ],
+      "bis": [
+        "Stringmaster R1"
+      ],
+      "premium": [
+        "Rime-Draped Sprouts R1"
+      ],
+      "accessible": [
+        "Jinzhou Keeper R5"
+      ],
+      "sets": [
+        "Molten Rift; Inferno Rider"
+      ],
+      "slots": {
+        "4": "CRIT",
+        "3a": "Fusion DMG",
+        "3b": "Fusion DMG / ATK%",
+        "1a": "ATK%",
+        "1b": "ATK%"
+      },
+      "substats": [
+        "Energy Regen",
+        "CRIT",
+        "ATK%"
+      ],
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "adequate": 2000,
+          "excellent": 2400,
+          "low": 1600.0,
+          "unit": "",
+          "context": "S0, nível 90, fora de combate.",
+          "cap": null
+        },
+        {
+          "stat": "CRIT Rate",
+          "adequate": 60,
+          "excellent": 75,
+          "low": 48.0,
+          "unit": "%",
+          "context": "S0, fora de combate.",
+          "cap": 100
+        }
+      ],
+      "skillPriority": [
+        "Liberation",
+        "Forte",
+        "Skill",
+        "Intro",
+        "Basic"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "hsr:credit",
+      "game": "HSR",
+      "name": "Credit",
+      "category": "Moeda",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/star-rail/characters/tingyun",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ]
+    },
+    {
+      "id": "hsr:scionette",
+      "game": "HSR",
+      "name": "Immortal Scionette",
+      "category": "Comum",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/star-rail/characters/tingyun",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ]
+    },
+    {
+      "id": "hsr:aeroblossom",
+      "game": "HSR",
+      "name": "Immortal Aeroblossom",
+      "category": "Comum",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/star-rail/characters/tingyun",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ]
+    },
+    {
+      "id": "hsr:lumintwig",
+      "game": "HSR",
+      "name": "Immortal Lumintwig",
+      "category": "Comum",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/star-rail/characters/tingyun",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ]
+    },
+    {
+      "id": "hsr:crown",
+      "game": "HSR",
+      "name": "Lightning Crown of the Past Shadow",
+      "category": "Boss",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/star-rail/characters/tingyun",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ]
+    },
+    {
+      "id": "wuwa:shell",
+      "game": "WUWA",
+      "name": "Shell Credits",
+      "category": "Moeda",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ]
+    },
+    {
+      "id": "wuwa:lf-core",
+      "game": "WUWA",
+      "name": "LF Whisperin Core",
+      "category": "Comum",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ]
+    },
+    {
+      "id": "wuwa:mf-core",
+      "game": "WUWA",
+      "name": "MF Whisperin Core",
+      "category": "Comum",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ]
+    },
+    {
+      "id": "wuwa:hf-core",
+      "game": "WUWA",
+      "name": "HF Whisperin Core",
+      "category": "Comum",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ]
+    },
+    {
+      "id": "wuwa:ff-core",
+      "game": "WUWA",
+      "name": "FF Whisperin Core",
+      "category": "Comum",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ]
+    },
+    {
+      "id": "wuwa:rage",
+      "game": "WUWA",
+      "name": "Rage Tacet Core",
+      "category": "Boss",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ]
+    },
+    {
+      "id": "wuwa:pecok",
+      "game": "WUWA",
+      "name": "Pecok Flower",
+      "category": "Coleta",
+      "sources": [
+        {
+          "name": "Prydwen",
+          "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+          "checkedAt": "2026-09-08",
+          "updatedAt": null,
+          "patch": "Não informado"
+        }
+      ]
+    },
+    {
+      "id": "zzz:denny",
+      "game": "ZZZ",
+      "name": "Denny",
+      "category": "Moeda"
+    },
+    {
+      "id": "genshin:mora",
+      "game": "GENSHIN",
+      "name": "Mora",
+      "category": "Moeda"
+    }
+  ],
+  "costs": [
+    {
+      "characterId": "hsr:tingyun",
+      "track": "Ascensão total (sem EXP)",
+      "from": 0,
+      "to": 6,
+      "costs": {
+        "hsr:credit": 246400,
+        "hsr:scionette": 12,
+        "hsr:aeroblossom": 13,
+        "hsr:lumintwig": 12,
+        "hsr:crown": 50
+      },
+      "source": {
+        "name": "Prydwen",
+        "url": "https://www.prydwen.gg/star-rail/characters/tingyun",
+        "checkedAt": "2026-09-08",
+        "updatedAt": null,
+        "patch": "Não informado"
+      }
+    },
+    {
+      "characterId": "ww:encore",
+      "track": "Ascensão total (sem EXP)",
+      "from": 0,
+      "to": 6,
+      "costs": {
+        "wuwa:shell": 170000,
+        "wuwa:lf-core": 4,
+        "wuwa:mf-core": 12,
+        "wuwa:hf-core": 12,
+        "wuwa:ff-core": 4,
+        "wuwa:rage": 46,
+        "wuwa:pecok": 60
+      },
+      "source": {
+        "name": "Prydwen",
+        "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+        "checkedAt": "2026-09-08",
+        "updatedAt": null,
+        "patch": "Não informado"
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "ellen-source",
+      "game": "ZZZ",
+      "name": "Ellen • referência de atordoamento",
+      "slots": [
+        [
+          "zzz:ellen"
+        ],
+        [
+          "zzz:dialyn",
+          "zzz:lighter",
+          "zzz:lycaon"
+        ],
+        [
+          "zzz:astra"
+        ]
+      ],
+      "explanation": "Stun abre a janela de dano; Astra oferece suporte.",
+      "source": {
+        "name": "Prydwen",
+        "url": "https://www.prydwen.gg/zenless/characters/ellen",
+        "checkedAt": "2026-09-08",
+        "updatedAt": "2026-08-19",
+        "patch": "2.5"
+      }
+    },
+    {
+      "id": "bennett-double-hydro",
+      "game": "GENSHIN",
+      "name": "Bennett • Double Hydro",
+      "slots": [
+        [
+          "gi:bennett"
+        ],
+        [
+          "gi:xiangling"
+        ],
+        [
+          "gi:xingqiu"
+        ],
+        [
+          "gi:yelan"
+        ]
+      ],
+      "explanation": "Vaporização com dois aplicadores Hydro.",
+      "source": {
+        "name": "KQM",
+        "url": "https://keqingmains.com/q/bennett-quickguide/",
+        "checkedAt": "2026-09-08",
+        "updatedAt": null,
+        "patch": "5.7"
+      }
+    },
+    {
+      "id": "encore-carry",
+      "game": "WUWA",
+      "name": "Encore • carry",
+      "slots": [
+        [
+          "ww:encore"
+        ],
+        [
+          "ww:lupa",
+          "ww:sanhua"
+        ],
+        [
+          "ww:shorekeeper"
+        ]
+      ],
+      "explanation": "Alternativas indicadas pela fonte; rotação depende do suporte.",
+      "source": {
+        "name": "Prydwen",
+        "url": "https://www.prydwen.gg/wuthering-waves/characters/encore",
+        "checkedAt": "2026-09-08",
+        "updatedAt": null,
+        "patch": "Não informado"
+      }
+    }
+  ],
+  "banners": []
+}
