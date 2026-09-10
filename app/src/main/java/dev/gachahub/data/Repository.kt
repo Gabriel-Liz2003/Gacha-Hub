@@ -74,8 +74,10 @@ class Repository(val db: HubDatabase) {
         dao.put(Record("account", account.id, codec.encodeToString(account)))
     }
     suspend fun editOwned(accountId: String, owned: Owned) = db.withTransaction {
-        val a = requireNotNull(snapshot().accounts.find { it.id == accountId })
-        saveAccount(a.copy(characters = a.characters.filterNot { it.characterId == owned.characterId } + owned))
+        val state=snapshot()
+        val a = requireNotNull(state.accounts.find { it.id == accountId })
+        val normalized=if(a.game==Game.ZZZ) normalizeZzzGear(owned,state.pack) else owned
+        saveAccount(a.copy(characters = a.characters.filterNot { it.characterId == owned.characterId } + normalized))
     }
     suspend fun inventory(accountId: String, materialId: String, quantity: Long) = db.withTransaction {
         val s = snapshot(); val a = s.accounts.first { it.id == accountId }
@@ -106,7 +108,9 @@ class Repository(val db: HubDatabase) {
         require(file.owned.map { it.characterId }.distinct().size == file.owned.size)
         file.characters.forEach { require(it.game == a.game); saveCharacter(it) }
         val merged = a.characters.associateBy { it.characterId }.toMutableMap()
-        file.owned.forEach { o ->
+        val pack=snapshot().pack
+        file.owned.forEach { incoming ->
+            val o=if(a.game==Game.ZZZ) normalizeZzzGear(incoming,pack) else incoming
             o.validate(a.game)
             val previous = merged[o.characterId]
             merged[o.characterId] = o.copy(stats = o.stats.ifEmpty { previous?.stats ?: emptyMap() }, favorite = previous?.favorite ?: o.favorite,

@@ -5,12 +5,28 @@ import dev.gachahub.core.ResourceMath
 object Planner {
     fun calculate(pack: ContentPack, characterId: String, targets: List<Target>): Map<String, Long> {
         require(targets.isNotEmpty() && targets.map { it.track }.distinct().size == targets.size) { "Selecione trilhas sem repetição" }
+        require(pack.characters.any { it.id == characterId }) { "Personagem desconhecido" }
+        val character = pack.characters.first { it.id == characterId }
+        val available = pack.costs.filter { it.characterId == characterId } + targets.filter { it.track.startsWith("weapon:") }
+            .map { it.track.removePrefix("weapon:").substringBeforeLast(':') }.distinct().flatMap { id ->
+                val weapon = requireNotNull(pack.weapons.find { it.id == id && it.game == character.game }) { "W-Engine desconhecido" }
+                Zzz.weaponSteps(weapon,characterId)
+            }
+        val byTrack = available.groupBy { it.track }.mapValues { (_, v) -> v.associateBy { it.from } }
+        if(character.game == Game.ZZZ) {
+            require(targets.filter { it.track.startsWith("weapon:") }.map { it.track.substringBeforeLast(':') }.distinct().size <= 1) { "Escolha um W-Engine por projeto" }
+            targets.find { it.track == "ascension" }?.let { promotion ->
+                targets.find { it.track == "level" }?.let { level ->
+                    require(level.to <= 10 + promotion.to * 10) { "O nível objetivo exige mais promoções" }
+                }
+            }
+        }
         val steps = mutableListOf<Map<String, Long>>()
         targets.forEach { t ->
             require(t.from >= 0 && t.to >= t.from) { "Objetivo deve ser maior ou igual ao atual" }
             var current = t.from
             while (current < t.to) {
-                val step = pack.costs.singleOrNull { it.characterId == characterId && it.track == t.track && it.from == current && it.to <= t.to }
+                val step = byTrack[t.track]?.get(current)?.takeIf { it.to <= t.to }
                     ?: error("Sem custo verificado: ${t.track} $current → ${t.to}. Importe uma tabela completa ou use checklist manual.")
                 steps += step.costs; current = step.to
             }
