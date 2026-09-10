@@ -4,6 +4,9 @@
 No runtime scraping, guessed costs, proportional totals, or recommendation generation.
 """
 import json
+import sys
+sys.path.insert(0,str(__import__("pathlib").Path(__file__).resolve().parent))
+from content_pipeline import canonical
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -73,9 +76,9 @@ def generate(base, snapshot):
                               days=sorted(set(days)), location=' • '.join(locations), sources=[source('materials', row['file'])])
     count = sum(c['game'] == 'GENSHIN' for c in characters)
     # Schema 2 prevents older APKs (single-row storage) from accepting this large pack.
-    return dict(base, schemaVersion=2, version=2, publishedAt=snapshot['checkedAt'], characters=characters,
+    return canonical(dict(base, schemaVersion=max(2,base["schemaVersion"]), version=max(2,base["version"]), publishedAt=max(base["publishedAt"],snapshot['checkedAt']), characters=characters,
                 materials=list(materials.values()), costs=costs,
-                coverage=f'PARCIAL: {len(characters)} personagens ({count} Genshin), {len(base["builds"])} builds. Genshin: ascensões por etapa e talentos 1–10; talentos do Viajante, EXP e armas ainda ausentes. Outros jogos mantêm cobertura inicial.')
+                coverage=base['coverage'] if base['schemaVersion']>=3 else f'PARCIAL: {len(characters)} personagens ({count} Genshin), {len(base["builds"])} builds. Genshin: ascensões por etapa e talentos 1–10; talentos do Viajante, EXP e armas ainda ausentes. Outros jogos mantêm cobertura inicial.'))
 
 
 if __name__ == '__main__':

@@ -44,9 +44,9 @@ class DomainTests {
         assertEquals(4,result.owned.single().skills["120201"]);assertTrue(result.owned.single().stats.isEmpty())
     }
     @Test fun zzzImport() {
-        val input="""{"PlayerInfo":{"ShowcaseDetail":{"AvatarList":[{"Id":1191,"Level":60,"PromotionLevel":6,"TalentLevel":3,"Weapon":{"Id":14119,"Level":60,"UpgradeLevel":1},"SkillLevelList":[{"Index":0,"Level":10}],"EquippedList":[{"Slot":4,"Equipment":{"Id":123,"Level":15}}]}]}},"ttl":60}"""
+        val input="""{"PlayerInfo":{"ShowcaseDetail":{"AvatarList":[{"Id":1191,"Level":60,"PromotionLevel":5,"TalentLevel":3,"Weapon":{"Id":14119,"Level":60,"UpgradeLevel":1},"SkillLevelList":[{"Index":0,"Level":10}],"EquippedList":[{"Slot":4,"Equipment":{"Id":123,"Level":15}}]}]}},"ttl":60}"""
         val result=ShowcaseParser.parse(Game.ZZZ,input,emptyList(),1)
-        assertEquals("zzz:1191",result.owned.single().characterId);assertEquals(10,result.owned.single().skills["0"])
+        assertEquals("zzz:1191",result.owned.single().characterId);assertEquals(10,result.owned.single().skills["basic"])
         assertEquals("4",result.owned.single().equipment.single().slot)
         assertEquals(1,result.owned.single().weapon?.refinement)
     }

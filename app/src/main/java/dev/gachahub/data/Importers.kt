@@ -72,7 +72,10 @@ object ShowcaseParser {
             val skills = when(game) {
                 Game.GENSHIN -> c.obj("skillLevelMap").mapValues { it.value.jsonPrimitive.int }
                 Game.HSR -> c.arr("skillTreeList").associate { it.jsonObject.str("pointId") to it.jsonObject.num("level") }
-                Game.ZZZ -> c.arr("SkillLevelList").associate { it.jsonObject.str("Index") to it.jsonObject.num("Level") }
+                Game.ZZZ -> c.arr("SkillLevelList").mapNotNull {
+                    val names=mapOf("0" to "basic","1" to "special","2" to "dodge","3" to "chain","6" to "assist")
+                    names[it.jsonObject.str("Index")]?.let { name -> name to it.jsonObject.num("Level") }
+                }.toMap() + ("core" to c.num("CoreSkillEnhancement"))
                 else -> emptyMap()
             }
             val weaponJson = when(game) {
@@ -83,7 +86,7 @@ object ShowcaseParser {
             }
             val weapon = weaponJson?.takeIf { it.isNotEmpty() }?.let { w ->
                 when(game) {
-                    Game.ZZZ -> Gear(id=w.str("Id"), name="W-Engine #${w.str("Id")}", level=w.num("Level",1), refinement=w.num("UpgradeLevel",1),raw=w.toString())
+                    Game.ZZZ -> Gear(id=w.str("Id"), name="W-Engine #${w.str("Id")}", level=w.num("Level",1), refinement=w.num("UpgradeLevel",1),raw=w.toString(),ascension=w.num("BreakLevel"))
                     Game.HSR -> Gear(id=w.str("tid"),name="Light Cone #${w.str("tid")}",level=w.num("level",1),refinement=w.num("rank",1),raw=w.toString())
                     else -> Gear(id=w.str("itemId"), name="Weapon #${w.str("itemId")}",level=w.obj("weapon").num("level",1),
                         refinement=(w.obj("weapon").obj("affixMap").values.firstOrNull()?.jsonPrimitive?.intOrNull ?: 0)+1,raw=w.toString())

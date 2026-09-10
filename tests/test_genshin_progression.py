@@ -70,6 +70,6 @@ class GenshinProgressionTests(unittest.TestCase):
  def test_size_within_import_limit(self):
   self.assertLess((ROOT/'content/starter.json').stat().st_size,8*1024*1024)
  def test_large_pack_requires_capable_reader(self):
-  self.assertEqual(2,self.pack['schemaVersion'])
+  self.assertGreaterEqual(self.pack['schemaVersion'],2)
 
 if __name__=='__main__':unittest.main()

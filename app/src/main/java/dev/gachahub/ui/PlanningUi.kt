@@ -17,6 +17,8 @@ import dev.gachahub.core.ResourceMath
 import dev.gachahub.data.*
 import dev.gachahub.data.Target
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 @Composable internal fun GlobalPlanningPage(state: HubState, open: (Project)->Unit) {
     var sort by rememberSaveable { mutableStateOf("Prioridade") }
@@ -85,7 +87,7 @@ import kotlinx.coroutines.launch
             Text("${chars[p.characterId]?.name} • ${(progress(p)*100).toInt()}% • prioridade ${p.priority}")
             Text(if(p.manual) "Checklist manual" else "Custos verificados • pacote ${p.dataVersion}")
             LinearProgressIndicator(progress={progress(p).toFloat()},modifier=Modifier.fillMaxWidth())
-            p.targets.forEach{Text("${it.track}: ${it.from} → ${it.to}")}
+            p.targets.forEach{Text("${Zzz.trackLabel(it.track,state.pack)}: ${it.from} → ${it.to}")}
             p.costs.forEach { (id,need) ->
                 val held=if(p.completed)need else a[id] ?: 0
                 Text("${if(held>=need)"✓" else "□"} ${materials[id]?.name ?: id}: $held / $need • faltam ${need-held}")
@@ -129,7 +131,13 @@ import kotlinx.coroutines.launch
     var selected by rememberSaveable { mutableStateOf(initial?.characterId ?: characters.first().id) }
     var title by rememberSaveable { mutableStateOf(initial?.title ?: "") }
     var priority by rememberSaveable{mutableStateOf((initial?.priority ?: 0).toString())}
-    val edges=state.pack?.costs.orEmpty().filter{it.characterId==selected}.groupBy { it.track }
+    val pack=state.pack
+    val ownedSelected=account.characters.first{it.characterId==selected}
+    var weaponId by rememberSaveable(selected){mutableStateOf(initial?.targets?.firstOrNull{it.track.startsWith("weapon:")}?.track?.removePrefix("weapon:")?.substringBeforeLast(':') ?: ownedSelected.weapon?.id.orEmpty())}
+    val edges=remember(pack,selected,weaponId){
+        (pack?.costs.orEmpty().filter{it.characterId==selected} +
+            pack?.weapons?.find{it.id==weaponId}?.let{Zzz.weaponSteps(it,selected)}.orEmpty()).groupBy { it.track }
+    }
     var manual by rememberSaveable(selected){mutableStateOf(initial?.manual ?: edges.isEmpty())}
     val enabledTracks=remember(selected){mutableStateMapOf<String,Boolean>().apply{initial?.takeIf{it.characterId==selected}?.targets?.forEach{put(it.track,true)}}}
     val from=remember(selected){mutableStateMapOf<String,String>().apply{initial?.takeIf{it.characterId==selected}?.targets?.forEach{put(it.track,it.from.toString())}}}
@@ -137,6 +145,8 @@ import kotlinx.coroutines.launch
     val amounts=remember{mutableStateMapOf<String,String>().apply{initial?.takeIf{it.manual}?.costs?.forEach{(id,n)->put(id,n.toString())}}}
     var formError by remember{mutableStateOf<String?>(null)}
     var preview by remember{mutableStateOf<Map<String,Long>?>(null)}
+    val scope=rememberCoroutineScope()
+    var calculating by remember{mutableStateOf(false)}
     fun targets()=enabledTracks.filterValues{it}.keys.map{track->Target(track,from[track]?.toIntOrNull() ?: error("Informe o valor atual de $track"),to[track]?.toIntOrNull() ?: error("Informe o objetivo de $track"))}
     fun calculate():Map<String,Long> {
         val costs=if(manual) amounts.filterValues{it.isNotBlank()}.mapValues{(_,value)->value.toLong().also{require(it in 0..1_000_000_000){"Quantidade inválida"}}}.filterValues{it>0}
@@ -146,10 +156,16 @@ import kotlinx.coroutines.launch
     }
     AlertDialog(onDismissRequest=close,title={Text(if(initial==null) "Planejar personagem" else "Editar objetivos")},text={Column(Modifier.verticalScroll(rememberScrollState()),verticalArrangement=Arrangement.spacedBy(8.dp)) {
         Text("Personagem")
-        Row(Modifier.horizontalScroll(rememberScrollState())) { characters.forEach { c -> FilterChip(selected==c.id,{selected=c.id;preview=null},label={Text(c.name)}) } }
+        Choice("Personagem",selected,characters.map{it.id to it.name}){selected=it;preview=null}
         val owned=account.characters.first{it.characterId==selected}
         Text("Atual: nível ${owned.level} • ascensão ${owned.ascension} • ${game.weaponTerm} ${owned.weapon?.level ?: "não cadastrado"}")
         Field("Nome do projeto",title,{title=it});Field("Prioridade",priority,{priority=it},true)
+        if(game==Game.ZZZ) {
+            Choice("Planejar W-Engine",weaponId,listOf("" to "Sem W-Engine")+pack?.weapons.orEmpty().filter{it.game==game}.map{it.id to it.name}) { id ->
+                weaponId=id;enabledTracks.keys.filter{it.startsWith("weapon:")}.toList().forEach{enabledTracks.remove(it)};preview=null
+            }
+            Text("EXP em pontos: some o valor dos logs/fontes de alimentação no inventário. A promoção não inclui EXP. As metas de habilidades usam nível base.")
+        }
         Row { Switch(manual,{manual=it;preview=null});Text("Checklist manual") }
         if(manual) {
             Text("Informe custos que você conferiu. Cadastre materiais ausentes na seção Materiais.")
@@ -159,21 +175,25 @@ import kotlinx.coroutines.launch
             edges.forEach{(track,steps)->
                 FilterChip(enabledTracks[track]==true,{
                     enabledTracks[track]=enabledTracks[track]!=true
-                    if(track !in from) from[track]=""
+                    if(track !in from) from[track]=if(game==Game.ZZZ) Zzz.current(track,owned)?.toString().orEmpty() else ""
                     if(track !in to) to[track]=steps.maxOf{it.to}.toString()
                     preview=null
-                },label={Text(track)})
+                },label={Text(if(game==Game.ZZZ) Zzz.trackLabel(track,pack) else track)})
                 if(enabledTracks[track]==true) {
                     Field("Atual • $track",from[track].orEmpty(),{from[track]=it;preview=null},true)
                     Field("Objetivo • $track",to[track].orEmpty(),{to[track]=it;preview=null},true)
-                    Text("Etapas disponíveis: ${steps.sortedBy{it.from}.joinToString { "${it.from}→${it.to}" }}",style=MaterialTheme.typography.bodySmall)
+                    Text("Etapas disponíveis: ${steps.minOf{it.from}} → ${steps.maxOf{it.to}} • ${steps.size} transições documentadas",style=MaterialTheme.typography.bodySmall)
                     steps.map{it.source}.distinct().forEach { SourceView(it) }
                 }
             }
             Text("Somente as trilhas selecionadas entram no cálculo. Uma tabela total não permite estimar níveis intermediários; EXP, habilidades e arma precisam de suas próprias tabelas.",style=MaterialTheme.typography.bodySmall)
         }
         if(initial!=null)Text("Salvar recalcula os custos com o pacote atual e atualiza a reserva; não consome inventário.")
-        TextButton(onClick={try{preview=calculate();formError=null}catch(e:Exception){formError=e.message}}){Text("Calcular prévia")}
+        TextButton(enabled=!calculating,onClick={scope.launch {
+            calculating=true
+            try { preview=withContext(Dispatchers.Default){calculate()};formError=null } catch(e:Exception){formError=e.message}
+            finally { calculating=false }
+        }}){Text("Calcular prévia")}
         preview?.forEach{(id,n)->Text("${state.materials.find{it.id==id}?.name ?: id}: $n")}
         formError?.let{Text(it,color=MaterialTheme.colorScheme.error)}
     }},confirmButton={TextButton(onClick={try {

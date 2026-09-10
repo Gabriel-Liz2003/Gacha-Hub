@@ -18,15 +18,20 @@ enum class Game(val title: String, val copyTerm: String, val weaponTerm: String,
     val updatedAt: String? = null, val patch: String = "Não informado", val note: String = "")
 @Serializable data class Character(val id: String, val game: Game, val name: String,
     val rarity: Int = 5, val element: String = "", val specialty: String = "", val role: String = "",
-    val image: String = "", val providerId: String = "", val sources: List<Source> = emptyList())
+    val image: String = "", val providerId: String = "", val sources: List<Source> = emptyList(),
+    val faction: String = "", val fullName: String = "", val description: String = "",
+    val attributeVariant: String = "", val baseStats: Map<String, Double> = emptyMap(),
+    val statContext: String = "", val skillNames: Map<String, List<String>> = emptyMap(),
+    val mindscapes: List<String> = emptyList(), val signatureWeaponId: String = "",
+    val additionalAbility: String = "")
 @Serializable data class Gear(val id: String = "", val name: String = "", val level: Int = 1,
     val refinement: Int = 1, val slot: String = "", val set: String = "", val main: String = "",
-    val stats: Map<String, Double> = emptyMap(), val raw: String = "")
+    val stats: Map<String, Double> = emptyMap(), val raw: String = "", val ascension: Int = 0)
 @Serializable data class Owned(val characterId: String, val level: Int = 1, val copies: Int = 0,
     val ascension: Int = 0, val skills: Map<String, Int> = emptyMap(), val weapon: Gear? = null,
     val equipment: List<Gear> = emptyList(), val stats: Map<String, Double> = emptyMap(),
     val favorite: Boolean = false, val buildId: String = "", val notes: String = "",
-    val importedAt: Long = 0, val raw: String = "")
+    val importedAt: Long = 0, val raw: String = "", val potential: Int = 0)
 @Serializable data class Account(val id: String, val game: Game, val name: String,
     val uid: String = "", val serverOffset: Int = -5, val resetHour: Int = 4,
     val characters: List<Owned> = emptyList(), val inventory: Map<String, Long> = emptyMap())
@@ -37,7 +42,19 @@ enum class Game(val title: String, val copyTerm: String, val weaponTerm: String,
     val accessible: List<String> = emptyList(), val sets: List<String> = emptyList(),
     val slots: Map<String, String> = emptyMap(), val substats: List<String> = emptyList(),
     val benchmarks: List<Benchmark> = emptyList(), val skillPriority: List<String> = emptyList(),
-    val rotation: String = "", val notes: String = "", val sources: List<Source>)
+    val rotation: String = "", val notes: String = "", val sources: List<Source>,
+    val weaponOptions: List<WeaponChoice> = emptyList(), val discOptions: List<DiscCombination> = emptyList(),
+    val statAdvice: String = "")
+@Serializable data class WeaponChoice(val weaponId: String, val tier: String, val note: String = "")
+@Serializable data class DiscCombination(val fourPieceId: String, val twoPieceIds: List<String>, val note: String = "")
+@Serializable data class UpgradeStep(val track: String, val from: Int, val to: Int, val costs: Map<String, Long>)
+@Serializable data class Weapon(val id: String, val game: Game, val name: String, val rarity: Int,
+    val specialty: String, val providerId: String, val image: String = "",
+    val baseStats: Map<String, Double> = emptyMap(), val statContext: String = "",
+    val effect: String = "", val sources: List<Source>, val upgrades: List<UpgradeStep> = emptyList())
+@Serializable data class DiscSet(val id: String, val game: Game, val name: String,
+    val providerId: String, val image: String = "", val twoPiece: String, val fourPiece: String,
+    val sources: List<Source>)
 @Serializable data class Material(val id: String, val game: Game, val name: String, val category: String,
     val days: List<Int> = emptyList(), val location: String = "", val energyPerRun: Int? = null,
     val estimatedYield: Double? = null, val sources: List<Source> = emptyList())
@@ -59,7 +76,8 @@ enum class Game(val title: String, val copyTerm: String, val weaponTerm: String,
     val publishedAt: String, val coverage: String, val characters: List<Character>,
     val builds: List<Build> = emptyList(), val materials: List<Material> = emptyList(),
     val costs: List<CostStep> = emptyList(), val teams: List<TeamGuide> = emptyList(),
-    val banners: List<Banner> = emptyList())
+    val banners: List<Banner> = emptyList(), val weapons: List<Weapon> = emptyList(),
+    val discSets: List<DiscSet> = emptyList())
 @Serializable data class Backup(val schemaVersion: Int = 1, val accounts: List<Account>,
     val projects: List<Project> = emptyList(), val teams: List<Team> = emptyList(),
     val customCharacters: List<Character> = emptyList(), val customMaterials: List<Material> = emptyList(), val content: ContentPack? = null)
@@ -72,19 +90,30 @@ data class HubState(val pack: ContentPack? = null, val custom: List<Character> =
     val materials: List<Material> get() = ((pack?.materials ?: emptyList()) + customMaterials).distinctBy { it.id }
     val characters: List<Character> get() = ((pack?.characters ?: emptyList()) + custom).distinctBy { it.id }
 }
+fun validHttps(value: String): Boolean = runCatching {
+    val uri = java.net.URI(value)
+    uri.scheme == "https" && !uri.host.isNullOrBlank() && uri.userInfo == null
+}.getOrDefault(false)
 fun Source.validate() {
-    require(name.isNotBlank() && java.net.URI(url).scheme == "https") { "Fonte precisa de nome e URL HTTPS" }
+    require(name.isNotBlank() && validHttps(url)) { "Fonte precisa de nome e URL HTTPS" }
     LocalDate.parse(checkedAt)
     updatedAt?.let { LocalDate.parse(it) }
 }
 fun Character.validate() {
     require(id.matches(Regex("[A-Za-z0-9_.:-]{1,100}")) && name.isNotBlank()) { "Personagem inválido" }
     require(rarity in 4..5) { "Raridade deve ser 4 ou 5 (A=4, S=5)" }
-    require(image.isEmpty() || java.net.URI(image).scheme == "https")
+    require(image.isEmpty() || validHttps(image))
 }
 fun Owned.validate(game: Game) {
     require(level in 1..game.maxLevel && copies in 0..6 && ascension in 0..6) { "Nível, ascensão ou duplicatas inválidos" }
     require(skills.values.all { it in 0..20 })
+    if(game == Game.ZZZ) {
+        require(potential in 0..6 && ascension in 0..5) { "Promoção ZZZ deve estar entre 0 e 5" }
+        require(skills.filterKeys { it in Zzz.skillKeys }.values.all { it in 1..12 }) { "Habilidades ZZZ usam nível base 1–12" }
+        require((skills["core"] ?: 0) in 0..6) { "Núcleo ZZZ: 0 ou A–F (1–6)" }
+        require(equipment.all { it.slot in (1..6).map(Int::toString) && it.level in 0..15 })
+        require(weapon == null || weapon.ascension in 0..5)
+    }
     require(stats.values.all { it.isFinite() && it >= 0 }) { "Atributos inválidos" }
     require(equipment.size <= 6 && equipment.map { it.slot }.distinct().size == equipment.size) { "Slots duplicados" }
     (equipment + listOfNotNull(weapon)).forEach {
@@ -93,7 +122,7 @@ fun Owned.validate(game: Game) {
     }
 }
 fun ContentPack.validate() {
-    require(schemaVersion in 1..2 && version > 0 && coverage.isNotBlank()) { "Versão de conteúdo incompatível; atualize o aplicativo" }
+    require(schemaVersion in 1..3 && version > 0 && coverage.isNotBlank()) { "Versão de conteúdo incompatível; atualize o aplicativo" }
     LocalDate.parse(publishedAt)
     require(characters.size <= 5000 && materials.size <= 20000 && costs.size <= 200000)
     fun <T> unique(items: List<T>, key: (T) -> String) = require(items.map(key).distinct().size == items.size) { "IDs duplicados" }
@@ -125,5 +154,6 @@ fun ContentPack.validate() {
         require(t.slots.size == t.game.teamSize && t.slots.all { it.isNotEmpty() })
         require(t.slots.flatten().all { chars[it]?.game == t.game }); t.source.validate()
     }
+    validateEquipmentCatalog()
     banners.forEach { require(java.time.Instant.parse(it.endsAt) > java.time.Instant.parse(it.startsAt)); it.source.validate() }
 }

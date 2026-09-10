@@ -1,0 +1,2180 @@
+{
+  "checkedAt": "2026-09-10",
+  "note": "Curadoria das recomendações; combinações de times são escolhas editoriais apoiadas nas sinergias descritas. Termos de progressão mantêm nível base.",
+  "accessibleWeapons": [
+    12001,
+    12002,
+    12003,
+    12004,
+    12005,
+    12006,
+    12007,
+    12008,
+    12009,
+    12010,
+    12011,
+    12012,
+    12013,
+    12014,
+    12015,
+    12016,
+    13001,
+    13002,
+    13003,
+    13004,
+    13005,
+    13006,
+    13007,
+    13008,
+    13010,
+    13017,
+    13018,
+    13019,
+    13020
+  ],
+  "battlePassWeapons": [
+    13009,
+    13011,
+    13012,
+    13021,
+    14001,
+    14002,
+    14003
+  ],
+  "agents": {
+    "Evelyn": {
+      "sets": [
+        {
+          "four": 31100,
+          "two": [
+            31000,
+            32700,
+            32200
+          ],
+          "note": "Recomendado com Dialyn para manter o bônus do Supremo."
+        },
+        {
+          "four": 31400,
+          "two": [
+            31000,
+            32700,
+            32200
+          ],
+          "note": "Alternativa: respeitar a duração e recarga de Hormone Punk."
+        }
+      ],
+      "statAdvice": "CRIT Rate: pelo menos 55% fora de combate; o Núcleo fornece 25% para ativar a habilidade adicional em 80%. ATK: 2600–3400+. CRIT DMG: 160–200%+.",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2600.0,
+          "adequate": 2600.0,
+          "excellent": 3400.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Claret": {
+      "statAdvice": "DEF: 2300–2600+. Crítico depende do motor e dos buffs; 128,9% é uma referência com assinatura, não requisito universal. A conversão de CRIT DMG e o crítico duplo permitem CRIT Rate acima de 100%.",
+      "notes": "Escala com DEF. Gerencie Crimson Inscription e acumule Gash antes do Stun; consuma com especiais para Maim. PEN/disco 5 depende de Rina ou redução de DEF. Bloodmarrow Coffer exige passe pago.",
+      "benchmarks": [
+        {
+          "stat": "DEF",
+          "low": 2300.0,
+          "adequate": 2300.0,
+          "excellent": 2600.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "HP",
+          "low": 9500.0,
+          "adequate": 9500.0,
+          "excellent": 9500.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Trigger": {
+      "statAdvice": "Impact: 162–186+. CRIT Rate: 60–90%; 90% maximiza o bônus de Daze da habilidade adicional e é mais viável com assinatura. ATK e CRIT DMG são secundários.",
+      "benchmarks": [
+        {
+          "stat": "Impact",
+          "low": 162.0,
+          "adequate": 162.0,
+          "excellent": 186.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Rina": {
+      "statAdvice": "PEN Ratio: 38–72%; 72% é o ponto de teto do buff do Núcleo máximo, não um requisito mínimo. Motor e Mindscape mudam a facilidade e duração do buff.",
+      "benchmarks": []
+    },
+    "Miyabi": {
+      "notes": "Priorize CRIT Rate para a interação do Núcleo e ajuste a meta com assinatura/Mindscape. Não use automaticamente os mesmos discos de AP dos demais agentes de Anomalia. Disorder sustenta os recursos dos carregados.",
+      "statAdvice": "ATK: 2500 - 3600+ (Depending on Disc Drive main stat choice)\nHP: 10000+\nDEF: 800+\nAnomaly Mastery: 116+\nAnomaly Proficiency: 240+\nCRIT RATE: 75-95%\nCRIT DMG: 150-190%",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2500.0,
+          "adequate": 2500.0,
+          "excellent": 3600.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Mastery",
+          "low": 116.0,
+          "adequate": 116.0,
+          "excellent": 116.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Proficiency",
+          "low": 240.0,
+          "adequate": 240.0,
+          "excellent": 240.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Nangong Yu": {
+      "notes": "Priorize AM e AP segundo esta build. É Stun com interações de Anomalia; um disco 6 de Impact não substitui automaticamente Anomaly Mastery.",
+      "statAdvice": "ATK: 2,200 - 2,500+\nHP: 9,500+\nDEF: 750+\nAnomaly Proficiency: 280 - 350+\nAnomaly Mastery: 173 - 211",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2200.0,
+          "adequate": 2200.0,
+          "excellent": 2500.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Proficiency",
+          "low": 280.0,
+          "adequate": 280.0,
+          "excellent": 350.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Mastery",
+          "low": 173.0,
+          "adequate": 173.0,
+          "excellent": 211.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Ben": {
+      "title": "dano / contra-ataques",
+      "notes": "Esta é a variante ofensiva da fonte atual; não representa uma build exclusivamente de escudo. Motores de outra especialidade contribuem apenas com atributos, sem passiva.",
+      "statAdvice": "ATK: 2700 - 3600+\nHP: 11500+\nDEF: 1400 - 2600+\nCRIT RATE: 50% - 60%+\nCRIT DMG: 100% - 120%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2700.0,
+          "adequate": 2700.0,
+          "excellent": 3600.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "HP",
+          "low": 11500.0,
+          "adequate": 11500.0,
+          "excellent": 11500.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "DEF",
+          "low": 1400.0,
+          "adequate": 1400.0,
+          "excellent": 2600.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Velina": {
+      "notes": "Especialista em Anomalia com contribuição fora de campo. Motores de outra especialidade, quando usados, só fornecem atributos; não ative suas passivas no comparador.",
+      "statAdvice": "ATK: 2400 - 2600+\nHP: 9500+\nDEF: 750+\nAnomaly Proficiency: 330 - 420+\nEnergy Regen: 2.88",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2400.0,
+          "adequate": 2400.0,
+          "excellent": 2600.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Proficiency",
+          "low": 330.0,
+          "adequate": 330.0,
+          "excellent": 420.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Energy Regen",
+          "low": 2.88,
+          "adequate": 2.88,
+          "excellent": 2.88,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Pyrois": {
+      "weapons": [
+        14155,
+        14146,
+        13004
+      ],
+      "notes": "Starlight Engine é a alternativa inicial de ATK, com efeito condicionado à esquiva/assistência rápida; não equivale aos motores premium.",
+      "statAdvice": "ATK: 2800 - 3200+\nHP: 9500+\nDEF: 750+\nCRIT RATE: 57% - 72% (before Sol Exuvia and M1)\nCRIT DMG: 140% - 180%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2800.0,
+          "adequate": 2800.0,
+          "excellent": 3200.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Alice": {
+      "statAdvice": "ATK: 2600 - 2900+\nHP: 9500+\nDEF: 750+\nAP: 330 - 420+\nAM: 184+ (60 Higher in combat with Sig)",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2600.0,
+          "adequate": 2600.0,
+          "excellent": 2900.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Proficiency",
+          "low": 330.0,
+          "adequate": 330.0,
+          "excellent": 420.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Anby": {
+      "statAdvice": "Impact: 169 - 190+\nATK: 1700 - 2000+ (Optional)\nHP: 9500+\nDEF: 800+\nCRIT RATE: 50%+ (Needed for King of the Summit)\nCRIT DMG: 100% - 120%+ (Optional)",
+      "benchmarks": [
+        {
+          "stat": "Impact",
+          "low": 169.0,
+          "adequate": 169.0,
+          "excellent": 190.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Anby: Soldier 0": {
+      "statAdvice": "ATK: 2800 - 3200+\nHP: 10000+\nDEF: 800+\nCRIT RATE: 58% - 78% (before Additional Ability and Shadow Harmony)\nCRIT DMG: 160% - 200%+ (before Core Passive)",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2800.0,
+          "adequate": 2800.0,
+          "excellent": 3200.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Anton": {
+      "statAdvice": "ATK: 2300-2800+\nHP: 9000+\nDEF: 800+\nCRIT RATE: 70-100%\nCRIT DMG: 120-160%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2300.0,
+          "adequate": 2300.0,
+          "excellent": 2800.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Aria": {
+      "statAdvice": "ATK: 2600 - 2900+\nHP: 9500+\nDEF: 750+\nAnomaly Proficiency: 330 - 420+\nAnomaly Mastery: 184 - 244",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2600.0,
+          "adequate": 2600.0,
+          "excellent": 2900.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Proficiency",
+          "low": 330.0,
+          "adequate": 330.0,
+          "excellent": 420.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Mastery",
+          "low": 184.0,
+          "adequate": 184.0,
+          "excellent": 244.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Astra Yao": {
+      "statAdvice": "ATK: 3430+\nHP: 10500+\nDEF: 800+\nEnergy Regen: 0 - 130% (Dependant on Secondary Disc Set, Disc Main Stat and W-Engine)",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 3430.0,
+          "adequate": 3430.0,
+          "excellent": 3430.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Energy Regen",
+          "low": 0.0,
+          "adequate": 0.0,
+          "excellent": 130.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Banyue": {
+      "statAdvice": "SHEER FORCE: 2200+\nATK: 1800 - 2000+\nHP: 18,000+\nDEF: 600+\nCRIT RATE: 90 - 100% (In combat; Including Disc Drive Bonus & Signature Weapon)\nCRIT DMG: 120 - 150%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 1800.0,
+          "adequate": 1800.0,
+          "excellent": 2000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Billy": {
+      "statAdvice": "ATK: 2400-2800+\nHP: 9000+\nDEF: 800+\nCRIT RATE: 70-80%\nCRIT DMG: 140-160%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2400.0,
+          "adequate": 2400.0,
+          "excellent": 2800.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Billy - Starlight": {
+      "statAdvice": "SHEER FORCE: 2200+\nATK: 1800 - 2000+\nHP: 18,000+\nDEF: 600+\nCRIT RATE: 90 - 100% (In combat; Including Disc Drive Bonus & Signature Weapon)\nCRIT DMG: 120 - 150%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 1800.0,
+          "adequate": 1800.0,
+          "excellent": 2000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Burnice": {
+      "statAdvice": "ATK: 2500 - 3200+ (Depends on the W-engine and Drive main stats)\nHP: 9500 - 10000+\nDEF: 800+\nAnomaly Proficiency: 350 - 400+\nAnomaly Mastery: 153+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2500.0,
+          "adequate": 2500.0,
+          "excellent": 3200.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Proficiency",
+          "low": 350.0,
+          "adequate": 350.0,
+          "excellent": 400.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Mastery",
+          "low": 153.0,
+          "adequate": 153.0,
+          "excellent": 153.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Caesar": {
+      "statAdvice": "ATK: 1400 - 2000+ (Optional)\nHP: 12000+\nDEF: 1000+\nIMPACT: 145 - 170+ (Most Important Stat)\nAnomaly Proficiency: 250 - 330+ (Optional)\nAnomaly Mastery: 87+ (Optional)\nCRIT RATE: 50 - 60%+ (Optional)\nCRIT DMG: 100 - 120%+ (Optional)",
+      "benchmarks": [
+        {
+          "stat": "Impact",
+          "low": 145.0,
+          "adequate": 145.0,
+          "excellent": 170.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Cissia": {
+      "statAdvice": "ATK: 2500 - 2700+\nHP: 9000+\nDEF: 800+\nCRIT RATE: 50% - 57% (with Signature W-Engine)\nCRIT DMG: 110%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2500.0,
+          "adequate": 2500.0,
+          "excellent": 2700.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Corin": {
+      "statAdvice": "ATK: 2400 - 3000+\nHP: 9000+\nDEF: 800+\nCRIT RATE: 70% - 80%+\nCRIT DMG: 140% - 160%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2400.0,
+          "adequate": 2400.0,
+          "excellent": 3000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Dialyn": {
+      "statAdvice": "ATK: 2400+\nHP: 9500+\nDEF: 800+\nCRIT RATE: 80% - 100%\nCRIT DMG: 100%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2400.0,
+          "adequate": 2400.0,
+          "excellent": 2400.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Ellen": {
+      "statAdvice": "ATK: 2600 - 3000+\nHP: 9500+\nDEF: 780+\nCRIT RATE: 90 - 100%\nCRIT DMG: 120% - 180%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2600.0,
+          "adequate": 2600.0,
+          "excellent": 3000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Grace": {
+      "statAdvice": "ATK: 2300 - 3000+\nHP: 9500+\nDEF: 800+\nAnomaly Mastery: 150 - 190+\nAnomaly Proficiency: 350 - 450+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2300.0,
+          "adequate": 2300.0,
+          "excellent": 3000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Mastery",
+          "low": 150.0,
+          "adequate": 150.0,
+          "excellent": 190.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Proficiency",
+          "low": 350.0,
+          "adequate": 350.0,
+          "excellent": 450.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Harumasa": {
+      "statAdvice": "ATK: 2600 - 3400+\nHP: 10000+\nDEF: 800+\nCRIT RATE: 75% (Not more)\nCRIT DMG: 150-190%",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2600.0,
+          "adequate": 2600.0,
+          "excellent": 3400.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Hugo": {
+      "statAdvice": "ATK: 2600 - 3000+\nHP: 10000+\nDEF: 800+\nCRIT RATE: 70 - 88%\nCRIT DMG: 160 - 200%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2600.0,
+          "adequate": 2600.0,
+          "excellent": 3000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Jane Doe": {
+      "statAdvice": "ATK: 2300 - 2800+\nHP: 9000 - 10000+\nDEF: 800+\nAnomaly Proficiency: 375 - 420+ (IN COMBAT; 420 Required for cap of 600 Flat Combat Attack in Passion State)\nAnomaly Mastery: 192+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2300.0,
+          "adequate": 2300.0,
+          "excellent": 2800.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Mastery",
+          "low": 192.0,
+          "adequate": 192.0,
+          "excellent": 192.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Ju Fufu": {
+      "statAdvice": "IMPACT: 139 - 160+\nATK: 3100-3400\nHP: 11,000+\nDEF: 850+\nCRIT RATE: 50%+ (If using 4P King of the Summit)",
+      "benchmarks": [
+        {
+          "stat": "Impact",
+          "low": 139.0,
+          "adequate": 139.0,
+          "excellent": 160.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "ATK",
+          "low": 3100.0,
+          "adequate": 3100.0,
+          "excellent": 3400.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Koleda": {
+      "statAdvice": "Impact: 166 - 190+\nATK: 1700 - 2000+ (Optional)\nHP: 10000+\nDEF: 800+\nCRIT RATE: 50%+ (Needed for King of the Summit)\nCRIT DMG: 100% - 120%+ (Optional)",
+      "benchmarks": [
+        {
+          "stat": "Impact",
+          "low": 166.0,
+          "adequate": 166.0,
+          "excellent": 190.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Lighter": {
+      "statAdvice": "Impact: 170 - 195+\nATK: 1700 - 2000+ (Optional)\nHP: 10500+\nDEF: 800+\nCRIT RATE: 50%+ (Needed for King of the Summit)\nCRIT DMG: 100% - 120%+ (Optional)",
+      "benchmarks": [
+        {
+          "stat": "Impact",
+          "low": 170.0,
+          "adequate": 170.0,
+          "excellent": 195.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Lucia": {
+      "statAdvice": "ATK: 1800+\nHP: 22000 - 24000+ (Focus on hitting 24000!)\nDEF: 800+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 1800.0,
+          "adequate": 1800.0,
+          "excellent": 1800.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "HP",
+          "low": 22000.0,
+          "adequate": 22000.0,
+          "excellent": 24000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "DEF",
+          "low": 800.0,
+          "adequate": 800.0,
+          "excellent": 800.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Lucy": {
+      "statAdvice": "HP: 10000+\nDEF: 800+\nCRIT RATE: 40% - 60%+ (Optional)\nCRIT DMG: 100% - 120%+ (Optional)",
+      "benchmarks": []
+    },
+    "Lycaon": {
+      "statAdvice": "Impact: 169 - 190+\nATK: 2000 - 2200+ (Optional)\nHP: 10500+\nDEF: 850+\nCRIT RATE: 50%+ (Needed for King of the Summit)\nCRIT DMG: 100% - 120%+ (Optional)",
+      "benchmarks": [
+        {
+          "stat": "Impact",
+          "low": 169.0,
+          "adequate": 169.0,
+          "excellent": 190.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Manato": {
+      "statAdvice": "SHEER FORCE: 2100 - 2400+\nATK: 1800+\nHP: 18000+\nDEF: 600+\nCRIT RATE: 44% - 66%+ (90 - 100% in-combat)\nCRIT DMG: 120% - 150%+ (before combat)",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 1800.0,
+          "adequate": 1800.0,
+          "excellent": 1800.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Nekomata": {
+      "statAdvice": "ATK: 2500 - 3100+ (Optional)\nHP: 9500+\nDEF: 800+\nCRIT RATE: 70% - 80%+\nCRIT DMG: 140% - 160%+",
+      "benchmarks": []
+    },
+    "Nicole": {
+      "statAdvice": "ATK: 2000 - 2400+ (Optional)\nHP: 10000+\nDEF: 800+\nAnomaly Proficiency: 200 - 320+(Optional)",
+      "benchmarks": []
+    },
+    "Norma": {
+      "statAdvice": "ATK: 2400+\nHP: 9500+\nDEF: 800+\nCRIT RATE: 80% - 100%\nCRIT DMG: 100%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2400.0,
+          "adequate": 2400.0,
+          "excellent": 2400.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Orphie & Magus": {
+      "statAdvice": "ATK: 2500 - 2700+\nHP: 10000+\nDEF: 900+\nCRIT RATE: 90 - 100% (Including Orphie Passive & Disc Drive Passive)\nCRIT DMG: 120%+\nEnergy Regen: 80%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2500.0,
+          "adequate": 2500.0,
+          "excellent": 2700.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Energy Regen",
+          "low": 80.0,
+          "adequate": 80.0,
+          "excellent": 80.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Pan Yinhu": {
+      "statAdvice": "ATK: 3000+\nHP: 10000+\nDEF: 800+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 3000.0,
+          "adequate": 3000.0,
+          "excellent": 3000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Piper": {
+      "statAdvice": "ATK: 2500-2800+\nHP: 9000+\nDEF: 800+\nAnomaly Mastery: 150+\nAnomaly Proficiency: 350 - 450+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2500.0,
+          "adequate": 2500.0,
+          "excellent": 2800.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Mastery",
+          "low": 150.0,
+          "adequate": 150.0,
+          "excellent": 150.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Proficiency",
+          "low": 350.0,
+          "adequate": 350.0,
+          "excellent": 450.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Promeia": {
+      "statAdvice": "ATK: 2600 - 2900+\nHP: 9500+\nDEF: 750+\nAnomaly Proficiency: 287 - 350+ (add +90 to values if AP mainstat W-Engine)\nAnomaly Mastery: 184 - 248",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2600.0,
+          "adequate": 2600.0,
+          "excellent": 2900.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Proficiency",
+          "low": 287.0,
+          "adequate": 287.0,
+          "excellent": 350.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Mastery",
+          "low": 184.0,
+          "adequate": 184.0,
+          "excellent": 248.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Pulchra": {
+      "statAdvice": "ATK: 1800 - 2200+ (Optional)\nHP: 10000+\nDEF: 850+\nIMPACT: 169 - 189+ (Most Important Stat)\nAnomaly Proficiency: 250 - 300+ (Optional)\nAnomaly Mastery: 92+ (Optional)\nCRIT RATE: 50 - 60%+ (for King of the Summit)\nCRIT DMG: 100 - 120%+ (Optional)",
+      "benchmarks": [
+        {
+          "stat": "Impact",
+          "low": 169.0,
+          "adequate": 169.0,
+          "excellent": 189.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Qingyi": {
+      "statAdvice": "Impact: 169 - 193+\nATK: 1800 - 2000+ (Optional - gains more in combat)\nHP: 10000+\nDEF: 800+\nCRIT RATE: 50%+ (Needed for King of the Summit)\nCRIT DMG: 100% - 120%+ (Optional)",
+      "benchmarks": [
+        {
+          "stat": "Impact",
+          "low": 169.0,
+          "adequate": 169.0,
+          "excellent": 193.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Remielle": {
+      "statAdvice": "ATK: 4000 (going above this does not add meaningful damage)\nHP: 9500+\nDEF: 750+\nAnomaly Proficiency: 370 - 460+ (may have a big range depending on AP D4 and 2-piece)",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 4000.0,
+          "adequate": 4000.0,
+          "excellent": 4000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Proficiency",
+          "low": 370.0,
+          "adequate": 370.0,
+          "excellent": 460.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Seed": {
+      "statAdvice": "ATK: 2700 - 3000+\nHP: 10000+\nDEF: 800+\nCRIT DMG: 110 - 140%+\nCRIT RATE: 75% - 90%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2700.0,
+          "adequate": 2700.0,
+          "excellent": 3000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Seth": {
+      "statAdvice": "ATK: 2600 - 3200+ (Shield Caps at 3750 Initial ATK but this is hard to achieve)\nHP: 11000+\nDEF: 900+\nAnomaly Proficiency: 200 - 300+ (Optional)",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2600.0,
+          "adequate": 2600.0,
+          "excellent": 3200.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Sigrid": {
+      "statAdvice": "ATK: 3000 - 3400+\nHP: 9500+\nDEF: 750+\nCRIT RATE: 33.8% (any more and she’ll overcap due to the 66% from her Core Passive!)\nCRIT DMG: 150% - 210%+ (W-Engine mainstat and D4 picks can give it a large range)",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 3000.0,
+          "adequate": 3000.0,
+          "excellent": 3400.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Soldier 11": {
+      "statAdvice": "ATK: 2800 - 3000+\nHP: 9500+\nDEF: 800+\nCRIT RATE: 80%+\nCRIT DMG: 140%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2800.0,
+          "adequate": 2800.0,
+          "excellent": 3000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Soukaku": {
+      "statAdvice": "ATK: 2777 (Lvl 4 Core Passive) - 2500 (Lvl 6 Core Passive)\nHP: 10000+\nDEF: 800+\nCRIT RATE: 50% - 60%+ (Optional)\nCRIT DMG: 100% - 120%+ (Optional)",
+      "benchmarks": []
+    },
+    "Sunna": {
+      "statAdvice": "ATK: 3500+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 3500.0,
+          "adequate": 3500.0,
+          "excellent": 3500.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Vivian": {
+      "statAdvice": "ATK: 2000 - 2400+\nHP: 10000\nDEF: 800\nAnomaly Mastery: 198+\nAnomaly Proficiency: 380 - 450+ (Before Combat)",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2000.0,
+          "adequate": 2000.0,
+          "excellent": 2400.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Mastery",
+          "low": 198.0,
+          "adequate": 198.0,
+          "excellent": 198.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Yanagi": {
+      "statAdvice": "ATK: 2600 - 3400+ (Depending on W-Engine choice)\nHP: 10000+\nDEF: 800+\nAnomaly Mastery: 148 - 190+\nAnomaly Proficiency: 350 - 450+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 2600.0,
+          "adequate": 2600.0,
+          "excellent": 3400.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Mastery",
+          "low": 148.0,
+          "adequate": 148.0,
+          "excellent": 190.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Proficiency",
+          "low": 350.0,
+          "adequate": 350.0,
+          "excellent": 450.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Ye Shunguang": {
+      "statAdvice": "ATK: 3000+\nHP: 10000+\nDEF: 600+\nCRIT DMG: 180 - 200%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 3000.0,
+          "adequate": 3000.0,
+          "excellent": 3000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Yidhari": {
+      "statAdvice": "SHEER FORCE: 2,400 - 2,600\nHP: 18,000 - 20,000+\nCRIT RATE: 58.6% - 65.8% (90.6% - 97.2% in-combat)\nCRIT DMG: 120% - 150%",
+      "benchmarks": [
+        {
+          "stat": "HP",
+          "low": 18000.0,
+          "adequate": 18000.0,
+          "excellent": 20000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Yixuan": {
+      "statAdvice": "SHEER FORCE: 2100 - 2400\nATK: 1800 - 2000+\nHP: 16,000 - 18,000+\nDEF: 600+\nCRIT RATE: 80 - 90% (Including Disc Drive Bonus)\nCRIT DMG: 140 - 160%",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 1800.0,
+          "adequate": 1800.0,
+          "excellent": 2000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "HP",
+          "low": 16000.0,
+          "adequate": 16000.0,
+          "excellent": 18000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "DEF",
+          "low": 600.0,
+          "adequate": 600.0,
+          "excellent": 600.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Yuzuha": {
+      "statAdvice": "ATK: 3000+\nHP: 11000+\nDEF: 800+\nAnomaly Proficiency: 200+\nAnomaly Mastery: 171",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 3000.0,
+          "adequate": 3000.0,
+          "excellent": 3000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Proficiency",
+          "low": 200.0,
+          "adequate": 200.0,
+          "excellent": 200.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "Anomaly Mastery",
+          "low": 171.0,
+          "adequate": 171.0,
+          "excellent": 171.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Zhao": {
+      "statAdvice": "ATK: 1900+\nHP: 25000+\nDEF: 800+\nCrit Rate: 30%+\nCrit DMG: 50%+",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 1900.0,
+          "adequate": 1900.0,
+          "excellent": 1900.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "HP",
+          "low": 25000.0,
+          "adequate": 25000.0,
+          "excellent": 25000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        },
+        {
+          "stat": "DEF",
+          "low": 800.0,
+          "adequate": 800.0,
+          "excellent": 800.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    },
+    "Zhu Yuan": {
+      "statAdvice": "ATK: 3000+\nHP: 9500+\nDEF: 800+\nCRIT RATE: 60% - 70% (90% - 100% with Add Ability; Max 55% with Nicole M6)\nCRIT DMG: 160% - 180%+ (Without Chaotic Metal Buff)",
+      "benchmarks": [
+        {
+          "stat": "ATK",
+          "low": 3000.0,
+          "adequate": 3000.0,
+          "excellent": 3000.0,
+          "unit": "",
+          "context": "Referência editorial da build no nível 60. Igualar Núcleo, equipamento e buffs da fonte; não é cálculo de dano. Sem faixa inferior inferida; abaixo do mínimo é classificado apenas como abaixo da meta."
+        }
+      ]
+    }
+  },
+  "teams": [
+    {
+      "agent": "Alice",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Alice"
+        ],
+        [
+          "Vivian",
+          "Burnice",
+          "Grace"
+        ],
+        [
+          "Yuzuha",
+          "Lucy"
+        ]
+      ],
+      "notes": "Disorder com segundo atributo; Lucy é a opção de menor custo."
+    },
+    {
+      "agent": "Anby",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Zhu Yuan",
+          "Harumasa"
+        ],
+        [
+          "Anby"
+        ],
+        [
+          "Nicole"
+        ]
+      ],
+      "notes": "Stun antes da janela de dano; Nicole reduz DEF."
+    },
+    {
+      "agent": "Anby: Soldier 0",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Anby: Soldier 0"
+        ],
+        [
+          "Trigger",
+          "Pulchra"
+        ],
+        [
+          "Astra Yao",
+          "Lucy"
+        ]
+      ],
+      "notes": "Aftershock; Pulchra deve estar em M6 para sua alternativa de apoio."
+    },
+    {
+      "agent": "Anton",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Anton"
+        ],
+        [
+          "Qingyi",
+          "Anby"
+        ],
+        [
+          "Grace",
+          "Rina"
+        ]
+      ],
+      "notes": "Manter Shock e entrar em Burst durante Stun."
+    },
+    {
+      "agent": "Aria",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Aria"
+        ],
+        [
+          "Nangong Yu",
+          "Dialyn"
+        ],
+        [
+          "Sunna",
+          "Yuzuha"
+        ]
+      ],
+      "notes": "Carregados e Abloom; Nangong Yu favorece composições de Anomalia."
+    },
+    {
+      "agent": "Astra Yao",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Evelyn",
+          "Ellen"
+        ],
+        [
+          "Lighter",
+          "Dialyn"
+        ],
+        [
+          "Astra Yao"
+        ]
+      ],
+      "notes": "Trocas rápidas e buffs para dano na janela de Stun."
+    },
+    {
+      "agent": "Banyue",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Banyue"
+        ],
+        [
+          "Dialyn",
+          "Ju Fufu"
+        ],
+        [
+          "Lucia",
+          "Pan Yinhu"
+        ]
+      ],
+      "notes": "Rupture usa Sheer Force; mantenha os buffs antes do combo."
+    },
+    {
+      "agent": "Ben",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Ben"
+        ],
+        [
+          "Koleda",
+          "Lighter"
+        ],
+        [
+          "Lucy",
+          "Nicole"
+        ]
+      ],
+      "notes": "Ben como atacante de contra-ataques; alternativa focada em defesa depende do investimento."
+    },
+    {
+      "agent": "Billy",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Billy"
+        ],
+        [
+          "Dialyn",
+          "Trigger"
+        ],
+        [
+          "Nicole",
+          "Astra Yao"
+        ]
+      ],
+      "notes": "Nicole ativa a sinergia de facção; concentre dano no Stun."
+    },
+    {
+      "agent": "Billy - Starlight",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Billy - Starlight"
+        ],
+        [
+          "Dialyn",
+          "Ju Fufu"
+        ],
+        [
+          "Lucia",
+          "Pan Yinhu"
+        ]
+      ],
+      "notes": "A versão Starlight é um agente distinto; buffs para Rupture."
+    },
+    {
+      "agent": "Burnice",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Jane Doe",
+          "Piper"
+        ],
+        [
+          "Burnice"
+        ],
+        [
+          "Yuzuha",
+          "Lucy"
+        ]
+      ],
+      "notes": "Aplicação de fogo fora de campo para Disorder."
+    },
+    {
+      "agent": "Caesar",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Billy",
+          "Corin"
+        ],
+        [
+          "Caesar"
+        ],
+        [
+          "Nicole",
+          "Lucy"
+        ]
+      ],
+      "notes": "Escudo e ATK; priorize sustentar a proteção durante os combos."
+    },
+    {
+      "agent": "Cissia",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Seed",
+          "Harumasa"
+        ],
+        [
+          "Cissia"
+        ],
+        [
+          "Trigger",
+          "Astra Yao"
+        ]
+      ],
+      "notes": "Cissia divide função ofensiva e buffs; observe as necessidades de energia."
+    },
+    {
+      "agent": "Claret",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Claret"
+        ],
+        [
+          "Norma",
+          "Koleda",
+          "Trigger"
+        ],
+        [
+          "Rina",
+          "Nicole"
+        ]
+      ],
+      "notes": "Rina favorece PEN; Nicole muda a saturação de redução de DEF. Claret escala com DEF."
+    },
+    {
+      "agent": "Corin",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Corin"
+        ],
+        [
+          "Trigger",
+          "Dialyn"
+        ],
+        [
+          "Astra Yao",
+          "Nicole"
+        ]
+      ],
+      "notes": "Execute a serra durante Stun e mantenha buffs ativos."
+    },
+    {
+      "agent": "Dialyn",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Ellen",
+          "Evelyn",
+          "Hugo"
+        ],
+        [
+          "Dialyn"
+        ],
+        [
+          "Astra Yao",
+          "Sunna"
+        ]
+      ],
+      "notes": "Conversão de ataques em cadeia para ampliar janelas de Supremo."
+    },
+    {
+      "agent": "Ellen",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Ellen"
+        ],
+        [
+          "Dialyn",
+          "Lighter",
+          "Lycaon"
+        ],
+        [
+          "Sunna",
+          "Astra Yao",
+          "Soukaku"
+        ]
+      ],
+      "notes": "Discos Puffer favorecem Supremos; considere a versão atual de Potential da Ellen."
+    },
+    {
+      "agent": "Evelyn",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Evelyn"
+        ],
+        [
+          "Dialyn",
+          "Lighter",
+          "Koleda"
+        ],
+        [
+          "Astra Yao",
+          "Lucy"
+        ]
+      ],
+      "notes": "Puffer fica mais consistente com Dialyn; Hormone exige respeitar a janela do conjunto."
+    },
+    {
+      "agent": "Grace",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Grace"
+        ],
+        [
+          "Remielle",
+          "Burnice"
+        ],
+        [
+          "Velina",
+          "Yuzuha"
+        ]
+      ],
+      "notes": "Disorder e aplicação rápida de Shock; evite disputar tempo de campo."
+    },
+    {
+      "agent": "Harumasa",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Harumasa"
+        ],
+        [
+          "Qingyi",
+          "Anby",
+          "Trigger"
+        ],
+        [
+          "Rina",
+          "Nicole"
+        ]
+      ],
+      "notes": "Priorize a janela de Stun e os ataques de esquiva aprimorados."
+    },
+    {
+      "agent": "Hugo",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Hugo"
+        ],
+        [
+          "Dialyn",
+          "Lycaon",
+          "Lighter"
+        ],
+        [
+          "Lighter",
+          "Trigger",
+          "Soukaku"
+        ]
+      ],
+      "notes": "Com dois Stunners, aproveite os atordoamentos sucessivos; não repita agente."
+    },
+    {
+      "agent": "Jane Doe",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Jane Doe"
+        ],
+        [
+          "Remielle",
+          "Burnice",
+          "Grace"
+        ],
+        [
+          "Yuzuha",
+          "Seth"
+        ]
+      ],
+      "notes": "Seth pode substituir o buffer; manter Assault e Disorder."
+    },
+    {
+      "agent": "Ju Fufu",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Yixuan",
+          "Banyue"
+        ],
+        [
+          "Ju Fufu"
+        ],
+        [
+          "Lucia",
+          "Pan Yinhu"
+        ]
+      ],
+      "notes": "Stun e buffs para Rupture; não aplicar metas de ATK do atacante à Yixuan."
+    },
+    {
+      "agent": "Koleda",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Soldier 11",
+          "Evelyn"
+        ],
+        [
+          "Koleda"
+        ],
+        [
+          "Lucy",
+          "Astra Yao"
+        ]
+      ],
+      "notes": "Daze de fogo e dano concentrado no atordoamento."
+    },
+    {
+      "agent": "Lighter",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Ellen",
+          "Evelyn",
+          "Hugo"
+        ],
+        [
+          "Lighter"
+        ],
+        [
+          "Astra Yao",
+          "Soukaku",
+          "Lucy"
+        ]
+      ],
+      "notes": "Escolha o suporte conforme o atributo do atacante."
+    },
+    {
+      "agent": "Lucia",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Yixuan",
+          "Yidhari",
+          "Banyue"
+        ],
+        [
+          "Ju Fufu",
+          "Dialyn"
+        ],
+        [
+          "Lucia"
+        ]
+      ],
+      "notes": "Buffs de HP e Sheer Force para composições de Rupture."
+    },
+    {
+      "agent": "Lucy",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Piper"
+        ],
+        [
+          "Burnice",
+          "Lighter"
+        ],
+        [
+          "Lucy"
+        ]
+      ],
+      "notes": "Piper e Lucy formam uma base acessível da facção Sons of Calydon."
+    },
+    {
+      "agent": "Lycaon",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Ellen",
+          "Hugo"
+        ],
+        [
+          "Lycaon"
+        ],
+        [
+          "Soukaku",
+          "Rina"
+        ]
+      ],
+      "notes": "Redução de resistência a gelo e Daze para o atacante."
+    },
+    {
+      "agent": "Manato",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Manato"
+        ],
+        [
+          "Dialyn",
+          "Ju Fufu"
+        ],
+        [
+          "Lucia",
+          "Pan Yinhu"
+        ]
+      ],
+      "notes": "Manato é a opção A de Rupture; ajuste os buffs antes dos ataques carregados."
+    },
+    {
+      "agent": "Miyabi",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Miyabi"
+        ],
+        [
+          "Yanagi",
+          "Vivian",
+          "Piper"
+        ],
+        [
+          "Yuzuha",
+          "Astra Yao",
+          "Lucy"
+        ]
+      ],
+      "notes": "Anomalias de atributos diferentes fornecem Disorder e recursos para Miyabi."
+    },
+    {
+      "agent": "Nangong Yu",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Aria",
+          "Miyabi",
+          "Jane Doe"
+        ],
+        [
+          "Nangong Yu"
+        ],
+        [
+          "Sunna",
+          "Yuzuha"
+        ]
+      ],
+      "notes": "AM/AP são relevantes para Nangong; não usar automaticamente uma build genérica de Impact."
+    },
+    {
+      "agent": "Nekomata",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Nekomata"
+        ],
+        [
+          "Dialyn",
+          "Trigger"
+        ],
+        [
+          "Nicole",
+          "Astra Yao"
+        ]
+      ],
+      "notes": "Combine as janelas de Stun com os bônus de assistência/esquiva."
+    },
+    {
+      "agent": "Nicole",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Zhu Yuan",
+          "Harumasa"
+        ],
+        [
+          "Qingyi",
+          "Anby"
+        ],
+        [
+          "Nicole"
+        ]
+      ],
+      "notes": "Redução de DEF e assistência rápida; opção Anby mais acessível."
+    },
+    {
+      "agent": "Norma",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Pyrois",
+          "Claret"
+        ],
+        [
+          "Norma"
+        ],
+        [
+          "Sunna",
+          "Rina"
+        ]
+      ],
+      "notes": "Construa Stun com invocações e ajuste o suporte ao atributo do atacante."
+    },
+    {
+      "agent": "Orphie & Magus",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Seed",
+          "Anby: Soldier 0"
+        ],
+        [
+          "Orphie & Magus"
+        ],
+        [
+          "Trigger",
+          "Astra Yao"
+        ]
+      ],
+      "notes": "Segundo atacante com contribuição fora de campo e sinergias de Aftershock."
+    },
+    {
+      "agent": "Pan Yinhu",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Yixuan",
+          "Yidhari",
+          "Manato"
+        ],
+        [
+          "Ju Fufu",
+          "Dialyn"
+        ],
+        [
+          "Pan Yinhu"
+        ]
+      ],
+      "notes": "ATK de Pan Yinhu converte em apoio a Rupture; alternativa acessível a Lucia."
+    },
+    {
+      "agent": "Piper",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Piper"
+        ],
+        [
+          "Burnice",
+          "Vivian"
+        ],
+        [
+          "Lucy",
+          "Yuzuha"
+        ]
+      ],
+      "notes": "Lucy é a opção de facção acessível; usar Disorder quando houver segundo atributo."
+    },
+    {
+      "agent": "Promeia",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Promeia"
+        ],
+        [
+          "Vivian",
+          "Nangong Yu"
+        ],
+        [
+          "Yuzuha",
+          "Sunna"
+        ]
+      ],
+      "notes": "Anomalia e Disorder; preserve as condições do conjunto escolhido."
+    },
+    {
+      "agent": "Pulchra",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Anby: Soldier 0",
+          "Corin"
+        ],
+        [
+          "Pulchra"
+        ],
+        [
+          "Astra Yao",
+          "Lucy"
+        ]
+      ],
+      "notes": "Apoio fora de campo melhora em M6; antes disso exige mais tempo ativo."
+    },
+    {
+      "agent": "Pyrois",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Pyrois"
+        ],
+        [
+          "Dialyn",
+          "Ju Fufu",
+          "Lycaon"
+        ],
+        [
+          "Sunna",
+          "Astra Yao",
+          "Nicole"
+        ]
+      ],
+      "notes": "Concentrar o dano nas janelas de buffs e de Stun."
+    },
+    {
+      "agent": "Qingyi",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Zhu Yuan",
+          "Harumasa"
+        ],
+        [
+          "Qingyi"
+        ],
+        [
+          "Nicole",
+          "Astra Yao"
+        ]
+      ],
+      "notes": "Acumule os bônus de Stun antes de entrar com o atacante."
+    },
+    {
+      "agent": "Remielle",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Aria",
+          "Jane Doe",
+          "Vivian"
+        ],
+        [
+          "Remielle"
+        ],
+        [
+          "Velina",
+          "Yuzuha"
+        ]
+      ],
+      "notes": "Remielle adapta sua contribuição de Anomalia à composição; confira o atributo resultante."
+    },
+    {
+      "agent": "Rina",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Harumasa",
+          "Jane Doe"
+        ],
+        [
+          "Trigger",
+          "Anby",
+          "Seth"
+        ],
+        [
+          "Rina"
+        ]
+      ],
+      "notes": "PEN compartilhado depende do Núcleo e dos atributos da Rina; M1 melhora duração."
+    },
+    {
+      "agent": "Seed",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Seed"
+        ],
+        [
+          "Orphie & Magus",
+          "Anby: Soldier 0",
+          "Evelyn"
+        ],
+        [
+          "Trigger",
+          "Astra Yao"
+        ]
+      ],
+      "notes": "Seed exige outro atacante para a sinergia; organize a alternância entre ambos."
+    },
+    {
+      "agent": "Seth",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Jane Doe",
+          "Yanagi"
+        ],
+        [
+          "Burnice",
+          "Grace"
+        ],
+        [
+          "Seth"
+        ]
+      ],
+      "notes": "Passe o escudo/AP ao atacante usando a assistência correta."
+    },
+    {
+      "agent": "Sigrid",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Sigrid"
+        ],
+        [
+          "Dialyn",
+          "Lighter",
+          "Lycaon"
+        ],
+        [
+          "Sunna",
+          "Astra Yao",
+          "Rina"
+        ]
+      ],
+      "notes": "Dano de gelo em Stun; adaptar PEN aos buffs/debuffs escolhidos."
+    },
+    {
+      "agent": "Soldier 11",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Soldier 11"
+        ],
+        [
+          "Lighter",
+          "Koleda"
+        ],
+        [
+          "Astra Yao",
+          "Lucy"
+        ]
+      ],
+      "notes": "Mantenha os golpes de fogo e os buffs durante o atordoamento."
+    },
+    {
+      "agent": "Soukaku",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Ellen",
+          "Miyabi"
+        ],
+        [
+          "Lycaon",
+          "Lighter"
+        ],
+        [
+          "Soukaku"
+        ]
+      ],
+      "notes": "Transferir o bônus de ATK ao atacante e manter a redução de resistência aplicável."
+    },
+    {
+      "agent": "Sunna",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Ye Shunguang",
+          "Ellen"
+        ],
+        [
+          "Dialyn",
+          "Trigger"
+        ],
+        [
+          "Sunna"
+        ]
+      ],
+      "notes": "ATK é a meta principal do suporte; respeite o contexto dos 3500 na fonte."
+    },
+    {
+      "agent": "Trigger",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Anby: Soldier 0",
+          "Seed"
+        ],
+        [
+          "Trigger"
+        ],
+        [
+          "Astra Yao",
+          "Lucy"
+        ]
+      ],
+      "notes": "CRIT Rate aumenta Daze de Aftershock até o limite da habilidade adicional."
+    },
+    {
+      "agent": "Velina",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Aria",
+          "Jane Doe",
+          "Vivian"
+        ],
+        [
+          "Remielle",
+          "Burnice"
+        ],
+        [
+          "Velina"
+        ]
+      ],
+      "notes": "Anomalias e Disorder com vento fora de campo; a regeneração sustenta os especiais."
+    },
+    {
+      "agent": "Vivian",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Miyabi",
+          "Alice",
+          "Jane Doe"
+        ],
+        [
+          "Vivian"
+        ],
+        [
+          "Yuzuha",
+          "Astra Yao",
+          "Lucy"
+        ]
+      ],
+      "notes": "Vivian contribui fora de campo; sincronizar Disorder com o atacante principal."
+    },
+    {
+      "agent": "Yanagi",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Yanagi"
+        ],
+        [
+          "Remielle",
+          "Burnice"
+        ],
+        [
+          "Yuzuha",
+          "Rina"
+        ]
+      ],
+      "notes": "Priorize a geração de recursos e os especiais para Disorder."
+    },
+    {
+      "agent": "Ye Shunguang",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Ye Shunguang"
+        ],
+        [
+          "Dialyn",
+          "Ju Fufu"
+        ],
+        [
+          "Sunna",
+          "Zhao"
+        ]
+      ],
+      "notes": "Apoio às janelas de dano e ao recurso próprio da personagem."
+    },
+    {
+      "agent": "Yidhari",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Yidhari"
+        ],
+        [
+          "Dialyn",
+          "Ju Fufu",
+          "Koleda"
+        ],
+        [
+          "Lucia",
+          "Pan Yinhu"
+        ]
+      ],
+      "notes": "Gerenciar HP e os ataques de Rupture; não usar PEN como regra universal."
+    },
+    {
+      "agent": "Yixuan",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Yixuan"
+        ],
+        [
+          "Ju Fufu",
+          "Dialyn"
+        ],
+        [
+          "Lucia",
+          "Pan Yinhu"
+        ]
+      ],
+      "notes": "Sheer Force e HP são centrais; buffs de PEN não aumentam Sheer DMG."
+    },
+    {
+      "agent": "Yuzuha",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Miyabi",
+          "Jane Doe",
+          "Piper"
+        ],
+        [
+          "Vivian",
+          "Burnice"
+        ],
+        [
+          "Yuzuha"
+        ]
+      ],
+      "notes": "Suporte de Anomalia para Disorder e efeitos associados à aplicação de atributos."
+    },
+    {
+      "agent": "Zhao",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Ye Shunguang",
+          "Ellen",
+          "Miyabi"
+        ],
+        [
+          "Dialyn",
+          "Lycaon"
+        ],
+        [
+          "Zhao"
+        ]
+      ],
+      "notes": "Preservar os buffs de suporte e ajustar o Stunner ao atacante."
+    },
+    {
+      "agent": "Zhu Yuan",
+      "title": "Recomendado e alternativas",
+      "slots": [
+        [
+          "Zhu Yuan"
+        ],
+        [
+          "Qingyi",
+          "Anby",
+          "Trigger"
+        ],
+        [
+          "Nicole"
+        ]
+      ],
+      "notes": "Atacante de explosão na janela de Stun; Nicole é a base acessível de suporte."
+    }
+  ]
+}

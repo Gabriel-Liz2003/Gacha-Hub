@@ -119,7 +119,7 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
                     }
                 } else {
                     Row(Modifier.horizontalScroll(rememberScrollState()).padding(horizontal=12.dp),horizontalArrangement=Arrangement.spacedBy(8.dp)) {
-                        pages.forEach { name -> FilterChip(selected=page==name,onClick={page=name},label={Text(name)}) }
+                        (if(game==Game.ZZZ) pages+"Equipamentos" else pages).forEach { name -> FilterChip(selected=page==name,onClick={page=name},label={Text(name)}) }
                     }
                     val accounts = state.accounts.filter { it.game == game }
                     if(accounts.size>1) Row(Modifier.horizontalScroll(rememberScrollState()).padding(horizontal=12.dp)) {
@@ -129,6 +129,7 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
                         "Conta" -> AccountPage(game,account,vm,{openFile("import")})
                         "Resumo" -> Dashboard(game,account,state,{page=it})
                         "Personagens","Favoritos" -> CharactersPage(game,account,state,vm,page=="Favoritos")
+                        "Equipamentos" -> EquipmentPage(game,state)
                         "Builds" -> BuildsPage(game,account,state,vm)
                         "Planejamento" -> PlannerPage(game,account,state,vm)
                         "Times" -> TeamsPage(game,account,state,vm)
@@ -197,7 +198,7 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     LazyColumn(contentPadding=PaddingValues(18.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
         item { Section("Seu progresso") {
             Text("${account.characters.size} personagens possuídos",style=MaterialTheme.typography.headlineMedium)
-            Text("${state.characters.count { it.game==game }} personagens no catálogo local (parcial)")
+            Text("${state.characters.count { it.game==game }} personagens no catálogo local")
             Text("${projects.size} projetos ativos • ${state.teams.count { it.accountId==account.id }} times")
             Text("${account.characters.count { it.stats.isEmpty() }} personagens com atributos pendentes")
             val favorite=account.characters.firstOrNull { it.favorite }?.characterId
@@ -217,13 +218,27 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     var query by rememberSaveable(game) { mutableStateOf("") }
     var ownedOnly by rememberSaveable(game) { mutableStateOf(false) }
     var rarity by rememberSaveable(game) { mutableStateOf(0) }
-    var editor by remember { mutableStateOf<Owned?>(null) }
+    var attribute by rememberSaveable(game) { mutableStateOf("") }
+    var specialty by rememberSaveable(game) { mutableStateOf("") }
+    var faction by rememberSaveable(game) { mutableStateOf("") }
+    var detail by rememberSaveable(game) { mutableStateOf<String?>(null) }
+    var editor by remember(account?.id) { mutableStateOf<Owned?>(null) }
     var create by remember { mutableStateOf(false) }
     val owned = account?.characters.orEmpty().associateBy { it.characterId }
-    val chars=state.characters.filter { it.game==game && ResourceMath.matches(it.name,it.element,it.role,it.specialty,query) && (!ownedOnly || it.id in owned) && (!favorites || owned[it.id]?.favorite==true) && (rarity==0 || it.rarity==rarity) }.sortedBy { it.name }
+    val all=remember(state.pack,state.custom,game){state.characters.filter { it.game==game }}
+    val chars=remember(all,owned,query,attribute,specialty,faction,rarity,ownedOnly,favorites) {
+        filterCharacters(all,game,owned,CharacterFilter(query,attribute,specialty,faction,rarity,ownedOnly,favorites))
+    }
     LazyColumn(contentPadding=PaddingValues(18.dp),verticalArrangement=Arrangement.spacedBy(12.dp)) {
         item {
             Field("Buscar nome, elemento, função ou especialidade",query,{query=it})
+            if(game==Game.ZZZ) {
+                Choice("Atributo",attribute,listOf("" to "Todos")+all.map{it.element}.distinct().sorted().map{it to it}){attribute=it}
+                Choice("Especialidade",specialty,listOf("" to "Todas")+all.map{it.specialty}.distinct().sorted().map{it to it}){specialty=it}
+                Choice("Facção",faction,listOf("" to "Todas")+all.map{it.faction}.distinct().sorted().map{it to it}){faction=it}
+                TextButton(onClick={query="";attribute="";specialty="";faction="";rarity=0;ownedOnly=false}){Text("Limpar filtros")}
+                Text("${chars.size} agentes encontrados")
+            }
             Row(horizontalArrangement=Arrangement.spacedBy(8.dp)) {
                 FilterChip(ownedOnly,{ownedOnly=!ownedOnly},label={Text("Possuídos")})
                 FilterChip(rarity==5,{rarity=if(rarity==5)0 else 5},label={Text("5★ / S")})
@@ -234,10 +249,14 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
         if(chars.isEmpty()) item { Text("Nenhum personagem encontrado. Adicione ao catálogo ou importe um pacote.") }
         items(chars,key={it.id}) { c -> Section(c.name) {
             Row(horizontalArrangement=Arrangement.spacedBy(12.dp)) {
-                if(c.image.isNotBlank()) AsyncImage(model=c.image,contentDescription=c.name,modifier=Modifier.size(76.dp))
+                CatalogImage(c.image,c.name)
                 Column { Text("${c.rarity}★ • ${c.element} • ${c.specialty}"); Text(c.role)
                     owned[c.id]?.let { Text("Lv. ${it.level} • ${game.copyTerm} ${it.copies}") }
                 }
+            }
+            if(game==Game.ZZZ) {
+                Text(c.faction)
+                TextButton(onClick={detail=c.id}){Text("Detalhes de ${c.name}")}
             }
             if(account != null) Row {
                 if(c.id !in owned) Button(onClick={vm.perform { vm.repository.editOwned(account.id,Owned(c.id)) }}){Text("Tenho este")}
@@ -256,7 +275,11 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
             Field("Nome",name,{name=it}); Field("Elemento / atributo",element,{element=it});Field("Função",role,{role=it});Field("Caminho / especialidade",specialty,{specialty=it}); Field("Raridade 4 ou 5",stars,{stars=it},true);Field("Imagem HTTPS (opcional)",image,{image=it})
         }},confirmButton={TextButton(onClick={vm.perform("Personagem cadastrado") { vm.repository.saveCharacter(Character("${game.name.lowercase()}:manual-${newId()}",game,name.trim(),stars.toInt(),element,specialty,role,image));create=false }}){Text("Salvar")}},dismissButton={TextButton(onClick={create=false}){Text("Cancelar")}})
     }
-    editor?.let { o -> OwnedEditor(game,state.characters.first { it.id==o.characterId },o,{editor=null}) { edited ->
+    detail?.let { id -> state.characters.find { it.id==id }?.let { c -> CharacterDetails(c,state,account,vm){detail=null} } }
+    editor?.let { o ->
+        if(game==Game.ZZZ) ZzzOwnedEditor(state.characters.first{it.id==o.characterId},state.pack,o,{editor=null}) { edited ->
+            vm.perform("Progresso salvo") { vm.repository.editOwned(requireNotNull(account).id,edited);editor=null }
+        } else OwnedEditor(game,state.characters.first { it.id==o.characterId },o,{editor=null}) { edited ->
         vm.perform("Progresso salvo") { vm.repository.editOwned(requireNotNull(account).id,edited); editor=null }
     } }
 }
@@ -307,8 +330,14 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     LazyColumn(contentPadding=PaddingValues(18.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
         item { Field("Buscar build por personagem",query,{query=it}) }
         if(builds.isEmpty())item{Text("Não há build verificada neste pacote para a busca. Nenhuma recomendação será gerada sem fonte.")}
-        items(builds,key={it.id}) { b -> Section("${chars[b.characterId]?.name} • ${b.title}") {
+        items(builds,key={it.id}) { b -> BuildCard(b,game,account,state,vm) }
+    }
+}
+@Composable internal fun BuildCard(b:Build,game:Game,account:Account?,state:HubState,vm:HubViewModel) {
+    Section("${state.characters.find{it.id==b.characterId}?.name} • ${b.title}") {
             Text(b.role,color=MaterialTheme.colorScheme.primary)
+            BuildEquipment(b,state.pack)
+            if(b.statAdvice.isNotBlank()) { Text("Referências de atributos • confira o contexto");Text(b.statAdvice) }
             if(b.bis.isNotEmpty())Text("Best in Slot: ${b.bis.joinToString()}")
             if(b.premium.isNotEmpty())Text("Premium: ${b.premium.joinToString()}")
             if(b.accessible.isNotEmpty())Text("Acessíveis / F2P: ${b.accessible.joinToString()}")
@@ -333,9 +362,10 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
                 Button(onClick={vm.perform("Build selecionada") { vm.repository.editOwned(account.id,owned.copy(buildId=b.id)) }}){Text(if(owned.buildId==b.id)"Build selecionada ✓" else "Usar esta build")}
             } else Text("Marque o personagem como possuído para comparar atributos.")
             b.sources.forEach { SourceView(it) }
-        } }
+
     }
 }
+
 @Composable private fun MaterialsPage(game:Game,account:Account?,state:HubState,vm:HubViewModel) {
     if(account==null){EmptyAccount();return}
     var query by rememberSaveable(game){mutableStateOf("")}

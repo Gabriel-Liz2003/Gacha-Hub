@@ -1,0 +1,3465 @@
+{
+  "checkedAt": "2026-09-09",
+  "method": "Recommendations normalized from individual Prydwen guides. Ordinal equipment choices; no copied DPS percentages or prose reviews. Patch is the build review patch, not the profile consultation date.",
+  "rows": [
+    {
+      "name": "Alice",
+      "url": "https://www.prydwen.gg/zenless/characters/alice",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.1",
+      "weapons": [
+        14140,
+        14126,
+        14118,
+        13008,
+        13009
+      ],
+      "sets": [
+        {
+          "four": 32600,
+          "two": [
+            33000,
+            31100,
+            31300,
+            31800,
+            32800
+          ]
+        },
+        {
+          "four": 31400,
+          "two": [
+            33000,
+            31100,
+            31300,
+            31800,
+            32600,
+            32800
+          ]
+        }
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency > ATK%",
+        "5": "PEN Ratio% > Physical DMG% > ATK%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": "Anomaly Proficiency > ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2600 - 2900+\n\n  * HP: 9500+\n\n  * DEF: 750+\n\n  * AP: 330 - 420+\n\n  * AM: 184+ (60 Higher in combat with Sig)",
+      "skillPriority": [
+        "Basic Attack",
+        "Chain Attack",
+        "Special Attack",
+        "Dodge",
+        "Assist"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Burnice",
+        "Grace",
+        "Lucy",
+        "Nicole",
+        "Vivian",
+        "Yanagi",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Anby",
+      "url": "https://www.prydwen.gg/zenless/characters/anby-demara",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.0",
+      "weapons": [
+        14110,
+        13005,
+        13006,
+        14114,
+        13101
+      ],
+      "sets": [
+        {
+          "four": 33200,
+          "two": [
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            33200,
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 31900,
+          "two": [
+            33200,
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 31200,
+          "two": [
+            33200,
+            31600
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Electric DMG% > ATK%",
+        "6": "Impact"
+      },
+      "substats": "CRIT RATE = CRIT DMG > ATK% > PEN = ATK",
+      "statNotes": "* Impact: 169 - 190+\n\n  * ATK: 1700 - 2000+ (Optional)\n\n  * HP: 9500+\n\n  * DEF: 800+\n\n  * CRIT RATE: 50%+ (Needed for King of the Summit)\n  * CRIT DMG: 100% - 120%+ (Optional)",
+      "skillPriority": [
+        "Special Attack",
+        "Basic Attack",
+        "Chain Attack",
+        "Dodge",
+        "Assist"
+      ],
+      "synergies": [
+        "Harumasa",
+        "Nicole",
+        "Qingyi",
+        "Zhu Yuan"
+      ]
+    },
+    {
+      "name": "Anby: Soldier 0",
+      "url": "https://www.prydwen.gg/zenless/characters/anby-demara-soldier-0",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.5",
+      "weapons": [
+        14138,
+        14146,
+        14132,
+        13015,
+        13004
+      ],
+      "sets": [
+        {
+          "four": 32900,
+          "two": [
+            31000,
+            31400,
+            32800,
+            32400,
+            32700,
+            31100
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Electric DMG% > ATK%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT RATE = CRIT DMG > ATK% > PEN = ATK",
+      "statNotes": "* ATK: 2800 - 3200+\n\n  * HP: 10000+\n\n  * DEF: 800+\n  * CRIT RATE: 58% - 78% (before Additional Ability and Shadow Harmony)\n\n  * CRIT DMG: 160% - 200%+ (before Core Passive)\n\n    * CRIT is a more valuable stat for S0 Anby compared to other characters, due to the additional scaling granted by her Core Passive. The 30% CRIT DMG multiplier to Aftershock damage makes stacking both CRIT-related stats even more of a priority.",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Basic Attack",
+        "Dodge",
+        "Assist"
+      ],
+      "synergies": [
+        "Anby",
+        "Astra Yao",
+        "Ju Fufu",
+        "Lucy",
+        "Nicole",
+        "Orphie & Magus",
+        "Pulchra",
+        "Seed",
+        "Trigger"
+      ]
+    },
+    {
+      "name": "Anton",
+      "url": "https://www.prydwen.gg/zenless/characters/anton",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 1.5",
+      "weapons": [
+        14132,
+        14120,
+        14104,
+        13001,
+        13004,
+        13015,
+        14001,
+        13013,
+        13111
+      ],
+      "sets": [
+        {
+          "four": 32400,
+          "two": [
+            31000,
+            31400,
+            31100
+          ]
+        },
+        {
+          "four": 31100,
+          "two": [
+            31000,
+            31400,
+            32400
+          ]
+        },
+        {
+          "four": 31000,
+          "two": [
+            31100,
+            31400,
+            32400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Electric DMG%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT RATE = CRIT DMG > ATK% > PEN = ATK",
+      "statNotes": "* ATK: 2300-2800+\n\n  * HP: 9000+\n\n  * DEF: 800+\n\n  * CRIT RATE: 70-100%\n\n  * CRIT DMG: 120-160%+",
+      "skillPriority": [
+        "Chain Attack",
+        "Basic Attack",
+        "Special Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Grace",
+        "Nicole",
+        "Qingyi",
+        "Trigger"
+      ]
+    },
+    {
+      "name": "Aria",
+      "url": "https://www.prydwen.gg/zenless/characters/aria",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.6",
+      "weapons": [
+        14150,
+        14133,
+        13009,
+        13008,
+        14118
+      ],
+      "sets": [
+        {
+          "four": 33000,
+          "two": [
+            31300,
+            31800,
+            33600,
+            32300
+          ]
+        },
+        {
+          "four": 33600,
+          "two": [
+            33000,
+            31300,
+            31800
+          ]
+        }
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "Ether DMG% = ATK% > PEN Ratio%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": "Anomaly Proficiency > ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2600 - 2900+\n\n  * HP: 9500+\n\n  * DEF: 750+\n\n  * Anomaly Proficiency: 330 - 420+\n\n  * Anomaly Mastery: 184 - 244",
+      "skillPriority": [
+        "Basic Attack",
+        "Assist",
+        "Special Attack",
+        "Chain Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Dialyn",
+        "Lycaon",
+        "Sunna",
+        "Trigger",
+        "Yuzuha",
+        "Zhao"
+      ]
+    },
+    {
+      "name": "Astra Yao",
+      "url": "https://www.prydwen.gg/zenless/characters/astra-yao",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.2",
+      "weapons": [
+        14131,
+        13113,
+        13115,
+        13103
+      ],
+      "sets": [
+        {
+          "four": 32800,
+          "two": [
+            31600,
+            33400,
+            31400
+          ]
+        },
+        {
+          "four": 33400,
+          "two": [
+            31600,
+            31400,
+            32800
+          ]
+        }
+      ],
+      "slots": {
+        "4": "ATK%",
+        "5": "ATK%",
+        "6": "Energy Regen = ATK%"
+      },
+      "substats": "ATK% > Flat ATK (Top Priorities Until Ability Cap) > Anomaly Proficiency > PEN",
+      "statNotes": "* ATK: 3430+\n\n    * Astra requires at minimum ~3430 ATK to get the maximum effect out of her Core Skill team-wide buff.\n    * Because of the potency of this buff, reaching this ATK breakpoint is the most important thing Astra can do with her Set Bonus, Main Stats, Sub Stats, and W-Engine choice. Use each of these methods to stack ATK until you have enough.\n\n  * HP: 10500+\n\n  * DEF: 800+\n\n  * Energy Regen: 0 - 130% (Dependant on Secondary Disc Set, Disc Main Stat and W-Engine)\n    * Gaining more ER is equivalent to gaining more free Quick Assists. Because of this getting as much Energy Regen as possible is very beneficial and picking it up whenever it doesn't interfere with you reaching 3430 ATK or more is a top priority.\n\nAfter achieving or exceeding all the stat goals above, you can aim to maximize Astra's damage potential by either stacking CRIT or Anomaly (not both) - any amount of either of the offensive stats is beneficial.\n\n  * CRIT RATE: Any Amount\n  * CRIT DMG: Any Amount\n\nOR\n\n  * Anomaly Proficiency: Any Amount",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Assist",
+        "Dodge",
+        "Basic Attack"
+      ],
+      "synergies": [
+        "Anby",
+        "Anby: Soldier 0",
+        "Anton",
+        "Billy",
+        "Burnice",
+        "Evelyn",
+        "Jane Doe",
+        "Miyabi",
+        "Nekomata",
+        "Nicole",
+        "Seed",
+        "Soldier 11",
+        "Trigger",
+        "Yanagi",
+        "Ye Shunguang",
+        "Zhu Yuan"
+      ]
+    },
+    {
+      "name": "Banyue",
+      "url": "https://www.prydwen.gg/zenless/characters/banyue",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.4",
+      "weapons": [
+        14147,
+        14137,
+        13019,
+        13144,
+        13012,
+        13014
+      ],
+      "sets": [
+        {
+          "four": 33100,
+          "two": [
+            31000,
+            32700
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT DMG% > CRIT Rate%",
+        "5": "Fire DMG% > HP%",
+        "6": "HP%"
+      },
+      "substats": "CRIT Rate = CRIT DMG > HP% > ATK% > Flat HP",
+      "statNotes": "* SHEER FORCE: 2200+\n\n  * ATK: 1800 - 2000+\n\n  * HP: 18,000+\n\n  * DEF: 600+\n\n  * CRIT RATE: 90 - 100% (In combat; Including Disc Drive Bonus & Signature Weapon)\n\n  * CRIT DMG: 120 - 150%+",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Caesar",
+        "Dialyn",
+        "Ju Fufu",
+        "Lucia",
+        "Pan Yinhu",
+        "Trigger"
+      ]
+    },
+    {
+      "name": "Ben",
+      "url": "https://www.prydwen.gg/zenless/characters/ben",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.6",
+      "weapons": [
+        13142,
+        14143,
+        14109,
+        14138,
+        14132
+      ],
+      "sets": [
+        {
+          "four": 32200,
+          "two": [
+            31000,
+            32700,
+            32800,
+            31400,
+            31100
+          ]
+        },
+        {
+          "four": 31000,
+          "two": [
+            32700,
+            32200,
+            32800,
+            31400,
+            31100
+          ]
+        },
+        {
+          "four": 31100,
+          "two": [
+            31000,
+            32700,
+            32200,
+            32800,
+            31400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Fire DMG% = PEN Ratio%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT RATE% (aim for 70%+) = CRIT DMG% > ATK% > Flat PEN = Flat ATK",
+      "statNotes": "* ATK: 2700 - 3600+\n\n  * HP: 11500+\n\n  * DEF: 1400 - 2600+\n  * CRIT RATE: 50% - 60%+\n\n  * CRIT DMG: 100% - 120%+",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Assist",
+        "Basic Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Burnice",
+        "Dialyn",
+        "Ju Fufu",
+        "Koleda",
+        "Lighter",
+        "Lucy",
+        "Nicole",
+        "Orphie & Magus",
+        "Pulchra",
+        "Trigger",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Billy",
+      "url": "https://www.prydwen.gg/zenless/characters/billy-kid",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.8",
+      "weapons": [
+        14104,
+        14143,
+        14132,
+        14102,
+        13108,
+        13004,
+        13001,
+        14001,
+        13013
+      ],
+      "sets": [
+        {
+          "four": 31000,
+          "two": [
+            32700,
+            31400,
+            32800,
+            31100
+          ]
+        },
+        {
+          "four": 32900,
+          "two": [
+            31000,
+            32700,
+            31100
+          ]
+        },
+        {
+          "four": 31100,
+          "two": [
+            31000,
+            32700,
+            31400,
+            32800
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% = CRIT DMG%",
+        "5": "PEN Ratio >= ATK % > Physical DMG %",
+        "6": "ATK%"
+      },
+      "substats": "CRIT RATE = CRIT DMG > ATK% > PEN = ATK",
+      "statNotes": "* ATK: 2400-2800+\n\n  * HP: 9000+\n\n  * DEF: 800+\n\n  * CRIT RATE: 70-80%\n\n  * CRIT DMG: 140-160%+",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Dodge",
+        "Basic Attack",
+        "Assist"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Caesar",
+        "Dialyn",
+        "Nicole",
+        "Sunna",
+        "Trigger"
+      ]
+    },
+    {
+      "name": "Billy - Starlight",
+      "url": "https://www.prydwen.gg/zenless/characters/billy-starlight",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.8",
+      "weapons": [
+        14153,
+        14137,
+        13019,
+        14102,
+        13144,
+        13012,
+        13014
+      ],
+      "sets": [
+        {
+          "four": 33100,
+          "two": [
+            31000,
+            32700,
+            32600,
+            33500,
+            32800,
+            31400,
+            33700
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% = CRIT DMG% = HP%",
+        "5": "Physical DMG% > HP%",
+        "6": "HP%"
+      },
+      "substats": "CRIT RATE > CRIT DMG = HP% > Flat HP > Flat ATK",
+      "statNotes": "* SHEER FORCE: 2200+\n\n  * ATK: 1800 - 2000+\n\n  * HP: 18,000+\n\n  * DEF: 600+\n\n  * CRIT RATE: 90 - 100% (In combat; Including Disc Drive Bonus & Signature Weapon)\n\n  * CRIT DMG: 120 - 150%+",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Billy",
+        "Caesar",
+        "Dialyn",
+        "Ju Fufu",
+        "Lucia",
+        "Pan Yinhu",
+        "Qingyi",
+        "Trigger"
+      ]
+    },
+    {
+      "name": "Burnice",
+      "url": "https://www.prydwen.gg/zenless/characters/burnice",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.5",
+      "weapons": [
+        14117,
+        14140,
+        13009,
+        13008
+      ],
+      "sets": [
+        {
+          "four": 31300,
+          "two": [
+            31600,
+            33400
+          ]
+        },
+        {
+          "four": 31800,
+          "two": [
+            31600,
+            33400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "PEN Ratio% >= Fire DMG%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": "Anomaly Proficiency > ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2500 - 3200+ (Depends on the W-engine and Drive main stats)\n\n  * HP: 9500 - 10000+\n\n  * DEF: 800+\n\n  * Anomaly Proficiency: 350 - 400+\n\n  * Anomaly Mastery: 153+",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Nangong Yu",
+        "Remielle",
+        "Velina",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Caesar",
+      "url": "https://www.prydwen.gg/zenless/characters/caesar",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.0",
+      "weapons": [
+        14107,
+        13007,
+        13011,
+        13127
+      ],
+      "sets": [
+        {
+          "four": 32800,
+          "two": [
+            31200,
+            33200,
+            31900
+          ]
+        },
+        {
+          "four": 31900,
+          "two": [
+            31200,
+            33200
+          ]
+        },
+        {
+          "four": 31300,
+          "two": [
+            31200,
+            33200,
+            31900
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% = Anomaly Proficiency",
+        "5": "Physical DMG% > ATK% = PEN Ratio%",
+        "6": "Impact"
+      },
+      "substats": "CRIT RATE = CRIT DMG > ATK% > PEN = ATK",
+      "statNotes": "* ATK: 1400 - 2000+ (Optional)\n\n  * HP: 12000+\n\n  * DEF: 1000+\n\n  * IMPACT: 145 - 170+ (Most Important Stat)\n\nCHOOSE 1 (based on the team you use Caesar in):\n\n  * Anomaly Proficiency: 250 - 330+ (Optional)\n\n  * Anomaly Mastery: 87+ (Optional)\n\nOR\n\n  * CRIT RATE: 50 - 60%+ (Optional)\n\n  * CRIT DMG: 100 - 120%+ (Optional)",
+      "skillPriority": [
+        "Assist",
+        "Special Attack",
+        "Basic Attack",
+        "Dodge",
+        "Chain Attack"
+      ],
+      "synergies": [
+        "Anby",
+        "Anby: Soldier 0",
+        "Astra Yao",
+        "Billy",
+        "Corin",
+        "Lucy",
+        "Nicole",
+        "Trigger"
+      ]
+    },
+    {
+      "name": "Cissia",
+      "url": "https://www.prydwen.gg/zenless/characters/cissia",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.7",
+      "weapons": [
+        14152,
+        14130,
+        13111,
+        14146,
+        14138
+      ],
+      "sets": [
+        {
+          "four": 32800,
+          "two": [
+            31600,
+            33400,
+            32700,
+            32400,
+            31000
+          ]
+        },
+        {
+          "four": 33300,
+          "two": [
+            31600,
+            33400,
+            32700,
+            32800,
+            31400,
+            32400,
+            31000
+          ]
+        },
+        {
+          "four": 32400,
+          "two": [
+            31600,
+            33400,
+            32700
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% > CRIT DMG%",
+        "5": "Electric DMG% > ATK%",
+        "6": "Energy Regen"
+      },
+      "substats": "CRIT RATE = CRIT DMG = ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2500 - 2700+\n\n  * HP: 9000+\n\n  * DEF: 800+\n\n  * CRIT RATE: 50% - 57% (with Signature W-Engine)\n\n  * CRIT DMG: 110%+",
+      "skillPriority": [
+        "Basic Attack",
+        "Special Attack",
+        "Chain Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Anby",
+        "Astra Yao",
+        "Dialyn",
+        "Harumasa",
+        "Ju Fufu",
+        "Nicole",
+        "Qingyi",
+        "Seed",
+        "Sunna",
+        "Trigger"
+      ]
+    },
+    {
+      "name": "Claret",
+      "url": "https://www.prydwen.gg/zenless/characters/claret",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 3.2",
+      "weapons": [
+        14161,
+        13021,
+        13017
+      ],
+      "sets": [
+        {
+          "four": 34200,
+          "two": [
+            31100,
+            31000,
+            31500,
+            32400,
+            32700
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate%",
+        "5": "PEN Ratio%",
+        "6": "DEF%"
+      },
+      "substats": "CRIT RATE > DEF% > CRIT DMG > PEN > DEF",
+      "statNotes": "* DEF: 2300- 2600+\n\n  * HP: 9500+\n\n  * CRIT RATE: 128,9% (with Signature)\nCRIT DMG is converted to CRIT RATE. Try to get as close as possible to 200% after factoring in Claret’s Core Passive, W-Engine and team buffs!",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Lycaon",
+        "Nicole",
+        "Norma",
+        "Rina",
+        "Trigger"
+      ]
+    },
+    {
+      "name": "Corin",
+      "url": "https://www.prydwen.gg/zenless/characters/corin",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.4",
+      "weapons": [
+        14146,
+        14132,
+        14102,
+        14129,
+        13106,
+        13004
+      ],
+      "sets": [
+        {
+          "four": 31100,
+          "two": [
+            31000,
+            32700,
+            32600,
+            32800,
+            31400
+          ]
+        },
+        {
+          "four": 31400,
+          "two": [
+            31000,
+            32700,
+            32600,
+            32800
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate%",
+        "5": "PEN Ratio% > ATK% = Physical DMG%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT RATE = CRIT DMG > ATK% > PEN = ATK",
+      "statNotes": "* ATK: 2400 - 3000+\n\n  * HP: 9000+\n\n  * DEF: 800+\n\n  * CRIT RATE: 70% - 80%+\n  * CRIT DMG: 140% - 160%+",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Assist",
+        "Dodge",
+        "Basic Attack"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Dialyn",
+        "Ju Fufu",
+        "Nicole",
+        "Seed",
+        "Trigger",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Dialyn",
+      "url": "https://www.prydwen.gg/zenless/characters/dialyn",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.4",
+      "weapons": [
+        14148,
+        14110,
+        13005,
+        13006
+      ],
+      "sets": [
+        {
+          "four": 33200,
+          "two": [
+            31000,
+            31600
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate%",
+        "5": "ATK% >= Physical DMG% = PEN Ratio%",
+        "6": "Energy Regen"
+      },
+      "substats": "CRIT RATE (until 100%) > CRIT DMG = ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2400+\n\n  * HP: 9500+\n\n  * DEF: 800+\n\n  * CRIT RATE: 80% - 100%\n\n  * CRIT DMG: 100%+",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Assist",
+        "Basic Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Anton",
+        "Banyue",
+        "Billy",
+        "Corin",
+        "Ellen",
+        "Evelyn",
+        "Harumasa",
+        "Hugo",
+        "Lighter",
+        "Manato",
+        "Nekomata",
+        "Ye Shunguang",
+        "Yidhari",
+        "Yixuan",
+        "Zhu Yuan"
+      ]
+    },
+    {
+      "name": "Ellen",
+      "url": "https://www.prydwen.gg/zenless/characters/ellen",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.5",
+      "weapons": [
+        14119,
+        14129,
+        14146,
+        14132,
+        14102,
+        13004
+      ],
+      "sets": [
+        {
+          "four": 31100,
+          "two": [
+            31000,
+            32500,
+            32700,
+            32800,
+            31400
+          ]
+        },
+        {
+          "four": 31000,
+          "two": [
+            31100,
+            32500,
+            32700,
+            32800,
+            31400
+          ]
+        },
+        {
+          "four": 32900,
+          "two": [
+            31100,
+            31000,
+            32700,
+            32800,
+            31400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT DMG%",
+        "5": "PEN Ratio% > Ice DMG%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT DMG >= CRIT Rate > ATK% > PEN = ATK",
+      "statNotes": "* ATK: 2600 - 3000+\n\n  * HP: 9500+\n\n  * DEF: 780+\n\n  * CRIT RATE: 90 - 100%\n\n  * CRIT DMG: 120% - 180%+",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Basic Attack",
+        "Dodge",
+        "Assist"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Dialyn",
+        "Ju Fufu",
+        "Lighter",
+        "Lycaon",
+        "Nicole",
+        "Soukaku",
+        "Sunna",
+        "Trigger",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Evelyn",
+      "url": "https://www.prydwen.gg/zenless/characters/evelyn",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.4",
+      "weapons": [
+        14132,
+        14138,
+        14146,
+        13004,
+        14102
+      ],
+      "sets": [
+        {
+          "four": 31400,
+          "two": []
+        },
+        {
+          "four": 31100,
+          "two": []
+        },
+        {
+          "four": 32800,
+          "two": []
+        }
+      ],
+      "slots": {
+        "4": "ATK% > CRIT DMG%",
+        "5": "PEN Ratio% > Fire DMG% > ATK%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT RATE (Until 75% in stat screen) > CRIT DMG = ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2600 - 3400+\n\n  * HP: 10000+\n\n  * DEF: 800+\n\n  * CRIT RATE: 80 - 100% (including core passive)\n    * Evelyn requires 80% CRIT RATE in order to activate her Additional ability. Including the 25% CRIT RATE from her Core Passive, she'll need at least 55% in order to operate optimally - ensure you have at least this much.\n\n  * CRIT DMG: 160 - 200%+",
+      "skillPriority": [
+        "Chain Attack",
+        "Basic Attack",
+        "Special Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Dialyn",
+        "Ju Fufu",
+        "Koleda",
+        "Lighter",
+        "Lucy",
+        "Norma",
+        "Seed",
+        "Trigger",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Grace",
+      "url": "https://www.prydwen.gg/zenless/characters/grace-howard",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.5",
+      "weapons": [
+        14122,
+        14140,
+        14118,
+        13009,
+        13008
+      ],
+      "sets": [
+        {
+          "four": 32400,
+          "two": [
+            31100,
+            33000,
+            31300,
+            32800,
+            31400
+          ]
+        },
+        {
+          "four": 31800,
+          "two": [
+            31100,
+            33000,
+            31300,
+            32800,
+            31400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency > ATK%",
+        "5": "PEN Ratio% > Electric DMG% >= ATK%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": "Anomaly Proficiency > ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2300 - 3000+\n\n  * HP: 9500+\n\n  * DEF: 800+\n\n  * Anomaly Mastery: 150 - 190+\n\n  * Anomaly Proficiency: 350 - 450+",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Assist",
+        "Basic Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Nangong Yu",
+        "Remielle",
+        "Velina",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Harumasa",
+      "url": "https://www.prydwen.gg/zenless/characters/harumasa",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.6",
+      "weapons": [
+        14146,
+        14120,
+        14104,
+        14132,
+        14138,
+        13004
+      ],
+      "sets": [
+        {
+          "four": 32400,
+          "two": [
+            31400,
+            32800,
+            32700,
+            32900,
+            31000
+          ]
+        },
+        {
+          "four": 32900,
+          "two": [
+            32700,
+            31000,
+            32800,
+            31400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "ATK% > Crit DMG% = Crit Rate%",
+        "5": "ATK% > Electric DMG%",
+        "6": "ATK%"
+      },
+      "substats": "Crit Rate (until 75% in stat screen) > ATK% > Crit DMG% > Flat PEN > Flat ATK",
+      "statNotes": "* ATK: 2600 - 3400+\n\n  * HP: 10000+\n\n  * DEF: 800+\n\n  * CRIT RATE: 75% (Not more)\n\n  * CRIT DMG: 150-190%",
+      "skillPriority": [
+        "Dodge",
+        "Chain Attack",
+        "Special Attack",
+        "Basic Attack",
+        "Assist"
+      ],
+      "synergies": [
+        "Anby",
+        "Astra Yao",
+        "Dialyn",
+        "Nicole",
+        "Qingyi",
+        "Rina",
+        "Seed",
+        "Sunna",
+        "Trigger",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Hugo",
+      "url": "https://www.prydwen.gg/zenless/characters/hugo",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.4",
+      "weapons": [
+        14129,
+        14146,
+        14132,
+        14102,
+        13015
+      ],
+      "sets": [
+        {
+          "four": 31400,
+          "two": [
+            32500,
+            31000,
+            31100,
+            32800,
+            32700
+          ]
+        },
+        {
+          "four": 31100,
+          "two": [
+            32500,
+            31000,
+            31400,
+            32800,
+            32700
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT DMG% > CRIT Rate%",
+        "5": "Ice DMG% > ATK% = PEN Ratio%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT Rate > CRIT DMG > ATK% > Flat ATK > PEN",
+      "statNotes": "* ATK: 2600 - 3000+\n\n  * HP: 10000+\n\n  * DEF: 800+\n\n  * CRIT RATE: 70 - 88%\n\n  * CRIT DMG: 160 - 200%+",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Dialyn",
+        "Lighter",
+        "Lycaon",
+        "Pulchra",
+        "Qingyi",
+        "Soukaku",
+        "Trigger"
+      ]
+    },
+    {
+      "name": "Jane Doe",
+      "url": "https://www.prydwen.gg/zenless/characters/jane-doe",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 3.1",
+      "weapons": [
+        14126,
+        14140,
+        14118,
+        13008
+      ],
+      "sets": [
+        {
+          "four": 32600,
+          "two": [
+            31100,
+            33000,
+            31300,
+            31800,
+            32800,
+            31400,
+            33500
+          ]
+        }
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "PEN Ratio% > Physical DMG% > ATK%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": "Anomaly Proficiency >= ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2300 - 2800+\n\n  * HP: 9000 - 10000+\n\n  * DEF: 800+\n\n  * Anomaly Proficiency: 375 - 420+ (IN COMBAT; 420 Required for cap of 600 Flat Combat Attack in Passion State)\n\n  * Anomaly Mastery: 192+",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Basic Attack",
+        "Dodge",
+        "Assist"
+      ],
+      "synergies": [
+        "Alice",
+        "Astra Yao",
+        "Burnice",
+        "Lucy",
+        "Nangong Yu",
+        "Nicole",
+        "Remielle",
+        "Seth",
+        "Trigger",
+        "Velina",
+        "Vivian",
+        "Yanagi",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Ju Fufu",
+      "url": "https://www.prydwen.gg/zenless/characters/ju-fufu",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.0",
+      "weapons": [
+        14139,
+        14116,
+        14110,
+        13006
+      ],
+      "sets": [
+        {
+          "four": 33200,
+          "two": [
+            31200,
+            31000,
+            32800,
+            31400,
+            31600
+          ]
+        },
+        {
+          "four": 31600,
+          "two": [
+            33200,
+            31200,
+            32800,
+            31400
+          ]
+        },
+        {
+          "four": 31900,
+          "two": [
+            33200,
+            32800,
+            31400,
+            31600
+          ]
+        },
+        {
+          "four": 31200,
+          "two": [
+            33200,
+            32800,
+            31400,
+            31600
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% = ATK%",
+        "5": "ATK%",
+        "6": "Impact = ATK%"
+      },
+      "substats": "CRIT Rate (until 50% if using 4P King) > ATK/Flat ATK (until max. 3400) > CRIT DMG > PEN",
+      "statNotes": "* IMPACT: 139 - 160+\n  * ATK: 3100-3400\n\n  * HP: 11,000+\n\n  * DEF: 850+\n\n  * CRIT RATE: 50%+ (If using 4P King of the Summit)",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Anby",
+        "Anby: Soldier 0",
+        "Banyue",
+        "Evelyn",
+        "Hugo",
+        "Lighter",
+        "Lucia",
+        "Lycaon",
+        "Manato",
+        "Orphie & Magus",
+        "Soldier 11",
+        "Trigger",
+        "Yidhari",
+        "Yixuan"
+      ]
+    },
+    {
+      "name": "Koleda",
+      "url": "https://www.prydwen.gg/zenless/characters/koleda",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 3.2",
+      "weapons": [
+        14110,
+        13006,
+        14116,
+        13005,
+        14157
+      ],
+      "sets": [
+        {
+          "four": 33200,
+          "two": [
+            31200,
+            31600,
+            33400
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            33200,
+            31200,
+            31600,
+            33400
+          ]
+        },
+        {
+          "four": 31900,
+          "two": [
+            33200,
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 31200,
+          "two": [
+            33200,
+            31600
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Fire DMG% > ATK%",
+        "6": "Impact"
+      },
+      "substats": "CRIT RATE > CRIT DMG > ATK% > PEN = ATK",
+      "statNotes": "* Impact: 166 - 190+\n\n  * ATK: 1700 - 2000+ (Optional)\n\n  * HP: 10000+\n\n  * DEF: 800+\n\n  * CRIT RATE: 50%+ (Needed for King of the Summit)\n  * CRIT DMG: 100% - 120%+ (Optional)",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Assist",
+        "Dodge",
+        "Basic Attack"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Evelyn",
+        "Lucy",
+        "Manato",
+        "Nicole",
+        "Soldier 11",
+        "Yidhari",
+        "Yixuan",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Lighter",
+      "url": "https://www.prydwen.gg/zenless/characters/lighter",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.0",
+      "weapons": [
+        14116,
+        14125,
+        14110,
+        13006,
+        14114
+      ],
+      "sets": [
+        {
+          "four": 33200,
+          "two": [
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            33200,
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 31900,
+          "two": [
+            33200,
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 31200,
+          "two": [
+            33200,
+            31600
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "ATK% = Fire DMG% = PEN Ratio%",
+        "6": "Impact"
+      },
+      "substats": "CRIT RATE > CRIT DMG > ATK% > PEN = ATK",
+      "statNotes": "* Impact: 170 - 195+\n\n  * ATK: 1700 - 2000+ (Optional)\n\n  * HP: 10500+\n\n  * DEF: 800+\n\n  * CRIT RATE: 50%+ (Needed for King of the Summit)\n  * CRIT DMG: 100% - 120%+ (Optional)",
+      "skillPriority": [
+        "Basic Attack",
+        "Special Attack",
+        "Chain Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Ellen",
+        "Evelyn",
+        "Hugo",
+        "Lucia",
+        "Lucy",
+        "Miyabi",
+        "Orphie & Magus",
+        "Soldier 11",
+        "Yidhari",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Lucia",
+      "url": "https://www.prydwen.gg/zenless/characters/lucia",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.3",
+      "weapons": [
+        14145,
+        14121,
+        13115,
+        14002
+      ],
+      "sets": [
+        {
+          "four": 33400,
+          "two": [
+            33100
+          ]
+        }
+      ],
+      "slots": {
+        "4": "HP%",
+        "5": "HP%",
+        "6": "HP%"
+      },
+      "substats": "HP% > HP > CRIT Rate >= CRIT DMG",
+      "statNotes": "* ATK: 1800+\n\n  * HP: 22000 - 24000+ (Focus on hitting 24000!)\n\n  * DEF: 800+",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Banyue",
+        "Manato",
+        "Yidhari",
+        "Yixuan"
+      ]
+    },
+    {
+      "name": "Lucy",
+      "url": "https://www.prydwen.gg/zenless/characters/lucy",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.2",
+      "weapons": [
+        13115,
+        14121,
+        13002,
+        12005,
+        14002
+      ],
+      "sets": [
+        {
+          "four": 33400,
+          "two": [
+            31100,
+            32800,
+            31400,
+            33000,
+            31800,
+            32600
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            31100,
+            31400,
+            33000,
+            31800,
+            32600
+          ]
+        },
+        {
+          "four": 31600,
+          "two": [
+            31100,
+            32800,
+            31400,
+            33000,
+            31800,
+            32600
+          ]
+        }
+      ],
+      "slots": {
+        "4": "ATK% > CRIT Rate%",
+        "5": "ATK%",
+        "6": "Energy Regen = ATK%"
+      },
+      "substats": "ATK% (top priority until ability cap) = CRIT RATE = CRIT DMG > PEN = ATK",
+      "statNotes": "* ATK:\n\n    * 1923 (Lvl 16 Special)\n\n    * 2000 (Lvl 15 Special)\n\n    * 2475 (Lvl 10 Special)\n\n    * 2700 (Lvl 8 Special)\n\n  * HP: 10000+\n\n  * DEF: 800+\n\n  * CRIT RATE: 40% - 60%+ (Optional)\n\n  * CRIT DMG: 100% - 120%+ (Optional)",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Burnice",
+        "Evelyn",
+        "Lighter",
+        "Piper"
+      ]
+    },
+    {
+      "name": "Lycaon",
+      "url": "https://www.prydwen.gg/zenless/characters/lycaon",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.6",
+      "weapons": [
+        14116,
+        13006,
+        13005,
+        14110,
+        14114
+      ],
+      "sets": [
+        {
+          "four": 33200,
+          "two": [
+            31200,
+            31600,
+            33400
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            33200,
+            31200,
+            31600,
+            33400
+          ]
+        },
+        {
+          "four": 31900,
+          "two": [
+            33200,
+            31200,
+            31600,
+            33400
+          ]
+        },
+        {
+          "four": 31200,
+          "two": [
+            33200,
+            31600,
+            33400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Ice DMG% > ATK%",
+        "6": "Impact"
+      },
+      "substats": "CRIT RATE = CRIT DMG > ATK% > PEN = ATK",
+      "statNotes": "* Impact: 169 - 190+\n\n  * ATK: 2000 - 2200+ (Optional)\n\n  * HP: 10500+\n\n  * DEF: 850+\n  * CRIT RATE: 50%+ (Needed for King of the Summit)\n\n  * CRIT DMG: 100% - 120%+ (Optional)",
+      "skillPriority": [
+        "Special Attack",
+        "Assist",
+        "Chain Attack",
+        "Basic Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Corin",
+        "Ellen",
+        "Hugo",
+        "Miyabi",
+        "Nicole",
+        "Rina",
+        "Soukaku",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Manato",
+      "url": "https://www.prydwen.gg/zenless/characters/manato",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.4",
+      "weapons": [
+        13144,
+        14147,
+        14137,
+        13014,
+        13012
+      ],
+      "sets": [
+        {
+          "four": 33100,
+          "two": [
+            31000,
+            32700,
+            32800,
+            31400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% = CRIT DMG%",
+        "5": "Fire DMG% > HP%",
+        "6": "HP%"
+      },
+      "substats": "CRIT Rate = CRIT DMG > HP% > HP > ATK% > ATK",
+      "statNotes": "* SHEER FORCE: 2100 - 2400+\n\n  * ATK: 1800+\n\n  * HP: 18000+\n\n  * DEF: 600+\n\n  * CRIT RATE: 44% - 66%+ (90 - 100% in-combat)\n\n  * CRIT DMG: 120% - 150%+ (before combat)",
+      "skillPriority": [
+        "Chain Attack",
+        "Assist",
+        "Basic Attack",
+        "Special Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Dialyn",
+        "Ju Fufu",
+        "Lucia",
+        "Pan Yinhu"
+      ]
+    },
+    {
+      "name": "Miyabi",
+      "url": "https://www.prydwen.gg/zenless/characters/miyabi",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.1",
+      "weapons": [
+        14109,
+        14118,
+        13009,
+        13003,
+        13008
+      ],
+      "sets": [
+        {
+          "four": 32700,
+          "two": [
+            32500,
+            32800,
+            31400,
+            31100,
+            31000
+          ]
+        },
+        {
+          "four": 31000,
+          "two": [
+            32500,
+            32800,
+            31400,
+            31100,
+            32700
+          ]
+        },
+        {
+          "four": 32500,
+          "two": [
+            31000,
+            32800,
+            31400,
+            32700,
+            31100
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= ATK%",
+        "5": "Ice DMG% = ATK%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT RATE (Until 80%) >= CRIT DMG = ATK% > Anomaly Proficiency = ATK = PEN",
+      "statNotes": "* ATK: 2500 - 3600+ (Depending on Disc Drive main stat choice)\n\n  * HP: 10000+\n\n  * DEF: 800+\n\n  * Anomaly Mastery: 116+\n\n  * Anomaly Proficiency: 240+\n\n  * CRIT RATE: 75-95%\n\n  * CRIT DMG: 150-190%",
+      "skillPriority": [
+        "Basic Attack",
+        "Chain Attack",
+        "Special Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Burnice",
+        "Lighter",
+        "Lucy",
+        "Lycaon",
+        "Nicole",
+        "Piper",
+        "Soukaku",
+        "Trigger",
+        "Vivian",
+        "Yanagi",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Nangong Yu",
+      "url": "https://www.prydwen.gg/zenless/characters/nangong-yu",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.7",
+      "weapons": [
+        14151,
+        14110,
+        13020,
+        13006,
+        14139
+      ],
+      "sets": [
+        {
+          "four": 33000,
+          "two": [
+            31300,
+            31800,
+            33600,
+            32300,
+            32800,
+            31400
+          ]
+        },
+        {
+          "four": 31300,
+          "two": [
+            33000
+          ]
+        }
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "Ether DMG% = ATK% > PEN Ratio%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": "Anomaly Proficiency > ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2,200 - 2,500+\n\n  * HP: 9,500+\n\n  * DEF: 750+\n\n  * Anomaly Proficiency: 280 - 350+\n\n  * Anomaly Mastery: 173 - 211",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Alice",
+        "Aria",
+        "Burnice",
+        "Grace",
+        "Jane Doe",
+        "Miyabi",
+        "Nicole",
+        "Piper",
+        "Sunna",
+        "Yanagi",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Nekomata",
+      "url": "https://www.prydwen.gg/zenless/characters/nekomata",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 3.1",
+      "weapons": [
+        14102,
+        14132,
+        14146,
+        14138,
+        13004
+      ],
+      "sets": [
+        {
+          "four": 31000,
+          "two": [
+            31100,
+            32700,
+            32600,
+            32800,
+            31400
+          ]
+        },
+        {
+          "four": 31100,
+          "two": [
+            31000,
+            32700,
+            32600,
+            32800,
+            31400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% > CRIT DMG% = ATK%",
+        "5": "PEN Ratio% > ATK% > Physical DMG%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT RATE (Until 100%) >= CRIT DMG = ATK% > PEN = ATK",
+      "statNotes": "* ATK: 2500 - 3100+ (Optional)\n\n  * HP: 9500+\n\n  * DEF: 800+\n  * CRIT RATE: 70% - 80%+\n\n  * CRIT DMG: 140% - 160%+",
+      "skillPriority": [
+        "Dodge",
+        "Chain Attack",
+        "Special Attack",
+        "Basic Attack",
+        "Assist"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Cissia",
+        "Dialyn",
+        "Nicole",
+        "Rina",
+        "Seed",
+        "Sunna"
+      ]
+    },
+    {
+      "name": "Nicole",
+      "url": "https://www.prydwen.gg/zenless/characters/nicole-demara",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.2",
+      "weapons": [
+        13103,
+        14121,
+        13115,
+        13002,
+        12005,
+        14002
+      ],
+      "sets": [
+        {
+          "four": 33400,
+          "two": [
+            33000,
+            32800,
+            31400,
+            31800,
+            31300
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            33000,
+            31400,
+            31800,
+            31300
+          ]
+        },
+        {
+          "four": 31600,
+          "two": [
+            33000,
+            32800,
+            31400,
+            31800,
+            31300
+          ]
+        }
+      ],
+      "slots": {
+        "4": "ATK% = Anomaly Proficiency",
+        "5": "Ether DMG% > ATK%",
+        "6": "Energy Regen = ATK%"
+      },
+      "substats": "Anomaly Proficiency = ATK% > PEN = FLAT ATK",
+      "statNotes": "* ATK: 2000 - 2400+ (Optional)\n\n  * HP: 10000+\n\n  * DEF: 800+\n  * Anomaly Proficiency: 200 - 320+(Optional)",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Harumasa",
+        "Zhu Yuan"
+      ]
+    },
+    {
+      "name": "Norma",
+      "url": "https://www.prydwen.gg/zenless/characters/norma",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 3.0",
+      "weapons": [
+        14157,
+        14110,
+        13005,
+        14116,
+        13020
+      ],
+      "sets": [
+        {
+          "four": 33200,
+          "two": [
+            31600,
+            33400,
+            31000
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate%",
+        "5": "Fire DMG% > PEN Ratio% > ATK%",
+        "6": "Energy Regen = Impact%"
+      },
+      "substats": "CRIT RATE (until 100% in combat) > CRIT DMG = ATK% > Flat PEN > Flat ATK",
+      "statNotes": "* ATK: 2400+\n\n  * HP: 9500+\n\n  * DEF: 800+\n\n  * CRIT RATE: 80% - 100%\n\n  * CRIT DMG: 100%+",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Assist",
+        "Basic Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Anby",
+        "Billy",
+        "Billy - Starlight",
+        "Cissia",
+        "Dialyn",
+        "Hugo",
+        "Manato",
+        "Orphie & Magus",
+        "Pyrois",
+        "Seed",
+        "Soldier 11",
+        "Sunna"
+      ]
+    },
+    {
+      "name": "Orphie & Magus",
+      "url": "https://www.prydwen.gg/zenless/characters/orphie-and-magus",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.2",
+      "weapons": [
+        14130,
+        14132,
+        14138,
+        14129,
+        14146,
+        13013,
+        13015
+      ],
+      "sets": [
+        {
+          "four": 32900,
+          "two": [
+            31600,
+            33400
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            31600,
+            33400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT DMG% = CRIT Rate%",
+        "5": "Fire DMG% >= ATK%",
+        "6": "Energy Regen >= ATK%"
+      },
+      "substats": "CRIT DMG = CRIT Rate > ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2500 - 2700+\n\n  * HP: 10000+\n\n  * DEF: 900+\n\n  * CRIT RATE: 90 - 100% (Including Orphie Passive & Disc Drive Passive)\n\n  * CRIT DMG: 120%+\n\n  * Energy Regen: 80%+",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Assist",
+        "Basic Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Anby",
+        "Anby: Soldier 0",
+        "Astra Yao",
+        "Ju Fufu",
+        "Lighter",
+        "Lucia",
+        "Manato",
+        "Nicole",
+        "Seed",
+        "Trigger",
+        "Yidhari",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Pan Yinhu",
+      "url": "https://www.prydwen.gg/zenless/characters/pan-yinhu",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.0",
+      "weapons": [
+        14107,
+        13142,
+        13011,
+        13127
+      ],
+      "sets": [
+        {
+          "four": 32800,
+          "two": [
+            31400,
+            31600,
+            32600
+          ]
+        },
+        {
+          "four": 31900,
+          "two": [
+            31400,
+            31600,
+            32600
+          ]
+        },
+        {
+          "four": 31600,
+          "two": [
+            31400,
+            32600
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% = CRIT DMG% > ATK%",
+        "5": "Physical DMG% > ATK%",
+        "6": "ATK%"
+      },
+      "substats": "ATK%/Flat ATK (until 3000 ATK) > CRIT Rate = CRIT DMG > PEN",
+      "statNotes": "* ATK: 3000+\n\n  * HP: 10000+\n\n  * DEF: 800+\nNote: Pan Yinhu is a very low-cost Agent, as he only needs to meet his 3000 ATK requirement. Other than that, if you wish to optimize build him for damage with as much CRIT as possible (this isn't necessary though, we recommend you spare the resources).",
+      "skillPriority": [
+        "Chain Attack",
+        "Assist",
+        "Special Attack",
+        "Basic Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Banyue",
+        "Lucia",
+        "Manato",
+        "Yidhari",
+        "Yixuan"
+      ]
+    },
+    {
+      "name": "Piper",
+      "url": "https://www.prydwen.gg/zenless/characters/piper",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.4",
+      "weapons": [
+        14140,
+        14126,
+        13008,
+        13128,
+        13009
+      ],
+      "sets": [
+        {
+          "four": 32600,
+          "two": [
+            33000,
+            31100,
+            31800,
+            31300,
+            32800,
+            31400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "PEN Ratio% = ATK% = Physical DMG%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": "Anomaly Proficiency > ATK% > PEN = ATK",
+      "statNotes": "* ATK: 2500-2800+\n\n  * HP: 9000+\n\n  * DEF: 800+\n\n  * Anomaly Mastery: 150+\n\n  * Anomaly Proficiency: 350 - 450+",
+      "skillPriority": [
+        "Special Attack",
+        "Assist",
+        "Chain Attack",
+        "Basic Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Burnice",
+        "Lucy",
+        "Nangong Yu",
+        "Nicole",
+        "Remielle",
+        "Velina",
+        "Vivian",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Promeia",
+      "url": "https://www.prydwen.gg/zenless/characters/promeia",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.8",
+      "weapons": [
+        14154,
+        14118,
+        14150,
+        13009,
+        13008
+      ],
+      "sets": [
+        {
+          "four": 33800,
+          "two": [
+            33000,
+            31300,
+            31800,
+            32800,
+            31400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "Ice DMG% = ATK% > PEN Ratio%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": "Anomaly Proficiency > ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2600 - 2900+\n\n  * HP: 9500+\n\n  * DEF: 750+\n  * Anomaly Proficiency: 287 - 350+ (add +90 to values if AP mainstat W-Engine)\n\n  * Anomaly Mastery: 184 - 248",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Lycaon",
+        "Nangong Yu",
+        "Nicole",
+        "Sunna",
+        "Vivian",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Pulchra",
+      "url": "https://www.prydwen.gg/zenless/characters/pulchra",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 1.6",
+      "weapons": [
+        14116,
+        13135,
+        13005,
+        14110,
+        13006,
+        12008,
+        14003
+      ],
+      "sets": [
+        {
+          "four": 33200,
+          "two": [
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            33200,
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 31900,
+          "two": [
+            33200,
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 31200,
+          "two": [
+            33200,
+            31600
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "ATK% = Physical DMG%",
+        "6": "Impact"
+      },
+      "substats": "Anomaly Profiency > ATK% > PEN > ATK",
+      "statNotes": "* ATK: 1800 - 2200+ (Optional)\n\n  * HP: 10000+\n\n  * DEF: 850+\n\n  * IMPACT: 169 - 189+ (Most Important Stat)\n\nChoose one:\n\n  * Option 1 (Anomaly teams):\n\n    * Anomaly Proficiency: 250 - 300+ (Optional)\n\n    * Anomaly Mastery: 92+ (Optional)\n\n  * Option 2 (Crit teams):\n\n    * CRIT RATE: 50 - 60%+ (for King of the Summit)\n    * CRIT DMG: 100 - 120%+ (Optional)",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Assist",
+        "Basic Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Anby",
+        "Anby: Soldier 0",
+        "Astra Yao",
+        "Corin",
+        "Lucy",
+        "Manato",
+        "Nekomata",
+        "Nicole",
+        "Soldier 11",
+        "Yixuan"
+      ]
+    },
+    {
+      "name": "Pyrois",
+      "url": "https://www.prydwen.gg/zenless/characters/pyrois",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 3.0",
+      "weapons": [
+        14155,
+        14146
+      ],
+      "sets": [
+        {
+          "four": 34000,
+          "two": [
+            31100,
+            32700,
+            32300,
+            33600,
+            32800,
+            31400
+          ]
+        },
+        {
+          "four": 31100,
+          "two": [
+            32700,
+            32800,
+            31400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% > CRIT DMG%",
+        "5": "PEN Ratio% > Ether DMG% > ATK%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT RATE (until 100% in combat) > CRIT DMG = ATK% > Flat PEN > Flat ATK",
+      "statNotes": "* ATK: 2800 - 3200+\n\n  * HP: 9500+\n\n  * DEF: 750+\n\n  * CRIT RATE: 57% - 72% (before Sol Exuvia and M1)\n\n  * CRIT DMG: 140% - 180%+",
+      "skillPriority": [
+        "Chain Attack",
+        "Basic Attack",
+        "Special Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Dialyn",
+        "Ju Fufu",
+        "Lycaon",
+        "Nangong Yu",
+        "Nicole",
+        "Rina",
+        "Sunna",
+        "Zhao"
+      ]
+    },
+    {
+      "name": "Qingyi",
+      "url": "https://www.prydwen.gg/zenless/characters/qingyi",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 1.5",
+      "weapons": [
+        14125,
+        14114,
+        13005,
+        13006
+      ],
+      "sets": [
+        {
+          "four": 33200,
+          "two": [
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            33200,
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 31900,
+          "two": [
+            33200,
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 31200,
+          "two": [
+            33200,
+            31600
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Electric DMG% > ATK%",
+        "6": "Impact"
+      },
+      "substats": "CRIT RATE > CRIT DMG > ATK% > PEN = ATK",
+      "statNotes": "* Impact: 169 - 193+\n\n  * ATK: 1800 - 2000+ (Optional - gains more in combat)\n\n  * HP: 10000+\n\n  * DEF: 800+\n  * CRIT RATE: 50%+ (Needed for King of the Summit)\n\n  * CRIT DMG: 100% - 120%+ (Optional)",
+      "skillPriority": [
+        "Basic Attack",
+        "Special Attack",
+        "Chain Attack",
+        "Dodge",
+        "Assist"
+      ],
+      "synergies": [
+        "Anby",
+        "Anby: Soldier 0",
+        "Astra Yao",
+        "Harumasa",
+        "Hugo",
+        "Lighter",
+        "Lycaon",
+        "Manato",
+        "Nicole",
+        "Pulchra",
+        "Yixuan",
+        "Yuzuha",
+        "Zhu Yuan"
+      ]
+    },
+    {
+      "name": "Remielle",
+      "url": "https://www.prydwen.gg/zenless/characters/remielle",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 3.1",
+      "weapons": [
+        14158,
+        13008
+      ],
+      "sets": [
+        {
+          "four": 34100,
+          "two": [
+            31300,
+            31800,
+            32800,
+            31400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "ATK%",
+        "6": "ATK%"
+      },
+      "substats": "ATK% (until 4000 in statscreen) > Anomaly Proficiency > PEN",
+      "statNotes": "* ATK: 4000 (going above this does not add meaningful damage)\n\n  * HP: 9500+\n\n  * DEF: 750+\n  * Anomaly Proficiency: 370 - 460+ (may have a big range depending on AP D4 and 2-piece)",
+      "skillPriority": [
+        "Chain Attack",
+        "Basic Attack",
+        "Assist",
+        "Special Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Alice",
+        "Aria",
+        "Burnice",
+        "Grace",
+        "Jane Doe",
+        "Miyabi",
+        "Piper",
+        "Promeia",
+        "Velina",
+        "Vivian",
+        "Yanagi",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Rina",
+      "url": "https://www.prydwen.gg/zenless/characters/rina",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 3.1",
+      "weapons": [
+        14121,
+        13115
+      ],
+      "sets": [
+        {
+          "four": 33400,
+          "two": [
+            31100
+          ]
+        }
+      ],
+      "slots": {
+        "4": "ATK% = Anomaly Proficiency = CRIT Rate",
+        "5": "PEN Ratio%",
+        "6": "Energy Regen"
+      },
+      "substats": "Anomaly Proficiency = CRIT Rate = ATK% > CRIT DMG > PEN > FLAT ATK",
+      "statNotes": "* ATK: 2000 - 2600+ (Optional)\n\n  * HP: 10500+\n\n  * DEF: 800+\n\n  * Anomaly Proficiency: 200 - 300 (Optional)\n  * PEN RATIO: 38% - 72% (72% Grants full 30% team buff at Core Passive 6)",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Harumasa",
+        "Jane Doe",
+        "Yanagi"
+      ]
+    },
+    {
+      "name": "Seed",
+      "url": "https://www.prydwen.gg/zenless/characters/seed",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.2",
+      "weapons": [
+        14146,
+        14132,
+        14129,
+        14120,
+        14124,
+        14104,
+        13015
+      ],
+      "sets": [
+        {
+          "four": 33300,
+          "two": [
+            31000,
+            32700,
+            31100,
+            32400,
+            32800,
+            31400
+          ]
+        },
+        {
+          "four": 31000,
+          "two": [
+            32700,
+            31100,
+            33300,
+            32400,
+            32800,
+            31400
+          ]
+        },
+        {
+          "four": 31400,
+          "two": [
+            31000,
+            32700,
+            33300,
+            31100,
+            32400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT DMG% > CRIT Rate%",
+        "5": "PEN Ratio% >= ATK% = Electric DMG%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT DMG = CRIT Rate > ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2700 - 3000+\n\n  * HP: 10000+\n\n  * DEF: 800+\n\n  * CRIT DMG: 110 - 140%+\n\n  * CRIT RATE: 75% - 90%+",
+      "skillPriority": [
+        "Basic Attack",
+        "Chain Attack",
+        "Special Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Anby",
+        "Anby: Soldier 0",
+        "Astra Yao",
+        "Billy",
+        "Evelyn",
+        "Hugo",
+        "Nekomata",
+        "Nicole",
+        "Orphie & Magus",
+        "Soldier 11",
+        "Trigger",
+        "Ye Shunguang"
+      ]
+    },
+    {
+      "name": "Seth",
+      "url": "https://www.prydwen.gg/zenless/characters/seth",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 1.5",
+      "weapons": [
+        13127,
+        13011,
+        13010,
+        13007
+      ],
+      "sets": [
+        {
+          "four": 32800,
+          "two": [
+            31600,
+            31300,
+            31800
+          ]
+        },
+        {
+          "four": 31600,
+          "two": [
+            31400,
+            31900,
+            31200
+          ]
+        },
+        {
+          "four": 31900,
+          "two": [
+            31600,
+            31400,
+            31200
+          ]
+        },
+        {
+          "four": 31300,
+          "two": [
+            31600,
+            31400,
+            31200
+          ]
+        }
+      ],
+      "slots": {
+        "4": "ATK% >= Anomaly Proficiency",
+        "5": "ATK% >= Electric DMG%",
+        "6": "Energy Regen = Anomaly Mastery"
+      },
+      "substats": "ATK% > Anomaly Proficiency > ATK > PEN",
+      "statNotes": "* ATK: 2600 - 3200+ (Shield Caps at 3750 Initial ATK but this is hard to achieve)\n  * HP: 11000+\n\n  * DEF: 900+\n\n  * Anomaly Proficiency: 200 - 300+ (Optional)",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Assist",
+        "Basic Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Jane Doe",
+        "Yanagi"
+      ]
+    },
+    {
+      "name": "Sigrid",
+      "url": "https://www.prydwen.gg/zenless/characters/sigrid",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 3.1",
+      "weapons": [
+        14159,
+        14104,
+        14138,
+        13004
+      ],
+      "sets": [
+        {
+          "four": 31400,
+          "two": [
+            31100
+          ]
+        },
+        {
+          "four": 31100,
+          "two": [
+            32700,
+            32800,
+            31400,
+            32500
+          ]
+        },
+        {
+          "four": 33300,
+          "two": [
+            31100
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT DMG% > ATK%",
+        "5": "PEN Ratio%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT RATE (until 33.8% in statscreen) > CRIT DMG = ATK% > PEN > ATK",
+      "statNotes": "* ATK: 3000 - 3400+\n\n  * HP: 9500+\n\n  * DEF: 750+\n\n  * CRIT RATE: 33.8% (any more and she’ll overcap due to the 66% from her Core Passive!)\n\n  * CRIT DMG: 150% - 210%+ (W-Engine mainstat and D4 picks can give it a large range)",
+      "skillPriority": [
+        "Basic Attack",
+        "Chain Attack",
+        "Special Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Dialyn",
+        "Ju Fufu",
+        "Lighter",
+        "Lycaon",
+        "Norma",
+        "Rina",
+        "Sunna"
+      ]
+    },
+    {
+      "name": "Soldier 11",
+      "url": "https://www.prydwen.gg/zenless/characters/soldier-11",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.5",
+      "weapons": [
+        14132,
+        14146,
+        14129,
+        14138,
+        14104,
+        13004
+      ],
+      "sets": [
+        {
+          "four": 31100,
+          "two": [
+            31000,
+            32800,
+            31400,
+            32700,
+            32200,
+            33300
+          ]
+        },
+        {
+          "four": 31000,
+          "two": [
+            31100,
+            32200,
+            32700,
+            32800,
+            31400,
+            33300
+          ]
+        },
+        {
+          "four": 33300,
+          "two": [
+            31000,
+            32800,
+            31400,
+            32700,
+            32200,
+            31100
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= ATK% >= CRIT DMG%",
+        "5": "PEN Ratio% >= ATK% > Fire DMG%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT RATE = CRIT DMG > ATK% > Anomaly Proficiency > PEN > ATK",
+      "statNotes": "* ATK: 2800 - 3000+\n\n  * HP: 9500+\n\n  * DEF: 800+\n\n  * CRIT RATE: 80%+\n\n  * CRIT DMG: 140%+",
+      "skillPriority": [
+        "Basic Attack",
+        "Chain Attack",
+        "Special Attack",
+        "Dodge",
+        "Assist"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Dialyn",
+        "Evelyn",
+        "Ju Fufu",
+        "Koleda",
+        "Lighter",
+        "Lucy",
+        "Orphie & Magus",
+        "Pulchra",
+        "Seed",
+        "Trigger",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Soukaku",
+      "url": "https://www.prydwen.gg/zenless/characters/soukaku",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.2",
+      "weapons": [
+        13113,
+        14121,
+        13115,
+        13002,
+        12005,
+        14002
+      ],
+      "sets": [
+        {
+          "four": 31300,
+          "two": [
+            33000,
+            32800,
+            31400,
+            31800
+          ]
+        },
+        {
+          "four": 33400,
+          "two": [
+            33000,
+            32800,
+            31400,
+            31800,
+            31300
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            33000,
+            31400,
+            31800,
+            31300
+          ]
+        }
+      ],
+      "slots": {
+        "4": "ATK% > CRIT Rate%",
+        "5": "ATK% > Ice DMG%",
+        "6": "Energy Regen = ATK%"
+      },
+      "substats": "ATK% (top priority until ability cap) = CRIT RATE = CRIT DMG > PEN = ATK",
+      "statNotes": "* ATK: 2777 (Lvl 4 Core Passive) - 2500 (Lvl 6 Core Passive)\n\n  * HP: 10000+\n\n  * DEF: 800+\n\n  * CRIT RATE: 50% - 60%+ (Optional)\n\n  * CRIT DMG: 100% - 120%+ (Optional)",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Ellen",
+        "Lycaon",
+        "Miyabi"
+      ]
+    },
+    {
+      "name": "Sunna",
+      "url": "https://www.prydwen.gg/zenless/characters/sunna",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.6",
+      "weapons": [
+        14149,
+        14121,
+        13115,
+        14002
+      ],
+      "sets": [
+        {
+          "four": 33400,
+          "two": [
+            31600,
+            32800,
+            31400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "ATK%",
+        "5": "ATK%",
+        "6": "Energy Regen"
+      },
+      "substats": "ATK% > ATK (until 3500) > Anomaly Proficiency > Flat PEN",
+      "statNotes": "* ATK: 3500+\n\nAll other stats are not too relevant, with most of her damage scaling with other Agents’ stats.",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Assist",
+        "Basic Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Billy",
+        "Dialyn",
+        "Ellen",
+        "Harumasa",
+        "Ye Shunguang",
+        "Zhao"
+      ]
+    },
+    {
+      "name": "Trigger",
+      "url": "https://www.prydwen.gg/zenless/characters/trigger",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.0",
+      "weapons": [
+        14136,
+        14116,
+        14125,
+        14114,
+        13006,
+        13005,
+        14110
+      ],
+      "sets": [
+        {
+          "four": 33200,
+          "two": [
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            33200,
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 31900,
+          "two": [
+            33200,
+            31200,
+            31600
+          ]
+        },
+        {
+          "four": 31200,
+          "two": [
+            33200,
+            31600
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate%",
+        "5": "Electric DMG% > ATK%",
+        "6": "Impact"
+      },
+      "substats": "CRIT RATE >= CRIT DMG > ATK% > PEN = ATK",
+      "statNotes": "* ATK: 1700 - 2200+ (Optional)\n\n  * HP: 10000+\n\n  * DEF: 750+\n\n  * IMPACT: 162 - 186 + (Most important stat)\n\n  * CRIT RATE: 60 - 90%\n    * Most Stun characters have little use for sub-stats outside of improving their Sub DPS capabilities, but this is not the case for Trigger.\n\n    * Stacking CRIT RATE grants her substantial DAZE% increase to all her Aftershock abilities, making it by far her highest priority stat after IMPACT% and DAZE% on gear.\n\n    * Get as much CRIT RATE as you can until her additional ability caps out at 90%, then prioritize other stats (only doable with her signature).\n\n  * CRIT DMG: 100 - 120%+ (Optional)",
+      "skillPriority": [
+        "Basic Attack",
+        "Special Attack",
+        "Chain Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Anby",
+        "Anby: Soldier 0",
+        "Astra Yao",
+        "Lucy",
+        "Manato",
+        "Miyabi",
+        "Nicole",
+        "Yanagi",
+        "Yidhari",
+        "Yixuan",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Velina",
+      "url": "https://www.prydwen.gg/zenless/characters/velina",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 3.0",
+      "weapons": [
+        14156,
+        14152,
+        14117,
+        13115
+      ],
+      "sets": [
+        {
+          "four": 33900,
+          "two": [
+            33400,
+            31600
+          ]
+        }
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "Wind DMG% = ATK% = PEN Ratio%",
+        "6": "Energy Regen"
+      },
+      "substats": "Anomaly Proficiency = ATK% > PEN > ATK",
+      "statNotes": "* ATK: 2400 - 2600+\n\n  * HP: 9500+\n\n  * DEF: 750+\n\n  * Anomaly Proficiency: 330 - 420+\n\n  * Energy Regen: 2.88",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Assist",
+        "Basic Attack",
+        "Dodge"
+      ],
+      "synergies": [
+        "Alice",
+        "Aria",
+        "Burnice",
+        "Grace",
+        "Jane Doe",
+        "Miyabi",
+        "Nangong Yu",
+        "Piper",
+        "Promeia",
+        "Vivian",
+        "Yanagi",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Vivian",
+      "url": "https://www.prydwen.gg/zenless/characters/vivian",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.3",
+      "weapons": [
+        14133,
+        13008
+      ],
+      "sets": [
+        {
+          "four": 33000,
+          "two": [
+            31800,
+            31300,
+            32300,
+            32800,
+            31400,
+            31100
+          ]
+        }
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "Ether DMG% > PEN Ratio% = ATK%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": "Anomaly Proficiency >>> ATK% > ATK = PEN",
+      "statNotes": "* ATK: 2000 - 2400+\n\n  * HP: 10000\n\n  * DEF: 800\n\n  * Anomaly Mastery: 198+\n  * Anomaly Proficiency: 380 - 450+ (Before Combat)\n\n    * Anomaly Proficiency is a more valuable stat for Vivian compared to other Anomaly characters due to the additional scaling granted by her Core Passive. Her Abloom Anomaly damage - which makes up most of her DPS - increases directly with how much Anomaly Proficiency she has. This means she favours this stat over ATK% in almost all situations.",
+      "skillPriority": [
+        "Basic Attack",
+        "Chain Attack",
+        "Special Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Alice",
+        "Astra Yao",
+        "Grace",
+        "Jane Doe",
+        "Lucy",
+        "Miyabi",
+        "Nicole",
+        "Piper",
+        "Yanagi",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Yanagi",
+      "url": "https://www.prydwen.gg/zenless/characters/yanagi",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.3",
+      "weapons": [
+        14122,
+        13008,
+        13009
+      ],
+      "sets": [
+        {
+          "four": 31800,
+          "two": [
+            31300,
+            31100,
+            32400,
+            32800,
+            31400
+          ]
+        }
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "PEN Ratio% >= Electric DMG% > ATK%",
+        "6": "Anomaly Mastery > ATK%"
+      },
+      "substats": "Anomaly Proficiency > ATK% > PEN = ATK",
+      "statNotes": "* ATK: 2600 - 3400+ (Depending on W-Engine choice)\n\n  * HP: 10000+\n\n  * DEF: 800+\n\n  * Anomaly Mastery: 148 - 190+\n\n  * Anomaly Proficiency: 350 - 450+",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Nangong Yu",
+        "Remielle",
+        "Rina",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Ye Shunguang",
+      "url": "https://www.prydwen.gg/zenless/characters/ye-shunguang",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.5",
+      "weapons": [
+        14143,
+        14104,
+        14138,
+        13004
+      ],
+      "sets": [
+        {
+          "four": 33500,
+          "two": [
+            32700,
+            31100,
+            32800,
+            31400,
+            32600,
+            31000
+          ]
+        }
+      ],
+      "slots": {
+        "4": "ATK% > CRIT DMG%",
+        "5": "PEN Ratio% = ATK%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT DMG = CRIT Rate > ATK% > PEN > ATK",
+      "statNotes": "* ATK: 3000+\n\n  * HP: 10000+\n\n  * DEF: 600+\n\n  * CRIT DMG: 180 - 200%+\n\n  * CRIT RATE: max. 50% (in stat screen)",
+      "skillPriority": [
+        "Basic Attack",
+        "Chain Attack",
+        "Special Attack",
+        "Dodge",
+        "Assist"
+      ],
+      "synergies": [
+        "Dialyn",
+        "Ju Fufu",
+        "Seed",
+        "Sunna",
+        "Trigger",
+        "Zhao"
+      ]
+    },
+    {
+      "name": "Yidhari",
+      "url": "https://www.prydwen.gg/zenless/characters/yidhari",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.5",
+      "weapons": [
+        14105,
+        13144,
+        13019,
+        14137,
+        13014,
+        13012
+      ],
+      "sets": [
+        {
+          "four": 33100,
+          "two": [
+            31000,
+            32700
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT Rate% = CRIT DMG%",
+        "5": "Ice DMG% > HP%",
+        "6": "HP%"
+      },
+      "substats": "CRIT Rate = CRIT DMG > HP% > ATK% = Flat HP",
+      "statNotes": "Stats below are pre-combat stats, assuming a 4-piece Yunkui Tales (12% CRIT RATE) and P1 Kraken’s Cradle (20% CRIT RATE):\n\n  * SHEER FORCE: 2,400 - 2,600\n\n  * HP: 18,000 - 20,000+\n\n  * CRIT RATE: 58.6% - 65.8% (90.6% - 97.2% in-combat)\n\n  * CRIT DMG: 120% - 150%",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Dialyn",
+        "Ju Fufu",
+        "Koleda",
+        "Lucia",
+        "Lycaon",
+        "Pan Yinhu",
+        "Trigger"
+      ]
+    },
+    {
+      "name": "Yixuan",
+      "url": "https://www.prydwen.gg/zenless/characters/yixuan",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.5",
+      "weapons": [
+        14137,
+        13019,
+        13014,
+        13012,
+        14105,
+        13144
+      ],
+      "sets": [
+        {
+          "four": 33100,
+          "two": [
+            31000,
+            32700
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT DMG% = CRIT Rate%",
+        "5": "Ether DMG% > HP%",
+        "6": "HP%"
+      },
+      "substats": "CRIT Rate = CRIT DMG > HP% > ATK% > Flat HP",
+      "statNotes": "* SHEER FORCE: 2100 - 2400\n\n  * ATK: 1800 - 2000+\n\n  * HP: 16,000 - 18,000+\n\n  * DEF: 600+\n\n  * CRIT RATE: 80 - 90% (Including Disc Drive Bonus)\n\n  * CRIT DMG: 140 - 160%",
+      "skillPriority": [
+        "Chain Attack",
+        "Special Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Astra Yao",
+        "Dialyn",
+        "Ju Fufu",
+        "Lucia",
+        "Pan Yinhu",
+        "Pulchra",
+        "Qingyi",
+        "Trigger",
+        "Yuzuha"
+      ]
+    },
+    {
+      "name": "Yuzuha",
+      "url": "https://www.prydwen.gg/zenless/characters/ukinami-yuzuha",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.6",
+      "weapons": [
+        14121,
+        14149,
+        14141,
+        13115,
+        14002
+      ],
+      "sets": [
+        {
+          "four": 33400,
+          "two": [
+            33000,
+            32800,
+            31400,
+            31800,
+            31300
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            33000,
+            31400,
+            31800,
+            31300
+          ]
+        }
+      ],
+      "slots": {
+        "4": "ATK% >= Anomaly Proficiency",
+        "5": "ATK% >= PEN Ratio%",
+        "6": "Anomaly Mastery = ATK%"
+      },
+      "substats": "ATK% > ATK (until 3000) > Anomaly Proficiency > PEN",
+      "statNotes": "* ATK: 3000+\n\n  * HP: 11000+\n\n  * DEF: 800+\n\n  * Anomaly Proficiency: 200+\n\n    * Always prioritize ATK on your Disk Drives if under 3000 ATK. Anomaly Proficiency is optimal for the best damage at 3000 ATK or above.\n\n  * Anomaly Mastery: 171\nCRIT competes with Anomaly Proficiency in non-Physical Anomaly teams and, as a result, can be considered for Yuzuha's build path. However, with Anomaly teams involving Physical characters, Anomaly Proficiency will be a much more important stat for Yuzuha, and CRIT should not be a priority.",
+      "skillPriority": [
+        "Basic Attack",
+        "Chain Attack",
+        "Special Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Burnice",
+        "Jane Doe",
+        "Miyabi",
+        "Nangong Yu",
+        "Piper",
+        "Promeia",
+        "Velina",
+        "Vivian"
+      ]
+    },
+    {
+      "name": "Zhao",
+      "url": "https://www.prydwen.gg/zenless/characters/zhao",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.5",
+      "weapons": [
+        14134,
+        14107,
+        13007
+      ],
+      "sets": [
+        {
+          "four": 33700,
+          "two": [
+            33100,
+            33400,
+            31600
+          ]
+        },
+        {
+          "four": 32800,
+          "two": [
+            33400,
+            31600,
+            33100
+          ]
+        }
+      ],
+      "slots": {
+        "4": "HP%",
+        "5": "HP%",
+        "6": "Energy Regen"
+      },
+      "substats": "HP% (Until 27000 Initial HP) > Flat HP (Until 27000 Initial HP) > Crit Rate = Crit DMG",
+      "statNotes": "* ATK: 1900+\n\n  * HP: 25000+\n\n  * DEF: 800+\n\n  * Crit Rate: 30%+\n\n  * Crit DMG: 50%+",
+      "skillPriority": [
+        "Special Attack",
+        "Chain Attack",
+        "Basic Attack",
+        "Assist",
+        "Dodge"
+      ],
+      "synergies": [
+        "Alice",
+        "Anby",
+        "Ellen",
+        "Miyabi",
+        "Nekomata",
+        "Seed",
+        "Yanagi",
+        "Ye Shunguang"
+      ]
+    },
+    {
+      "name": "Zhu Yuan",
+      "url": "https://www.prydwen.gg/zenless/characters/zhu-yuan",
+      "checkedAt": "2026-09-09",
+      "patch": "Patch 2.4",
+      "weapons": [
+        14146,
+        14104,
+        14124,
+        13015,
+        13004
+      ],
+      "sets": [
+        {
+          "four": 32300,
+          "two": [
+            31000,
+            32800,
+            31400,
+            32700,
+            33300
+          ]
+        },
+        {
+          "four": 31100,
+          "two": [
+            31000,
+            32700,
+            32800,
+            31400,
+            32300
+          ]
+        },
+        {
+          "four": 31000,
+          "two": [
+            32700,
+            32300,
+            32800,
+            31400,
+            33300
+          ]
+        }
+      ],
+      "slots": {
+        "4": "CRIT DMG% = CRIT Rate%",
+        "5": "ATK% > Ether DMG% = PEN Ratio%",
+        "6": "ATK%"
+      },
+      "substats": "CRIT RATE = CRIT DMG = ATK% > PEN > ATK",
+      "statNotes": "* ATK: 3000+\n\n  * HP: 9500+\n\n  * DEF: 800+\n\n  * CRIT RATE: 60% - 70% (90% - 100% with Add Ability; Max 55% with Nicole M6)\n\n  * CRIT DMG: 160% - 180%+ (Without Chaotic Metal Buff)",
+      "skillPriority": [
+        "Basic Attack",
+        "Chain Attack",
+        "Special Attack",
+        "Dodge",
+        "Assist"
+      ],
+      "synergies": [
+        "Anby",
+        "Dialyn",
+        "Pulchra",
+        "Qingyi",
+        "Seed",
+        "Trigger"
+      ]
+    }
+  ]
+}

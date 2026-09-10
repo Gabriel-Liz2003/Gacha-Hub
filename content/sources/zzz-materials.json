@@ -1,0 +1,1752 @@
+{
+  "items": {
+    "10": {
+      "name": "Denny",
+      "category": "Moeda",
+      "location": "HIA • Simulação de Combate e recompensas de atividades",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/10",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100110": {
+      "name": "Basic Physical Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100110",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100111": {
+      "name": "Basic Burn Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100111",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100112": {
+      "name": "Basic Freeze Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100112",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100113": {
+      "name": "Basic Shock Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100113",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100115": {
+      "name": "Basic Ether Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100115",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100116": {
+      "name": "Basic Windbite Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100116",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100117": {
+      "name": "Basic Lumiflux Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100117",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100120": {
+      "name": "Advanced Physical Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100120",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100121": {
+      "name": "Advanced Burn Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100121",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100122": {
+      "name": "Advanced Freeze Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100122",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100123": {
+      "name": "Advanced Shock Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100123",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100125": {
+      "name": "Advanced Ether Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100125",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100126": {
+      "name": "Advanced Windbite Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100126",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100127": {
+      "name": "Advanced Lumiflux Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100127",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100130": {
+      "name": "Specialized Physical Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100130",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100131": {
+      "name": "Specialized Burn Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100131",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100132": {
+      "name": "Specialized Freeze Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100132",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100133": {
+      "name": "Specialized Shock Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100133",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100135": {
+      "name": "Specialized Ether Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100135",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100136": {
+      "name": "Specialized Windbite Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100136",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100137": {
+      "name": "Specialized Lumiflux Chip",
+      "category": "Chip de habilidade",
+      "location": "HIA • Simulação de Combate — habilidades do atributo correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100137",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100211": {
+      "name": "Basic Attack Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100211",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100212": {
+      "name": "Basic Stun Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100212",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100213": {
+      "name": "Basic Anomaly Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100213",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100214": {
+      "name": "Basic Support Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100214",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100215": {
+      "name": "Basic Defense Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100215",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100216": {
+      "name": "Basic Rupture Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100216",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100217": {
+      "name": "Basic Armorer Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100217",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100221": {
+      "name": "Advanced Attack Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100221",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100222": {
+      "name": "Advanced Stun Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100222",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100223": {
+      "name": "Advanced Anomaly Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100223",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100224": {
+      "name": "Advanced Support Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100224",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100225": {
+      "name": "Advanced Defense Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100225",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100226": {
+      "name": "Advanced Rupture Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100226",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100227": {
+      "name": "Advanced Armorer Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100227",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100231": {
+      "name": "Pioneer's Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100231",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100232": {
+      "name": "Buster Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100232",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100233": {
+      "name": "Controller Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100233",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100234": {
+      "name": "Ruler Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100234",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100235": {
+      "name": "Defender Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100235",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100236": {
+      "name": "Arbiter Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100236",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100237": {
+      "name": "Bladebearer Certification Seal",
+      "category": "Certificação",
+      "location": "HIA • Simulação de Combate — promoção da especialidade correspondente",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100237",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "100941": {
+      "name": "Hamster Cage Pass",
+      "category": "Habilidade máxima",
+      "location": "Eventos e New Eridu City Fund",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/100941",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101010": {
+      "name": "Attack Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101010",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101011": {
+      "name": "Stun Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101011",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101012": {
+      "name": "Anomaly Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101012",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101013": {
+      "name": "Support Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101013",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101014": {
+      "name": "Defense Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101014",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101015": {
+      "name": "Rupture Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101015",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101016": {
+      "name": "Armorer Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101016",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101020": {
+      "name": "Reinforced Attack Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101020",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101021": {
+      "name": "Reinforced Stun Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101021",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101022": {
+      "name": "Reinforced Anomaly Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101022",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101023": {
+      "name": "Reinforced Support Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101023",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101024": {
+      "name": "Reinforced Defense Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101024",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101025": {
+      "name": "Reinforced Rupture Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101025",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101026": {
+      "name": "Reinforced Armorer Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101026",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101030": {
+      "name": "Specialized Attack Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101030",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101031": {
+      "name": "Specialized Stun Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101031",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101032": {
+      "name": "Specialized Anomaly Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101032",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101033": {
+      "name": "Specialized Support Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101033",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101034": {
+      "name": "Specialized Defense Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101034",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101035": {
+      "name": "Specialized Rupture Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101035",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "101036": {
+      "name": "Specialized Armorer Component",
+      "category": "Componente de W-Engine",
+      "location": "HIA • Simulação de Combate — modificação de W-Engine",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/101036",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110001": {
+      "name": "Ferocious Grip",
+      "category": "Material de Núcleo • chefe",
+      "location": "Notorious Hunt • confira o chefe na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110001",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110002": {
+      "name": "Living Drive",
+      "category": "Material de Núcleo • chefe",
+      "location": "Notorious Hunt • confira o chefe na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110002",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110003": {
+      "name": "Finale Dance Shoes",
+      "category": "Material de Núcleo • chefe",
+      "location": "Notorious Hunt • confira o chefe na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110003",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110004": {
+      "name": "Scarlet Engine",
+      "category": "Material de Núcleo • chefe",
+      "location": "Notorious Hunt • confira o chefe na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110004",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110005": {
+      "name": "Sycophant's Refinement",
+      "category": "Material de Núcleo • chefe",
+      "location": "Notorious Hunt • confira o chefe na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110005",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110006": {
+      "name": "Exuvia of Refinement",
+      "category": "Material de Núcleo • chefe",
+      "location": "Notorious Hunt • confira o chefe na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110006",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110007": {
+      "name": "Crimson Miasma Spike",
+      "category": "Material de Núcleo • chefe",
+      "location": "Notorious Hunt • confira o chefe na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110007",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110008": {
+      "name": "Clouded Crystalline Substance",
+      "category": "Material de Núcleo • chefe",
+      "location": "Notorious Hunt • confira o chefe na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110008",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110009": {
+      "name": "Marrow-Draining Thorn",
+      "category": "Material de Núcleo • chefe",
+      "location": "Notorious Hunt • confira o chefe na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110009",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110010": {
+      "name": "Timeworn Husk",
+      "category": "Material de Núcleo • chefe",
+      "location": "Notorious Hunt • confira o chefe na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110010",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110011": {
+      "name": "Counterfeit Nucleus",
+      "category": "Material de Núcleo • chefe",
+      "location": "Notorious Hunt • confira o chefe na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110011",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110501": {
+      "name": "Higher Dimensional Data: Murderous Obituary",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110501",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110502": {
+      "name": "Higher Dimensional Data: Crimson Awe",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110502",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110503": {
+      "name": "Higher Dimensional Data: Ethereal Pursuit",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110503",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110504": {
+      "name": "Higher Dimensional Data: Steel Malice",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110504",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110505": {
+      "name": "Higher Dimensional Data: Destructive Advance",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110505",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110506": {
+      "name": "Higher Dimensional Data: Falling Fist",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110506",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110507": {
+      "name": "Higher Dimensional Data: Stealth Phantom",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110507",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110508": {
+      "name": "Higher Dimensional Data: Thunderous Dragon",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110508",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110509": {
+      "name": "Higher Dimensional Data: Mortal Cleave",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110509",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110510": {
+      "name": "Higher Dimensional Data: Miasmic Elytron",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110510",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110511": {
+      "name": "Higher Dimensional Data: Toxic Edge",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110511",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110512": {
+      "name": "Higher Dimensional Data: Corrupted Dreamsteel",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110512",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110513": {
+      "name": "Higher Dimensional Data: Spiked Corruption Core",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110513",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110514": {
+      "name": "Higher Dimensional Data: Bloodstained Miasma Feather",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110514",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110515": {
+      "name": "Higher Dimensional Data: Deep Erosion Circuit",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110515",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    },
+    "110516": {
+      "name": "Higher Dimensional Data: Imitation Core",
+      "category": "Material de Núcleo • desafio",
+      "location": "HIA • Expert Challenge • confira o inimigo na fonte do material",
+      "sources": [
+        {
+          "name": "ZZZ Akademiya • material",
+          "url": "https://zzz.akademiya.app/en/materials/110516",
+          "checkedAt": "2026-09-10",
+          "patch": "3.2"
+        },
+        {
+          "name": "Icy Veins • obtenção de materiais",
+          "url": "https://www.icy-veins.com/zenless-zone-zero/agent-leveling",
+          "checkedAt": "2026-09-10",
+          "patch": "Não informado"
+        }
+      ]
+    }
+  }
+}

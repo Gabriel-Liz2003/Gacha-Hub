@@ -6,7 +6,7 @@ import kotlinx.serialization.encodeToString
 object ContentStorage {
     fun records(pack: ContentPack): List<Record> {
         val result=mutableListOf(Record("content","current",codec.encodeToString(pack.copy(
-            characters=emptyList(),builds=emptyList(),materials=emptyList(),costs=emptyList(),teams=emptyList(),banners=emptyList()))))
+            characters=emptyList(),builds=emptyList(),materials=emptyList(),costs=emptyList(),teams=emptyList(),banners=emptyList(),weapons=emptyList(),discSets=emptyList()))))
         fun add(kind:String, values:List<String>) {
             values.forEachIndexed { i,payload ->
                 require(payload.toByteArray(Charsets.UTF_8).size <= 512*1024) { "Registro de catálogo excede 512 KB" }
@@ -18,6 +18,8 @@ object ContentStorage {
         add("catalog_material",pack.materials.map{codec.encodeToString(it)})
         add("catalog_cost",pack.costs.map{codec.encodeToString(it)})
         add("catalog_team",pack.teams.map{codec.encodeToString(it)})
+        add("catalog_weapon",pack.weapons.map{codec.encodeToString(it)})
+        add("catalog_disc",pack.discSets.map{codec.encodeToString(it)})
         add("catalog_banner",pack.banners.map{codec.encodeToString(it)})
         require(result.first().payload.toByteArray(Charsets.UTF_8).size <= 512*1024) { "Metadados de catálogo excedem 512 KB" }
         return result
@@ -33,6 +35,8 @@ object ContentStorage {
             materials=values("catalog_material").map{codec.decodeFromString<Material>(it)},
             costs=values("catalog_cost").map{codec.decodeFromString<CostStep>(it)},
             teams=values("catalog_team").map{codec.decodeFromString<TeamGuide>(it)},
+            weapons=values("catalog_weapon").map{codec.decodeFromString<Weapon>(it)},
+            discSets=values("catalog_disc").map{codec.decodeFromString<DiscSet>(it)},
             banners=values("catalog_banner").map{codec.decodeFromString<Banner>(it)}
         )
     }
