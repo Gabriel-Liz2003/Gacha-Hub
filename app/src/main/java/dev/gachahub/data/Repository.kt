@@ -101,7 +101,8 @@ class Repository(val db: HubDatabase) {
     }
     suspend fun import(accountId: String, file: ImportFile) = db.withTransaction {
         require(file.schemaVersion == 1 && file.owned.size <= 5000)
-        val a = snapshot().accounts.first { it.id == accountId }
+        val current = snapshot()
+        val a = current.accounts.first { it.id == accountId }
         require(file.game == a.game) { "O arquivo pertence a outro jogo" }
         require(file.owned.map { it.characterId }.distinct().size == file.owned.size)
         file.characters.forEach { require(it.game == a.game); saveCharacter(it) }
@@ -109,7 +110,10 @@ class Repository(val db: HubDatabase) {
         file.owned.forEach { o ->
             o.validate(a.game)
             val previous = merged[o.characterId]
-            merged[o.characterId] = o.copy(stats = o.stats.ifEmpty { previous?.stats ?: emptyMap() }, favorite = previous?.favorite ?: o.favorite,
+            val motor = if(a.game == Game.ZZZ) o.weapon?.let { gear ->
+                current.pack?.wEngines?.find { it.providerId == gear.id || it.id == gear.id }?.let { gear.copy(name=it.name) } ?: gear
+            } else o.weapon
+            merged[o.characterId] = o.copy(weapon=motor, skills=if(a.game == Game.ZZZ) ZzzProgress.skills(o.skills) else o.skills, stats = o.stats.ifEmpty { previous?.stats ?: emptyMap() }, favorite = previous?.favorite ?: o.favorite,
                 buildId = previous?.buildId ?: o.buildId, notes = previous?.notes ?: o.notes)
         }
         saveAccount(a.copy(characters = merged.values.toList()))

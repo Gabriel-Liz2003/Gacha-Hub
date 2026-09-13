@@ -11,8 +11,8 @@ builder=importlib.util.module_from_spec(spec);spec.loader.exec_module(builder)
 class GenshinProgressionTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.pack=json.loads((ROOT/'content/starter.json').read_text())
-  cls.snapshot=json.loads((ROOT/'content/sources/genshin-db.json').read_text())
+  cls.pack=json.loads((ROOT/'content/starter.json').read_text(encoding="utf-8"))
+  cls.snapshot=json.loads((ROOT/'content/sources/genshin-db.json').read_text(encoding="utf-8"))
  def costs(self,character,track,start,end):
   result=collections.Counter()
   for level in range(start,end):

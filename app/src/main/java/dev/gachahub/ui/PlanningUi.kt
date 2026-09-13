@@ -37,14 +37,15 @@ import kotlinx.coroutines.launch
             FilterChip(activeOnly,{activeOnly=!activeOnly},label={Text("Somente ativos")})
             Text("Cada conta usa seu próprio inventário. Toque em um projeto para gerenciá-lo.")
         }
-        if(projects.isEmpty()) item { Text("Nenhum planejamento neste filtro.") }
+        if(projects.isEmpty()) item { EmptyState("Nenhum planejamento neste filtro", "Crie um objetivo de progressão em uma conta para acompanhar recursos.") }
         items(projects,key={it.id}) { p ->
-            Card(onClick={open(p)},modifier=Modifier.fillMaxWidth()) {
-                Column(Modifier.padding(18.dp),verticalArrangement=Arrangement.spacedBy(8.dp)) {
+            GachaCard(Modifier.fillMaxWidth(), onClick={open(p)}) {
+                Column(verticalArrangement=Arrangement.spacedBy(8.dp)) {
                     Text(p.title,style=MaterialTheme.typography.titleMedium)
                     Text("${accounts[p.accountId]?.game?.title} • ${accounts[p.accountId]?.name}")
                     Text("${characters[p.characterId]?.name} • prioridade ${p.priority} • ${(progress(p)*100).toInt()}%")
-                    LinearProgressIndicator(progress={progress(p).toFloat()},modifier=Modifier.fillMaxWidth())
+                    ProgressBar(progress(p).toFloat(), Modifier.fillMaxWidth())
+                    Text("Abrir projeto  ›", color=MaterialTheme.colorScheme.primary, style=MaterialTheme.typography.labelLarge)
                 }
             }
         }
@@ -79,12 +80,12 @@ import kotlinx.coroutines.launch
             SortChips(sort,{sort=it},listOf("Prioridade","Progresso","Personagem"))
             Text("Inventário reservado por prioridade (menor número primeiro). Concluir consome os materiais; atualize o progresso do personagem após evoluí-lo no jogo.",style=MaterialTheme.typography.bodySmall)
         }
-        if(ps.isEmpty())item{Text("Nenhum projeto. Cadastre um personagem e crie seu objetivo.")}
+        if(ps.isEmpty())item{EmptyState("Nenhum projeto ativo", "Cadastre um personagem e defina um objetivo de progressão.")}
         items(ps,key={it.id}) { p -> Section(p.title) {
             val a=allocations[p.id].orEmpty()
             Text("${chars[p.characterId]?.name} • ${(progress(p)*100).toInt()}% • prioridade ${p.priority}")
             Text(if(p.manual) "Checklist manual" else "Custos verificados • pacote ${p.dataVersion}")
-            LinearProgressIndicator(progress={progress(p).toFloat()},modifier=Modifier.fillMaxWidth())
+            ProgressBar(progress(p).toFloat(), Modifier.fillMaxWidth())
             p.targets.forEach{Text("${it.track}: ${it.from} → ${it.to}")}
             p.costs.forEach { (id,need) ->
                 val held=if(p.completed)need else a[id] ?: 0
@@ -148,6 +149,7 @@ import kotlinx.coroutines.launch
         Text("Personagem")
         Row(Modifier.horizontalScroll(rememberScrollState())) { characters.forEach { c -> FilterChip(selected==c.id,{selected=c.id;preview=null},label={Text(c.name)}) } }
         val owned=account.characters.first{it.characterId==selected}
+        if(game==Game.ZZZ) Text("Core: 0 = sem melhoria; 1–6 = A–F. EXP calcula pontos, sem Denny de aplicação de logs. Trilhas ausentes não têm custos verificados.")
         Text("Atual: nível ${owned.level} • ascensão ${owned.ascension} • ${game.weaponTerm} ${owned.weapon?.level ?: "não cadastrado"}")
         Field("Nome do projeto",title,{title=it});Field("Prioridade",priority,{priority=it},true)
         Row { Switch(manual,{manual=it;preview=null});Text("Checklist manual") }
@@ -159,7 +161,11 @@ import kotlinx.coroutines.launch
             edges.forEach{(track,steps)->
                 FilterChip(enabledTracks[track]==true,{
                     enabledTracks[track]=enabledTracks[track]!=true
-                    if(track !in from) from[track]=""
+                    if(track !in from) from[track]=if(game==Game.ZZZ) when(track) {
+                        "Promoção" -> owned.ascension.toString()
+                        "EXP de nível (sem Denny)" -> owned.level.toString()
+                        else -> ZzzProgress.skills(owned.skills)[track]?.toString().orEmpty()
+                    } else ""
                     if(track !in to) to[track]=steps.maxOf{it.to}.toString()
                     preview=null
                 },label={Text(track)})
@@ -203,8 +209,15 @@ import kotlinx.coroutines.launch
             Button(onClick={vm.perform("Time salvo"){vm.repository.saveTeam(Team(editing ?: newId(),account.id,name.trim(),selected,notes));reset()}},enabled=name.isNotBlank() && selected.isNotEmpty()){Text(if(editing==null)"Salvar time" else "Salvar alterações do time")}
             if(editing!=null)TextButton(onClick={reset()}){Text("Cancelar edição")}
         }}
-        items(state.teams.filter{it.accountId==account.id},key={it.id}){t->Section(t.name){
-            Text(t.members.joinToString(" • "){chars[it]?.name ?: it});Text(t.notes)
+        val savedTeams=state.teams.filter{it.accountId==account.id}
+        if(savedTeams.isEmpty()) item { EmptyState("Nenhum time salvo", "Selecione personagens acima para criar sua primeira composição.") }
+        items(savedTeams,key={it.id}){t->Section(t.name){
+            Row(Modifier.horizontalScroll(rememberScrollState()),horizontalArrangement=Arrangement.spacedBy(8.dp)) {
+                t.members.mapNotNull { chars[it] }.forEach { c -> Column(Modifier.width(76.dp),horizontalAlignment=androidx.compose.ui.Alignment.CenterHorizontally) {
+                    CharacterArtwork(c, true, Modifier.size(58.dp)); Text(c.name,style=MaterialTheme.typography.labelSmall,maxLines=1)
+                } }
+            }
+            Text(t.members.joinToString(" • "){chars[it]?.name ?: it},color=GachaTokens.muted);Text(t.notes)
             Row {
                 TextButton(onClick={editing=t.id;name=t.name;selected=t.members;notes=t.notes;scope.launch { listState.animateScrollToItem(0) }}){Text("Editar time")}
                 TextButton(onClick={deleting=t}){Text("Excluir time")}

@@ -6,10 +6,10 @@ import kotlinx.serialization.encodeToString
 object ContentStorage {
     fun records(pack: ContentPack): List<Record> {
         val result=mutableListOf(Record("content","current",codec.encodeToString(pack.copy(
-            characters=emptyList(),builds=emptyList(),materials=emptyList(),costs=emptyList(),teams=emptyList(),banners=emptyList()))))
+            characters=emptyList(),builds=emptyList(),materials=emptyList(),costs=emptyList(),teams=emptyList(),banners=emptyList(),wEngines=emptyList(),driveDiscs=emptyList()))))
         fun add(kind:String, values:List<String>) {
             values.forEachIndexed { i,payload ->
-                require(payload.toByteArray(Charsets.UTF_8).size <= 512*1024) { "Registro de catálogo excede 512 KB" }
+                require(payload.toByteArray(Charsets.UTF_8).size <= 256*1024) { "Registro de catálogo excede 256 KB" }
                 result += Record(kind,i.toString().padStart(8,'0'),payload)
             }
         }
@@ -19,7 +19,9 @@ object ContentStorage {
         add("catalog_cost",pack.costs.map{codec.encodeToString(it)})
         add("catalog_team",pack.teams.map{codec.encodeToString(it)})
         add("catalog_banner",pack.banners.map{codec.encodeToString(it)})
-        require(result.first().payload.toByteArray(Charsets.UTF_8).size <= 512*1024) { "Metadados de catálogo excedem 512 KB" }
+        add("catalog_engine",pack.wEngines.map{codec.encodeToString(it)})
+        add("catalog_disc",pack.driveDiscs.map{codec.encodeToString(it)})
+        require(result.first().payload.toByteArray(Charsets.UTF_8).size <= 256*1024) { "Metadados de catálogo excedem 256 KB" }
         return result
     }
     fun decode(records:List<Record>): ContentPack? {
@@ -33,7 +35,9 @@ object ContentStorage {
             materials=values("catalog_material").map{codec.decodeFromString<Material>(it)},
             costs=values("catalog_cost").map{codec.decodeFromString<CostStep>(it)},
             teams=values("catalog_team").map{codec.decodeFromString<TeamGuide>(it)},
-            banners=values("catalog_banner").map{codec.decodeFromString<Banner>(it)}
+            banners=values("catalog_banner").map{codec.decodeFromString<Banner>(it)},
+            wEngines=values("catalog_engine").map{codec.decodeFromString<WEngine>(it)},
+            driveDiscs=values("catalog_disc").map{codec.decodeFromString<DriveDisc>(it)}
         )
     }
 }

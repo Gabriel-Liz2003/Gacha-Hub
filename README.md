@@ -14,6 +14,21 @@ App nativo para Zenless Zone Zero, Honkai: Star Rail, Genshin Impact e Wuthering
 Waves. Kotlin, Jetpack Compose, Material 3, Room, Coroutines/Flow, OkHttp e Coil.
 Android 8+ (API 26), target/compile SDK 35. Sem WebView, Electron ou Chromium.
 
+## Interface 0.5.0
+
+A experiência visual usa o Design System `GachaTokens` e `GachaTheme`: canvas escuro,
+painéis elevados, cantos amplos, tipografia com hierarquia e accent por jogo. A Home
+apresenta os quatro mundos e seus indicadores; cada jogo possui dashboard com ações
+rápidas, favoritos e farm. Dentro do jogo, uma barra inferior compacta complementa os
+chips de navegação existentes.
+
+O catálogo usa `LazyVerticalGrid` adaptativa ou lista, artwork com placeholder, badge de
+posse, busca e filtros. `GachaCard`, `HeroPanel`, `MetricPill`, `StatusBadge`,
+`CharacterArtwork`, `ProgressBar`, `EmptyState`, `LoadingState` e `ErrorState` são
+componentes compartilhados entre Home, personagens, builds, Planner, materiais, Times e
+Conta. Chaves estáveis continuam sendo usadas nas listas; imagens seguem carregamento
+assíncrono e cache do Coil. A reformulação não altera schemas Room, repositórios ou dados.
+
 ## O que o código já implementa
 
 - Jogos e contas separados; várias contas por jogo.
@@ -208,12 +223,20 @@ Prydwen. As recomendações são sínteses com links para as análises originais
 
 ## Compatibilidade do catálogo ampliado
 
-O pacote Genshin usa **schemaVersion 2** e requer **APK 0.3 ou posterior**. APKs antigos
+O pacote usa **schemaVersion 2** e requer **APK 0.4 ou posterior**. APKs antigos
 rejeitam esse pacote antes de gravar; instale a versão nova uma vez. Depois, as próximas
 atualizações compatíveis podem chegar pelo botão de conteúdo, sem trocar o APK.
 O banco Room v3 guarda o catálogo em linhas pequenas. As migrations 1→2→3 preservam
 os registros do usuário; a migração 2→3 lê catálogos antigos em partes para evitar
 exceder o CursorWindow. A assinatura debug ainda pode exigir backup e reinstalação.
+
+### ZZZ no pacote 0.4
+
+O gerador offline lê `content/sources/zzz-optimizer.json` (MIT, commit fixado), as tabelas factuais revisadas em `zzz-progression-facts.json` e as sínteses editoriais em `zzz-editorial.json`. O roster tem 59 agentes live no corte de 12/09/2026, 65 W-Engines, 27 conjuntos de Drive Discs, 59 builds e quatro guias de time. Os CostSteps são transições inteiras: não há divisão de totais, interpolação ou rendimento inventado. `EXP de nível (sem Denny)` representa pontos de EXP exatos; a combinação de logs e o Denny de aplicação continuam uma escolha do jogador.
+
+O importador Enka usa os índices documentados pela [API pública do Enka](https://github.com/EnkaNetwork/API-docs/blob/master/docs/zzz/api.md): 0 Basic, 1 Special, 2 Dodge, 3 Chain, 6 Assist e `CoreSkillEnhancement` A–F. IDs de agente conhecidos ligam ao catálogo; um ID desconhecido continua sendo mantido como `zzz:<id>` para permitir a importação sem falsificar um nome.
+
+Claret está incluída porque a página oficial confirmou sua disponibilidade no corte, mas a fonte estruturada consultada ainda não fornecia Provider ID, imagem, facção e tabela de custos. Core Skill só foi publicado para 26 IDs na referência licenciada; os demais ficam sem trilha inventada e podem ser adicionados por uma futura atualização com fonte verificável.
 
 ## Publicar uma atualização de conteúdo
 

@@ -85,3 +85,11 @@ armas. Não há promessa de atualização diária: snapshots novos exigem valida
 
 Testes comparam todas as etapas geradas aos valores do snapshot e verificam totais
 e parciais de Bennett, triple crown de Furina e dias dos livros.
+# ZZZ 0.4 research note
+
+The ZZZ expansion uses three primary inputs: the MIT licensed Zenless portion of
+[Genshin Optimizer](https://github.com/frzyc/genshin-optimizer/tree/180a0a1015cb725c7570cd828eb086749960df98), frozen at commit `180a0a1015cb725c7570cd828eb086749960df98`; the official live availability notice from [HoYoverse](https://zenless.hoyoverse.com/pt-pt/news/166023?catchSpider=1); and editorial build pages on [Prydwen](https://www.prydwen.gg/zenless-zone-zero/characters). The optimizer license is stored in `content/sources/zzz-optimizer-LICENSE.txt`; only compact fields used by the app are committed.
+
+The progression tables are manually transcribed factual references from the structured `zzz-hakush.in` cache because that repository did not expose a compatible license. The cache is not copied into this repository; its URLs and checked date are recorded in `content/sources/zzz-progression-facts.json`. No whole guide, lore, skill multiplier table, or unlicensed dataset is bundled.
+
+The publication cut is 2026-09-12. The 59-agent manifest deliberately excludes announced or future names. `Claret` is included from the official availability confirmation but remains a metadata-only roster row until Provider ID and exact costs have a source suitable for redistribution. The same limitation is stated in the pack coverage string and tests.
