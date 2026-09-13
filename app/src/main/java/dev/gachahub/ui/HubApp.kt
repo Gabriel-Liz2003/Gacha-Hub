@@ -202,9 +202,6 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     var offset by rememberSaveable(account?.id) { mutableStateOf((account?.serverOffset ?: -5).toString()) }
     var reset by rememberSaveable(account?.id) { mutableStateOf((account?.resetHour ?: 4).toString()) }
     LazyColumn(contentPadding=PaddingValues(18.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
-        item { HeroPanel(game, account?.name?.ifBlank { "Conta ${game.title}" } ?: "Nova conta", if(account == null) "Conecte seu perfil para acompanhar a coleção." else "Perfil local e importação") {
-            StatusBadge(if(account?.uid.isNullOrBlank()) "Configuração pendente" else "Sincronizado", positive=!account?.uid.isNullOrBlank())
-        } }
         item { Section("Nova conta") {
             Field("Nome da conta",name,{name=it})
             Button(onClick={vm.perform("Conta criada") { vm.repository.saveAccount(Account(newId(),game,name.trim())) }},enabled=name.isNotBlank()) { Text("Criar conta") }
