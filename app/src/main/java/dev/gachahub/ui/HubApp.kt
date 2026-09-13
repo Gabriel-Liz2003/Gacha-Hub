@@ -19,6 +19,7 @@ import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
@@ -92,8 +93,8 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
                     LazyColumn(Modifier.fillMaxSize(),contentPadding=PaddingValues(20.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
                         item { HomeHero(state, accent) { globalPlanning=true } }
                         item { Row(horizontalArrangement=Arrangement.spacedBy(10.dp), modifier=Modifier.fillMaxWidth()) {
-                            MetricPill("Projetos ativos", state.projects.count { !it.completed }.toString(), accent, Modifier.weight(1f))
-                            MetricPill("Contas", state.accounts.size.toString(), accent, Modifier.weight(1f))
+                            MetricPill("Projetos ativos", state.projects.count { !it.completed }.toString(), accent, modifier=Modifier.weight(1f))
+                            MetricPill("Contas", state.accounts.size.toString(), accent, modifier=Modifier.weight(1f))
                         } }
                         items(Game.entries) { g ->
                             GameCard(g, state, onClick={ gameName=g.name; accountId=state.accounts.firstOrNull { it.game==g }?.id; page="Resumo" })
@@ -228,7 +229,7 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     }
 }
 @Composable private fun Dashboard(game: Game, account: Account?, state: HubState, go:(String)->Unit) {
-    if(account==null) { Column(Modifier.padding(20.dp), verticalArrangement=Arrangement.spacedBy(12.dp)) { EmptyState("Nenhuma conta conectada", "Crie uma conta ou importe um perfil para acompanhar seu progresso.") { Button(onClick={go("Conta")}){Text("Cadastrar conta")}} }; return }
+    if(account==null) { Column(Modifier.padding(20.dp), verticalArrangement=Arrangement.spacedBy(12.dp)) { EmptyState("Nenhuma conta conectada", "Crie uma conta ou importe um perfil para acompanhar seu progresso.", action={ Button(onClick={go("Conta")}){Text("Cadastrar conta")} }) }; return }
     val projects=state.projects.filter { it.accountId==account.id && !it.completed }
     val today=ResourceMath.serverDay(Instant.now().epochSecond,account.serverOffset,account.resetHour)
     val needed=projects.flatMap { it.costs.keys }.toSet()
@@ -239,9 +240,9 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
             StatusBadge(if(account.uid.isBlank()) "UID pendente" else "Perfil conectado", positive=account.uid.isNotBlank())
         } }
         item { Row(horizontalArrangement=Arrangement.spacedBy(10.dp), modifier=Modifier.fillMaxWidth()) {
-            MetricPill("Possuídos", account.characters.size.toString(), Modifier.weight(1f))
-            MetricPill("Projetos", projects.size.toString(), Modifier.weight(1f))
-            MetricPill("Times", state.teams.count { it.accountId==account.id }.toString(), Modifier.weight(1f))
+            MetricPill("Possuídos", account.characters.size.toString(), modifier=Modifier.weight(1f))
+            MetricPill("Projetos", projects.size.toString(), modifier=Modifier.weight(1f))
+            MetricPill("Times", state.teams.count { it.accountId==account.id }.toString(), modifier=Modifier.weight(1f))
         } }
         item { Section("Ações rápidas") {
             Row(Modifier.fillMaxWidth(), horizontalArrangement=Arrangement.spacedBy(8.dp)) {
@@ -377,8 +378,8 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
             if(owned == null) Text("Este personagem ainda não está marcado na conta.", color=GachaTokens.muted)
             else {
                 Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.spacedBy(8.dp)) {
-                    MetricPill("Nível", "${owned.level}/${game.maxLevel}", Modifier.weight(1f))
-                    MetricPill(if(game==Game.ZZZ) "Mindscape" else game.copyTerm, owned.copies.toString(), Modifier.weight(1f))
+                    MetricPill("Nível", "${owned.level}/${game.maxLevel}", modifier=Modifier.weight(1f))
+                    MetricPill(if(game==Game.ZZZ) "Mindscape" else game.copyTerm, owned.copies.toString(), modifier=Modifier.weight(1f))
                 }
                 Text(if(owned.weapon?.name.isNullOrBlank()) "Equipamento principal não cadastrado" else "${game.weaponTerm}: ${owned.weapon?.name}", color=GachaTokens.muted)
                 Button(onClick={onEdit(owned)}, modifier=Modifier.fillMaxWidth()) { Text("Editar progresso") }
@@ -529,9 +530,9 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
             val required=needed[m.id] ?: 0
             Text("${m.category} • ${m.location}",color=GachaTokens.muted)
             Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.spacedBy(8.dp)) {
-                MetricPill("Tenho", held.toString(), Modifier.weight(1f))
-                MetricPill("Preciso", required.toString(), Modifier.weight(1f))
-                MetricPill("Faltam", ResourceMath.missing(required,held).toString(), Modifier.weight(1f))
+                MetricPill("Tenho", held.toString(), modifier=Modifier.weight(1f))
+                MetricPill("Preciso", required.toString(), modifier=Modifier.weight(1f))
+                MetricPill("Faltam", ResourceMath.missing(required,held).toString(), modifier=Modifier.weight(1f))
             }
             if(required>0) ProgressBar((held.toFloat()/required).coerceIn(0f,1f),Modifier.fillMaxWidth(),if(held>=required) GachaTokens.success else MaterialTheme.colorScheme.primary)
             Field("Quantidade no inventário",quantity,{quantity=it},true)

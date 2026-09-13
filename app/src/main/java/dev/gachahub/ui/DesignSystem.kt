@@ -224,8 +224,8 @@ private fun GachaDesignPreview() {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             HeroPanel(Game.ZZZ, "Zenless Zone Zero", "Seu painel de progresso") { StatusBadge("Perfil conectado") }
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                MetricPill("Possuídos", "31", Modifier.weight(1f))
-                MetricPill("Projetos", "3", Modifier.weight(1f))
+                MetricPill("Possuídos", "31", modifier=Modifier.weight(1f))
+                MetricPill("Projetos", "3", modifier=Modifier.weight(1f))
             }
             EmptyState("Nenhum favorito", "Marque personagens no catálogo para vê-los aqui.")
         }
