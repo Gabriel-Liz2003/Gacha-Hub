@@ -148,6 +148,7 @@ import kotlinx.coroutines.launch
         Text("Personagem")
         Row(Modifier.horizontalScroll(rememberScrollState())) { characters.forEach { c -> FilterChip(selected==c.id,{selected=c.id;preview=null},label={Text(c.name)}) } }
         val owned=account.characters.first{it.characterId==selected}
+        if(game==Game.ZZZ) Text("Core: 0 = sem melhoria; 1–6 = A–F. EXP calcula pontos, sem Denny de aplicação de logs. Trilhas ausentes não têm custos verificados.")
         Text("Atual: nível ${owned.level} • ascensão ${owned.ascension} • ${game.weaponTerm} ${owned.weapon?.level ?: "não cadastrado"}")
         Field("Nome do projeto",title,{title=it});Field("Prioridade",priority,{priority=it},true)
         Row { Switch(manual,{manual=it;preview=null});Text("Checklist manual") }
@@ -159,7 +160,11 @@ import kotlinx.coroutines.launch
             edges.forEach{(track,steps)->
                 FilterChip(enabledTracks[track]==true,{
                     enabledTracks[track]=enabledTracks[track]!=true
-                    if(track !in from) from[track]=""
+                    if(track !in from) from[track]=if(game==Game.ZZZ) when(track) {
+                        "Promoção" -> owned.ascension.toString()
+                        "EXP de nível (sem Denny)" -> owned.level.toString()
+                        else -> ZzzProgress.skills(owned.skills)[track]?.toString().orEmpty()
+                    } else ""
                     if(track !in to) to[track]=steps.maxOf{it.to}.toString()
                     preview=null
                 },label={Text(track)})

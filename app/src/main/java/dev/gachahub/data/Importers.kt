@@ -72,7 +72,8 @@ object ShowcaseParser {
             val skills = when(game) {
                 Game.GENSHIN -> c.obj("skillLevelMap").mapValues { it.value.jsonPrimitive.int }
                 Game.HSR -> c.arr("skillTreeList").associate { it.jsonObject.str("pointId") to it.jsonObject.num("level") }
-                Game.ZZZ -> c.arr("SkillLevelList").associate { it.jsonObject.str("Index") to it.jsonObject.num("Level") }
+                Game.ZZZ -> ZzzProgress.skills(c.arr("SkillLevelList").associate { it.jsonObject.str("Index") to it.jsonObject.num("Level") }) +
+                    (if("CoreSkillEnhancement" in c) mapOf("Core" to c.num("CoreSkillEnhancement")) else emptyMap())
                 else -> emptyMap()
             }
             val weaponJson = when(game) {

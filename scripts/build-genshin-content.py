@@ -71,20 +71,18 @@ def generate(base, snapshot):
         key = material_ids.get(mid, f'genshin:material-{mid}')
         materials[key] = dict(id=key, game='GENSHIN', name=row['name'], category=row.get('type', 'Material'),
                               days=sorted(set(days)), location=' • '.join(locations), sources=[source('materials', row['file'])])
+    if base.get('version',1)>2:
+        order={c['id']:i for i,c in enumerate(base['characters'])}
+        characters.sort(key=lambda c:order.get(c['id'],len(order)))
+        cost_order={(c['characterId'],c['track'],c['from']):i for i,c in enumerate(base['costs'])}
+        costs.sort(key=lambda c:cost_order.get((c['characterId'],c['track'],c['from']),len(cost_order)))
     count = sum(c['game'] == 'GENSHIN' for c in characters)
     # Schema 2 prevents older APKs (single-row storage) from accepting this large pack.
-    return dict(base, schemaVersion=2, version=2, publishedAt=snapshot['checkedAt'], characters=characters,
+    return dict(base, schemaVersion=2, version=max(2, base.get("version",1)), publishedAt=max(snapshot["checkedAt"],base["publishedAt"]), characters=characters,
                 materials=list(materials.values()), costs=costs,
-                coverage=f'PARCIAL: {len(characters)} personagens ({count} Genshin), {len(base["builds"])} builds. Genshin: ascensões por etapa e talentos 1–10; talentos do Viajante, EXP e armas ainda ausentes. Outros jogos mantêm cobertura inicial.')
+                coverage=base['coverage'] if base.get('version',1)>2 else f'PARCIAL: {len(characters)} personagens ({count} Genshin), {len(base["builds"])} builds. Genshin: ascensões por etapa e talentos 1–10; talentos do Viajante, EXP e armas ainda ausentes. Outros jogos mantêm cobertura inicial.')
 
 
 if __name__ == '__main__':
-    base = json.loads((ROOT/'content/starter.json').read_text())
-    snapshot = json.loads((ROOT/'content/sources/genshin-db.json').read_text())
-    pack = generate(base, snapshot)
-    # Compact APK data: sources and costs remain fully inspectable as JSON.
-    data = json.dumps(pack, ensure_ascii=False, separators=(',', ':')) + '\n'
-    for path in ['content/starter.json', 'app/src/main/assets/starter.json']:
-        (ROOT/path).write_text(data)
-    print({key: len(pack[key]) for key in ['characters', 'builds', 'materials', 'costs']})
-    print(f'Content bytes: {len(data.encode())}')
+    import runpy
+    runpy.run_path(str(ROOT/'scripts/make-starter.py'),run_name='__main__')

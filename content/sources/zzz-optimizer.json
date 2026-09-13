@@ -1,0 +1,589 @@
+{
+  "repository": "frzyc/genshin-optimizer",
+  "sha": "180a0a1015cb725c7570cd828eb086749960df98",
+  "checkedAt": "2026-09-12",
+  "sourceDate": "2026-08-26",
+  "license": "MIT",
+  "rows": [
+    {
+      "id": "1401",
+      "rarity": "S",
+      "attribute": "physical",
+      "specialty": "anomaly",
+      "faction": "SpookShack",
+      "key": "Alice",
+      "name": "Alice",
+      "file": "libs/zzz/stats/Data/Characters/Alice.json"
+    },
+    {
+      "id": "1011",
+      "rarity": "A",
+      "attribute": "electric",
+      "specialty": "stun",
+      "faction": "CunningHares",
+      "key": "Anby",
+      "name": "Anby",
+      "file": "libs/zzz/stats/Data/Characters/Anby.json"
+    },
+    {
+      "id": "1111",
+      "rarity": "A",
+      "attribute": "electric",
+      "specialty": "attack",
+      "faction": "BelebogHeavyIndustries",
+      "key": "Anton",
+      "name": "Anton",
+      "file": "libs/zzz/stats/Data/Characters/Anton.json"
+    },
+    {
+      "id": "1501",
+      "rarity": "S",
+      "attribute": "ether",
+      "specialty": "anomaly",
+      "faction": "AngelsOfDelusion",
+      "key": "Aria",
+      "name": "Aria",
+      "file": "libs/zzz/stats/Data/Characters/Aria.json"
+    },
+    {
+      "id": "1311",
+      "rarity": "S",
+      "attribute": "ether",
+      "specialty": "support",
+      "faction": "StarsOfLyra",
+      "key": "AstraYao",
+      "name": "Astra Yao",
+      "file": "libs/zzz/stats/Data/Characters/AstraYao.json"
+    },
+    {
+      "id": "1471",
+      "rarity": "S",
+      "attribute": "fire",
+      "specialty": "rupture",
+      "faction": "KrampusComplianceAuthority",
+      "key": "Banyue",
+      "name": "Banyue",
+      "file": "libs/zzz/stats/Data/Characters/Banyue.json"
+    },
+    {
+      "id": "1121",
+      "rarity": "A",
+      "attribute": "fire",
+      "specialty": "defense",
+      "faction": "BelebogHeavyIndustries",
+      "key": "Ben",
+      "name": "Ben",
+      "file": "libs/zzz/stats/Data/Characters/Ben.json"
+    },
+    {
+      "id": "1081",
+      "rarity": "A",
+      "attribute": "physical",
+      "specialty": "attack",
+      "faction": "CunningHares",
+      "key": "Billy",
+      "name": "Billy",
+      "file": "libs/zzz/stats/Data/Characters/Billy.json"
+    },
+    {
+      "id": "1171",
+      "rarity": "S",
+      "attribute": "fire",
+      "specialty": "anomaly",
+      "faction": "SonsOfCalydon",
+      "key": "Burnice",
+      "name": "Burnice",
+      "file": "libs/zzz/stats/Data/Characters/Burnice.json"
+    },
+    {
+      "id": "1071",
+      "rarity": "S",
+      "attribute": "physical",
+      "specialty": "defense",
+      "faction": "SonsOfCalydon",
+      "key": "Caesar",
+      "name": "Caesar",
+      "file": "libs/zzz/stats/Data/Characters/Caesar.json"
+    },
+    {
+      "id": "1521",
+      "rarity": "S",
+      "attribute": "electric",
+      "specialty": "attack",
+      "faction": "CriminalInvestigationSpecialResponseTeam",
+      "key": "Cissia",
+      "name": "Cissia",
+      "file": "libs/zzz/stats/Data/Characters/Cissia.json"
+    },
+    {
+      "id": "1061",
+      "rarity": "A",
+      "attribute": "physical",
+      "specialty": "attack",
+      "faction": "VictoriaHousekeepingCo",
+      "key": "Corin",
+      "name": "Corin",
+      "file": "libs/zzz/stats/Data/Characters/Corin.json"
+    },
+    {
+      "id": "1481",
+      "rarity": "S",
+      "attribute": "physical",
+      "specialty": "stun",
+      "faction": "KrampusComplianceAuthority",
+      "key": "Dialyn",
+      "name": "Dialyn",
+      "file": "libs/zzz/stats/Data/Characters/Dialyn.json"
+    },
+    {
+      "id": "1191",
+      "rarity": "S",
+      "attribute": "ice",
+      "specialty": "attack",
+      "faction": "VictoriaHousekeepingCo",
+      "key": "Ellen",
+      "name": "Ellen",
+      "file": "libs/zzz/stats/Data/Characters/Ellen.json"
+    },
+    {
+      "id": "1321",
+      "rarity": "S",
+      "attribute": "fire",
+      "specialty": "attack",
+      "faction": "StarsOfLyra",
+      "key": "Evelyn",
+      "name": "Evelyn",
+      "file": "libs/zzz/stats/Data/Characters/Evelyn.json"
+    },
+    {
+      "id": "1181",
+      "rarity": "S",
+      "attribute": "electric",
+      "specialty": "anomaly",
+      "faction": "BelebogHeavyIndustries",
+      "key": "Grace",
+      "name": "Grace",
+      "file": "libs/zzz/stats/Data/Characters/Grace.json"
+    },
+    {
+      "id": "1201",
+      "rarity": "S",
+      "attribute": "electric",
+      "specialty": "attack",
+      "faction": "HollowSpecialOoperationsSection6",
+      "key": "Harumasa",
+      "name": "Harumasa",
+      "file": "libs/zzz/stats/Data/Characters/Harumasa.json"
+    },
+    {
+      "id": "1291",
+      "rarity": "S",
+      "attribute": "ice",
+      "specialty": "attack",
+      "faction": "Mockingbird",
+      "key": "Hugo",
+      "name": "Hugo",
+      "file": "libs/zzz/stats/Data/Characters/Hugo.json"
+    },
+    {
+      "id": "1261",
+      "rarity": "S",
+      "attribute": "physical",
+      "specialty": "anomaly",
+      "faction": "CriminalInvestigationSpecialResponseTeam",
+      "key": "Jane",
+      "name": "Jane",
+      "file": "libs/zzz/stats/Data/Characters/Jane.json"
+    },
+    {
+      "id": "1391",
+      "rarity": "S",
+      "attribute": "fire",
+      "specialty": "stun",
+      "faction": "YunkuiSummit",
+      "key": "JuFufu",
+      "name": "Ju Fufu",
+      "file": "libs/zzz/stats/Data/Characters/JuFufu.json"
+    },
+    {
+      "id": "1101",
+      "rarity": "S",
+      "attribute": "fire",
+      "specialty": "stun",
+      "faction": "BelebogHeavyIndustries",
+      "key": "Koleda",
+      "name": "Koleda",
+      "file": "libs/zzz/stats/Data/Characters/Koleda.json"
+    },
+    {
+      "id": "1161",
+      "rarity": "S",
+      "attribute": "fire",
+      "specialty": "stun",
+      "faction": "SonsOfCalydon",
+      "key": "Lighter",
+      "name": "Lighter",
+      "file": "libs/zzz/stats/Data/Characters/Lighter.json"
+    },
+    {
+      "id": "1451",
+      "rarity": "S",
+      "attribute": "ether",
+      "specialty": "support",
+      "faction": "SpookShack",
+      "key": "Lucia",
+      "name": "Lucia",
+      "file": "libs/zzz/stats/Data/Characters/Lucia.json"
+    },
+    {
+      "id": "1151",
+      "rarity": "A",
+      "attribute": "fire",
+      "specialty": "support",
+      "faction": "SonsOfCalydon",
+      "key": "Lucy",
+      "name": "Lucy",
+      "file": "libs/zzz/stats/Data/Characters/Lucy.json"
+    },
+    {
+      "id": "1141",
+      "rarity": "S",
+      "attribute": "ice",
+      "specialty": "stun",
+      "faction": "VictoriaHousekeepingCo",
+      "key": "Lycaon",
+      "name": "Lycaon",
+      "file": "libs/zzz/stats/Data/Characters/Lycaon.json"
+    },
+    {
+      "id": "1441",
+      "rarity": "A",
+      "attribute": "fire",
+      "specialty": "rupture",
+      "faction": "SpookShack",
+      "key": "Manato",
+      "name": "Manato",
+      "file": "libs/zzz/stats/Data/Characters/Manato.json"
+    },
+    {
+      "id": "1091",
+      "rarity": "S",
+      "attribute": "ice",
+      "specialty": "anomaly",
+      "faction": "HollowSpecialOoperationsSection6",
+      "key": "Miyabi",
+      "name": "Miyabi",
+      "file": "libs/zzz/stats/Data/Characters/Miyabi.json"
+    },
+    {
+      "id": "1511",
+      "rarity": "S",
+      "attribute": "ether",
+      "specialty": "stun",
+      "faction": "AngelsOfDelusion",
+      "key": "NangongYu",
+      "name": "Nangong Yu",
+      "file": "libs/zzz/stats/Data/Characters/NangongYu.json"
+    },
+    {
+      "id": "1021",
+      "rarity": "S",
+      "attribute": "physical",
+      "specialty": "attack",
+      "faction": "CunningHares",
+      "key": "Nekomata",
+      "name": "Nekomata",
+      "file": "libs/zzz/stats/Data/Characters/Nekomata.json"
+    },
+    {
+      "id": "1031",
+      "rarity": "A",
+      "attribute": "ether",
+      "specialty": "support",
+      "faction": "CunningHares",
+      "key": "Nicole",
+      "name": "Nicole",
+      "file": "libs/zzz/stats/Data/Characters/Nicole.json"
+    },
+    {
+      "id": "1571",
+      "rarity": "S",
+      "attribute": "fire",
+      "specialty": "stun",
+      "faction": "RoscaeliferExternalStrategyDepartment",
+      "key": "Norma",
+      "name": "Norma",
+      "file": "libs/zzz/stats/Data/Characters/Norma.json"
+    },
+    {
+      "id": "1301",
+      "rarity": "S",
+      "attribute": "fire",
+      "specialty": "attack",
+      "faction": "NewEriduDefenseForce",
+      "key": "OrphieMagus",
+      "name": "Orphie & Magus",
+      "file": "libs/zzz/stats/Data/Characters/OrphieMagus.json"
+    },
+    {
+      "id": "1421",
+      "rarity": "A",
+      "attribute": "physical",
+      "specialty": "defense",
+      "faction": "YunkuiSummit",
+      "key": "PanYinhu",
+      "name": "Pan Yinhu",
+      "file": "libs/zzz/stats/Data/Characters/PanYinhu.json"
+    },
+    {
+      "id": "1281",
+      "rarity": "A",
+      "attribute": "physical",
+      "specialty": "anomaly",
+      "faction": "SonsOfCalydon",
+      "key": "Piper",
+      "name": "Piper",
+      "file": "libs/zzz/stats/Data/Characters/Piper.json"
+    },
+    {
+      "id": "1541",
+      "rarity": "S",
+      "attribute": "ice",
+      "specialty": "anomaly",
+      "faction": "KrampusComplianceAuthority",
+      "key": "Promeia",
+      "name": "Promeia",
+      "file": "libs/zzz/stats/Data/Characters/Promeia.json"
+    },
+    {
+      "id": "1351",
+      "rarity": "A",
+      "attribute": "physical",
+      "specialty": "stun",
+      "faction": "SonsOfCalydon",
+      "key": "Pulchra",
+      "name": "Pulchra",
+      "file": "libs/zzz/stats/Data/Characters/Pulchra.json"
+    },
+    {
+      "id": "1551",
+      "rarity": "S",
+      "attribute": "ether",
+      "specialty": "attack",
+      "faction": "Phaethon",
+      "key": "Pyrois",
+      "name": "Pyrois",
+      "file": "libs/zzz/stats/Data/Characters/Pyrois.json"
+    },
+    {
+      "id": "1251",
+      "rarity": "S",
+      "attribute": "electric",
+      "specialty": "stun",
+      "faction": "CriminalInvestigationSpecialResponseTeam",
+      "key": "Qingyi",
+      "name": "Qingyi",
+      "file": "libs/zzz/stats/Data/Characters/Qingyi.json"
+    },
+    {
+      "id": "1581",
+      "rarity": "S",
+      "attribute": "lumiflux",
+      "specialty": "anomaly",
+      "faction": "CovenantOfDayat",
+      "key": "Remielle",
+      "name": "Remielle",
+      "file": "libs/zzz/stats/Data/Characters/Remielle.json"
+    },
+    {
+      "id": "1211",
+      "rarity": "S",
+      "attribute": "electric",
+      "specialty": "support",
+      "faction": "VictoriaHousekeepingCo",
+      "key": "Rina",
+      "name": "Rina",
+      "file": "libs/zzz/stats/Data/Characters/Rina.json"
+    },
+    {
+      "id": "1461",
+      "rarity": "S",
+      "attribute": "electric",
+      "specialty": "attack",
+      "faction": "NewEriduDefenseForce",
+      "key": "Seed",
+      "name": "Seed",
+      "file": "libs/zzz/stats/Data/Characters/Seed.json"
+    },
+    {
+      "id": "1271",
+      "rarity": "A",
+      "attribute": "electric",
+      "specialty": "defense",
+      "faction": "CriminalInvestigationSpecialResponseTeam",
+      "key": "Seth",
+      "name": "Seth",
+      "file": "libs/zzz/stats/Data/Characters/Seth.json"
+    },
+    {
+      "id": "1591",
+      "rarity": "S",
+      "attribute": "ice",
+      "specialty": "attack",
+      "faction": "RoscaeliferExternalStrategyDepartment",
+      "key": "Sigrid",
+      "name": "Sigrid",
+      "file": "libs/zzz/stats/Data/Characters/Sigrid.json"
+    },
+    {
+      "id": "1381",
+      "rarity": "S",
+      "attribute": "electric",
+      "specialty": "attack",
+      "faction": "NewEriduDefenseForce",
+      "key": "Soldier0Anby",
+      "name": "Soldier 0 - Anby",
+      "file": "libs/zzz/stats/Data/Characters/Soldier0Anby.json"
+    },
+    {
+      "id": "1041",
+      "rarity": "S",
+      "attribute": "fire",
+      "specialty": "attack",
+      "faction": "NewEriduDefenseForce",
+      "key": "Soldier11",
+      "name": "Soldier 11",
+      "file": "libs/zzz/stats/Data/Characters/Soldier11.json"
+    },
+    {
+      "id": "1131",
+      "rarity": "A",
+      "attribute": "ice",
+      "specialty": "support",
+      "faction": "HollowSpecialOoperationsSection6",
+      "key": "Soukaku",
+      "name": "Soukaku",
+      "file": "libs/zzz/stats/Data/Characters/Soukaku.json"
+    },
+    {
+      "id": "1531",
+      "rarity": "S",
+      "attribute": "physical",
+      "specialty": "rupture",
+      "faction": "CunningHares",
+      "key": "StarlightBilly",
+      "name": "Starlight - Billy",
+      "file": "libs/zzz/stats/Data/Characters/StarlightBilly.json"
+    },
+    {
+      "id": "1491",
+      "rarity": "S",
+      "attribute": "physical",
+      "specialty": "support",
+      "faction": "AngelsOfDelusion",
+      "key": "Sunna",
+      "name": "Sunna",
+      "file": "libs/zzz/stats/Data/Characters/Sunna.json"
+    },
+    {
+      "id": "1361",
+      "rarity": "S",
+      "attribute": "electric",
+      "specialty": "stun",
+      "faction": "NewEriduDefenseForce",
+      "key": "Trigger",
+      "name": "Trigger",
+      "file": "libs/zzz/stats/Data/Characters/Trigger.json"
+    },
+    {
+      "id": "1561",
+      "rarity": "S",
+      "attribute": "wind",
+      "specialty": "anomaly",
+      "faction": "RoscaeliferExternalStrategyDepartment",
+      "key": "Velina",
+      "name": "Velina",
+      "file": "libs/zzz/stats/Data/Characters/Velina.json"
+    },
+    {
+      "id": "1331",
+      "rarity": "S",
+      "attribute": "ether",
+      "specialty": "anomaly",
+      "faction": "Mockingbird",
+      "key": "Vivian",
+      "name": "Vivian",
+      "file": "libs/zzz/stats/Data/Characters/Vivian.json"
+    },
+    {
+      "id": "1221",
+      "rarity": "S",
+      "attribute": "electric",
+      "specialty": "anomaly",
+      "faction": "HollowSpecialOoperationsSection6",
+      "key": "Yanagi",
+      "name": "Yanagi",
+      "file": "libs/zzz/stats/Data/Characters/Yanagi.json"
+    },
+    {
+      "id": "1431",
+      "rarity": "S",
+      "attribute": "physical",
+      "specialty": "attack",
+      "faction": "YunkuiSummit",
+      "key": "YeShunguang",
+      "name": "Ye Shunguang",
+      "file": "libs/zzz/stats/Data/Characters/YeShunguang.json"
+    },
+    {
+      "id": "1051",
+      "rarity": "S",
+      "attribute": "ice",
+      "specialty": "rupture",
+      "faction": "SpookShack",
+      "key": "Yidhari",
+      "name": "Yidhari",
+      "file": "libs/zzz/stats/Data/Characters/Yidhari.json"
+    },
+    {
+      "id": "1371",
+      "rarity": "S",
+      "attribute": "ether",
+      "specialty": "rupture",
+      "faction": "YunkuiSummit",
+      "key": "Yixuan",
+      "name": "Yixuan",
+      "file": "libs/zzz/stats/Data/Characters/Yixuan.json"
+    },
+    {
+      "id": "1411",
+      "rarity": "S",
+      "attribute": "physical",
+      "specialty": "support",
+      "faction": "SpookShack",
+      "key": "Yuzuha",
+      "name": "Yuzuha",
+      "file": "libs/zzz/stats/Data/Characters/Yuzuha.json"
+    },
+    {
+      "id": "1341",
+      "rarity": "S",
+      "attribute": "ice",
+      "specialty": "defense",
+      "faction": "KrampusComplianceAuthority",
+      "key": "Zhao",
+      "name": "Zhao",
+      "file": "libs/zzz/stats/Data/Characters/Zhao.json"
+    },
+    {
+      "id": "1241",
+      "rarity": "S",
+      "attribute": "ether",
+      "specialty": "attack",
+      "faction": "CriminalInvestigationSpecialResponseTeam",
+      "key": "ZhuYuan",
+      "name": "Zhu Yuan",
+      "file": "libs/zzz/stats/Data/Characters/ZhuYuan.json"
+    }
+  ]
+}

@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.0 — expansão Zenless Zone Zero
+
+- Roster live de 59 agentes no corte de 12/09/2026 (58 Provider IDs resolvidos); personagens futuros ficam fora do pacote.
+- Progressão ZZZ por CostStep: EXP em pontos, promoção e Basic/Dodge/Assist/Special/Chain para 58 agentes; Core A–F verificado para 26.
+- Catálogo editorial compacto de 65 W-Engines, 27 Drive Disc sets, 59 builds e quatro guias de time, com referências por commit e sem benchmarks inventados.
+- Importador Enka traduz índices de habilidade ZZZ, preserva chaves desconhecidas, registra CoreSkillEnhancement e resolve nomes de W-Engine quando o Provider ID está no catálogo.
+- Filtros de atributo, especialidade e facção; rank S/A e Mindscape M0–M6; editor de progressão ZZZ e visualização dos equipamentos das builds.
+- Room continua v3, agora com linhas `catalog_engine`/`catalog_disc`; limite individual de catálogo reduzido para 256 KiB.
+- Pipeline offline único (`make-starter.py`) preserva os registros Genshin e gera os dois arquivos idênticos do pacote.
+
+As limitações de fonte ficam explícitas no campo `coverage`: Claret está no roster live, porém sem Provider ID e custos verificados; os nomes de Core só estão disponíveis para 26 agentes no snapshot consultado; EXP não inclui a quantidade de Denny para aplicar logs. Nenhum valor ausente é estimado.
+
 ## 0.3.0 — catálogo e evolução Genshin
 
 - Pacote v2: 120 personagens Genshin, ascensões por etapa e talentos 1–10 para 118.

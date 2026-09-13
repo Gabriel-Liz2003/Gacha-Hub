@@ -217,26 +217,39 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     var query by rememberSaveable(game) { mutableStateOf("") }
     var ownedOnly by rememberSaveable(game) { mutableStateOf(false) }
     var rarity by rememberSaveable(game) { mutableStateOf(0) }
+    var attribute by rememberSaveable(game) { mutableStateOf("") }
+    var specialty by rememberSaveable(game) { mutableStateOf("") }
+    var faction by rememberSaveable(game) { mutableStateOf("") }
     var editor by remember { mutableStateOf<Owned?>(null) }
     var create by remember { mutableStateOf(false) }
     val owned = account?.characters.orEmpty().associateBy { it.characterId }
-    val chars=state.characters.filter { it.game==game && ResourceMath.matches(it.name,it.element,it.role,it.specialty,query) && (!ownedOnly || it.id in owned) && (!favorites || owned[it.id]?.favorite==true) && (rarity==0 || it.rarity==rarity) }.sortedBy { it.name }
+    val chars=state.characters.filter { it.game==game && ResourceMath.matches(it.name,it.element,it.role + " " + it.faction,it.specialty,query) && (attribute.isBlank() || it.element==attribute) && (specialty.isBlank() || it.specialty==specialty) && (faction.isBlank() || it.faction==faction) && (!ownedOnly || it.id in owned) && (!favorites || owned[it.id]?.favorite==true) && (rarity==0 || it.rarity==rarity) }.sortedBy { it.name }
     LazyColumn(contentPadding=PaddingValues(18.dp),verticalArrangement=Arrangement.spacedBy(12.dp)) {
         item {
-            Field("Buscar nome, elemento, função ou especialidade",query,{query=it})
+            Field("Buscar nome, atributo, função, especialidade ou facção",query,{query=it})
             Row(horizontalArrangement=Arrangement.spacedBy(8.dp)) {
                 FilterChip(ownedOnly,{ownedOnly=!ownedOnly},label={Text("Possuídos")})
-                FilterChip(rarity==5,{rarity=if(rarity==5)0 else 5},label={Text("5★ / S")})
-                FilterChip(rarity==4,{rarity=if(rarity==4)0 else 4},label={Text("4★ / A")})
+                FilterChip(rarity==5,{rarity=if(rarity==5)0 else 5},label={Text(if(game==Game.ZZZ) "Rank S" else "5★")})
+                FilterChip(rarity==4,{rarity=if(rarity==4)0 else 4},label={Text(if(game==Game.ZZZ) "Rank A" else "4★")})
+            }
+            if(game==Game.ZZZ) {
+                val roster=state.characters.filter { it.game==game }
+                CatalogFilter("Atributo",attribute,{attribute=it},roster.map{it.element})
+                CatalogFilter("Especialidade",specialty,{specialty=it},roster.map{it.specialty})
+                CatalogFilter("Facção",faction,{faction=it},roster.map{it.faction})
             }
             OutlinedButton(onClick={create=true}){Text("Cadastrar personagem ausente")}
         }
         if(chars.isEmpty()) item { Text("Nenhum personagem encontrado. Adicione ao catálogo ou importe um pacote.") }
         items(chars,key={it.id}) { c -> Section(c.name) {
             Row(horizontalArrangement=Arrangement.spacedBy(12.dp)) {
-                if(c.image.isNotBlank()) AsyncImage(model=c.image,contentDescription=c.name,modifier=Modifier.size(76.dp))
-                Column { Text("${c.rarity}★ • ${c.element} • ${c.specialty}"); Text(c.role)
-                    owned[c.id]?.let { Text("Lv. ${it.level} • ${game.copyTerm} ${it.copies}") }
+                Box(Modifier.size(76.dp)) {
+                    Text(c.name.take(2),modifier=Modifier.padding(16.dp),style=MaterialTheme.typography.titleLarge)
+                    if(c.image.isNotBlank()) AsyncImage(model=c.image,contentDescription=c.name,modifier=Modifier.size(76.dp))
+                }
+                Column { Text("${if(game==Game.ZZZ) (if(c.rarity==5) "S" else "A") else "${c.rarity}★"} • ${c.element} • ${c.specialty}"); Text(c.role)
+                    if(c.faction.isNotBlank()) Text(c.faction)
+                    owned[c.id]?.let { Text("Lv. ${it.level} • ${if(game==Game.ZZZ) "M${it.copies}" else "${game.copyTerm} ${it.copies}"}") }
                 }
             }
             if(account != null) Row {
@@ -260,15 +273,41 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
         vm.perform("Progresso salvo") { vm.repository.editOwned(requireNotNull(account).id,edited); editor=null }
     } }
 }
+@Composable private fun CatalogFilter(label:String, selected:String, change:(String)->Unit, values:List<String>) {
+    Text(label,style=MaterialTheme.typography.labelMedium)
+    Row(Modifier.horizontalScroll(rememberScrollState()),horizontalArrangement=Arrangement.spacedBy(8.dp)) {
+        FilterChip(selected.isBlank(),{change("")},label={Text("Todos")})
+        values.filter{it.isNotBlank()}.distinct().sorted().forEach { value ->
+            FilterChip(selected==value,{change(if(selected==value) "" else value)},label={Text(value)})
+        }
+    }
+}
 @Composable private fun OwnedEditor(game: Game, character: Character, initial: Owned, close:()->Unit, save:(Owned)->Unit) {
     var level by remember { mutableStateOf(initial.level.toString()) }; var copies by remember { mutableStateOf(initial.copies.toString()) }
     var asc by remember { mutableStateOf(initial.ascension.toString()) }; var notes by remember { mutableStateOf(initial.notes) }
-    var stats by remember { mutableStateOf(codec.encodeToString(initial.stats)) }; var skills by remember { mutableStateOf(codec.encodeToString(initial.skills)) }
+    var stats by remember { mutableStateOf(codec.encodeToString(initial.stats)) }; var skills by remember { mutableStateOf(codec.encodeToString(if(game==Game.ZZZ) ZzzProgress.skills(initial.skills) else initial.skills)) }
     var weapon by remember { mutableStateOf(codec.encodeToString(initial.weapon ?: Gear())) }; var equipment by remember { mutableStateOf(codec.encodeToString(initial.equipment)) }
     var error by remember { mutableStateOf<String?>(null) }
     val invalidStats = remember { mutableStateMapOf<String,Boolean>() }
     AlertDialog(onDismissRequest=close,title={Text(character.name)},text={Column(Modifier.verticalScroll(rememberScrollState()),verticalArrangement=Arrangement.spacedBy(8.dp)) {
-        Field("Nível (1–${game.maxLevel})",level,{level=it},true);Field(game.copyTerm,copies,{copies=it},true);Field("Ascensão (0–6)",asc,{asc=it},true)
+        Field("Nível (1–${game.maxLevel})",level,{level=it},true);if(game==Game.ZZZ) {
+            Row(Modifier.horizontalScroll(rememberScrollState())) {
+                (0..6).forEach { n -> FilterChip(copies==n.toString(),{copies=n.toString()},label={Text("M$n")}) }
+            }
+            Field("Promoção (0–5)",asc,{asc=it},true)
+            Text("Níveis base, sem bônus de Mindscape. Core: 0 = sem melhoria, 1–6 = A–F.")
+            (ZzzProgress.tracks+"Core").forEach { track ->
+                val map=runCatching{codec.decodeFromString<Map<String,Int>>(skills)}.getOrDefault(emptyMap())
+                var value by remember(track) { mutableStateOf(map[track]?.toString().orEmpty()) }
+                Field(if(track=="Core") "Core (0–6 / A–F)" else "$track (1–12)",value,{ text ->
+                    value=text
+                    val next=map.toMutableMap()
+                    if(text.isBlank()) next.remove(track) else text.toIntOrNull()?.let { next[track]=it }
+                    invalidStats[track]=text.isNotBlank() && (text.toIntOrNull()?.let { it in (if(track=="Core") 0..6 else 1..12) } != true)
+                    skills=codec.encodeToString(next)
+                },true)
+            }
+        } else { Field(game.copyTerm,copies,{copies=it},true);Field("Ascensão (0–6)",asc,{asc=it},true) }
         Text("Atributos em unidades da tela: porcentagens como 70, não 0.70. Use nomes do comparador: ATK, CRIT Rate, CRIT DMG, SPD…")
         val statKeys = listOf("ATK","HP","DEF","CRIT Rate","CRIT DMG") + when(game) {
             Game.GENSHIN -> listOf("Energy Recharge","Elemental Mastery")
@@ -309,10 +348,16 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
         if(builds.isEmpty())item{Text("Não há build verificada neste pacote para a busca. Nenhuma recomendação será gerada sem fonte.")}
         items(builds,key={it.id}) { b -> Section("${chars[b.characterId]?.name} • ${b.title}") {
             Text(b.role,color=MaterialTheme.colorScheme.primary)
-            if(b.bis.isNotEmpty())Text("Best in Slot: ${b.bis.joinToString()}")
+            if(b.bis.isNotEmpty())Text("${if(game==Game.ZZZ) "Recomendação principal" else "Best in Slot"}: ${b.bis.joinToString()}")
             if(b.premium.isNotEmpty())Text("Premium: ${b.premium.joinToString()}")
             if(b.accessible.isNotEmpty())Text("Acessíveis / F2P: ${b.accessible.joinToString()}")
             Text("Conjuntos: ${b.sets.joinToString("; ")}")
+            b.wEngineIds.mapNotNull { id -> state.pack?.wEngines?.find{it.id==id} }.forEach { motor ->
+                Text("${motor.name} • ${motor.rarity} • ${motor.specialty} • ${motor.mainStat}",style=MaterialTheme.typography.bodySmall)
+            }
+            b.driveDiscIds.mapNotNull { id -> state.pack?.driveDiscs?.find{it.id==id} }.forEach { disc ->
+                Text("${disc.name} — 2p: ${disc.twoPiece} • 4p: ${disc.fourPiece}",style=MaterialTheme.typography.bodySmall)
+            }
             b.slots.forEach{(slot,stat)->Text("$slot → $stat")}
             Text("Substats: ${b.substats.joinToString(" > ")}")
             Text("Habilidades: ${b.skillPriority.joinToString(" > ")}")

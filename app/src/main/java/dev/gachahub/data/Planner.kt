@@ -6,11 +6,12 @@ object Planner {
     fun calculate(pack: ContentPack, characterId: String, targets: List<Target>): Map<String, Long> {
         require(targets.isNotEmpty() && targets.map { it.track }.distinct().size == targets.size) { "Selecione trilhas sem repetição" }
         val steps = mutableListOf<Map<String, Long>>()
+        val edges = pack.costs.filter { it.characterId == characterId }.groupBy { it.track to it.from }
         targets.forEach { t ->
             require(t.from >= 0 && t.to >= t.from) { "Objetivo deve ser maior ou igual ao atual" }
             var current = t.from
             while (current < t.to) {
-                val step = pack.costs.singleOrNull { it.characterId == characterId && it.track == t.track && it.from == current && it.to <= t.to }
+                val step = edges[t.track to current]?.singleOrNull { it.to <= t.to }
                     ?: error("Sem custo verificado: ${t.track} $current → ${t.to}. Importe uma tabela completa ou use checklist manual.")
                 steps += step.costs; current = step.to
             }

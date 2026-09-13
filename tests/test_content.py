@@ -1,12 +1,15 @@
 import json,unittest,datetime,pathlib,xml.etree.ElementTree as ET
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 class ContentTests(unittest.TestCase):
- def setUp(self): self.p=json.loads((ROOT/'content/starter.json').read_text())
+ def setUp(self): self.p=json.loads((ROOT/'content/starter.json').read_text(encoding="utf-8"))
  def test_asset_matches_published(self):self.assertEqual((ROOT/'content/starter.json').read_bytes(),(ROOT/'app/src/main/assets/starter.json').read_bytes())
  def test_all_games(self):self.assertEqual({c['game'] for c in self.p['characters']},{'ZZZ','HSR','GENSHIN','WUWA'})
  def test_unique_ids(self):
-  for kind in ['characters','builds','materials','teams']:
+  for kind in ['characters','builds','materials','teams','wEngines','driveDiscs']:
    ids=[x['id'] for x in self.p[kind]];self.assertEqual(len(ids),len(set(ids)))
+ def test_provider_ids_unique_per_game(self):
+  values=[(c['game'],c['providerId']) for c in self.p['characters'] if c.get('providerId')]
+  self.assertEqual(len(values),len(set(values)))
  def test_costs_never_cross_games(self):
   chars={c['id']:c for c in self.p['characters']};mats={m['id']:m for m in self.p['materials']}
   for c in self.p['costs']:

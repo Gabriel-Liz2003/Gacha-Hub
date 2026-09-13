@@ -32,7 +32,7 @@ class PersistenceTests {
             val r=Repository(db)
             assertEquals(expected,r.snapshot().pack)
             assertEquals("Preserved account",r.snapshot().accounts.single().name)
-            assertTrue(db.dao().all().all { it.payload.toByteArray().size<512*1024 })
+            assertTrue(db.dao().all().all { it.payload.toByteArray().size<256*1024 })
             assertEquals(expected.costs.size,db.dao().all().count{it.kind=="catalog_cost"})
         }finally{db.close();context.deleteDatabase(name)}
     }
