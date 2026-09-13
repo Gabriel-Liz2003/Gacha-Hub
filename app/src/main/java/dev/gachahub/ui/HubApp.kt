@@ -201,12 +201,12 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     var uid by rememberSaveable(account?.id) { mutableStateOf(account?.uid ?: "") }
     var offset by rememberSaveable(account?.id) { mutableStateOf((account?.serverOffset ?: -5).toString()) }
     var reset by rememberSaveable(account?.id) { mutableStateOf((account?.resetHour ?: 4).toString()) }
-    LazyColumn(contentPadding=PaddingValues(18.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
-        item { Section("Nova conta") {
+    Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(18.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
+        Section("Nova conta") {
             Field("Nome da conta",name,{name=it})
             Button(onClick={vm.perform("Conta criada") { vm.repository.saveAccount(Account(newId(),game,name.trim())) }},enabled=name.isNotBlank()) { Text("Criar conta") }
-        } }
-        if(account != null) item { Section("${account.name} • importação") {
+        }
+        if(account != null) Section("${account.name} • importação") {
             Field("UID público",uid,{uid=it},true)
             if(game != Game.WUWA) {
                 Text("Importa apenas personagens exibidos na vitrine pública. Não usa HoYoLAB autenticado nem acessa inventário de materiais.")
@@ -222,7 +222,7 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
                 val current=vm.repository.snapshot().accounts.first { it.id==account.id }
                 vm.repository.saveAccount(current.copy(uid=uid,serverOffset=offset.toInt(),resetHour=reset.toInt()))
             }}) { Text("Salvar UID e servidor") }
-        } }
+        }
     }
 }
 @Composable private fun Dashboard(game: Game, account: Account?, state: HubState, go:(String)->Unit) {
