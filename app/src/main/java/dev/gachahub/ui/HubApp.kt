@@ -288,11 +288,14 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     var specialty by rememberSaveable(game) { mutableStateOf("") }
     var faction by rememberSaveable(game) { mutableStateOf("") }
     var grid by rememberSaveable(game) { mutableStateOf(true) }
+    var detail by remember { mutableStateOf<Character?>(null) }
     var editor by remember { mutableStateOf<Owned?>(null) }
     var create by remember { mutableStateOf(false) }
     val owned = account?.characters.orEmpty().associateBy { it.characterId }
     val chars=state.characters.filter { it.game==game && ResourceMath.matches(it.name,it.element,it.role + " " + it.faction,it.specialty,query) && (attribute.isBlank() || it.element==attribute) && (specialty.isBlank() || it.specialty==specialty) && (faction.isBlank() || it.faction==faction) && (!ownedOnly || it.id in owned) && (!favorites || owned[it.id]?.favorite==true) && (rarity==0 || it.rarity==rarity) }.sortedBy { it.name }
-    Column(Modifier.fillMaxSize()) {
+    if(detail != null) {
+        CharacterDetail(game, detail!!, owned[detail!!.id], state, onBack={detail=null}, onEdit={ownedDetail -> editor=ownedDetail})
+    } else Column(Modifier.fillMaxSize()) {
         Column(Modifier.padding(horizontal=18.dp, vertical=12.dp), verticalArrangement=Arrangement.spacedBy(10.dp)) {
             Row(Modifier.fillMaxWidth(), verticalAlignment=Alignment.CenterVertically, horizontalArrangement=Arrangement.SpaceBetween) {
                 Column(Modifier.weight(1f)) {
@@ -319,11 +322,11 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
             EmptyState("Nenhum personagem encontrado", "Ajuste a busca ou importe um pacote de conteúdo.", modifier=Modifier.padding(18.dp))
         } else if(grid) {
             LazyVerticalGrid(columns=GridCells.Adaptive(156.dp), modifier=Modifier.fillMaxSize(), contentPadding=PaddingValues(start=18.dp,end=18.dp,bottom=24.dp), horizontalArrangement=Arrangement.spacedBy(10.dp), verticalArrangement=Arrangement.spacedBy(10.dp)) {
-                items(chars, key={it.id}) { c -> CharacterCard(game,c,owned[c.id],account,vm,{editor=it}) }
+                items(chars, key={it.id}) { c -> CharacterCard(game,c,owned[c.id],account,vm,{editor=it},{detail=c}) }
             }
         } else {
             LazyColumn(contentPadding=PaddingValues(start=18.dp,end=18.dp,bottom=24.dp), verticalArrangement=Arrangement.spacedBy(12.dp)) {
-                items(chars,key={it.id}) { c -> CharacterCard(game,c,owned[c.id],account,vm,{editor=it},compact=true) }
+                items(chars,key={it.id}) { c -> CharacterCard(game,c,owned[c.id],account,vm,{editor=it},{detail=c},compact=true) }
             }
         }
     }
@@ -340,8 +343,8 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     } }
 }
 
-@Composable private fun CharacterCard(game: Game, character: Character, owned: Owned?, account: Account?, vm: HubViewModel, edit: (Owned) -> Unit, compact: Boolean=false) {
-    GachaCard(Modifier.fillMaxWidth()) {
+@Composable private fun CharacterCard(game: Game, character: Character, owned: Owned?, account: Account?, vm: HubViewModel, edit: (Owned) -> Unit, open: () -> Unit, compact: Boolean=false) {
+    GachaCard(Modifier.fillMaxWidth(), onClick=open) {
         if(compact) Row(horizontalArrangement=Arrangement.spacedBy(12.dp), verticalAlignment=Alignment.CenterVertically) {
             CharacterArtwork(character, owned != null, Modifier.size(72.dp))
             CharacterMeta(game, character, owned, Modifier.weight(1f))
@@ -356,6 +359,36 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
                 TextButton(onClick={vm.perform { val current=vm.repository.snapshot().accounts.first{it.id==account.id}.characters.first{it.characterId==character.id}; vm.repository.editOwned(account.id,current.copy(favorite=!current.favorite)) }}, modifier=Modifier.weight(1f)) { Text(if(owned.favorite) "★" else "☆") }
             }
         }
+    }
+}
+
+@Composable private fun CharacterDetail(game: Game, character: Character, owned: Owned?, state: HubState, onBack: () -> Unit, onEdit: (Owned) -> Unit) {
+    LazyColumn(contentPadding=PaddingValues(18.dp), verticalArrangement=Arrangement.spacedBy(14.dp)) {
+        item { TextButton(onClick=onBack) { Text("‹  Voltar ao catálogo") } }
+        item {
+            Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(30.dp)).background(Brush.linearGradient(listOf(MaterialTheme.colorScheme.primary.copy(alpha=.28f),GachaTokens.panel))).padding(18.dp), verticalArrangement=Arrangement.spacedBy(10.dp)) {
+                CharacterArtwork(character, owned != null, Modifier.fillMaxWidth().height(240.dp))
+                Text(character.name, style=MaterialTheme.typography.headlineSmall)
+                Text("${if(game==Game.ZZZ) (if(character.rarity==5) "Rank S" else "Rank A") else "${character.rarity}★"} • ${character.element} • ${character.specialty}", color=MaterialTheme.colorScheme.primary)
+                Text("${character.role}${if(character.faction.isBlank()) "" else " • ${character.faction}"}", color=GachaTokens.muted)
+            }
+        }
+        item { Section("Visão geral") {
+            if(owned == null) Text("Este personagem ainda não está marcado na conta.", color=GachaTokens.muted)
+            else {
+                Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.spacedBy(8.dp)) {
+                    MetricPill("Nível", "${owned.level}/${game.maxLevel}", Modifier.weight(1f))
+                    MetricPill(if(game==Game.ZZZ) "Mindscape" else game.copyTerm, owned.copies.toString(), Modifier.weight(1f))
+                }
+                Text(if(owned.weapon?.name.isNullOrBlank()) "Equipamento principal não cadastrado" else "${game.weaponTerm}: ${owned.weapon?.name}", color=GachaTokens.muted)
+                Button(onClick={onEdit(owned)}, modifier=Modifier.fillMaxWidth()) { Text("Editar progresso") }
+            }
+        } }
+        item { Section("Build e progresso") {
+            val build=state.pack?.builds?.find { it.id==owned?.buildId }
+            Text(build?.title ?: "Nenhuma build vinculada", color=GachaTokens.muted)
+            Text("Use o Planner para definir a próxima evolução e acompanhar os materiais.")
+        } }
     }
 }
 
