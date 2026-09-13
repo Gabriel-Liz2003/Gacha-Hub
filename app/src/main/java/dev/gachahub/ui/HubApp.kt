@@ -130,7 +130,7 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
                         accounts.forEach { a -> TextButton(onClick={accountId=a.id}) { Text(if(account?.id==a.id) "● ${a.name}" else a.name) } }
                     }
                     when(page) {
-                        "Conta" -> AccountPage(game,account,vm,{openFile("import")})
+                        "Conta" -> AccountPage(game,account,vm,{openFile("import")}) { created -> pendingAccount=created; accountId=created.id }
                         "Resumo" -> Dashboard(game,account,state,{page=it})
                         "Personagens","Favoritos" -> CharactersPage(game,account,state,vm,page=="Favoritos")
                         "Builds" -> BuildsPage(game,account,state,vm)
@@ -199,7 +199,7 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
 }
 @Composable internal fun EmptyAccount() { EmptyState("Nenhuma conta selecionada", "Crie ou selecione uma conta na seção Conta.", modifier=Modifier.padding(20.dp)) }
 
-@Composable private fun AccountPage(game: Game, account: Account?, vm: HubViewModel, importFile:()->Unit) {
+@Composable private fun AccountPage(game: Game, account: Account?, vm: HubViewModel, importFile:()->Unit, onCreated:(Account)->Unit) {
     var name by rememberSaveable(game) { mutableStateOf("") }
     var uid by rememberSaveable(account?.id) { mutableStateOf(account?.uid ?: "") }
     var offset by rememberSaveable(account?.id) { mutableStateOf((account?.serverOffset ?: -5).toString()) }
@@ -209,8 +209,7 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
             Field("Nome da conta",name,{name=it})
             Button(onClick={
                 val created=Account(newId(),game,name.trim())
-                pendingAccount=created
-                accountId=created.id
+                onCreated(created)
                 vm.perform("Conta criada") { vm.repository.saveAccount(created) }
             },enabled=name.isNotBlank()) { Text("Criar conta") }
         }
