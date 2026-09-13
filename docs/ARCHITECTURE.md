@@ -37,7 +37,7 @@ que todo jogo usa automaticamente as mesmas regras de ascensão/equipamentos.
 ## Catálogo grande (0.3)
 
 Room v3 mantém os metadados em `content/current` e cada personagem, build, material,
-custo, time-guia e banner em registros `catalog_*` separados, com limite de 512 KB
+custo, time-guia, banner, W-Engine e Drive Disc em registros `catalog_*` separados, com limite de 256 KB
 por registro. Listas são reconstruídas por índice estável. A atualização é transacional.
 
 A migration 2→3 lê `substr(payload)` do antigo registro de conteúdo em blocos de

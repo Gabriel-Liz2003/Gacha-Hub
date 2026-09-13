@@ -18,7 +18,7 @@ data class CacheEntry(@PrimaryKey val key: String, val payload: String, val fetc
     @Upsert suspend fun putAll(records: List<Record>)
     @Query("DELETE FROM records WHERE kind=:kind AND id=:id") suspend fun delete(kind: String, id: String)
     @Query("DELETE FROM records") suspend fun clearRecords()
-    @Query("DELETE FROM records WHERE kind IN ('catalog_character','catalog_build','catalog_material','catalog_cost','catalog_team','catalog_banner')") suspend fun deleteCatalog()
+    @Query("DELETE FROM records WHERE kind IN ('catalog_character','catalog_build','catalog_material','catalog_cost','catalog_team','catalog_banner','catalog_engine','catalog_disc')") suspend fun deleteCatalog()
     @Query("SELECT * FROM cache WHERE `key`=:key") suspend fun cache(key: String): CacheEntry?
     @Upsert suspend fun putCache(entry: CacheEntry)
     @Query("DELETE FROM cache") suspend fun clearCache()
@@ -51,7 +51,7 @@ abstract class HubDatabase : RoomDatabase() {
                 }
                 val pack=codec.decodeFromString<ContentPack>(payload)
                 val records=ContentStorage.records(pack)
-                db.execSQL("DELETE FROM records WHERE kind IN ('catalog_character','catalog_build','catalog_material','catalog_cost','catalog_team','catalog_banner')")
+                db.execSQL("DELETE FROM records WHERE kind IN ('catalog_character','catalog_build','catalog_material','catalog_cost','catalog_team','catalog_banner','catalog_engine','catalog_disc')")
                 records.forEach { db.execSQL("INSERT OR REPLACE INTO records (kind,id,payload) VALUES (?,?,?)",arrayOf(it.kind,it.id,it.payload)) }
             }
         }

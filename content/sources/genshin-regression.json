@@ -1,0 +1,14 @@
+{
+  "characters": {
+    "count": 120,
+    "sha256": "e5c953cddfd1006311dcba3d127a1a485828339bd6ee9f2cda26b04e05c58412"
+  },
+  "materials": {
+    "count": 307,
+    "sha256": "2689b63f62e87eaf2a73546ee116a808beb2147a389d22f6116ceeeb43b4a894"
+  },
+  "costs": {
+    "count": 3774,
+    "sha256": "9157a477ea4f0d4872dbed80eb6ba06646764e58953aa9926c9a7f64da408d4a"
+  }
+}

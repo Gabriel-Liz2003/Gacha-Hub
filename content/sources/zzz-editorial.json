@@ -1,0 +1,4431 @@
+{
+  "cutoff": "2026-09-12",
+  "additionalCharacters": [
+    {
+      "id": "zzz:claret",
+      "game": "ZZZ",
+      "name": "Claret",
+      "rarity": 5,
+      "element": "Electric",
+      "specialty": "Armorer",
+      "role": "DPS",
+      "faction": "",
+      "providerId": "",
+      "image": "",
+      "sources": [
+        {
+          "name": "HoYoverse • versão 3.2 fase 1",
+          "url": "https://zenless.hoyoverse.com/pt-pt/news/166023?catchSpider=1",
+          "checkedAt": "2026-09-12",
+          "patch": "3.2"
+        }
+      ]
+    }
+  ],
+  "builds": [
+    {
+      "id": "zzz:alice-main",
+      "characterId": "zzz:alice",
+      "title": "Build principal • Fanged Metal",
+      "role": "Anomaly",
+      "bis": [
+        "Practiced Perfection (W1)"
+      ],
+      "premium": [
+        "Sharpened Stinger (W1)"
+      ],
+      "accessible": [
+        "Weeping Gemini (W5)"
+      ],
+      "sets": [
+        "4p Fanged Metal",
+        "2p Phaethon's Melody"
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency > ATK%",
+        "5": "PEN Ratio% > Physical DMG% > ATK%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": [
+        "Anomaly Proficiency > ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Chain",
+        "Special",
+        "Dodge",
+        "Assist"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/alice",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.1"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-PracticedPerfection",
+        "zzz:engine-SharpenedStinger",
+        "zzz:engine-WeepingGemini"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-FangedMetal",
+        "zzz:disc-PhaethonsMelody"
+      ]
+    },
+    {
+      "id": "zzz:anby-main",
+      "characterId": "zzz:anby",
+      "title": "Build principal • King of the Summit",
+      "role": "Stun",
+      "bis": [
+        "Hellfire Gears (W1)"
+      ],
+      "premium": [
+        "The Restrained (W1)"
+      ],
+      "accessible": [
+        "Steam Oven (W5)"
+      ],
+      "sets": [
+        "4p King of the Summit",
+        "2p Shockstar Disco"
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Electric DMG% > ATK%",
+        "6": "Impact"
+      },
+      "substats": [
+        "CRIT RATE = CRIT DMG > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Basic",
+        "Chain",
+        "Dodge",
+        "Assist"
+      ],
+      "notes": "Atordoamento para equipes de dano crítico. Garanta 50% CRIT Rate para King of the Summit. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/anby-demara",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.0"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-HellfireGears",
+        "zzz:engine-TheRestrained",
+        "zzz:engine-SteamOven"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-KingOfTheSummit",
+        "zzz:disc-ShockstarDisco"
+      ]
+    },
+    {
+      "id": "zzz:anton-main",
+      "characterId": "zzz:anton",
+      "title": "Build principal • Thunder Metal",
+      "role": "Attack",
+      "bis": [
+        "Heartstring Nocturne (W1)"
+      ],
+      "premium": [
+        "Zanshin Herb Case (W1)"
+      ],
+      "accessible": [
+        "Street Superstar (W5)"
+      ],
+      "sets": [
+        "4p Thunder Metal",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Electric DMG%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT RATE = CRIT DMG > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Basic",
+        "Special",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "O bônus de ATK do set exige um inimigo com Shock. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/anton",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "1.5"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-HeartstringNocturne",
+        "zzz:engine-ZanshinHerbCase",
+        "zzz:engine-StreetSuperstar"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-ThunderMetal",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:aria-main",
+      "characterId": "zzz:aria",
+      "title": "Build principal • Phaethon's Melody",
+      "role": "Anomaly",
+      "bis": [
+        "Angel in the Shell (W1)"
+      ],
+      "premium": [
+        "Flight of Fancy (W1)"
+      ],
+      "accessible": [
+        "Electro-Lip Gloss (W5)"
+      ],
+      "sets": [
+        "4p Phaethon's Melody",
+        "2p Freedom Blues"
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "Ether DMG% = ATK% > PEN Ratio%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": [
+        "Anomaly Proficiency > ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Assist",
+        "Special",
+        "Chain",
+        "Dodge"
+      ],
+      "notes": "Phaethon exige EX frequentes da equipe para sustentar seus bônus; acompanhe a duração durante a rotação. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/aria",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.6"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-AngelInTheShell",
+        "zzz:engine-FlightOfFancy",
+        "zzz:engine-ElectroLipGloss"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-PhaethonsMelody",
+        "zzz:disc-FreedomBlues"
+      ]
+    },
+    {
+      "id": "zzz:astra-main",
+      "characterId": "zzz:astra",
+      "title": "Build principal • Astral Voice",
+      "role": "Support",
+      "bis": [
+        "Elegant Vanity (W1)"
+      ],
+      "premium": [],
+      "accessible": [
+        "Bashful Demon (W5)"
+      ],
+      "sets": [
+        "4p Astral Voice",
+        "2p Swing Jazz"
+      ],
+      "slots": {
+        "4": "ATK%",
+        "5": "ATK%",
+        "6": "Energy Regen = ATK%"
+      },
+      "substats": [
+        "ATK% > Flat ATK (Top Priorities Until Ability Cap) > Anomaly Proficiency > PEN"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Assist",
+        "Dodge",
+        "Basic"
+      ],
+      "notes": "Mantenha Quick Assists para acumular e renovar Astral Voice. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/astra-yao",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.2"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-ElegantVanity",
+        "zzz:engine-BashfulDemon"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-AstralVoice",
+        "zzz:disc-SwingJazz"
+      ]
+    },
+    {
+      "id": "zzz:banyue-main",
+      "characterId": "zzz:banyue",
+      "title": "Build principal • Yunkui Tales",
+      "role": "Rupture",
+      "bis": [
+        "Wrathful Vajra (W1)"
+      ],
+      "premium": [
+        "Qingming Birdcage (W1)"
+      ],
+      "accessible": [
+        "Cauldron of Clarity (W5)"
+      ],
+      "sets": [
+        "4p Yunkui Tales",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT DMG% > CRIT Rate%",
+        "5": "Fire DMG% > HP%",
+        "6": "HP%"
+      },
+      "substats": [
+        "CRIT Rate = CRIT DMG > HP% > ATK% > Flat HP"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/banyue",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.4"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-WrathfulVajra",
+        "zzz:engine-QingmingBirdcage",
+        "zzz:engine-CauldronOfClarity"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-YunkuiTales",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:ben-main",
+      "characterId": "zzz:ben",
+      "title": "Build principal • Inferno Metal",
+      "role": "Defense",
+      "bis": [
+        "Tremor Trigram Vessel (W5)"
+      ],
+      "premium": [
+        "Hailstorm Shrine (W1)"
+      ],
+      "accessible": [],
+      "sets": [
+        "4p Inferno Metal",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Fire DMG% = PEN Ratio%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT RATE% (aim for 70%+) = CRIT DMG% > ATK% > Flat PEN = Flat ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Assist",
+        "Basic",
+        "Dodge"
+      ],
+      "notes": "Variante de dano pessoal do guia; Inferno depende de Burn consistente, por exemplo com Burnice. Motores de outra especialidade fornecem atributos, mas sua passiva fica desativada. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/ben",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.6"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-TremorTrigramVessel",
+        "zzz:engine-HailstormShrine"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-InfernoMetal",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:billy-main",
+      "characterId": "zzz:billy",
+      "title": "Build principal • Woodpecker Electro",
+      "role": "Attack",
+      "bis": [
+        "Cloudcleave Radiance (W1)"
+      ],
+      "premium": [
+        "Heartstring Nocturne (W1)"
+      ],
+      "accessible": [
+        "Starlight Engine Replica (W5)"
+      ],
+      "sets": [
+        "4p Woodpecker Electro",
+        "2p Branch & Blade Song"
+      ],
+      "slots": {
+        "4": "CRIT Rate% = CRIT DMG%",
+        "5": "PEN Ratio >= ATK % > Physical DMG %",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT RATE = CRIT DMG > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Dodge",
+        "Basic",
+        "Assist"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/billy-kid",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.8"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-CloudcleaveRadiance",
+        "zzz:engine-HeartstringNocturne",
+        "zzz:engine-StarlightEngineReplica"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-WoodpeckerElectro",
+        "zzz:disc-BranchBladeSong"
+      ]
+    },
+    {
+      "id": "zzz:burnice-main",
+      "characterId": "zzz:burnice",
+      "title": "Build principal • Freedom Blues",
+      "role": "Anomaly",
+      "bis": [
+        "Flamemaker Shaker (W1)"
+      ],
+      "premium": [
+        "Practiced Perfection (W1)"
+      ],
+      "accessible": [
+        "Electro-Lip Gloss (W5)"
+      ],
+      "sets": [
+        "4p Freedom Blues",
+        "2p Swing Jazz"
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "PEN Ratio% >= Fire DMG%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": [
+        "Anomaly Proficiency > ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Variante de suporte a Wind Anomaly com Velina. Freedom Blues favorece aplicação de Anomaly; considera Potential do guia. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/burnice",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.5"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-FlamemakerShaker",
+        "zzz:engine-PracticedPerfection",
+        "zzz:engine-ElectroLipGloss"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-FreedomBlues",
+        "zzz:disc-SwingJazz"
+      ]
+    },
+    {
+      "id": "zzz:caesar-main",
+      "characterId": "zzz:caesar",
+      "title": "Build principal • Astral Voice",
+      "role": "Defense",
+      "bis": [
+        "Tusks of Fury (W1)"
+      ],
+      "premium": [],
+      "accessible": [
+        "Original Transmorpher (W5)"
+      ],
+      "sets": [
+        "4p Astral Voice",
+        "2p Shockstar Disco"
+      ],
+      "slots": {
+        "4": "CRIT Rate% = Anomaly Proficiency",
+        "5": "Physical DMG% > ATK% = PEN Ratio%",
+        "6": "Impact"
+      },
+      "substats": [
+        "CRIT RATE = CRIT DMG > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Assist",
+        "Special",
+        "Basic",
+        "Dodge",
+        "Chain"
+      ],
+      "notes": "Mantenha Quick Assists para acumular e renovar Astral Voice. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/caesar",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.0"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-TusksOfFury",
+        "zzz:engine-OriginalTransmorpher"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-AstralVoice",
+        "zzz:disc-ShockstarDisco"
+      ]
+    },
+    {
+      "id": "zzz:cissia-main",
+      "characterId": "zzz:cissia",
+      "title": "Build principal • Astral Voice",
+      "role": "Attack",
+      "bis": [
+        "Serpentine Seeker (W1)"
+      ],
+      "premium": [
+        "Bellicose Blaze (W1)"
+      ],
+      "accessible": [
+        "Drill Rig - Red Axis (W5)"
+      ],
+      "sets": [
+        "4p Astral Voice",
+        "2p Swing Jazz"
+      ],
+      "slots": {
+        "4": "CRIT Rate% > CRIT DMG%",
+        "5": "Electric DMG% > ATK%",
+        "6": "Energy Regen"
+      },
+      "substats": [
+        "CRIT RATE = CRIT DMG = ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Special",
+        "Chain",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Astral Voice pressupõe Seed e Sunna/Astra, com Quick Assists frequentes entre os atacantes. Mantenha Quick Assists para acumular e renovar Astral Voice. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/cissia",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.7"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-SerpentineSeeker",
+        "zzz:engine-BellicoseBlaze",
+        "zzz:engine-DrillRigRedAxis"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-AstralVoice",
+        "zzz:disc-SwingJazz"
+      ]
+    },
+    {
+      "id": "zzz:corin-main",
+      "characterId": "zzz:corin",
+      "title": "Build principal • Puffer Electro",
+      "role": "Attack",
+      "bis": [
+        "Cordis Germina (W1)"
+      ],
+      "premium": [
+        "Heartstring Nocturne (W1)"
+      ],
+      "accessible": [
+        "Housekeeper (W5)"
+      ],
+      "sets": [
+        "4p Puffer Electro",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT Rate%",
+        "5": "PEN Ratio% > ATK% = Physical DMG%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT RATE = CRIT DMG > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Assist",
+        "Dodge",
+        "Basic"
+      ],
+      "notes": "Puffer pressupõe Dialyn para sustentar Ultimates nas janelas de atordoamento. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/corin",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.4"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-CordisGermina",
+        "zzz:engine-HeartstringNocturne",
+        "zzz:engine-Housekeeper"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-PufferElectro",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:dialyn-main",
+      "characterId": "zzz:dialyn",
+      "title": "Build principal • King of the Summit",
+      "role": "Stun",
+      "bis": [
+        "Yesterday Calls (W1)"
+      ],
+      "premium": [
+        "Hellfire Gears (W1)"
+      ],
+      "accessible": [
+        "Steam Oven (W5)"
+      ],
+      "sets": [
+        "4p King of the Summit",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT Rate%",
+        "5": "ATK% >= Physical DMG% = PEN Ratio%",
+        "6": "Energy Regen"
+      },
+      "substats": [
+        "CRIT RATE (until 100%) > CRIT DMG = ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Assist",
+        "Basic",
+        "Dodge"
+      ],
+      "notes": "Garanta 50% CRIT Rate para o bônus completo do set. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/dialyn",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.4"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-YesterdayCalls",
+        "zzz:engine-HellfireGears",
+        "zzz:engine-SteamOven"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-KingOfTheSummit",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "ellen-dialyn",
+      "characterId": "zzz:ellen",
+      "title": "Build principal • Puffer Electro",
+      "role": "Attack",
+      "bis": [
+        "Deep Sea Visitor (W1)"
+      ],
+      "premium": [
+        "Myriad Eclipse (W1)"
+      ],
+      "accessible": [
+        "Starlight Engine (W5)"
+      ],
+      "sets": [
+        "4p Puffer Electro",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT DMG%",
+        "5": "PEN Ratio% > Ice DMG%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT DMG >= CRIT Rate > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Basic",
+        "Dodge",
+        "Assist"
+      ],
+      "notes": "Com Dialyn e Potential do guia. Sem Dialyn, prefira a alternativa 4p Woodpecker Electro + 2p Puffer Electro. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/ellen",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.5"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-DeepSeaVisitor",
+        "zzz:engine-MyriadEclipse",
+        "zzz:engine-StarlightEngine"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-PufferElectro",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:evelyn-main",
+      "characterId": "zzz:evelyn",
+      "title": "Build principal • Hormone Punk",
+      "role": "Attack",
+      "bis": [
+        "Heartstring Nocturne (W1)"
+      ],
+      "premium": [
+        "Severed Innocence (W1)"
+      ],
+      "accessible": [
+        "Starlight Engine (W5)"
+      ],
+      "sets": [
+        "4p Hormone Punk"
+      ],
+      "slots": {
+        "4": "ATK% > CRIT DMG%",
+        "5": "PEN Ratio% > Fire DMG% > ATK%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT RATE (Until 75% in stat screen) > CRIT DMG = ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Basic",
+        "Special",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Hormone Punk exige controlar a janela de 10s e o intervalo de 20s. Com Dialyn, Puffer é alternativa. O guia não especifica um set 2p nesta seção. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/evelyn",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.4"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-HeartstringNocturne",
+        "zzz:engine-SeveredInnocence",
+        "zzz:engine-StarlightEngine"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-HormonePunk"
+      ]
+    },
+    {
+      "id": "zzz:grace-main",
+      "characterId": "zzz:grace",
+      "title": "Build principal • Thunder Metal",
+      "role": "Anomaly",
+      "bis": [
+        "Timeweaver (W1)"
+      ],
+      "premium": [
+        "Practiced Perfection (W1)"
+      ],
+      "accessible": [
+        "Electro-Lip Gloss (W5)"
+      ],
+      "sets": [
+        "4p Thunder Metal",
+        "2p Puffer Electro"
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency > ATK%",
+        "5": "PEN Ratio% > Electric DMG% >= ATK%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": [
+        "Anomaly Proficiency > ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Assist",
+        "Basic",
+        "Dodge"
+      ],
+      "notes": "Thunder Metal exige manter Shock; confira as condições e Potential considerados no guia. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/grace-howard",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.5"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-Timeweaver",
+        "zzz:engine-PracticedPerfection",
+        "zzz:engine-ElectroLipGloss"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-ThunderMetal",
+        "zzz:disc-PufferElectro"
+      ]
+    },
+    {
+      "id": "zzz:harumasa-main",
+      "characterId": "zzz:harumasa",
+      "title": "Build principal • Thunder Metal",
+      "role": "Attack",
+      "bis": [
+        "Cordis Germina (W1)"
+      ],
+      "premium": [
+        "Zanshin Herb Case (W1)"
+      ],
+      "accessible": [
+        "Starlight Engine (W5)"
+      ],
+      "sets": [
+        "4p Thunder Metal",
+        "2p Hormone Punk"
+      ],
+      "slots": {
+        "4": "ATK% > Crit DMG% = Crit Rate%",
+        "5": "ATK% > Electric DMG%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "Crit Rate (until 75% in stat screen) > ATK% > Crit DMG% > Flat PEN > Flat ATK"
+      ],
+      "skillPriority": [
+        "Dodge",
+        "Chain",
+        "Special",
+        "Basic",
+        "Assist"
+      ],
+      "notes": "Mantenha Shock com outro agente Electric. Sem essa condição, Thunder Metal perde seu bônus. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/harumasa",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.6"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-CordisGermina",
+        "zzz:engine-ZanshinHerbCase",
+        "zzz:engine-StarlightEngine"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-ThunderMetal",
+        "zzz:disc-HormonePunk"
+      ]
+    },
+    {
+      "id": "zzz:hugo-main",
+      "characterId": "zzz:hugo",
+      "title": "Build principal • Hormone Punk",
+      "role": "Attack",
+      "bis": [
+        "Myriad Eclipse (W1)"
+      ],
+      "premium": [
+        "Cordis Germina (W1)"
+      ],
+      "accessible": [
+        "Marcato Desire (W5)"
+      ],
+      "sets": [
+        "4p Hormone Punk",
+        "2p Polar Metal"
+      ],
+      "slots": {
+        "4": "CRIT DMG% > CRIT Rate%",
+        "5": "Ice DMG% > ATK% = PEN Ratio%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT Rate > CRIT DMG > ATK% > Flat ATK > PEN"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guarde a entrada em campo e o bônus de Hormone Punk para a janela de atordoamento e Totalize. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/hugo",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.4"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-MyriadEclipse",
+        "zzz:engine-CordisGermina",
+        "zzz:engine-MarcatoDesire"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-HormonePunk",
+        "zzz:disc-PolarMetal"
+      ]
+    },
+    {
+      "id": "zzz:jane-main",
+      "characterId": "zzz:jane",
+      "title": "Build principal • Fanged Metal",
+      "role": "Anomaly",
+      "bis": [
+        "Practiced Perfection (W1)"
+      ],
+      "premium": [
+        "Sharpened Stinger (W1)"
+      ],
+      "accessible": [
+        "Weeping Gemini (W5)"
+      ],
+      "sets": [
+        "4p Fanged Metal",
+        "2p Puffer Electro"
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "PEN Ratio% > Physical DMG% > ATK%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": [
+        "Anomaly Proficiency >= ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Basic",
+        "Dodge",
+        "Assist"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/jane-doe",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "3.1"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-PracticedPerfection",
+        "zzz:engine-SharpenedStinger",
+        "zzz:engine-WeepingGemini"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-FangedMetal",
+        "zzz:disc-PufferElectro"
+      ]
+    },
+    {
+      "id": "zzz:ju-fufu-main",
+      "characterId": "zzz:ju-fufu",
+      "title": "Build principal • King of the Summit",
+      "role": "Stun",
+      "bis": [
+        "Roaring Fur-nace (W1)"
+      ],
+      "premium": [
+        "Blazing Laurel (W1)"
+      ],
+      "accessible": [
+        "Precious Fossilized Core (W5)"
+      ],
+      "sets": [
+        "4p King of the Summit",
+        "2p Shockstar Disco"
+      ],
+      "slots": {
+        "4": "CRIT Rate% = ATK%",
+        "5": "ATK%",
+        "6": "Impact = ATK%"
+      },
+      "substats": [
+        "CRIT Rate (until 50% if using 4P King) > ATK/Flat ATK (until max. 3400) > CRIT DMG > PEN"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Garanta 50% CRIT Rate para o bônus completo do set. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/ju-fufu",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.0"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-RoaringFurnace",
+        "zzz:engine-BlazingLaurel",
+        "zzz:engine-PreciousFossilizedCore"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-KingOfTheSummit",
+        "zzz:disc-ShockstarDisco"
+      ]
+    },
+    {
+      "id": "zzz:koleda-main",
+      "characterId": "zzz:koleda",
+      "title": "Build principal • King of the Summit",
+      "role": "Stun",
+      "bis": [
+        "Blazing Laurel (W1)"
+      ],
+      "premium": [
+        "Hellfire Gears (W1)"
+      ],
+      "accessible": [
+        "Precious Fossilized Core (W5)"
+      ],
+      "sets": [
+        "4p King of the Summit",
+        "2p Shockstar Disco"
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Fire DMG% > ATK%",
+        "6": "Impact"
+      },
+      "substats": [
+        "CRIT RATE > CRIT DMG > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Assist",
+        "Dodge",
+        "Basic"
+      ],
+      "notes": "Garanta 50% CRIT Rate para o bônus completo do set.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/koleda",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "3.2"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-BlazingLaurel",
+        "zzz:engine-HellfireGears",
+        "zzz:engine-PreciousFossilizedCore"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-KingOfTheSummit",
+        "zzz:disc-ShockstarDisco"
+      ]
+    },
+    {
+      "id": "zzz:lighter-main",
+      "characterId": "zzz:lighter",
+      "title": "Build principal • King of the Summit",
+      "role": "Stun",
+      "bis": [
+        "Blazing Laurel (W1)"
+      ],
+      "premium": [
+        "Ice-Jade Teapot (W1)"
+      ],
+      "accessible": [
+        "Precious Fossilized Core (W5)"
+      ],
+      "sets": [
+        "4p King of the Summit",
+        "2p Shockstar Disco"
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "ATK% = Fire DMG% = PEN Ratio%",
+        "6": "Impact"
+      },
+      "substats": [
+        "CRIT RATE > CRIT DMG > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Special",
+        "Chain",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Garanta 50% CRIT Rate para o bônus completo do set. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/lighter",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.0"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-BlazingLaurel",
+        "zzz:engine-IceJadeTeapot",
+        "zzz:engine-PreciousFossilizedCore"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-KingOfTheSummit",
+        "zzz:disc-ShockstarDisco"
+      ]
+    },
+    {
+      "id": "zzz:lucia-main",
+      "characterId": "zzz:lucia",
+      "title": "Build principal • Moonlight Lullaby",
+      "role": "Support",
+      "bis": [
+        "Dreamlit Hearth (W1)"
+      ],
+      "premium": [
+        "Weeping Cradle (W1)"
+      ],
+      "accessible": [
+        "Kaboom the Cannon (W5)"
+      ],
+      "sets": [
+        "4p Moonlight Lullaby",
+        "2p Yunkui Tales"
+      ],
+      "slots": {
+        "4": "HP%",
+        "5": "HP%",
+        "6": "HP%"
+      },
+      "substats": [
+        "HP% > HP > CRIT Rate >= CRIT DMG"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/lucia",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.3"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-DreamlitHearth",
+        "zzz:engine-WeepingCradle",
+        "zzz:engine-KaboomTheCannon"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-MoonlightLullaby",
+        "zzz:disc-YunkuiTales"
+      ]
+    },
+    {
+      "id": "zzz:lucy-main",
+      "characterId": "zzz:lucy",
+      "title": "Build principal • Moonlight Lullaby",
+      "role": "Support",
+      "bis": [
+        "Kaboom the Cannon (W5)"
+      ],
+      "premium": [],
+      "accessible": [],
+      "sets": [
+        "4p Moonlight Lullaby",
+        "2p Puffer Electro"
+      ],
+      "slots": {
+        "4": "ATK% > CRIT Rate%",
+        "5": "ATK%",
+        "6": "Energy Regen = ATK%"
+      },
+      "substats": [
+        "ATK% (top priority until ability cap) = CRIT RATE = CRIT DMG > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/lucy",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.2"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-KaboomTheCannon"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-MoonlightLullaby",
+        "zzz:disc-PufferElectro"
+      ]
+    },
+    {
+      "id": "zzz:lycaon-main",
+      "characterId": "zzz:lycaon",
+      "title": "Build principal • King of the Summit",
+      "role": "Stun",
+      "bis": [
+        "Blazing Laurel (W1)"
+      ],
+      "premium": [
+        "Hellfire Gears (W1)"
+      ],
+      "accessible": [
+        "Precious Fossilized Core (W5)"
+      ],
+      "sets": [
+        "4p King of the Summit",
+        "2p Shockstar Disco"
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Ice DMG% > ATK%",
+        "6": "Impact"
+      },
+      "substats": [
+        "CRIT RATE = CRIT DMG > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Assist",
+        "Chain",
+        "Basic",
+        "Dodge"
+      ],
+      "notes": "Garanta 50% CRIT Rate para o bônus completo do set. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/lycaon",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.6"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-BlazingLaurel",
+        "zzz:engine-HellfireGears",
+        "zzz:engine-PreciousFossilizedCore"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-KingOfTheSummit",
+        "zzz:disc-ShockstarDisco"
+      ]
+    },
+    {
+      "id": "zzz:manato-main",
+      "characterId": "zzz:manato",
+      "title": "Build principal • Yunkui Tales",
+      "role": "Rupture",
+      "bis": [
+        "Grill O'Wisp (W5)"
+      ],
+      "premium": [
+        "Grill O'Wisp (W1)"
+      ],
+      "accessible": [],
+      "sets": [
+        "4p Yunkui Tales",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT Rate% = CRIT DMG%",
+        "5": "Fire DMG% > HP%",
+        "6": "HP%"
+      },
+      "substats": [
+        "CRIT Rate = CRIT DMG > HP% > HP > ATK% > ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Assist",
+        "Basic",
+        "Special",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/manato",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.4"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-GrillOWisp",
+        "zzz:engine-GrillOWisp"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-YunkuiTales",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:miyabi-main",
+      "characterId": "zzz:miyabi",
+      "title": "Build principal • Branch & Blade Song",
+      "role": "Anomaly",
+      "bis": [
+        "Hailstorm Shrine (W1)"
+      ],
+      "premium": [
+        "Fusion Compiler (W1)"
+      ],
+      "accessible": [
+        "Electro-Lip Gloss (W5)"
+      ],
+      "sets": [
+        "4p Branch & Blade Song",
+        "2p Polar Metal"
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= ATK%",
+        "5": "Ice DMG% = ATK%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT RATE (Until 80%) >= CRIT DMG = ATK% > Anomaly Proficiency = ATK = PEN"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Chain",
+        "Special",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/miyabi",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.1"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-HailstormShrine",
+        "zzz:engine-FusionCompiler",
+        "zzz:engine-ElectroLipGloss"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-BranchBladeSong",
+        "zzz:disc-PolarMetal"
+      ]
+    },
+    {
+      "id": "zzz:nangong-yu-main",
+      "characterId": "zzz:nangong-yu",
+      "title": "Build principal • Phaethon's Melody",
+      "role": "Stun",
+      "bis": [
+        "Neon Fantasies (W1)"
+      ],
+      "premium": [
+        "Hellfire Gears (W1)"
+      ],
+      "accessible": [
+        "The Simmering Pot (W5)"
+      ],
+      "sets": [
+        "4p Phaethon's Melody",
+        "2p Freedom Blues"
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "Ether DMG% = ATK% > PEN Ratio%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": [
+        "Anomaly Proficiency > ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/nangong-yu",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.7"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-NeonFantasies",
+        "zzz:engine-HellfireGears",
+        "zzz:engine-TheSimmeringPot"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-PhaethonsMelody",
+        "zzz:disc-FreedomBlues"
+      ]
+    },
+    {
+      "id": "zzz:nekomata-main",
+      "characterId": "zzz:nekomata",
+      "title": "Build principal • Woodpecker Electro",
+      "role": "Attack",
+      "bis": [
+        "Steel Cushion (W1)"
+      ],
+      "premium": [
+        "Heartstring Nocturne (W1)"
+      ],
+      "accessible": [
+        "Starlight Engine (W5)"
+      ],
+      "sets": [
+        "4p Woodpecker Electro",
+        "2p Puffer Electro"
+      ],
+      "slots": {
+        "4": "CRIT Rate% > CRIT DMG% = ATK%",
+        "5": "PEN Ratio% > ATK% > Physical DMG%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT RATE (Until 100%) >= CRIT DMG = ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Dodge",
+        "Chain",
+        "Special",
+        "Basic",
+        "Assist"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/nekomata",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "3.1"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-SteelCushion",
+        "zzz:engine-HeartstringNocturne",
+        "zzz:engine-StarlightEngine"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-WoodpeckerElectro",
+        "zzz:disc-PufferElectro"
+      ]
+    },
+    {
+      "id": "zzz:nicole-main",
+      "characterId": "zzz:nicole",
+      "title": "Build principal • Moonlight Lullaby",
+      "role": "Support",
+      "bis": [
+        "The Vault (W5)"
+      ],
+      "premium": [],
+      "accessible": [],
+      "sets": [
+        "4p Moonlight Lullaby",
+        "2p Phaethon's Melody"
+      ],
+      "slots": {
+        "4": "ATK% = Anomaly Proficiency",
+        "5": "Ether DMG% > ATK%",
+        "6": "Energy Regen = ATK%"
+      },
+      "substats": [
+        "Anomaly Proficiency = ATK% > PEN = FLAT ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/nicole-demara",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.2"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-TheVault"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-MoonlightLullaby",
+        "zzz:disc-PhaethonsMelody"
+      ]
+    },
+    {
+      "id": "zzz:norma-main",
+      "characterId": "zzz:norma",
+      "title": "Build principal • King of the Summit",
+      "role": "Stun",
+      "bis": [
+        "Chief Sidekick (W1)"
+      ],
+      "premium": [
+        "Blazing Laurel (W1)"
+      ],
+      "accessible": [
+        "Steam Oven (W5)"
+      ],
+      "sets": [
+        "4p King of the Summit",
+        "2p Swing Jazz"
+      ],
+      "slots": {
+        "4": "CRIT Rate%",
+        "5": "Fire DMG% > PEN Ratio% > ATK%",
+        "6": "Energy Regen = Impact%"
+      },
+      "substats": [
+        "CRIT RATE (until 100% in combat) > CRIT DMG = ATK% > Flat PEN > Flat ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Assist",
+        "Basic",
+        "Dodge"
+      ],
+      "notes": "Garanta 50% CRIT Rate para o bônus completo do set. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/norma",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "3.0"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-ChiefSidekick",
+        "zzz:engine-BlazingLaurel",
+        "zzz:engine-SteamOven"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-KingOfTheSummit",
+        "zzz:disc-SwingJazz"
+      ]
+    },
+    {
+      "id": "zzz:orphie-magus-main",
+      "characterId": "zzz:orphie-magus",
+      "title": "Build principal • Shadow Harmony",
+      "role": "Attack",
+      "bis": [
+        "Bellicose Blaze (W1)"
+      ],
+      "premium": [
+        "Heartstring Nocturne (W1)"
+      ],
+      "accessible": [
+        "Gilded Blossom (W5)"
+      ],
+      "sets": [
+        "4p Shadow Harmony",
+        "2p Swing Jazz"
+      ],
+      "slots": {
+        "4": "CRIT DMG% = CRIT Rate%",
+        "5": "Fire DMG% >= ATK%",
+        "6": "Energy Regen >= ATK%"
+      },
+      "substats": [
+        "CRIT DMG = CRIT Rate > ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Assist",
+        "Basic",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/orphie-and-magus",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.2"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-BellicoseBlaze",
+        "zzz:engine-HeartstringNocturne",
+        "zzz:engine-GildedBlossom"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-ShadowHarmony",
+        "zzz:disc-SwingJazz"
+      ]
+    },
+    {
+      "id": "zzz:pan-yinhu-main",
+      "characterId": "zzz:pan-yinhu",
+      "title": "Build principal • Astral Voice",
+      "role": "Defense",
+      "bis": [
+        "Tusks of Fury (W1)"
+      ],
+      "premium": [],
+      "accessible": [
+        "Tremor Trigram Vessel (W5)"
+      ],
+      "sets": [
+        "4p Astral Voice",
+        "2p Hormone Punk"
+      ],
+      "slots": {
+        "4": "CRIT Rate% = CRIT DMG% > ATK%",
+        "5": "Physical DMG% > ATK%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "ATK%/Flat ATK (until 3000 ATK) > CRIT Rate = CRIT DMG > PEN"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Assist",
+        "Special",
+        "Basic",
+        "Dodge"
+      ],
+      "notes": "Mantenha Quick Assists para acumular e renovar Astral Voice. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/pan-yinhu",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.0"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-TusksOfFury",
+        "zzz:engine-TremorTrigramVessel"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-AstralVoice",
+        "zzz:disc-HormonePunk"
+      ]
+    },
+    {
+      "id": "zzz:piper-main",
+      "characterId": "zzz:piper",
+      "title": "Build principal • Fanged Metal",
+      "role": "Anomaly",
+      "bis": [
+        "Practiced Perfection (W1)"
+      ],
+      "premium": [
+        "Sharpened Stinger (W1)"
+      ],
+      "accessible": [
+        "Weeping Gemini (W5)"
+      ],
+      "sets": [
+        "4p Fanged Metal",
+        "2p Phaethon's Melody"
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "PEN Ratio% = ATK% = Physical DMG%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": [
+        "Anomaly Proficiency > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Assist",
+        "Chain",
+        "Basic",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/piper",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.4"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-PracticedPerfection",
+        "zzz:engine-SharpenedStinger",
+        "zzz:engine-WeepingGemini"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-FangedMetal",
+        "zzz:disc-PhaethonsMelody"
+      ]
+    },
+    {
+      "id": "zzz:promeia-main",
+      "characterId": "zzz:promeia",
+      "title": "Build principal • Notes From the Chained",
+      "role": "Anomaly",
+      "bis": [
+        "Frostfall Sickle (W1)"
+      ],
+      "premium": [
+        "Angel in the Shell (W1)"
+      ],
+      "accessible": [
+        "Electro-Lip Gloss (W5)"
+      ],
+      "sets": [
+        "4p Notes From the Chained",
+        "2p Phaethon's Melody"
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "Ice DMG% = ATK% > PEN Ratio%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": [
+        "Anomaly Proficiency > ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/promeia",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.8"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-FrostfallSickle",
+        "zzz:engine-AngelInTheShell",
+        "zzz:engine-ElectroLipGloss"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-NotesFromTheChained",
+        "zzz:disc-PhaethonsMelody"
+      ]
+    },
+    {
+      "id": "zzz:pulchra-main",
+      "characterId": "zzz:pulchra",
+      "title": "Build principal • King of the Summit",
+      "role": "Stun",
+      "bis": [
+        "Blazing Laurel (W1)"
+      ],
+      "premium": [
+        "Hellfire Gears (W1)"
+      ],
+      "accessible": [
+        "Box Cutter (W5)"
+      ],
+      "sets": [
+        "4p King of the Summit",
+        "2p Shockstar Disco"
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "ATK% = Physical DMG%",
+        "6": "Impact"
+      },
+      "substats": [
+        "CRIT RATE = CRIT DMG > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Assist",
+        "Basic",
+        "Dodge"
+      ],
+      "notes": "Variante de suporte a dano crítico. Garanta 50% CRIT Rate para King of the Summit. Bônus a outros tipos de dano depende de M6. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/pulchra",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "1.6"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-BlazingLaurel",
+        "zzz:engine-HellfireGears",
+        "zzz:engine-BoxCutter"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-KingOfTheSummit",
+        "zzz:disc-ShockstarDisco"
+      ]
+    },
+    {
+      "id": "zzz:pyrois-main",
+      "characterId": "zzz:pyrois",
+      "title": "Build principal • The Sky Ablaze",
+      "role": "Attack",
+      "bis": [
+        "Sol Exuvia (W1)"
+      ],
+      "premium": [
+        "Cordis Germina (W1)"
+      ],
+      "accessible": [],
+      "sets": [
+        "4p The Sky Ablaze",
+        "2p Puffer Electro"
+      ],
+      "slots": {
+        "4": "CRIT Rate% > CRIT DMG%",
+        "5": "PEN Ratio% > Ether DMG% > ATK%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT RATE (until 100% in combat) > CRIT DMG = ATK% > Flat PEN > Flat ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Basic",
+        "Special",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/pyrois",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "3.0"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-SolExuvia",
+        "zzz:engine-CordisGermina"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-TheSkyAblaze",
+        "zzz:disc-PufferElectro"
+      ]
+    },
+    {
+      "id": "zzz:qingyi-main",
+      "characterId": "zzz:qingyi",
+      "title": "Build principal • King of the Summit",
+      "role": "Stun",
+      "bis": [
+        "Ice-Jade Teapot (W1)"
+      ],
+      "premium": [
+        "The Restrained (W1)"
+      ],
+      "accessible": [
+        "Steam Oven (W5)"
+      ],
+      "sets": [
+        "4p King of the Summit",
+        "2p Shockstar Disco"
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Electric DMG% > ATK%",
+        "6": "Impact"
+      },
+      "substats": [
+        "CRIT RATE > CRIT DMG > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Special",
+        "Chain",
+        "Dodge",
+        "Assist"
+      ],
+      "notes": "Garanta 50% CRIT Rate para o bônus completo do set. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/qingyi",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "1.5"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-IceJadeTeapot",
+        "zzz:engine-TheRestrained",
+        "zzz:engine-SteamOven"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-KingOfTheSummit",
+        "zzz:disc-ShockstarDisco"
+      ]
+    },
+    {
+      "id": "zzz:remielle-main",
+      "characterId": "zzz:remielle",
+      "title": "Build principal • Feathered Fate",
+      "role": "Anomaly",
+      "bis": [
+        "Ode of Resurrected Wings (W1)"
+      ],
+      "premium": [],
+      "accessible": [
+        "Weeping Gemini (W5)"
+      ],
+      "sets": [
+        "4p Feathered Fate",
+        "2p Freedom Blues"
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "ATK%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "ATK% (until 4000 in statscreen) > Anomaly Proficiency > PEN"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Basic",
+        "Assist",
+        "Special",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/remielle",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "3.1"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-OdeOfResurrectedWings",
+        "zzz:engine-WeepingGemini"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-FeatheredFate",
+        "zzz:disc-FreedomBlues"
+      ]
+    },
+    {
+      "id": "zzz:rina-main",
+      "characterId": "zzz:rina",
+      "title": "Build principal • Moonlight Lullaby",
+      "role": "Support",
+      "bis": [
+        "Weeping Cradle (W1)"
+      ],
+      "premium": [],
+      "accessible": [
+        "Kaboom the Cannon (W5)"
+      ],
+      "sets": [
+        "4p Moonlight Lullaby",
+        "2p Puffer Electro"
+      ],
+      "slots": {
+        "4": "ATK% = Anomaly Proficiency = CRIT Rate",
+        "5": "PEN Ratio%",
+        "6": "Energy Regen"
+      },
+      "substats": [
+        "Anomaly Proficiency = CRIT Rate = ATK% > CRIT DMG > PEN > FLAT ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/rina",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "3.1"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-WeepingCradle",
+        "zzz:engine-KaboomTheCannon"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-MoonlightLullaby",
+        "zzz:disc-PufferElectro"
+      ]
+    },
+    {
+      "id": "zzz:seed-main",
+      "characterId": "zzz:seed",
+      "title": "Build principal • Dawn's Bloom",
+      "role": "Attack",
+      "bis": [
+        "Cordis Germina (W1)"
+      ],
+      "premium": [
+        "Heartstring Nocturne (W1)"
+      ],
+      "accessible": [
+        "Marcato Desire (W5)"
+      ],
+      "sets": [
+        "4p Dawn's Bloom",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT DMG% > CRIT Rate%",
+        "5": "PEN Ratio% >= ATK% = Electric DMG%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT DMG = CRIT Rate > ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Chain",
+        "Special",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/seed",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.2"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-CordisGermina",
+        "zzz:engine-HeartstringNocturne",
+        "zzz:engine-MarcatoDesire"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-DawnsBloom",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:seth-main",
+      "characterId": "zzz:seth",
+      "title": "Build principal • Astral Voice",
+      "role": "Defense",
+      "bis": [
+        "Peacekeeper - Specialized (W5)"
+      ],
+      "premium": [],
+      "accessible": [],
+      "sets": [
+        "4p Astral Voice",
+        "2p Swing Jazz"
+      ],
+      "slots": {
+        "4": "ATK% >= Anomaly Proficiency",
+        "5": "ATK% >= Electric DMG%",
+        "6": "Energy Regen = Anomaly Mastery"
+      },
+      "substats": [
+        "ATK% > Anomaly Proficiency > ATK > PEN"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Assist",
+        "Basic",
+        "Dodge"
+      ],
+      "notes": "Mantenha Quick Assists para acumular e renovar Astral Voice. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/seth",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "1.5"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-PeacekeeperSpecialized"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-AstralVoice",
+        "zzz:disc-SwingJazz"
+      ]
+    },
+    {
+      "id": "zzz:sigrid-main",
+      "characterId": "zzz:sigrid",
+      "title": "Build principal • Hormone Punk",
+      "role": "Attack",
+      "bis": [
+        "Knight's Extolment (W1)"
+      ],
+      "premium": [
+        "Severed Innocence (W1)"
+      ],
+      "accessible": [
+        "Starlight Engine (W5)"
+      ],
+      "sets": [
+        "4p Hormone Punk",
+        "2p Puffer Electro"
+      ],
+      "slots": {
+        "4": "CRIT DMG% > ATK%",
+        "5": "PEN Ratio%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT RATE (until 33.8% in statscreen) > CRIT DMG = ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Chain",
+        "Special",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Controle a janela de Hormone Punk. O guia não apresenta cálculos comparativos finais para os sets. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/sigrid",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "3.1"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-KnightsExtolment",
+        "zzz:engine-SeveredInnocence",
+        "zzz:engine-StarlightEngine"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-HormonePunk",
+        "zzz:disc-PufferElectro"
+      ]
+    },
+    {
+      "id": "zzz:soldier0-anby-main",
+      "characterId": "zzz:soldier0-anby",
+      "title": "Build principal • Shadow Harmony",
+      "role": "Attack",
+      "bis": [
+        "Severed Innocence (W1)"
+      ],
+      "premium": [
+        "Cordis Germina (W1)"
+      ],
+      "accessible": [
+        "Marcato Desire (W5)"
+      ],
+      "sets": [
+        "4p Shadow Harmony",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= CRIT DMG%",
+        "5": "Electric DMG% > ATK%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT RATE = CRIT DMG > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Basic",
+        "Dodge",
+        "Assist"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/anby-demara-soldier-0",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.5"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-SeveredInnocence",
+        "zzz:engine-CordisGermina",
+        "zzz:engine-MarcatoDesire"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-ShadowHarmony",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:soldier11-main",
+      "characterId": "zzz:soldier11",
+      "title": "Build principal • Puffer Electro",
+      "role": "Attack",
+      "bis": [
+        "Heartstring Nocturne (W1)"
+      ],
+      "premium": [
+        "Cordis Germina (W1)"
+      ],
+      "accessible": [
+        "Starlight Engine (W5)"
+      ],
+      "sets": [
+        "4p Puffer Electro",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT Rate% >= ATK% >= CRIT DMG%",
+        "5": "PEN Ratio% >= ATK% > Fire DMG%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT RATE = CRIT DMG > ATK% > Anomaly Proficiency > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Chain",
+        "Special",
+        "Dodge",
+        "Assist"
+      ],
+      "notes": "Puffer pressupõe Dialyn e os recursos de Potential usados no guia. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/soldier-11",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.5"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-HeartstringNocturne",
+        "zzz:engine-CordisGermina",
+        "zzz:engine-StarlightEngine"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-PufferElectro",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:soukaku-main",
+      "characterId": "zzz:soukaku",
+      "title": "Build principal • Freedom Blues",
+      "role": "Support",
+      "bis": [
+        "Bashful Demon (W5)"
+      ],
+      "premium": [],
+      "accessible": [],
+      "sets": [
+        "4p Freedom Blues",
+        "2p Phaethon's Melody"
+      ],
+      "slots": {
+        "4": "ATK% > CRIT Rate%",
+        "5": "ATK% > Ice DMG%",
+        "6": "Energy Regen = ATK%"
+      },
+      "substats": [
+        "ATK% (top priority until ability cap) = CRIT RATE = CRIT DMG > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Freedom Blues foi escolhido para equipes Ice/Anomaly, como as de Miyabi. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/soukaku",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.2"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-BashfulDemon"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-FreedomBlues",
+        "zzz:disc-PhaethonsMelody"
+      ]
+    },
+    {
+      "id": "zzz:starlight-billy-main",
+      "characterId": "zzz:starlight-billy",
+      "title": "Build principal • Yunkui Tales",
+      "role": "Rupture",
+      "bis": [
+        "Starlight Rider Faceplate (W1)"
+      ],
+      "premium": [
+        "Qingming Birdcage (W1)"
+      ],
+      "accessible": [
+        "Cauldron of Clarity (W5)"
+      ],
+      "sets": [
+        "4p Yunkui Tales",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT Rate% = CRIT DMG% = HP%",
+        "5": "Physical DMG% > HP%",
+        "6": "HP%"
+      },
+      "substats": [
+        "CRIT RATE > CRIT DMG = HP% > Flat HP > Flat ATK"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Renove Yunkui Tales durante transições longas usando as habilidades indicadas no guia. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/billy-starlight",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.8"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-StarlightRiderFaceplate",
+        "zzz:engine-QingmingBirdcage",
+        "zzz:engine-CauldronOfClarity"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-YunkuiTales",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:sunna-main",
+      "characterId": "zzz:sunna",
+      "title": "Build principal • Moonlight Lullaby",
+      "role": "Support",
+      "bis": [
+        "Thoughtbop (W1)"
+      ],
+      "premium": [
+        "Weeping Cradle (W1)"
+      ],
+      "accessible": [
+        "Kaboom the Cannon (W5)"
+      ],
+      "sets": [
+        "4p Moonlight Lullaby",
+        "2p Swing Jazz"
+      ],
+      "slots": {
+        "4": "ATK%",
+        "5": "ATK%",
+        "6": "Energy Regen"
+      },
+      "substats": [
+        "ATK% > ATK (until 3500) > Anomaly Proficiency > Flat PEN"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Assist",
+        "Basic",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/sunna",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.6"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-Thoughtbop",
+        "zzz:engine-WeepingCradle",
+        "zzz:engine-KaboomTheCannon"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-MoonlightLullaby",
+        "zzz:disc-SwingJazz"
+      ]
+    },
+    {
+      "id": "zzz:trigger-main",
+      "characterId": "zzz:trigger",
+      "title": "Build principal • King of the Summit",
+      "role": "Stun",
+      "bis": [
+        "Spectral Gaze (W1)"
+      ],
+      "premium": [
+        "Blazing Laurel (W1)"
+      ],
+      "accessible": [
+        "Precious Fossilized Core (W5)"
+      ],
+      "sets": [
+        "4p King of the Summit",
+        "2p Shockstar Disco"
+      ],
+      "slots": {
+        "4": "CRIT Rate%",
+        "5": "Electric DMG% > ATK%",
+        "6": "Impact"
+      },
+      "substats": [
+        "CRIT RATE >= CRIT DMG > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Special",
+        "Chain",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Garanta 50% CRIT Rate para o bônus completo do set. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/trigger",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.0"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-SpectralGaze",
+        "zzz:engine-BlazingLaurel",
+        "zzz:engine-PreciousFossilizedCore"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-KingOfTheSummit",
+        "zzz:disc-ShockstarDisco"
+      ]
+    },
+    {
+      "id": "zzz:velina-main",
+      "characterId": "zzz:velina",
+      "title": "Build principal • Wuthering Salon",
+      "role": "Anomaly",
+      "bis": [
+        "Joyau Dore (W1)"
+      ],
+      "premium": [
+        "Serpentine Seeker (W1)"
+      ],
+      "accessible": [],
+      "sets": [
+        "4p Wuthering Salon",
+        "2p Moonlight Lullaby"
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "Wind DMG% = ATK% = PEN Ratio%",
+        "6": "Energy Regen"
+      },
+      "substats": [
+        "Anomaly Proficiency = ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Assist",
+        "Basic",
+        "Dodge"
+      ],
+      "notes": "Priorize a regeneração exigida por sua Core. Motores de outra especialidade fornecem atributos, mas não ativam sua passiva. Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/velina",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "3.0"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-JoyauDore",
+        "zzz:engine-SerpentineSeeker"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-WutheringSalon",
+        "zzz:disc-MoonlightLullaby"
+      ]
+    },
+    {
+      "id": "zzz:vivian-main",
+      "characterId": "zzz:vivian",
+      "title": "Build principal • Phaethon's Melody",
+      "role": "Anomaly",
+      "bis": [
+        "Flight of Fancy (W1)"
+      ],
+      "premium": [],
+      "accessible": [
+        "Weeping Gemini (W5)"
+      ],
+      "sets": [
+        "4p Phaethon's Melody",
+        "2p Chaos Jazz"
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "Ether DMG% > PEN Ratio% = ATK%",
+        "6": "Anomaly Mastery"
+      },
+      "substats": [
+        "Anomaly Proficiency >>> ATK% > ATK = PEN"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Chain",
+        "Special",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/vivian",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.3"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-FlightOfFancy",
+        "zzz:engine-WeepingGemini"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-PhaethonsMelody",
+        "zzz:disc-ChaosJazz"
+      ]
+    },
+    {
+      "id": "zzz:yanagi-main",
+      "characterId": "zzz:yanagi",
+      "title": "Build principal • Chaos Jazz",
+      "role": "Anomaly",
+      "bis": [
+        "Timeweaver (W1)"
+      ],
+      "premium": [],
+      "accessible": [
+        "Weeping Gemini (W5)"
+      ],
+      "sets": [
+        "4p Chaos Jazz",
+        "2p Freedom Blues"
+      ],
+      "slots": {
+        "4": "Anomaly Proficiency",
+        "5": "PEN Ratio% >= Electric DMG% > ATK%",
+        "6": "Anomaly Mastery > ATK%"
+      },
+      "substats": [
+        "Anomaly Proficiency > ATK% > PEN = ATK"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/yanagi",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.3"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-Timeweaver",
+        "zzz:engine-WeepingGemini"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-ChaosJazz",
+        "zzz:disc-FreedomBlues"
+      ]
+    },
+    {
+      "id": "zzz:ye-shunguang-main",
+      "characterId": "zzz:ye-shunguang",
+      "title": "Build principal • White Water Ballad",
+      "role": "Attack",
+      "bis": [
+        "Cloudcleave Radiance (W1)"
+      ],
+      "premium": [
+        "Severed Innocence (W1)"
+      ],
+      "accessible": [
+        "Starlight Engine (W5)"
+      ],
+      "sets": [
+        "4p White Water Ballad",
+        "2p Branch & Blade Song"
+      ],
+      "slots": {
+        "4": "ATK% > CRIT DMG%",
+        "5": "PEN Ratio% = ATK%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT DMG = CRIT Rate > ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Chain",
+        "Special",
+        "Dodge",
+        "Assist"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/ye-shunguang",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.5"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-CloudcleaveRadiance",
+        "zzz:engine-SeveredInnocence",
+        "zzz:engine-StarlightEngine"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-WhiteWaterBallad",
+        "zzz:disc-BranchBladeSong"
+      ]
+    },
+    {
+      "id": "zzz:yidhari-main",
+      "characterId": "zzz:yidhari",
+      "title": "Build principal • Yunkui Tales",
+      "role": "Rupture",
+      "bis": [
+        "Kraken's Cradle (W1)"
+      ],
+      "premium": [
+        "Qingming Birdcage (W1)"
+      ],
+      "accessible": [
+        "Grill O'Wisp (W5)"
+      ],
+      "sets": [
+        "4p Yunkui Tales",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT Rate% = CRIT DMG%",
+        "5": "Ice DMG% > HP%",
+        "6": "HP%"
+      },
+      "substats": [
+        "CRIT Rate = CRIT DMG > HP% > ATK% = Flat HP"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/yidhari",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.5"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-KrakensCradle",
+        "zzz:engine-QingmingBirdcage",
+        "zzz:engine-GrillOWisp"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-YunkuiTales",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:yixuan-main",
+      "characterId": "zzz:yixuan",
+      "title": "Build principal • Yunkui Tales",
+      "role": "Rupture",
+      "bis": [
+        "Qingming Birdcage (W1)"
+      ],
+      "premium": [
+        "Kraken's Cradle (W1)"
+      ],
+      "accessible": [
+        "Cauldron of Clarity (W5)"
+      ],
+      "sets": [
+        "4p Yunkui Tales",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT DMG% = CRIT Rate%",
+        "5": "Ether DMG% > HP%",
+        "6": "HP%"
+      },
+      "substats": [
+        "CRIT Rate = CRIT DMG > HP% > ATK% > Flat HP"
+      ],
+      "skillPriority": [
+        "Chain",
+        "Special",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/yixuan",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.5"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-QingmingBirdcage",
+        "zzz:engine-KrakensCradle",
+        "zzz:engine-CauldronOfClarity"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-YunkuiTales",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:yuzuha-main",
+      "characterId": "zzz:yuzuha",
+      "title": "Build principal • Moonlight Lullaby",
+      "role": "Support",
+      "bis": [
+        "Thoughtbop (W1)"
+      ],
+      "premium": [
+        "Metanukimorphosis (W1)"
+      ],
+      "accessible": [
+        "Kaboom the Cannon (W5)"
+      ],
+      "sets": [
+        "4p Moonlight Lullaby",
+        "2p Phaethon's Melody"
+      ],
+      "slots": {
+        "4": "ATK% >= Anomaly Proficiency",
+        "5": "ATK% >= PEN Ratio%",
+        "6": "Anomaly Mastery = ATK%"
+      },
+      "substats": [
+        "ATK% > ATK (until 3000) > Anomaly Proficiency > PEN"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Chain",
+        "Special",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/ukinami-yuzuha",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.6"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-Thoughtbop",
+        "zzz:engine-Metanukimorphosis",
+        "zzz:engine-KaboomTheCannon"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-MoonlightLullaby",
+        "zzz:disc-PhaethonsMelody"
+      ]
+    },
+    {
+      "id": "zzz:zhao-main",
+      "characterId": "zzz:zhao",
+      "title": "Build principal • Bunny in Wonderland",
+      "role": "Defense",
+      "bis": [
+        "Half-Sugar Bunny (W1)"
+      ],
+      "premium": [
+        "Tusks of Fury (W1)"
+      ],
+      "accessible": [
+        "Original Transmorpher (W5)"
+      ],
+      "sets": [
+        "4p Bunny in Wonderland",
+        "2p Yunkui Tales"
+      ],
+      "slots": {
+        "4": "HP%",
+        "5": "HP%",
+        "6": "Energy Regen"
+      },
+      "substats": [
+        "HP% (Until 27000 Initial HP) > Flat HP (Until 27000 Initial HP) > Crit Rate = Crit DMG"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/zhao",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.5"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-HalfSugarBunny",
+        "zzz:engine-TusksOfFury",
+        "zzz:engine-OriginalTransmorpher"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-BunnyInWonderland",
+        "zzz:disc-YunkuiTales"
+      ]
+    },
+    {
+      "id": "zzz:zhu-yuan-main",
+      "characterId": "zzz:zhu-yuan",
+      "title": "Build principal • Chaotic Metal",
+      "role": "Attack",
+      "bis": [
+        "Cordis Germina (W1)"
+      ],
+      "premium": [
+        "The Brimstone (W1)"
+      ],
+      "accessible": [
+        "Marcato Desire (W5)"
+      ],
+      "sets": [
+        "4p Chaotic Metal",
+        "2p Woodpecker Electro"
+      ],
+      "slots": {
+        "4": "CRIT DMG% = CRIT Rate%",
+        "5": "ATK% > Ether DMG% = PEN Ratio%",
+        "6": "ATK%"
+      },
+      "substats": [
+        "CRIT RATE = CRIT DMG = ATK% > PEN > ATK"
+      ],
+      "skillPriority": [
+        "Basic",
+        "Chain",
+        "Special",
+        "Dodge",
+        "Assist"
+      ],
+      "notes": "Guia de patch anterior; consulte a revisão indicada antes de investir.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/zhu-yuan",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "2.4"
+        }
+      ],
+      "wEngineIds": [
+        "zzz:engine-CordisGermina",
+        "zzz:engine-TheBrimstone",
+        "zzz:engine-MarcatoDesire"
+      ],
+      "driveDiscIds": [
+        "zzz:disc-ChaoticMetal",
+        "zzz:disc-WoodpeckerElectro"
+      ]
+    },
+    {
+      "id": "zzz:claret-main",
+      "characterId": "zzz:claret",
+      "title": "Build principal • Thorned Rose",
+      "role": "Armorer",
+      "bis": [
+        "Crimson Thirst (W1)"
+      ],
+      "premium": [
+        "Bloodmarrow Coffer (W1)"
+      ],
+      "accessible": [],
+      "sets": [
+        "4p Thorned Rose",
+        "2p Puffer Electro"
+      ],
+      "slots": {
+        "4": "CRIT Rate%",
+        "5": "PEN Ratio%",
+        "6": "DEF%"
+      },
+      "substats": [
+        "CRIT RATE > DEF% > CRIT DMG > PEN > DEF"
+      ],
+      "skillPriority": [
+        "Special",
+        "Chain",
+        "Basic",
+        "Assist",
+        "Dodge"
+      ],
+      "notes": "Dano escala com DEF. Puffer 2p foi escolhido para equipes com Rina; revise se usar redução de DEF. Não aplica o limite genérico de 100% CRIT Rate.",
+      "sources": [
+        {
+          "name": "Prydwen • síntese de build",
+          "url": "https://www.prydwen.gg/zenless/characters/claret",
+          "checkedAt": "2026-09-12",
+          "updatedAt": "2026-09-09",
+          "patch": "3.2"
+        }
+      ],
+      "wEngineIds": [],
+      "driveDiscIds": [
+        "zzz:disc-ThornedRose",
+        "zzz:disc-PufferElectro"
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "id": "zzz:team-Ellen • janela de dano",
+      "game": "ZZZ",
+      "name": "Ellen • janela de dano",
+      "slots": [
+        [
+          "zzz:ellen"
+        ],
+        [
+          "zzz:dialyn",
+          "zzz:lighter",
+          "zzz:lycaon"
+        ],
+        [
+          "zzz:astra"
+        ]
+      ],
+      "explanation": "Stun abre a janela de dano Ice; Astra oferece buffs e Quick Assists. Puffer requer Dialyn.",
+      "source": {
+        "name": "Prydwen • síntese de build",
+        "url": "https://www.prydwen.gg/zenless/characters/ellen",
+        "checkedAt": "2026-09-12",
+        "updatedAt": "2026-09-09",
+        "patch": "2.5"
+      }
+    },
+    {
+      "id": "zzz:team-Zhu Yuan • Cunning Hares",
+      "game": "ZZZ",
+      "name": "Zhu Yuan • Cunning Hares",
+      "slots": [
+        [
+          "zzz:zhu-yuan"
+        ],
+        [
+          "zzz:anby"
+        ],
+        [
+          "zzz:nicole"
+        ]
+      ],
+      "explanation": "Anby atordoa; Nicole reduz DEF e oferece bônus Ether. As duas Demara ativam suas Additional Abilities.",
+      "source": {
+        "name": "Prydwen • síntese de build",
+        "url": "https://www.prydwen.gg/zenless/characters/anby-demara",
+        "checkedAt": "2026-09-12",
+        "updatedAt": "2026-09-09",
+        "patch": "2.0"
+      }
+    },
+    {
+      "id": "zzz:team-Soldier 0 • Aftershock",
+      "game": "ZZZ",
+      "name": "Soldier 0 • Aftershock",
+      "slots": [
+        [
+          "zzz:soldier0-anby"
+        ],
+        [
+          "zzz:pulchra"
+        ],
+        [
+          "zzz:astra",
+          "zzz:nicole",
+          "zzz:lucy"
+        ]
+      ],
+      "explanation": "Pulchra oferece atordoamento fora de campo e bônus a Aftershock desde M0; o terceiro slot fornece suporte.",
+      "source": {
+        "name": "Prydwen • síntese de build",
+        "url": "https://www.prydwen.gg/zenless/characters/pulchra",
+        "checkedAt": "2026-09-12",
+        "updatedAt": "2026-09-09",
+        "patch": "1.6"
+      }
+    },
+    {
+      "id": "zzz:team-Rupture • Pulchra M6",
+      "game": "ZZZ",
+      "name": "Rupture • Pulchra M6",
+      "slots": [
+        [
+          "zzz:yixuan",
+          "zzz:manato"
+        ],
+        [
+          "zzz:pulchra"
+        ],
+        [
+          "zzz:astra",
+          "zzz:lucy"
+        ]
+      ],
+      "explanation": "Use Pulchra M6 para estender seu bônus além de Aftershock. Pouco tempo em campo para liberar o carregador.",
+      "source": {
+        "name": "Prydwen • síntese de build",
+        "url": "https://www.prydwen.gg/zenless/characters/pulchra",
+        "checkedAt": "2026-09-12",
+        "updatedAt": "2026-09-09",
+        "patch": "1.6"
+      }
+    }
+  ],
+  "wEngines": [
+    {
+      "id": "zzz:engine-PracticedPerfection",
+      "name": "Practiced Perfection",
+      "rarity": "S",
+      "specialty": "Anomaly",
+      "mainStat": "ATK%",
+      "providerId": "14140",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/PracticedPerfection.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-SharpenedStinger",
+      "name": "Sharpened Stinger",
+      "rarity": "S",
+      "specialty": "Anomaly",
+      "mainStat": "Anomaly Proficiency",
+      "providerId": "14126",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/SharpenedStinger.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-WeepingGemini",
+      "name": "Weeping Gemini",
+      "rarity": "A",
+      "specialty": "Anomaly",
+      "mainStat": "ATK%",
+      "providerId": "13008",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/WeepingGemini.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-HellfireGears",
+      "name": "Hellfire Gears",
+      "rarity": "S",
+      "specialty": "Stun",
+      "mainStat": "Impact%",
+      "providerId": "14110",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/HellfireGears.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-TheRestrained",
+      "name": "The Restrained",
+      "rarity": "S",
+      "specialty": "Stun",
+      "mainStat": "Impact%",
+      "providerId": "14114",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/TheRestrained.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-SteamOven",
+      "name": "Steam Oven",
+      "rarity": "A",
+      "specialty": "Stun",
+      "mainStat": "Energy Regen%",
+      "providerId": "13005",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/SteamOven.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-HeartstringNocturne",
+      "name": "Heartstring Nocturne",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "CRIT Rate",
+      "providerId": "14132",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/HeartstringNocturne.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-ZanshinHerbCase",
+      "name": "Zanshin Herb Case",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "CRIT DMG",
+      "providerId": "14120",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/ZanshinHerbCase.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-StreetSuperstar",
+      "name": "Street Superstar",
+      "rarity": "A",
+      "specialty": "Attack",
+      "mainStat": "ATK%",
+      "providerId": "13001",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/StreetSuperstar.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-AngelInTheShell",
+      "name": "Angel in the Shell",
+      "rarity": "S",
+      "specialty": "Anomaly",
+      "mainStat": "anomMas_",
+      "providerId": "14150",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/AngelInTheShell.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-FlightOfFancy",
+      "name": "Flight of Fancy",
+      "rarity": "S",
+      "specialty": "Anomaly",
+      "mainStat": "Anomaly Proficiency",
+      "providerId": "14133",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/FlightOfFancy.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-ElectroLipGloss",
+      "name": "Electro-Lip Gloss",
+      "rarity": "A",
+      "specialty": "Anomaly",
+      "mainStat": "Anomaly Proficiency",
+      "providerId": "13009",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/ElectroLipGloss.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-ElegantVanity",
+      "name": "Elegant Vanity",
+      "rarity": "S",
+      "specialty": "Support",
+      "mainStat": "ATK%",
+      "providerId": "14131",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/ElegantVanity.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-BashfulDemon",
+      "name": "Bashful Demon",
+      "rarity": "A",
+      "specialty": "Support",
+      "mainStat": "ATK%",
+      "providerId": "13113",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/BashfulDemon.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-WrathfulVajra",
+      "name": "Wrathful Vajra",
+      "rarity": "S",
+      "specialty": "Rupture",
+      "mainStat": "HP%",
+      "providerId": "14147",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/WrathfulVajra.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-QingmingBirdcage",
+      "name": "Qingming Birdcage",
+      "rarity": "S",
+      "specialty": "Rupture",
+      "mainStat": "HP%",
+      "providerId": "14137",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/QingmingBirdcage.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-CauldronOfClarity",
+      "name": "Cauldron of Clarity",
+      "rarity": "A",
+      "specialty": "Rupture",
+      "mainStat": "HP%",
+      "providerId": "13019",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/CauldronOfClarity.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-TremorTrigramVessel",
+      "name": "Tremor Trigram Vessel",
+      "rarity": "A",
+      "specialty": "Defense",
+      "mainStat": "ATK%",
+      "providerId": "13142",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/TremorTrigramVessel.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-HailstormShrine",
+      "name": "Hailstorm Shrine",
+      "rarity": "S",
+      "specialty": "Anomaly",
+      "mainStat": "CRIT Rate",
+      "providerId": "14109",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/HailstormShrine.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-CloudcleaveRadiance",
+      "name": "Cloudcleave Radiance",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "CRIT DMG",
+      "providerId": "14143",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/CloudcleaveRadiance.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-StarlightEngineReplica",
+      "name": "Starlight Engine Replica",
+      "rarity": "A",
+      "specialty": "Attack",
+      "mainStat": "ATK%",
+      "providerId": "13108",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/StarlightEngineReplica.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-FlamemakerShaker",
+      "name": "Flamemaker Shaker",
+      "rarity": "S",
+      "specialty": "Anomaly",
+      "mainStat": "ATK%",
+      "providerId": "14117",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/FlamemakerShaker.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-TusksOfFury",
+      "name": "Tusks of Fury",
+      "rarity": "S",
+      "specialty": "Defense",
+      "mainStat": "Impact%",
+      "providerId": "14107",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/TusksOfFury.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-OriginalTransmorpher",
+      "name": "Original Transmorpher",
+      "rarity": "A",
+      "specialty": "Defense",
+      "mainStat": "HP%",
+      "providerId": "13007",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/OriginalTransmorpher.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-SerpentineSeeker",
+      "name": "Serpentine Seeker",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "Energy Regen%",
+      "providerId": "14152",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/SerpentineSeeker.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-BellicoseBlaze",
+      "name": "Bellicose Blaze",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "Energy Regen%",
+      "providerId": "14130",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/BellicoseBlaze.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-DrillRigRedAxis",
+      "name": "Drill Rig - Red Axis",
+      "rarity": "A",
+      "specialty": "Attack",
+      "mainStat": "Energy Regen%",
+      "providerId": "13111",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/DrillRigRedAxis.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-CordisGermina",
+      "name": "Cordis Germina",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "CRIT Rate",
+      "providerId": "14146",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/CordisGermina.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-Housekeeper",
+      "name": "Housekeeper",
+      "rarity": "A",
+      "specialty": "Attack",
+      "mainStat": "ATK%",
+      "providerId": "13106",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/Housekeeper.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-YesterdayCalls",
+      "name": "Yesterday Calls",
+      "rarity": "S",
+      "specialty": "Stun",
+      "mainStat": "CRIT Rate",
+      "providerId": "14148",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/YesterdayCalls.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-DeepSeaVisitor",
+      "name": "Deep Sea Visitor",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "CRIT Rate",
+      "providerId": "14119",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/DeepSeaVisitor.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-MyriadEclipse",
+      "name": "Myriad Eclipse",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "CRIT Rate",
+      "providerId": "14129",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/MyriadEclipse.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-StarlightEngine",
+      "name": "Starlight Engine",
+      "rarity": "A",
+      "specialty": "Attack",
+      "mainStat": "ATK%",
+      "providerId": "13004",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/StarlightEngine.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-SeveredInnocence",
+      "name": "Severed Innocence",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "CRIT DMG",
+      "providerId": "14138",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/SeveredInnocence.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-Timeweaver",
+      "name": "Timeweaver",
+      "rarity": "S",
+      "specialty": "Anomaly",
+      "mainStat": "ATK%",
+      "providerId": "14122",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/Timeweaver.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-MarcatoDesire",
+      "name": "Marcato Desire",
+      "rarity": "A",
+      "specialty": "Attack",
+      "mainStat": "CRIT Rate",
+      "providerId": "13015",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/MarcatoDesire.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-RoaringFurnace",
+      "name": "Roaring Fur-nace",
+      "rarity": "S",
+      "specialty": "Stun",
+      "mainStat": "ATK%",
+      "providerId": "14139",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/RoaringFurnace.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-BlazingLaurel",
+      "name": "Blazing Laurel",
+      "rarity": "S",
+      "specialty": "Stun",
+      "mainStat": "Impact%",
+      "providerId": "14116",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/BlazingLaurel.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-PreciousFossilizedCore",
+      "name": "Precious Fossilized Core",
+      "rarity": "A",
+      "specialty": "Stun",
+      "mainStat": "Impact%",
+      "providerId": "13006",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/PreciousFossilizedCore.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-IceJadeTeapot",
+      "name": "Ice-Jade Teapot",
+      "rarity": "S",
+      "specialty": "Stun",
+      "mainStat": "Impact%",
+      "providerId": "14125",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/IceJadeTeapot.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-DreamlitHearth",
+      "name": "Dreamlit Hearth",
+      "rarity": "S",
+      "specialty": "Support",
+      "mainStat": "HP%",
+      "providerId": "14145",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/DreamlitHearth.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-WeepingCradle",
+      "name": "Weeping Cradle",
+      "rarity": "S",
+      "specialty": "Support",
+      "mainStat": "PEN Ratio%",
+      "providerId": "14121",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/WeepingCradle.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-KaboomTheCannon",
+      "name": "Kaboom the Cannon",
+      "rarity": "A",
+      "specialty": "Support",
+      "mainStat": "Energy Regen%",
+      "providerId": "13115",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/KaboomTheCannon.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-GrillOWisp",
+      "name": "Grill O'Wisp",
+      "rarity": "A",
+      "specialty": "Rupture",
+      "mainStat": "HP%",
+      "providerId": "13144",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/GrillOWisp.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-FusionCompiler",
+      "name": "Fusion Compiler",
+      "rarity": "S",
+      "specialty": "Anomaly",
+      "mainStat": "PEN Ratio%",
+      "providerId": "14118",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/FusionCompiler.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-NeonFantasies",
+      "name": "Neon Fantasies",
+      "rarity": "S",
+      "specialty": "Stun",
+      "mainStat": "anomMas_",
+      "providerId": "14151",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/NeonFantasies.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-TheSimmeringPot",
+      "name": "The Simmering Pot",
+      "rarity": "A",
+      "specialty": "Stun",
+      "mainStat": "Impact%",
+      "providerId": "13020",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/TheSimmeringPot.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-SteelCushion",
+      "name": "Steel Cushion",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "CRIT Rate",
+      "providerId": "14102",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/SteelCushion.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-TheVault",
+      "name": "The Vault",
+      "rarity": "A",
+      "specialty": "Support",
+      "mainStat": "Energy Regen%",
+      "providerId": "13103",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/TheVault.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-ChiefSidekick",
+      "name": "Chief Sidekick",
+      "rarity": "S",
+      "specialty": "Stun",
+      "mainStat": "CRIT Rate",
+      "providerId": "14157",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/ChiefSidekick.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-GildedBlossom",
+      "name": "Gilded Blossom",
+      "rarity": "A",
+      "specialty": "Attack",
+      "mainStat": "ATK%",
+      "providerId": "13013",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/GildedBlossom.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-FrostfallSickle",
+      "name": "Frostfall Sickle",
+      "rarity": "S",
+      "specialty": "Anomaly",
+      "mainStat": "anomMas_",
+      "providerId": "14154",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/FrostfallSickle.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-BoxCutter",
+      "name": "Box Cutter",
+      "rarity": "A",
+      "specialty": "Stun",
+      "mainStat": "Impact%",
+      "providerId": "13135",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/BoxCutter.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-SolExuvia",
+      "name": "Sol Exuvia",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "ATK%",
+      "providerId": "14155",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/SolExuvia.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-OdeOfResurrectedWings",
+      "name": "Ode of Resurrected Wings",
+      "rarity": "S",
+      "specialty": "Anomaly",
+      "mainStat": "ATK%",
+      "providerId": "14158",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/OdeOfResurrectedWings.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-PeacekeeperSpecialized",
+      "name": "Peacekeeper - Specialized",
+      "rarity": "A",
+      "specialty": "Defense",
+      "mainStat": "ATK%",
+      "providerId": "13127",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/PeacekeeperSpecialized.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-KnightsExtolment",
+      "name": "Knight's Extolment",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "CRIT DMG",
+      "providerId": "14159",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/KnightsExtolment.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-StarlightRiderFaceplate",
+      "name": "Starlight Rider Faceplate",
+      "rarity": "S",
+      "specialty": "Rupture",
+      "mainStat": "HP%",
+      "providerId": "14153",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/StarlightRiderFaceplate.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-Thoughtbop",
+      "name": "Thoughtbop",
+      "rarity": "S",
+      "specialty": "Support",
+      "mainStat": "Energy Regen%",
+      "providerId": "14149",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/Thoughtbop.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-SpectralGaze",
+      "name": "Spectral Gaze",
+      "rarity": "S",
+      "specialty": "Stun",
+      "mainStat": "CRIT Rate",
+      "providerId": "14136",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/SpectralGaze.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-JoyauDore",
+      "name": "Joyau Dore",
+      "rarity": "S",
+      "specialty": "Anomaly",
+      "mainStat": "Energy Regen%",
+      "providerId": "14156",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/JoyauDore.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-KrakensCradle",
+      "name": "Kraken's Cradle",
+      "rarity": "S",
+      "specialty": "Rupture",
+      "mainStat": "HP%",
+      "providerId": "14105",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/KrakensCradle.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-Metanukimorphosis",
+      "name": "Metanukimorphosis",
+      "rarity": "S",
+      "specialty": "Support",
+      "mainStat": "Energy Regen%",
+      "providerId": "14141",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/Metanukimorphosis.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-HalfSugarBunny",
+      "name": "Half-Sugar Bunny",
+      "rarity": "S",
+      "specialty": "Defense",
+      "mainStat": "HP%",
+      "providerId": "14134",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/HalfSugarBunny.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:engine-TheBrimstone",
+      "name": "The Brimstone",
+      "rarity": "S",
+      "specialty": "Attack",
+      "mainStat": "ATK%",
+      "providerId": "14104",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/stats/Data/Wengine/TheBrimstone.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    }
+  ],
+  "driveDiscs": [
+    {
+      "id": "zzz:disc-FangedMetal",
+      "name": "Fanged Metal",
+      "twoPiece": "Physical DMG +10%",
+      "fourPiece": "Assault aplicado por um aliado aumenta em 35% o dano do usuário contra esse alvo por 12s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_FangedMetal_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-PhaethonsMelody",
+      "name": "Phaethon's Melody",
+      "twoPiece": "Anomaly Mastery +8%",
+      "fourPiece": "EX de um aliado concede Anomaly Proficiency +45 por 8s; se quem usou EX for outro agente, também concede Ether DMG +25%.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_PhaethonsMelody_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-KingOfTheSummit",
+      "name": "King of the Summit",
+      "twoPiece": "Daze +6%",
+      "fourPiece": "Para Stun: EX ou Chain concede CRIT DMG +15% à equipe por 15s; com CRIT Rate ≥50%, mais 15%. Efeitos iguais não acumulam.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_KingOfTheSummit_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-ShockstarDisco",
+      "name": "Shockstar Disco",
+      "twoPiece": "Impact +6%",
+      "fourPiece": "Basic, Dash e Dodge Counter causam 20% mais Daze ao alvo principal.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_ShockstarDisco_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-ThunderMetal",
+      "name": "Thunder Metal",
+      "twoPiece": "Electric DMG +10%",
+      "fourPiece": "ATK +28% enquanto houver um inimigo com Shock em combate.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_ThunderMetal_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-WoodpeckerElectro",
+      "name": "Woodpecker Electro",
+      "twoPiece": "CRIT Rate +8%",
+      "fourPiece": "Crítico de Basic, Dodge Counter ou EX concede ATK +9% por 6s; os três tipos têm duração independente.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_WoodpeckerElectro_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-FreedomBlues",
+      "name": "Freedom Blues",
+      "twoPiece": "Anomaly Proficiency +30",
+      "fourPiece": "EX que acerta reduz em 20% a resistência à acumulação de Anomaly do atributo do usuário por 8s. Não acumula com o mesmo atributo.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_FreedomBlues_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-AstralVoice",
+      "name": "Astral Voice",
+      "twoPiece": "ATK +10%",
+      "fourPiece": "Quick Assists acumulam até 3 cargas por 15s; cada carga dá 8% de dano ao agente que entra por Quick Assist. Efeitos iguais não acumulam.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_AstralVoice_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-SwingJazz",
+      "name": "Swing Jazz",
+      "twoPiece": "Energy Regen +20%",
+      "fourPiece": "Chain ou Ultimate concede dano +15% à equipe por 12s. Efeitos iguais não acumulam.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_SwingJazz_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-YunkuiTales",
+      "name": "Yunkui Tales",
+      "twoPiece": "HP +10%",
+      "fourPiece": "EX, Chain ou Ultimate concede CRIT Rate +4% por carga, até 3, por 15s. Com 3 cargas: Sheer DMG +10%.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_YunkuiTales_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-InfernoMetal",
+      "name": "Inferno Metal",
+      "twoPiece": "Fire DMG +10%",
+      "fourPiece": "Acertar um inimigo com Burn concede CRIT Rate +28% por 8s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_InfernoMetal_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-BranchBladeSong",
+      "name": "Branch & Blade Song",
+      "twoPiece": "CRIT DMG +16%",
+      "fourPiece": "Com Anomaly Mastery ≥115: CRIT DMG +30%. Freeze ou Shatter da equipe concede CRIT Rate +12% por 15s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_BranchBladeSong_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-PufferElectro",
+      "name": "Puffer Electro",
+      "twoPiece": "PEN Ratio +8%",
+      "fourPiece": "Ultimate DMG +20%; usar Ultimate concede ATK +15% por 12s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_PufferElectro_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-HormonePunk",
+      "name": "Hormone Punk",
+      "twoPiece": "ATK +10%",
+      "fourPiece": "Entrar em campo concede ATK +25% por 10s, com intervalo de 20s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_HormonePunk_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-PolarMetal",
+      "name": "Polar Metal",
+      "twoPiece": "Ice DMG +10%",
+      "fourPiece": "Basic e Dash DMG +20%; Freeze ou Shatter da equipe adiciona mais 20% por 12s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_PolarMetal_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-MoonlightLullaby",
+      "name": "Moonlight Lullaby",
+      "twoPiece": "Energy Regen +20%",
+      "fourPiece": "Para Support: EX ou Ultimate concede dano +18% à equipe por 25s. Efeitos iguais não acumulam.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_MoonlightLullaby_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-ShadowHarmony",
+      "name": "Shadow Harmony",
+      "twoPiece": "Aftershock e Dash DMG +15%",
+      "fourPiece": "Aftershock/Dash do atributo do usuário concede ATK e CRIT Rate +4% por carga, até 3, por 15s. Uma carga por uso de habilidade.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_ShadowHarmony_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-NotesFromTheChained",
+      "name": "Notes From the Chained",
+      "twoPiece": "Ice DMG +10%",
+      "fourPiece": "Abloom concede Anomaly Proficiency +48 por 30s. Freeze concede dano de Anomaly e Disorder +16% por 30s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_NotesFromTheChained_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-TheSkyAblaze",
+      "name": "The Sky Ablaze",
+      "twoPiece": "Ether DMG +10%",
+      "fourPiece": "Para Ether: CRIT DMG +30%. EX ou Ultimate concede ATK +10% por 30s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_TheSkyAblaze_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-FeatheredFate",
+      "name": "Feathered Fate",
+      "twoPiece": "Anomaly Proficiency +30",
+      "fourPiece": "Ao entrar: Anomaly Proficiency +50; para Lumiflux, dano de Anomaly +15% por 15s. O efeito continua fora de campo.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_FeatheredFate_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-DawnsBloom",
+      "name": "Dawn's Bloom",
+      "twoPiece": "Basic DMG +15%",
+      "fourPiece": "Basic DMG +20%. Para Attack, EX ou Ultimate adiciona mais 20% por 25s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_DawnsBloom_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-WutheringSalon",
+      "name": "Wuthering Salon",
+      "twoPiece": "Wind DMG +10%",
+      "fourPiece": "EX concede Anomaly Proficiency +25 por carga, até 2, por 40s. Windswept concede dano +18% por 40s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_WutheringSalon_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-ChaosJazz",
+      "name": "Chaos Jazz",
+      "twoPiece": "Anomaly Proficiency +30",
+      "fourPiece": "Fire/Electric DMG +15%. Fora de campo: EX e Assist DMG +20%; persiste 5s ao entrar, com intervalo de 7,5s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_ChaosJazz_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-WhiteWaterBallad",
+      "name": "White Water Ballad",
+      "twoPiece": "Physical DMG +10%",
+      "fourPiece": "Dentro de Ether Veil: CRIT Rate +10%, persistindo 15s após sair. Para Attack, criar/prolongar Veil concede CRIT Rate e ATK +10% por 30s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_WhiteWaterBallad_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-BunnyInWonderland",
+      "name": "Bunny in Wonderland",
+      "twoPiece": "HP +10%",
+      "fourPiece": "Para Defense: EX ou Assist defensivo/evasivo da equipe dá 6% de dano por carga, até 3, por 25s. Cargas expiram uma a uma. Efeitos iguais não acumulam.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_BunnyInWonderland_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-ChaoticMetal",
+      "name": "Chaotic Metal",
+      "twoPiece": "Ether DMG +10%",
+      "fourPiece": "CRIT DMG +20%; dano de Corruption da equipe acumula mais 5,5% por carga, até 6, por 8s.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_ChaoticMetal_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    },
+    {
+      "id": "zzz:disc-ThornedRose",
+      "name": "Thorned Rose",
+      "twoPiece": "DEF +16%",
+      "fourPiece": "Dano +15%. Com DEF inicial ≥1.000/1.800, concede CRIT Rate +8%/16%.",
+      "source": {
+        "name": "Zenless Optimizer • equipamento",
+        "url": "https://github.com/frzyc/genshin-optimizer/blob/180a0a1015cb725c7570cd828eb086749960df98/libs/zzz/dm-localization/assets/locales/en/disc_ThornedRose_gen.json",
+        "checkedAt": "2026-09-12",
+        "patch": "não informado"
+      }
+    }
+  ]
+}

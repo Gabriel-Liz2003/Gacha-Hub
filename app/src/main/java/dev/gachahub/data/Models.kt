@@ -18,7 +18,8 @@ enum class Game(val title: String, val copyTerm: String, val weaponTerm: String,
     val updatedAt: String? = null, val patch: String = "Não informado", val note: String = "")
 @Serializable data class Character(val id: String, val game: Game, val name: String,
     val rarity: Int = 5, val element: String = "", val specialty: String = "", val role: String = "",
-    val image: String = "", val providerId: String = "", val sources: List<Source> = emptyList())
+    val image: String = "", val providerId: String = "", val sources: List<Source> = emptyList(),
+    val faction: String = "")
 @Serializable data class Gear(val id: String = "", val name: String = "", val level: Int = 1,
     val refinement: Int = 1, val slot: String = "", val set: String = "", val main: String = "",
     val stats: Map<String, Double> = emptyMap(), val raw: String = "")
@@ -37,7 +38,11 @@ enum class Game(val title: String, val copyTerm: String, val weaponTerm: String,
     val accessible: List<String> = emptyList(), val sets: List<String> = emptyList(),
     val slots: Map<String, String> = emptyMap(), val substats: List<String> = emptyList(),
     val benchmarks: List<Benchmark> = emptyList(), val skillPriority: List<String> = emptyList(),
-    val rotation: String = "", val notes: String = "", val sources: List<Source>)
+    val rotation: String = "", val notes: String = "", val sources: List<Source>,
+    val wEngineIds: List<String> = emptyList(), val driveDiscIds: List<String> = emptyList())
+@Serializable data class WEngine(val id: String, val name: String, val rarity: String, val specialty: String,
+    val mainStat: String = "", val providerId: String = "", val source: Source)
+@Serializable data class DriveDisc(val id: String, val name: String, val twoPiece: String, val fourPiece: String, val source: Source)
 @Serializable data class Material(val id: String, val game: Game, val name: String, val category: String,
     val days: List<Int> = emptyList(), val location: String = "", val energyPerRun: Int? = null,
     val estimatedYield: Double? = null, val sources: List<Source> = emptyList())
@@ -59,7 +64,8 @@ enum class Game(val title: String, val copyTerm: String, val weaponTerm: String,
     val publishedAt: String, val coverage: String, val characters: List<Character>,
     val builds: List<Build> = emptyList(), val materials: List<Material> = emptyList(),
     val costs: List<CostStep> = emptyList(), val teams: List<TeamGuide> = emptyList(),
-    val banners: List<Banner> = emptyList())
+    val banners: List<Banner> = emptyList(),
+    val wEngines: List<WEngine> = emptyList(), val driveDiscs: List<DriveDisc> = emptyList())
 @Serializable data class Backup(val schemaVersion: Int = 1, val accounts: List<Account>,
     val projects: List<Project> = emptyList(), val teams: List<Team> = emptyList(),
     val customCharacters: List<Character> = emptyList(), val customMaterials: List<Material> = emptyList(), val content: ContentPack? = null)
@@ -99,6 +105,11 @@ fun ContentPack.validate() {
     fun <T> unique(items: List<T>, key: (T) -> String) = require(items.map(key).distinct().size == items.size) { "IDs duplicados" }
     unique(characters) { it.id }; unique(materials) { it.id }; unique(builds) { it.id }; unique(teams) { it.id }
     characters.forEach { it.validate(); it.sources.forEach(Source::validate) }
+    unique(characters.filter { it.providerId.isNotBlank() }) { "${it.game}:${it.providerId}" }
+    unique(wEngines) { it.id }; unique(driveDiscs) { it.id }
+    unique(wEngines.filter { it.providerId.isNotBlank() }) { it.providerId }
+    wEngines.forEach { require(it.id.isNotBlank() && it.name.isNotBlank() && it.rarity in listOf("S","A","B")); it.source.validate() }
+    driveDiscs.forEach { require(it.id.isNotBlank() && it.name.isNotBlank() && it.twoPiece.isNotBlank() && it.fourPiece.isNotBlank()); it.source.validate() }
     val chars = characters.associateBy { it.id }; val mats = materials.associateBy { it.id }
     materials.forEach {
         require(it.days.all { d -> d in 1..7 } && (it.energyPerRun == null || it.energyPerRun > 0))
@@ -107,6 +118,8 @@ fun ContentPack.validate() {
     }
     builds.forEach { b ->
         require(b.characterId in chars && b.sources.isNotEmpty()) { "Build sem personagem ou fonte" }
+        require(b.wEngineIds.all { id -> wEngines.any { it.id == id } } && b.driveDiscIds.all { id -> driveDiscs.any { it.id == id } }) { "Equipamento de build desconhecido" }
+        require((b.wEngineIds.isEmpty() && b.driveDiscIds.isEmpty()) || chars[b.characterId]?.game == Game.ZZZ)
         b.sources.forEach(Source::validate)
         b.benchmarks.forEach { x ->
             require(listOf(x.low, x.adequate, x.excellent).all { it.isFinite() && it > 0 })
