@@ -150,7 +150,7 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
         verticalArrangement=Arrangement.spacedBy(12.dp)
     ) {
         Text("QUATRO MUNDOS, UM HUB", style=MaterialTheme.typography.labelLarge, color=accent, fontWeight=FontWeight.Bold)
-        Text("Gacha Hub", style=MaterialTheme.typography.displaySmall)
+        Text("Seu espaço de progresso", style=MaterialTheme.typography.displaySmall)
         Text("Sua coleção, suas builds e o próximo objetivo em um só lugar.", color=GachaTokens.muted)
         Button(onClick=openPlanner, modifier=Modifier.fillMaxWidth()) { Text("Todos os planejamentos (${state.projects.count { !it.completed }})") }
     }
