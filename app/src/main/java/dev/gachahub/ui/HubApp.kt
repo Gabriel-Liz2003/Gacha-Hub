@@ -223,6 +223,10 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
                 vm.repository.saveAccount(current.copy(uid=uid,serverOffset=offset.toInt(),resetHour=reset.toInt()))
             }}) { Text("Salvar UID e servidor") }
         }
+        else Section("Importar perfil") {
+            Field("UID público",uid,{uid=it},true)
+            Text("Crie uma conta acima para habilitar a importação e o vínculo do UID.", style=MaterialTheme.typography.bodySmall, color=GachaTokens.muted)
+        }
     }
 }
 @Composable private fun Dashboard(game: Game, account: Account?, state: HubState, go:(String)->Unit) {
