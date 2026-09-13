@@ -83,7 +83,7 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
         } },navigationIcon={ if(game != null || globalPlanning) TextButton(onClick={gameName=null;globalPlanning=false}) { Text("‹", style=MaterialTheme.typography.headlineSmall) } }) },
             bottomBar={ if(game != null) GachaNavigationBar(page) { page=it } }) { padding ->
             Column(Modifier.fillMaxSize().padding(padding)) {
-                if(busy) LoadingState(Modifier.padding(horizontal=18.dp, vertical=6.dp))
+                if(busy) LoadingState(modifier=Modifier.padding(horizontal=18.dp, vertical=6.dp))
                 if(globalPlanning) {
                     GlobalPlanningPage(state) { project ->
                         val target = state.accounts.first { it.id == project.accountId }
