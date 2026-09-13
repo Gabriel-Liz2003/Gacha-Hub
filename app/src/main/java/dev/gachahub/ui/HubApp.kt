@@ -52,8 +52,11 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     var accountId by rememberSaveable { mutableStateOf<String?>(null) }
     var globalPlanning by rememberSaveable { mutableStateOf(false) }
     var page by rememberSaveable { mutableStateOf("Resumo") }
+    var pendingAccount by remember { mutableStateOf<Account?>(null) }
     val game = gameName?.let(Game::valueOf)
-    val account = state.accounts.find { it.id == accountId && it.game == game } ?: state.accounts.firstOrNull { it.game == game }
+    val account = state.accounts.find { it.id == accountId && it.game == game }
+        ?: state.accounts.firstOrNull { it.game == game }
+        ?: pendingAccount?.takeIf { it.game == game }
     var fileKind by rememberSaveable { mutableStateOf("import") }
     var importTarget by rememberSaveable { mutableStateOf<String?>(null) }
     val context = LocalContext.current
@@ -204,7 +207,12 @@ private val pages = listOf("Resumo","Conta","Personagens","Builds","Planejamento
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(18.dp),verticalArrangement=Arrangement.spacedBy(14.dp)) {
         Section("Nova conta") {
             Field("Nome da conta",name,{name=it})
-            Button(onClick={vm.perform("Conta criada") { vm.repository.saveAccount(Account(newId(),game,name.trim())) }},enabled=name.isNotBlank()) { Text("Criar conta") }
+            Button(onClick={
+                val created=Account(newId(),game,name.trim())
+                pendingAccount=created
+                accountId=created.id
+                vm.perform("Conta criada") { vm.repository.saveAccount(created) }
+            },enabled=name.isNotBlank()) { Text("Criar conta") }
         }
         if(account != null) Section("${account.name} • importação") {
             Field("UID público",uid,{uid=it},true)
