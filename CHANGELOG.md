@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.5.0 — identidade visual Gacha Hub
+
+- Design System dark-first compartilhado com canvas, painéis elevados, tipografia, chips, badges, barras de progresso e estados vazios/carregando/erro.
+- Home redesenhada com hero, métricas, cards dos quatro jogos e acesso global ao Planner.
+- Dashboard por jogo com perfil, métricas, ações rápidas, favoritos e farm do dia.
+- Navegação inferior compacta (Início, Roster, Planner, Squad e Mais) preservando a navegação existente por chips e o back stack.
+- Catálogo com cards de artwork, indicação de posse, favoritos, busca/filtros e alternância responsiva entre grade adaptativa e lista.
+- Builds, benchmarks, Planner, inventário, Times e Conta receberam hierarquia visual, estados vazios e indicadores de progresso sem alterar dados ou regras de negócio.
+- Versão Android atualizada para 0.5.0 (versionCode 5).
+
 ## 0.4.0 — expansão Zenless Zone Zero
 
 - Roster live de 59 agentes no corte de 12/09/2026 (58 Provider IDs resolvidos); personagens futuros ficam fora do pacote.

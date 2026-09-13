@@ -14,6 +14,21 @@ App nativo para Zenless Zone Zero, Honkai: Star Rail, Genshin Impact e Wuthering
 Waves. Kotlin, Jetpack Compose, Material 3, Room, Coroutines/Flow, OkHttp e Coil.
 Android 8+ (API 26), target/compile SDK 35. Sem WebView, Electron ou Chromium.
 
+## Interface 0.5.0
+
+A experiência visual usa o Design System `GachaTokens` e `GachaTheme`: canvas escuro,
+painéis elevados, cantos amplos, tipografia com hierarquia e accent por jogo. A Home
+apresenta os quatro mundos e seus indicadores; cada jogo possui dashboard com ações
+rápidas, favoritos e farm. Dentro do jogo, uma barra inferior compacta complementa os
+chips de navegação existentes.
+
+O catálogo usa `LazyVerticalGrid` adaptativa ou lista, artwork com placeholder, badge de
+posse, busca e filtros. `GachaCard`, `HeroPanel`, `MetricPill`, `StatusBadge`,
+`CharacterArtwork`, `ProgressBar`, `EmptyState`, `LoadingState` e `ErrorState` são
+componentes compartilhados entre Home, personagens, builds, Planner, materiais, Times e
+Conta. Chaves estáveis continuam sendo usadas nas listas; imagens seguem carregamento
+assíncrono e cache do Coil. A reformulação não altera schemas Room, repositórios ou dados.
+
 ## O que o código já implementa
 
 - Jogos e contas separados; várias contas por jogo.
